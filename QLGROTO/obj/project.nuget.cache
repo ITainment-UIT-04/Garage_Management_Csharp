@@ -1,54 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OpW3xxNGRti010a2VFxNmXkyzPHdzA3fTCQ5N8YgZaU/3rMgEvUKwMV3Nt4ICHfSN/vZijkV1jUpYI+xMrjQ3A==",
+  "dgSpecHash": "y7Q22VVk0DJ+QU9NbuDfVZYtRRpv46pxWoeGSbGQO+IIpw2bCpxzfx4cALNWawHJWrV/YAZHPFp8mPpgadm8TQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\84981\\source\\repos\\QLGROTO\\QLGROTO\\QLGROTO.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\84981\\.nuget\\packages\\bunifu.charts.winforms\\1.1.5\\bunifu.charts.winforms.1.1.5.nupkg.sha512",
-    "C:\\Users\\84981\\.nuget\\packages\\bunifu.dataviz.winforms\\2.2.1\\bunifu.dataviz.winforms.2.2.1.nupkg.sha512",
-    "C:\\Users\\84981\\.nuget\\packages\\bunifu.ui.winforms\\5.3.0\\bunifu.ui.winforms.5.3.0.nupkg.sha512",
-    "C:\\Users\\84981\\.nuget\\packages\\bunifu.utils\\1.0.6\\bunifu.utils.1.0.6.nupkg.sha512"
-  ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Bunifu.Charts.WinForms 1.1.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Bunifu.Charts.WinForms",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Bunifu.Dataviz.WinForms 2.2.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Bunifu.Dataviz.WinForms",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Bunifu.UI.WinForms 5.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Bunifu.UI.WinForms",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Bunifu.Utils 1.0.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Bunifu.Utils",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    }
-  ]
+  "projectFilePath": "C:\\Users\\overl\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Tài liệu\\Thiên Phước\\Software Programming\\Garage_Management_Csharp\\QLGROTO\\QLGROTO.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
 }
