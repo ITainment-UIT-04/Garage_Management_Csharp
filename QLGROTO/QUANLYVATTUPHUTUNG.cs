@@ -36,5 +36,10 @@ namespace UI
         {
 
         }
+
+        private void VTPTVatTuPhuTung_Gr_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

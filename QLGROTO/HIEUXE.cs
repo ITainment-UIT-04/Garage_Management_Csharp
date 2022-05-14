@@ -16,5 +16,10 @@ namespace UI
         {
             InitializeComponent();
         }
+
+        private void DeleteHieuXe_Button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

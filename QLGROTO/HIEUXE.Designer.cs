@@ -37,6 +37,7 @@
             this.DeleteHieuXe_Button = new System.Windows.Forms.Button();
             this.AddHieuXe_button = new System.Windows.Forms.Button();
             this.HieuXe_DanhSachGr = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.HieuXe_SettingGr.SuspendLayout();
@@ -46,12 +47,12 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
             this.panel1.Controls.Add(this.QuanLyHieuXe_Title);
-            this.panel1.Location = new System.Drawing.Point(16, 18);
+            this.panel1.Location = new System.Drawing.Point(-1, 18);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(681, 85);
+            this.panel1.Size = new System.Drawing.Size(715, 85);
             this.panel1.TabIndex = 0;
             // 
             // QuanLyHieuXe_Title
@@ -60,6 +61,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.QuanLyHieuXe_Title.AutoSize = true;
             this.QuanLyHieuXe_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.QuanLyHieuXe_Title.ForeColor = System.Drawing.SystemColors.Control;
             this.QuanLyHieuXe_Title.Location = new System.Drawing.Point(200, 18);
             this.QuanLyHieuXe_Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.QuanLyHieuXe_Title.Name = "QuanLyHieuXe_Title";
@@ -75,7 +77,7 @@
             this.panel2.Location = new System.Drawing.Point(16, 131);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(396, 154);
+            this.panel2.Size = new System.Drawing.Size(415, 154);
             this.panel2.TabIndex = 1;
             // 
             // textBox1
@@ -84,11 +86,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(141, 57);
+            this.textBox1.Location = new System.Drawing.Point(133, 63);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.textBox1.Size = new System.Drawing.Size(234, 30);
+            this.textBox1.Size = new System.Drawing.Size(253, 30);
             this.textBox1.TabIndex = 1;
             // 
             // HieuXe_Label
@@ -108,6 +110,7 @@
             // 
             this.HieuXe_SettingGr.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.HieuXe_SettingGr.Controls.Add(this.button1);
             this.HieuXe_SettingGr.Controls.Add(this.DeleteHieuXe_Button);
             this.HieuXe_SettingGr.Controls.Add(this.AddHieuXe_button);
             this.HieuXe_SettingGr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -118,25 +121,25 @@
             this.HieuXe_SettingGr.Size = new System.Drawing.Size(267, 166);
             this.HieuXe_SettingGr.TabIndex = 2;
             this.HieuXe_SettingGr.TabStop = false;
-            this.HieuXe_SettingGr.Text = "Tùy chỉnh";
             // 
             // DeleteHieuXe_Button
             // 
             this.DeleteHieuXe_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.DeleteHieuXe_Button.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.DeleteHieuXe_Button.Location = new System.Drawing.Point(8, 103);
+            this.DeleteHieuXe_Button.Location = new System.Drawing.Point(8, 117);
             this.DeleteHieuXe_Button.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DeleteHieuXe_Button.Name = "DeleteHieuXe_Button";
             this.DeleteHieuXe_Button.Size = new System.Drawing.Size(251, 48);
             this.DeleteHieuXe_Button.TabIndex = 1;
             this.DeleteHieuXe_Button.Text = "Xóa hiệu xe";
             this.DeleteHieuXe_Button.UseVisualStyleBackColor = false;
+            this.DeleteHieuXe_Button.Click += new System.EventHandler(this.DeleteHieuXe_Button_Click);
             // 
             // AddHieuXe_button
             // 
             this.AddHieuXe_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.AddHieuXe_button.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.AddHieuXe_button.Location = new System.Drawing.Point(8, 45);
+            this.AddHieuXe_button.Location = new System.Drawing.Point(8, 11);
             this.AddHieuXe_button.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AddHieuXe_button.Name = "AddHieuXe_button";
             this.AddHieuXe_button.Size = new System.Drawing.Size(251, 48);
@@ -157,6 +160,19 @@
             this.HieuXe_DanhSachGr.TabIndex = 3;
             this.HieuXe_DanhSachGr.TabStop = false;
             this.HieuXe_DanhSachGr.Text = "Danh sách";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(8, 66);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(251, 48);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Sửa hiệu xe";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.DeleteHieuXe_Button_Click);
             // 
             // HIEUXE
             // 
@@ -192,5 +208,6 @@
         private System.Windows.Forms.GroupBox HieuXe_DanhSachGr;
         private System.Windows.Forms.Button DeleteHieuXe_Button;
         private System.Windows.Forms.Button AddHieuXe_button;
+        private Button button1;
     }
 }
