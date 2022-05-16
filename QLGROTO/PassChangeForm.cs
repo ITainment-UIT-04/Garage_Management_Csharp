@@ -17,20 +17,16 @@ namespace QLGROTO
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
+       
 
+        private void chgbtn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Đổi mật khẩu thành công!", "Đổi mật khẩu", MessageBoxButtons.OK);
+            this.Close(); 
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void escbtn_Click(object sender, EventArgs e)
         {
-
-        }
-
-     
-        private void pschgbtn_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Đổi mật khẩu thành công!", "Đổi mật khẩu", MessageBoxButtons.OK, MessageBoxIcon.None);
             this.Close();
         }
     }

@@ -57,16 +57,44 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chgbtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="chgbtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 180</value>
+  </data>
+  <data name="chgbtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 29</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chgbtn.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="chgbtn.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;chgbtn.Name" xml:space="preserve">
+    <value>chgbtn</value>
+  </data>
+  <data name="&gt;&gt;chgbtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chgbtn.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;chgbtn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="escbtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>200, 180</value>
+    <value>205, 180</value>
   </data>
   <data name="escbtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 29</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="escbtn.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="escbtn.Text" xml:space="preserve">
     <value>Thoát</value>
@@ -81,43 +109,16 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;escbtn.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="pschgbtn.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="pschgbtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 179</value>
-  </data>
-  <data name="pschgbtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 30</value>
-  </data>
-  <data name="pschgbtn.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="pschgbtn.Text" xml:space="preserve">
-    <value>Đổi mật khẩu</value>
-  </data>
-  <data name="&gt;&gt;pschgbtn.Name" xml:space="preserve">
-    <value>pschgbtn</value>
-  </data>
-  <data name="&gt;&gt;pschgbtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pschgbtn.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;pschgbtn.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 136</value>
+    <value>6, 136</value>
   </data>
   <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>285, 27</value>
+    <value>293, 27</value>
   </data>
   <data name="textBox5.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
     <value>textBox5</value>
@@ -132,13 +133,13 @@
     <value>2</value>
   </data>
   <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 83</value>
+    <value>6, 83</value>
   </data>
   <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>285, 27</value>
+    <value>293, 27</value>
   </data>
   <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
     <value>textBox3</value>
@@ -153,10 +154,10 @@
     <value>3</value>
   </data>
   <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 30</value>
+    <value>6, 30</value>
   </data>
   <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>285, 27</value>
+    <value>293, 27</value>
   </data>
   <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -231,7 +232,7 @@
     <value>True</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 7</value>
+    <value>6, 7</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 20</value>
@@ -284,7 +285,6 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>317, 226</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>

@@ -4,7 +4,6 @@ C:\Users\84981\source\repos\QLGROTO\QLGROTO\bin\Debug\net6.0-windows\QLGROTO.run
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\bin\Debug\net6.0-windows\QLGROTO.dll
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\bin\Debug\net6.0-windows\QLGROTO.pdb
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.csproj.AssemblyReference.cache
-C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.Form1.resources
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.csproj.GenerateResource.cache
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.AssemblyInfoInputs.cache
@@ -62,33 +61,13 @@ C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.csp
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\UI.BAOCAOTON.resources
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\UI.HIEUXE.resources
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\UI.QUANLYTIENCONG.resources
-C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\UI.QUANLYVATTUPHUTUNG.resources
-C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.TIEPNHANSUACHUA.resources
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\bin\Debug\net6.0-windows\QLGROTO.exe
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\bin\Debug\net6.0-windows\QLGROTO.deps.json
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\bin\Debug\net6.0-windows\QLGROTO.runtimeconfig.json
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\bin\Debug\net6.0-windows\QLGROTO.dll
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\bin\Debug\net6.0-windows\QLGROTO.pdb
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.csproj.AssemblyReference.cache
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.AboutForm.resources
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\UI.BAOCAOTON.resources
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.ContactForm.resources
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.Form1.resources
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\UI.HIEUXE.resources
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.InfoForm.resources
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.MainForm.resources
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.PassChangeForm.resources
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.Properties.Resources.resources
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\UI.QUANLYTIENCONG.resources
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\UI.QUANLYVATTUPHUTUNG.resources
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.TIEPNHANSUACHUA.resources
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.csproj.GenerateResource.cache
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.AssemblyInfoInputs.cache
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.AssemblyInfo.cs
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.csproj.CoreCompileInputs.cache
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.dll
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\refint\QLGROTO.dll
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.pdb
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.genruntimeconfig.cache
-C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\ref\QLGROTO.dll
+C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.AccessoryForm.resources
+C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.RepairForm.resources
+C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.ReceiptForm.resources
+C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.ReceiveForm.resources
+C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.InfoCarForm.resources
+C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.ChangeForm.resources
+C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.LogInForm.resources
+C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.AccessoryList.resources
+C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.InfoAccChangeForm.resources
+C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.InfoAccessoryForm.resources

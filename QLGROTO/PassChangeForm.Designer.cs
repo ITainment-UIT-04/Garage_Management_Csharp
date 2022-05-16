@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PassChangeForm));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.chgbtn = new System.Windows.Forms.Button();
             this.escbtn = new System.Windows.Forms.Button();
-            this.pschgbtn = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -43,8 +43,8 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.chgbtn);
             this.panel2.Controls.Add(this.escbtn);
-            this.panel2.Controls.Add(this.pschgbtn);
             this.panel2.Controls.Add(this.textBox5);
             this.panel2.Controls.Add(this.textBox3);
             this.panel2.Controls.Add(this.textBox4);
@@ -54,32 +54,31 @@
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
+            // chgbtn
+            // 
+            resources.ApplyResources(this.chgbtn, "chgbtn");
+            this.chgbtn.Name = "chgbtn";
+            this.chgbtn.UseVisualStyleBackColor = true;
+            this.chgbtn.Click += new System.EventHandler(this.chgbtn_Click);
+            // 
             // escbtn
             // 
             resources.ApplyResources(this.escbtn, "escbtn");
             this.escbtn.Name = "escbtn";
             this.escbtn.UseVisualStyleBackColor = true;
-            // 
-            // pschgbtn
-            // 
-            resources.ApplyResources(this.pschgbtn, "pschgbtn");
-            this.pschgbtn.Name = "pschgbtn";
-            this.pschgbtn.UseVisualStyleBackColor = true;
-            this.pschgbtn.Click += new System.EventHandler(this.pschgbtn_Click);
+            this.escbtn.Click += new System.EventHandler(this.escbtn_Click);
             // 
             // textBox5
             // 
             resources.ApplyResources(this.textBox5, "textBox5");
             this.textBox5.Name = "textBox5";
             this.textBox5.UseSystemPasswordChar = true;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox3
             // 
             resources.ApplyResources(this.textBox3, "textBox3");
             this.textBox3.Name = "textBox3";
             this.textBox3.UseSystemPasswordChar = true;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
@@ -91,28 +90,25 @@
             // 
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Click += new System.EventHandler(this.label1_Click);
             // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label5.Name = "label5";
-            this.label5.Click += new System.EventHandler(this.label1_Click);
             // 
             // label6
             // 
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Click += new System.EventHandler(this.label1_Click);
             // 
             // PassChangeForm
             // 
-            this.AcceptButton = this.escbtn;
+            this.AcceptButton = this.chgbtn;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.CancelButton = this.pschgbtn;
+            this.CancelButton = this.escbtn;
             this.Controls.Add(this.panel2);
             this.MaximizeBox = false;
             this.Name = "PassChangeForm";
@@ -130,7 +126,7 @@
         private Label label5;
         private Label label6;
         private TextBox textBox5;
+        private Button chgbtn;
         private Button escbtn;
-        private Button pschgbtn;
     }
 }

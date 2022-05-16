@@ -73,6 +73,16 @@ namespace QLGROTO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap certificate_g32c53cd83_640__1_ {
+            get {
+                object obj = ResourceManager.GetObject("certificate-g32c53cd83_640 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gear_2128601_640__1_ {
             get {
                 object obj = ResourceManager.GetObject("gear-2128601_640 (1)", resourceCulture);

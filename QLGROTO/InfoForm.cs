@@ -22,10 +22,16 @@ namespace QLGROTO
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+      
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            PassChangeForm form = new PassChangeForm(); 
-            form.ShowDialog();  
+            PassChangeForm form = new PassChangeForm();
+            form.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
