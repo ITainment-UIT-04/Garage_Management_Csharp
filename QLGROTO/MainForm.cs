@@ -119,11 +119,7 @@ namespace QLGROTO
             receiptForm.ShowDialog();
         }
 
-        private void infocarbtn_Click(object sender, EventArgs e)
-        {
-            InfoCarForm infoCarForm = new InfoCarForm();    
-            infoCarForm.ShowDialog();
-        }
+        
 
         private void button10_Click(object sender, EventArgs e)
         {
@@ -155,6 +151,17 @@ namespace QLGROTO
         {
             AccessoryList a = new AccessoryList();
             a.ShowDialog();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cậpNhậtTỉLệLãiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            InterestRateForm interestRateForm = new InterestRateForm();
+            interestRateForm.ShowDialog();
         }
     }
 }

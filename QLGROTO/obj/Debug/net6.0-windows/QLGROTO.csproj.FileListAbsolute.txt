@@ -65,9 +65,9 @@ C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.Acc
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.RepairForm.resources
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.ReceiptForm.resources
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.ReceiveForm.resources
-C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.InfoCarForm.resources
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.ChangeForm.resources
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.LogInForm.resources
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.AccessoryList.resources
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.InfoAccChangeForm.resources
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.InfoAccessoryForm.resources
+C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.InterestRateForm.resources

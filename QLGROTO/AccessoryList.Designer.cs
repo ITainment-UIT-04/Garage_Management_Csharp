@@ -46,7 +46,6 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button11 = new System.Windows.Forms.Button();
-            this.infocarbtn = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -159,7 +158,7 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
             this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dataGridView1.Size = new System.Drawing.Size(1111, 546);
+            this.dataGridView1.Size = new System.Drawing.Size(1111, 378);
             this.dataGridView1.TabIndex = 13;
             // 
             // Column9
@@ -231,22 +230,6 @@
             this.button11.Text = "Xoá VTPT";
             this.button11.UseVisualStyleBackColor = false;
             // 
-            // infocarbtn
-            // 
-            this.infocarbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.infocarbtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.infocarbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.infocarbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.infocarbtn.Image = global::QLGROTO.Properties.Resources.lens_1723832_640;
-            this.infocarbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.infocarbtn.Location = new System.Drawing.Point(12, 736);
-            this.infocarbtn.Name = "infocarbtn";
-            this.infocarbtn.Size = new System.Drawing.Size(265, 65);
-            this.infocarbtn.TabIndex = 15;
-            this.infocarbtn.Text = "Xem thông tin VTPT";
-            this.infocarbtn.UseVisualStyleBackColor = false;
-            this.infocarbtn.Click += new System.EventHandler(this.infocarbtn_Click);
-            // 
             // button10
             // 
             this.button10.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -296,7 +279,6 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button11);
-            this.Controls.Add(this.infocarbtn);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button9);
@@ -329,7 +311,6 @@
         private Label label1;
         private DataGridView dataGridView1;
         private Button button11;
-        private Button infocarbtn;
         private Button button10;
         private DataGridViewTextBoxColumn Column9;
         private DataGridViewTextBoxColumn Column1;

@@ -38,9 +38,14 @@
             this.báoCáoDoanhSốThángToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danhSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danhSáchVậtTưPhụTùngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.danhSáchLoạiTiềnCôngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.danhSáchHiệuXeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.danhSáchNhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danhSáchPhiếuNhậtKhoVTPTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danhSáchLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danhSáchPhiếuThuTiềnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thayĐổiSốXeSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cậpNhậtTỉLệLãiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trợGiúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinPhầnMềmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.liênHệToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,7 +60,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.infocarbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -70,15 +74,25 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.thayĐổiSốXeSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cậpNhậtTỉLệLãiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.danhSáchLoạiTiềnCôngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.danhSáchHiệuXeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.danhSáchNhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.TenChuXe = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.TenChuXe_Box = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -165,6 +179,24 @@
             this.danhSáchVậtTưPhụTùngToolStripMenuItem.Text = "Danh sách vật tư phụ tùng";
             this.danhSáchVậtTưPhụTùngToolStripMenuItem.Click += new System.EventHandler(this.danhSáchVậtTưPhụTùngToolStripMenuItem_Click_1);
             // 
+            // danhSáchLoạiTiềnCôngToolStripMenuItem
+            // 
+            this.danhSáchLoạiTiềnCôngToolStripMenuItem.Name = "danhSáchLoạiTiềnCôngToolStripMenuItem";
+            this.danhSáchLoạiTiềnCôngToolStripMenuItem.Size = new System.Drawing.Size(375, 26);
+            this.danhSáchLoạiTiềnCôngToolStripMenuItem.Text = "Danh sách loại tiền công";
+            // 
+            // danhSáchHiệuXeToolStripMenuItem
+            // 
+            this.danhSáchHiệuXeToolStripMenuItem.Name = "danhSáchHiệuXeToolStripMenuItem";
+            this.danhSáchHiệuXeToolStripMenuItem.Size = new System.Drawing.Size(375, 26);
+            this.danhSáchHiệuXeToolStripMenuItem.Text = "Danh sách hiệu xe";
+            // 
+            // danhSáchNhânViênToolStripMenuItem
+            // 
+            this.danhSáchNhânViênToolStripMenuItem.Name = "danhSáchNhânViênToolStripMenuItem";
+            this.danhSáchNhânViênToolStripMenuItem.Size = new System.Drawing.Size(375, 26);
+            this.danhSáchNhânViênToolStripMenuItem.Text = "Danh sách nhân viên";
+            // 
             // danhSáchPhiếuNhậtKhoVTPTToolStripMenuItem
             // 
             this.danhSáchPhiếuNhậtKhoVTPTToolStripMenuItem.Name = "danhSáchPhiếuNhậtKhoVTPTToolStripMenuItem";
@@ -183,6 +215,19 @@
             this.danhSáchPhiếuThuTiềnToolStripMenuItem.Name = "danhSáchPhiếuThuTiềnToolStripMenuItem";
             this.danhSáchPhiếuThuTiềnToolStripMenuItem.Size = new System.Drawing.Size(375, 26);
             this.danhSáchPhiếuThuTiềnToolStripMenuItem.Text = "Danh sách phiếu thu tiền";
+            // 
+            // thayĐổiSốXeSToolStripMenuItem
+            // 
+            this.thayĐổiSốXeSToolStripMenuItem.Name = "thayĐổiSốXeSToolStripMenuItem";
+            this.thayĐổiSốXeSToolStripMenuItem.Size = new System.Drawing.Size(375, 26);
+            this.thayĐổiSốXeSToolStripMenuItem.Text = " Cập nhật số xe sửa chữa tối đa trong ngày";
+            // 
+            // cậpNhậtTỉLệLãiToolStripMenuItem
+            // 
+            this.cậpNhậtTỉLệLãiToolStripMenuItem.Name = "cậpNhậtTỉLệLãiToolStripMenuItem";
+            this.cậpNhậtTỉLệLãiToolStripMenuItem.Size = new System.Drawing.Size(375, 26);
+            this.cậpNhậtTỉLệLãiToolStripMenuItem.Text = "Cập nhật tỉ lệ lãi";
+            this.cậpNhậtTỉLệLãiToolStripMenuItem.Click += new System.EventHandler(this.cậpNhậtTỉLệLãiToolStripMenuItem_Click);
             // 
             // trợGiúpToolStripMenuItem
             // 
@@ -346,50 +391,35 @@
             // 
             // button11
             // 
-            this.button11.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button11.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button11.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button11.Image = global::QLGROTO.Properties.Resources.recycle_310938_640;
             this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.Location = new System.Drawing.Point(1035, 696);
+            this.button11.Location = new System.Drawing.Point(1298, 722);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(285, 65);
+            this.button11.Size = new System.Drawing.Size(199, 65);
             this.button11.TabIndex = 0;
             this.button11.Text = "Xoá xe";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button10
             // 
-            this.button10.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button10.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button10.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button10.Image = global::QLGROTO.Properties.Resources.tool_145375_640;
             this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(728, 696);
+            this.button10.Location = new System.Drawing.Point(1298, 658);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(285, 65);
+            this.button10.Size = new System.Drawing.Size(199, 65);
             this.button10.TabIndex = 0;
             this.button10.Text = "Sửa thông tin xe";
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // infocarbtn
-            // 
-            this.infocarbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.infocarbtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.infocarbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.infocarbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.infocarbtn.Image = global::QLGROTO.Properties.Resources.lens_1723832_640;
-            this.infocarbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.infocarbtn.Location = new System.Drawing.Point(417, 696);
-            this.infocarbtn.Name = "infocarbtn";
-            this.infocarbtn.Size = new System.Drawing.Size(285, 65);
-            this.infocarbtn.TabIndex = 0;
-            this.infocarbtn.Text = "Xem thông tin xe";
-            this.infocarbtn.UseVisualStyleBackColor = false;
-            this.infocarbtn.Click += new System.EventHandler(this.infocarbtn_Click);
             // 
             // label1
             // 
@@ -482,7 +512,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(1279, 546);
+            this.dataGridView1.Size = new System.Drawing.Size(1279, 521);
             this.dataGridView1.TabIndex = 7;
             // 
             // Column1
@@ -532,41 +562,189 @@
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
             // 
-            // thayĐổiSốXeSToolStripMenuItem
+            // panel3
             // 
-            this.thayĐổiSốXeSToolStripMenuItem.Name = "thayĐổiSốXeSToolStripMenuItem";
-            this.thayĐổiSốXeSToolStripMenuItem.Size = new System.Drawing.Size(375, 26);
-            this.thayĐổiSốXeSToolStripMenuItem.Text = " Cập nhật số xe sửa chữa tối đa trong ngày";
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.dateTimePicker1);
+            this.panel3.Controls.Add(this.label8);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.TenChuXe);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.textBox4);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.TenChuXe_Box);
+            this.panel3.Controls.Add(this.textBox5);
+            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Location = new System.Drawing.Point(220, 658);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1072, 129);
+            this.panel3.TabIndex = 8;
             // 
-            // cậpNhậtTỉLệLãiToolStripMenuItem
+            // label7
             // 
-            this.cậpNhậtTỉLệLãiToolStripMenuItem.Name = "cậpNhậtTỉLệLãiToolStripMenuItem";
-            this.cậpNhậtTỉLệLãiToolStripMenuItem.Size = new System.Drawing.Size(375, 26);
-            this.cậpNhậtTỉLệLãiToolStripMenuItem.Text = "Cập nhật tỉ lệ lãi";
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(58, 56);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(95, 31);
+            this.label7.TabIndex = 33;
+            this.label7.Text = "Hiệu xe:";
             // 
-            // danhSáchLoạiTiềnCôngToolStripMenuItem
+            // dateTimePicker1
             // 
-            this.danhSáchLoạiTiềnCôngToolStripMenuItem.Name = "danhSáchLoạiTiềnCôngToolStripMenuItem";
-            this.danhSáchLoạiTiềnCôngToolStripMenuItem.Size = new System.Drawing.Size(375, 26);
-            this.danhSáchLoạiTiềnCôngToolStripMenuItem.Text = "Danh sách loại tiền công";
+            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(708, 87);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(360, 27);
+            this.dateTimePicker1.TabIndex = 38;
             // 
-            // danhSáchHiệuXeToolStripMenuItem
+            // label8
             // 
-            this.danhSáchHiệuXeToolStripMenuItem.Name = "danhSáchHiệuXeToolStripMenuItem";
-            this.danhSáchHiệuXeToolStripMenuItem.Size = new System.Drawing.Size(375, 26);
-            this.danhSáchHiệuXeToolStripMenuItem.Text = "Danh sách hiệu xe";
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label8.Location = new System.Drawing.Point(61, 25);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(92, 31);
+            this.label8.TabIndex = 34;
+            this.label8.Text = "Biển số:";
             // 
-            // danhSáchNhânViênToolStripMenuItem
+            // label6
             // 
-            this.danhSáchNhânViênToolStripMenuItem.Name = "danhSáchNhânViênToolStripMenuItem";
-            this.danhSáchNhânViênToolStripMenuItem.Size = new System.Drawing.Size(375, 26);
-            this.danhSáchNhânViênToolStripMenuItem.Text = "Danh sách nhân viên";
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(526, 83);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(176, 31);
+            this.label6.TabIndex = 37;
+            this.label6.Text = "Ngày tiếp nhận:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // TenChuXe
+            // 
+            this.TenChuXe.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.TenChuXe.AutoSize = true;
+            this.TenChuXe.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TenChuXe.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TenChuXe.Location = new System.Drawing.Point(27, 85);
+            this.TenChuXe.Name = "TenChuXe";
+            this.TenChuXe.Size = new System.Drawing.Size(126, 31);
+            this.TenChuXe.TabIndex = 35;
+            this.TenChuXe.Text = "Tên chủ xe:";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(578, 52);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(124, 31);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "Điện thoại:";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox2.Location = new System.Drawing.Point(159, 57);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.textBox2.Size = new System.Drawing.Size(360, 25);
+            this.textBox2.TabIndex = 30;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(613, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(89, 31);
+            this.label3.TabIndex = 35;
+            this.label3.Text = "Địa chỉ:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox4.Location = new System.Drawing.Point(159, 27);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.textBox4.Size = new System.Drawing.Size(360, 25);
+            this.textBox4.TabIndex = 31;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(610, 21);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(95, 31);
+            this.label4.TabIndex = 36;
+            this.label4.Text = "Hiệu xe:";
+            // 
+            // TenChuXe_Box
+            // 
+            this.TenChuXe_Box.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.TenChuXe_Box.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TenChuXe_Box.Location = new System.Drawing.Point(159, 87);
+            this.TenChuXe_Box.Multiline = true;
+            this.TenChuXe_Box.Name = "TenChuXe_Box";
+            this.TenChuXe_Box.ReadOnly = true;
+            this.TenChuXe_Box.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.TenChuXe_Box.Size = new System.Drawing.Size(360, 25);
+            this.TenChuXe_Box.TabIndex = 32;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox5.Location = new System.Drawing.Point(708, 56);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.textBox5.Size = new System.Drawing.Size(360, 25);
+            this.textBox5.TabIndex = 32;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox3.Location = new System.Drawing.Point(708, 23);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.textBox3.Size = new System.Drawing.Size(360, 25);
+            this.textBox3.TabIndex = 33;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1509, 801);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.button10);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.radioButton3);
@@ -575,8 +753,6 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button11);
-            this.Controls.Add(this.infocarbtn);
-            this.Controls.Add(this.button10);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -592,6 +768,8 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -620,7 +798,6 @@
         private Panel panel2;
         private Button button11;
         private Button button10;
-        private Button infocarbtn;
         private Label label1;
         private TextBox textBox1;
         private RadioButton radioButton1;
@@ -645,5 +822,19 @@
         private ToolStripMenuItem danhSáchLoạiTiềnCôngToolStripMenuItem;
         private ToolStripMenuItem danhSáchHiệuXeToolStripMenuItem;
         private ToolStripMenuItem danhSáchNhânViênToolStripMenuItem;
+        private Panel panel3;
+        private DateTimePicker dateTimePicker1;
+        private Label label6;
+        private Label label5;
+        private Label label3;
+        private Label label4;
+        private TextBox textBox5;
+        private TextBox textBox3;
+        private Label label7;
+        private Label label8;
+        private Label TenChuXe;
+        private TextBox textBox2;
+        private TextBox textBox4;
+        private TextBox TenChuXe_Box;
     }
 }
