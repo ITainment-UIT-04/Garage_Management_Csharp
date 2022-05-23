@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
+            this.OK_Button = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.TenChuXe = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Pos_TextBox = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PhoneNum_Textbox = new System.Windows.Forms.TextBox();
+            this.Address_Textbox = new System.Windows.Forms.TextBox();
             this.TenChuXe_Box = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.DoiMatKhau_Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button2
+            // OK_Button
             // 
-            this.button2.Location = new System.Drawing.Point(493, 176);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "OK";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.OK_Button.Location = new System.Drawing.Point(493, 176);
+            this.OK_Button.Name = "OK_Button";
+            this.OK_Button.Size = new System.Drawing.Size(94, 29);
+            this.OK_Button.TabIndex = 1;
+            this.OK_Button.Text = "OK";
+            this.OK_Button.UseVisualStyleBackColor = true;
+            this.OK_Button.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 
@@ -61,6 +61,7 @@
             this.label3.TabIndex = 14;
             this.label3.Text = "Chức vụ:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -92,18 +93,18 @@
             this.TenChuXe.TabIndex = 18;
             this.TenChuXe.Text = "Họ và tên:";
             // 
-            // textBox4
+            // Pos_TextBox
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Pos_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(214, 128);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.textBox4.Size = new System.Drawing.Size(300, 29);
-            this.textBox4.TabIndex = 7;
+            this.Pos_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Pos_TextBox.Location = new System.Drawing.Point(214, 128);
+            this.Pos_TextBox.Multiline = true;
+            this.Pos_TextBox.Name = "Pos_TextBox";
+            this.Pos_TextBox.ReadOnly = true;
+            this.Pos_TextBox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.Pos_TextBox.Size = new System.Drawing.Size(300, 29);
+            this.Pos_TextBox.TabIndex = 7;
             // 
             // textBox3
             // 
@@ -118,31 +119,32 @@
             this.textBox3.Size = new System.Drawing.Size(300, 29);
             this.textBox3.TabIndex = 8;
             // 
-            // textBox2
+            // PhoneNum_Textbox
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.PhoneNum_Textbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(214, 93);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.textBox2.Size = new System.Drawing.Size(300, 29);
-            this.textBox2.TabIndex = 9;
+            this.PhoneNum_Textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PhoneNum_Textbox.Location = new System.Drawing.Point(214, 93);
+            this.PhoneNum_Textbox.Multiline = true;
+            this.PhoneNum_Textbox.Name = "PhoneNum_Textbox";
+            this.PhoneNum_Textbox.ReadOnly = true;
+            this.PhoneNum_Textbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.PhoneNum_Textbox.Size = new System.Drawing.Size(300, 29);
+            this.PhoneNum_Textbox.TabIndex = 9;
             // 
-            // textBox1
+            // Address_Textbox
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Address_Textbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(214, 58);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.textBox1.Size = new System.Drawing.Size(300, 29);
-            this.textBox1.TabIndex = 10;
+            this.Address_Textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Address_Textbox.Location = new System.Drawing.Point(214, 58);
+            this.Address_Textbox.Multiline = true;
+            this.Address_Textbox.Name = "Address_Textbox";
+            this.Address_Textbox.ReadOnly = true;
+            this.Address_Textbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.Address_Textbox.Size = new System.Drawing.Size(300, 29);
+            this.Address_Textbox.TabIndex = 10;
+            this.Address_Textbox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // TenChuXe_Box
             // 
@@ -157,35 +159,35 @@
             this.TenChuXe_Box.Size = new System.Drawing.Size(300, 29);
             this.TenChuXe_Box.TabIndex = 11;
             // 
-            // button1
+            // DoiMatKhau_Button
             // 
-            this.button1.AutoSize = true;
-            this.button1.Location = new System.Drawing.Point(379, 176);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 30);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Đổi mật khẩu";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.DoiMatKhau_Button.AutoSize = true;
+            this.DoiMatKhau_Button.Location = new System.Drawing.Point(379, 176);
+            this.DoiMatKhau_Button.Name = "DoiMatKhau_Button";
+            this.DoiMatKhau_Button.Size = new System.Drawing.Size(108, 30);
+            this.DoiMatKhau_Button.TabIndex = 1;
+            this.DoiMatKhau_Button.Text = "Đổi mật khẩu";
+            this.DoiMatKhau_Button.UseVisualStyleBackColor = true;
+            this.DoiMatKhau_Button.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // InfoForm
             // 
-            this.AcceptButton = this.button2;
+            this.AcceptButton = this.OK_Button;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.button2;
+            this.CancelButton = this.OK_Button;
             this.ClientSize = new System.Drawing.Size(599, 217);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TenChuXe);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.Pos_TextBox);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.PhoneNum_Textbox);
+            this.Controls.Add(this.Address_Textbox);
             this.Controls.Add(this.TenChuXe_Box);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.DoiMatKhau_Button);
+            this.Controls.Add(this.OK_Button);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "InfoForm";
@@ -197,16 +199,16 @@
         }
 
         #endregion
-        private Button button2;
+        private Button OK_Button;
         private Label label3;
         private Label label2;
         private Label label1;
         private Label TenChuXe;
-        private TextBox textBox4;
+        private TextBox Pos_TextBox;
         private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox PhoneNum_Textbox;
+        private TextBox Address_Textbox;
         private TextBox TenChuXe_Box;
-        private Button button1;
+        private Button DoiMatKhau_Button;
     }
 }
