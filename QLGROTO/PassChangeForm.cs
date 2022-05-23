@@ -33,5 +33,10 @@ namespace QLGROTO
             MessageBox.Show("Đổi mật khẩu thành công!", "Đổi mật khẩu", MessageBoxButtons.OK, MessageBoxIcon.None);
             this.Close();
         }
+
+        private void tbMatKhauCu_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

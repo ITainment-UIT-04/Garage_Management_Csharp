@@ -21,5 +21,10 @@ namespace UI
         {
 
         }
+
+        private void AddHieuXe_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -92,3 +92,31 @@ C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technol
 C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.pdb
 C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.genruntimeconfig.cache
 C:\Users\overl\OneDrive - Trường ĐH CNTT - University of Information Technology\Tài liệu\Thiên Phước\Software Programming\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\ref\QLGROTO.dll
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\bin\Debug\net6.0-windows\QLGROTO.exe
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\bin\Debug\net6.0-windows\QLGROTO.deps.json
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\bin\Debug\net6.0-windows\QLGROTO.runtimeconfig.json
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\bin\Debug\net6.0-windows\QLGROTO.dll
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\bin\Debug\net6.0-windows\QLGROTO.pdb
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.AboutForm.resources
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\UI.BAOCAOTON.resources
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.ContactForm.resources
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.Form1.resources
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\UI.HIEUXE.resources
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.InfoForm.resources
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.MainForm.resources
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.PassChangeForm.resources
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.Properties.Resources.resources
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\UI.QUANLYTIENCONG.resources
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\UI.QUANLYVATTUPHUTUNG.resources
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.TIEPNHANSUACHUA.resources
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.csproj.GenerateResource.cache
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.dll
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\refint\QLGROTO.dll
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.pdb
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.genruntimeconfig.cache
+C:\Users\ADMIN\Documents\GitHub\Garage_Management_Csharp\QLGROTO\obj\Debug\net6.0-windows\ref\QLGROTO.dll

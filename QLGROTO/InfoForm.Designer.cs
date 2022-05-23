@@ -33,8 +33,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.DoiMatKhau_Button = new System.Windows.Forms.Button();
+            this.OK_Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -88,35 +88,35 @@
             this.label5.Text = "Chức vụ:";
             this.label5.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button1
+            // DoiMatKhau_Button
             // 
-            this.button1.AutoSize = true;
-            this.button1.Location = new System.Drawing.Point(432, 183);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 30);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Đổi mật khẩu";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.DoiMatKhau_Button.AutoSize = true;
+            this.DoiMatKhau_Button.Location = new System.Drawing.Point(432, 183);
+            this.DoiMatKhau_Button.Name = "DoiMatKhau_Button";
+            this.DoiMatKhau_Button.Size = new System.Drawing.Size(111, 30);
+            this.DoiMatKhau_Button.TabIndex = 1;
+            this.DoiMatKhau_Button.Text = "Đổi mật khẩu";
+            this.DoiMatKhau_Button.UseVisualStyleBackColor = true;
+            this.DoiMatKhau_Button.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // OK_Button
             // 
-            this.button2.Location = new System.Drawing.Point(555, 183);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "OK";
-            this.button2.UseVisualStyleBackColor = true;
+            this.OK_Button.Location = new System.Drawing.Point(555, 183);
+            this.OK_Button.Name = "OK_Button";
+            this.OK_Button.Size = new System.Drawing.Size(94, 29);
+            this.OK_Button.TabIndex = 1;
+            this.OK_Button.Text = "OK";
+            this.OK_Button.UseVisualStyleBackColor = true;
             // 
             // InfoForm
             // 
-            this.AcceptButton = this.button2;
+            this.AcceptButton = this.OK_Button;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.button2;
+            this.CancelButton = this.OK_Button;
             this.ClientSize = new System.Drawing.Size(661, 224);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.OK_Button);
+            this.Controls.Add(this.DoiMatKhau_Button);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -139,7 +139,7 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private Button button1;
-        private Button button2;
+        private Button DoiMatKhau_Button;
+        private Button OK_Button;
     }
 }

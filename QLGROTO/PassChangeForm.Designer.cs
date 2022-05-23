@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PassChangeForm));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.escbtn = new System.Windows.Forms.Button();
-            this.pschgbtn = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Thoat_Button = new System.Windows.Forms.Button();
+            this.DoiMatKhau_Button = new System.Windows.Forms.Button();
+            this.NhapLaiMatKhauMoi_Textbox = new System.Windows.Forms.TextBox();
+            this.MatKhauMoi_Textbox = new System.Windows.Forms.TextBox();
+            this.MatKhauCu_Textbox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -43,49 +43,50 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.escbtn);
-            this.panel2.Controls.Add(this.pschgbtn);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.Thoat_Button);
+            this.panel2.Controls.Add(this.DoiMatKhau_Button);
+            this.panel2.Controls.Add(this.NhapLaiMatKhauMoi_Textbox);
+            this.panel2.Controls.Add(this.MatKhauMoi_Textbox);
+            this.panel2.Controls.Add(this.MatKhauCu_Textbox);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label6);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
-            // escbtn
+            // Thoat_Button
             // 
-            resources.ApplyResources(this.escbtn, "escbtn");
-            this.escbtn.Name = "escbtn";
-            this.escbtn.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.Thoat_Button, "Thoat_Button");
+            this.Thoat_Button.Name = "Thoat_Button";
+            this.Thoat_Button.UseVisualStyleBackColor = true;
             // 
-            // pschgbtn
+            // DoiMatKhau_Button
             // 
-            resources.ApplyResources(this.pschgbtn, "pschgbtn");
-            this.pschgbtn.Name = "pschgbtn";
-            this.pschgbtn.UseVisualStyleBackColor = true;
-            this.pschgbtn.Click += new System.EventHandler(this.pschgbtn_Click);
+            resources.ApplyResources(this.DoiMatKhau_Button, "DoiMatKhau_Button");
+            this.DoiMatKhau_Button.Name = "DoiMatKhau_Button";
+            this.DoiMatKhau_Button.UseVisualStyleBackColor = true;
+            this.DoiMatKhau_Button.Click += new System.EventHandler(this.pschgbtn_Click);
             // 
-            // textBox5
+            // NhapLaiMatKhauMoi_Textbox
             // 
-            resources.ApplyResources(this.textBox5, "textBox5");
-            this.textBox5.Name = "textBox5";
-            this.textBox5.UseSystemPasswordChar = true;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            resources.ApplyResources(this.NhapLaiMatKhauMoi_Textbox, "NhapLaiMatKhauMoi_Textbox");
+            this.NhapLaiMatKhauMoi_Textbox.Name = "NhapLaiMatKhauMoi_Textbox";
+            this.NhapLaiMatKhauMoi_Textbox.UseSystemPasswordChar = true;
+            this.NhapLaiMatKhauMoi_Textbox.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // textBox3
+            // MatKhauMoi_Textbox
             // 
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
-            this.textBox3.UseSystemPasswordChar = true;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            resources.ApplyResources(this.MatKhauMoi_Textbox, "MatKhauMoi_Textbox");
+            this.MatKhauMoi_Textbox.Name = "MatKhauMoi_Textbox";
+            this.MatKhauMoi_Textbox.UseSystemPasswordChar = true;
+            this.MatKhauMoi_Textbox.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // textBox4
+            // MatKhauCu_Textbox
             // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
-            this.textBox4.UseSystemPasswordChar = true;
+            resources.ApplyResources(this.MatKhauCu_Textbox, "MatKhauCu_Textbox");
+            this.MatKhauCu_Textbox.Name = "MatKhauCu_Textbox";
+            this.MatKhauCu_Textbox.UseSystemPasswordChar = true;
+            this.MatKhauCu_Textbox.TextChanged += new System.EventHandler(this.tbMatKhauCu_TextChanged);
             // 
             // label4
             // 
@@ -108,11 +109,11 @@
             // 
             // PassChangeForm
             // 
-            this.AcceptButton = this.escbtn;
+            this.AcceptButton = this.Thoat_Button;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.CancelButton = this.pschgbtn;
+            this.CancelButton = this.DoiMatKhau_Button;
             this.Controls.Add(this.panel2);
             this.MaximizeBox = false;
             this.Name = "PassChangeForm";
@@ -124,13 +125,13 @@
 
         #endregion
         private Panel panel2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox MatKhauMoi_Textbox;
+        private TextBox MatKhauCu_Textbox;
         private Label label4;
         private Label label5;
         private Label label6;
-        private TextBox textBox5;
-        private Button escbtn;
-        private Button pschgbtn;
+        private TextBox NhapLaiMatKhauMoi_Textbox;
+        private Button Thoat_Button;
+        private Button DoiMatKhau_Button;
     }
 }
