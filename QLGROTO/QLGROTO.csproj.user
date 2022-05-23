@@ -13,6 +13,9 @@
     <Compile Update="ChangeForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ChangeWageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ContactForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -37,6 +40,9 @@
     <Compile Update="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="MaxCarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="PassChangeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,6 +59,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ReceiveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WageForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
