@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "I6VDQe6CDhDv17okRI6rXwPA4viyU0YJCYElpjRo31PUsQ/I19uS9UDAcbYkH4t13vBKAInOhfc2jucws/e/VQ==",
+  "dgSpecHash": "V+Cm33RxgWLLJLquQgM56qwlRpWMwpJUMdui3ApV6P1qZ8wn65hOa4kFzFAc2SdIVxxNq8yi2ZaTgbgMz3EWUA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ADMIN\\Documents\\GitHub\\Garage_Management_Csharp\\QLGROTO\\QLGROTO.csproj",
+  "projectFilePath": "C:\\Users\\overl\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Tài liệu\\Thiên Phước\\Software Programming\\Garage_Management_Csharp\\QLGROTO\\QLGROTO.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ADMIN\\.nuget\\packages\\bunifu.charts.winforms\\1.1.5\\bunifu.charts.winforms.1.1.5.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\bunifu.dataviz.winforms\\2.2.1\\bunifu.dataviz.winforms.2.2.1.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\bunifu.ui.winforms\\5.3.0\\bunifu.ui.winforms.5.3.0.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\bunifu.utils\\1.0.6\\bunifu.utils.1.0.6.nupkg.sha512"
+    "C:\\Users\\overl\\.nuget\\packages\\bunifu.charts.winforms\\1.1.5\\bunifu.charts.winforms.1.1.5.nupkg.sha512",
+    "C:\\Users\\overl\\.nuget\\packages\\bunifu.dataviz.winforms\\2.2.1\\bunifu.dataviz.winforms.2.2.1.nupkg.sha512",
+    "C:\\Users\\overl\\.nuget\\packages\\bunifu.ui.winforms\\5.3.0\\bunifu.ui.winforms.5.3.0.nupkg.sha512",
+    "C:\\Users\\overl\\.nuget\\packages\\bunifu.utils\\1.0.6\\bunifu.utils.1.0.6.nupkg.sha512"
   ],
   "logs": [
     {
