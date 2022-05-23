@@ -172,8 +172,14 @@ namespace QLGROTO
 
         private void danhSáchLoạiTiềnCôngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            WageForm wageForm = new WageForm();
+            WageList wageForm = new WageList();
             wageForm.ShowDialog();
+        }
+
+        private void danhSáchHiệuXeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BrandList brandForm = new BrandList();
+            brandForm.ShowDialog();
         }
     }
 }

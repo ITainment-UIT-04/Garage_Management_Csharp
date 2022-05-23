@@ -11,7 +11,16 @@
     <Compile Update="AccessoryList.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="BAOCAODOANHSOTHANG.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="BAOCAOTON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BAOCAOTONVTPT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BrandList.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ChangeForm.cs">
@@ -21,6 +30,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ContactForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DSNHANVIEN.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form1.cs">
@@ -68,10 +80,19 @@
     <Compile Update="RepairForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ThemHieuXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ThemTienCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="TIEPNHANSUACHUA.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="WageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WageList.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

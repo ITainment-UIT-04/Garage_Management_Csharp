@@ -10,26 +10,22 @@ using System.Windows.Forms;
 
 namespace QLGROTO
 {
-    public partial class ChangeWageForm : Form
+    public partial class BrandList : Form
     {
-        public ChangeWageForm()
+        public BrandList()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void BrandList_Load(object sender, EventArgs e)
         {
-            this.Close();
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void themtiencong_btn_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void ChangeWageForm_Load(object sender, EventArgs e)
-        {
-
+            ThemHieuXe themHieuXe = new ThemHieuXe();
+            themHieuXe.ShowDialog();
         }
     }
 }
