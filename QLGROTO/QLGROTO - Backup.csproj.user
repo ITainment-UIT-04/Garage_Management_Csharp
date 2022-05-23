@@ -1,14 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
   <ItemGroup>
     <Compile Update="AboutForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="AccessoryForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="AccessoryList.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="BAOCAOTON.cs">
@@ -26,9 +22,6 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="HIEUXE.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="InfoAccChangeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -38,10 +31,16 @@
     <Compile Update="InfoCarForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="InfoForm.cs">
+    <Compile Update="InterestRateForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="InterestRateForm.cs">
+    <Compile Update="LogInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="HIEUXE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MainForm.cs">
@@ -56,22 +55,26 @@
     <Compile Update="QUANLYTIENCONG.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="AccessoryList.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="QUANLYVATTUPHUTUNG.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ReceiptForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ReceiveForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="RepairForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="TIEPNHANSUACHUA.cs">
+    <Compile Update="ReceiveForm.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
+    <Compile Update="TIEPNHANSUACHUA.cs">
+=======
     <Compile Update="WageForm.cs">
+>>>>>>> 4efd65a7afb49b29a047e433d9892c2d9f4f4b00
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

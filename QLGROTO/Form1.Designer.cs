@@ -33,8 +33,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.escbtn = new System.Windows.Forms.Button();
             this.lginbtn = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.MatKhau_TextBox = new System.Windows.Forms.TextBox();
+            this.TenDN_TextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -57,8 +57,8 @@
             // 
             this.panel1.Controls.Add(this.escbtn);
             this.panel1.Controls.Add(this.lginbtn);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.MatKhau_TextBox);
+            this.panel1.Controls.Add(this.TenDN_TextBox);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(0, 41);
@@ -86,20 +86,21 @@
             this.lginbtn.UseVisualStyleBackColor = true;
             this.lginbtn.Click += new System.EventHandler(this.lginbtn_Click);
             // 
-            // textBox2
+            // MatKhau_TextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(148, 50);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(338, 27);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.MatKhau_TextBox.Location = new System.Drawing.Point(148, 50);
+            this.MatKhau_TextBox.Name = "MatKhau_TextBox";
+            this.MatKhau_TextBox.Size = new System.Drawing.Size(338, 27);
+            this.MatKhau_TextBox.TabIndex = 2;
+            this.MatKhau_TextBox.UseSystemPasswordChar = true;
             // 
-            // textBox1
+            // TenDN_TextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(338, 27);
-            this.textBox1.TabIndex = 1;
+            this.TenDN_TextBox.Location = new System.Drawing.Point(148, 15);
+            this.TenDN_TextBox.Name = "TenDN_TextBox";
+            this.TenDN_TextBox.Size = new System.Drawing.Size(338, 27);
+            this.TenDN_TextBox.TabIndex = 1;
+            this.TenDN_TextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -152,8 +153,8 @@
         private Label label2;
         private Button escbtn;
         private Button lginbtn;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox MatKhau_TextBox;
+        private TextBox TenDN_TextBox;
         private Label label3;
     }
 }
