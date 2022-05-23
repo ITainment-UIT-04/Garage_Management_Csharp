@@ -31,13 +31,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.QuanLyHieuXe_Title = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.HieuXe_Textbox = new System.Windows.Forms.TextBox();
             this.HieuXe_Label = new System.Windows.Forms.Label();
             this.HieuXe_SettingGr = new System.Windows.Forms.GroupBox();
+            this.SuaHieuXe_Button = new System.Windows.Forms.Button();
             this.DeleteHieuXe_Button = new System.Windows.Forms.Button();
             this.AddHieuXe_button = new System.Windows.Forms.Button();
             this.HieuXe_DanhSachGr = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.HieuXe_SettingGr.SuspendLayout();
@@ -72,7 +72,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.HieuXe_Textbox);
             this.panel2.Controls.Add(this.HieuXe_Label);
             this.panel2.Location = new System.Drawing.Point(16, 131);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -80,18 +80,18 @@
             this.panel2.Size = new System.Drawing.Size(415, 154);
             this.panel2.TabIndex = 1;
             // 
-            // textBox1
+            // HieuXe_Textbox
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.HieuXe_Textbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(133, 63);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.textBox1.Size = new System.Drawing.Size(253, 30);
-            this.textBox1.TabIndex = 1;
+            this.HieuXe_Textbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.HieuXe_Textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HieuXe_Textbox.Location = new System.Drawing.Point(133, 63);
+            this.HieuXe_Textbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.HieuXe_Textbox.Name = "HieuXe_Textbox";
+            this.HieuXe_Textbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.HieuXe_Textbox.Size = new System.Drawing.Size(253, 30);
+            this.HieuXe_Textbox.TabIndex = 1;
             // 
             // HieuXe_Label
             // 
@@ -110,7 +110,7 @@
             // 
             this.HieuXe_SettingGr.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.HieuXe_SettingGr.Controls.Add(this.button1);
+            this.HieuXe_SettingGr.Controls.Add(this.SuaHieuXe_Button);
             this.HieuXe_SettingGr.Controls.Add(this.DeleteHieuXe_Button);
             this.HieuXe_SettingGr.Controls.Add(this.AddHieuXe_button);
             this.HieuXe_SettingGr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -121,6 +121,19 @@
             this.HieuXe_SettingGr.Size = new System.Drawing.Size(267, 166);
             this.HieuXe_SettingGr.TabIndex = 2;
             this.HieuXe_SettingGr.TabStop = false;
+            // 
+            // SuaHieuXe_Button
+            // 
+            this.SuaHieuXe_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.SuaHieuXe_Button.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.SuaHieuXe_Button.Location = new System.Drawing.Point(8, 66);
+            this.SuaHieuXe_Button.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.SuaHieuXe_Button.Name = "SuaHieuXe_Button";
+            this.SuaHieuXe_Button.Size = new System.Drawing.Size(251, 48);
+            this.SuaHieuXe_Button.TabIndex = 1;
+            this.SuaHieuXe_Button.Text = "Sửa hiệu xe";
+            this.SuaHieuXe_Button.UseVisualStyleBackColor = false;
+            this.SuaHieuXe_Button.Click += new System.EventHandler(this.DeleteHieuXe_Button_Click);
             // 
             // DeleteHieuXe_Button
             // 
@@ -161,19 +174,6 @@
             this.HieuXe_DanhSachGr.TabStop = false;
             this.HieuXe_DanhSachGr.Text = "Danh sách";
             // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(8, 66);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(251, 48);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Sửa hiệu xe";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.DeleteHieuXe_Button_Click);
-            // 
             // HIEUXE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -202,12 +202,12 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label QuanLyHieuXe_Title;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox HieuXe_Textbox;
         private System.Windows.Forms.Label HieuXe_Label;
         private System.Windows.Forms.GroupBox HieuXe_SettingGr;
         private System.Windows.Forms.GroupBox HieuXe_DanhSachGr;
         private System.Windows.Forms.Button DeleteHieuXe_Button;
         private System.Windows.Forms.Button AddHieuXe_button;
-        private Button button1;
+        private Button SuaHieuXe_Button;
     }
 }

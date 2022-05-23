@@ -32,9 +32,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.chgbtn = new System.Windows.Forms.Button();
             this.escbtn = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.NhapLaiMatKhauMoi_Textbox = new System.Windows.Forms.TextBox();
+            this.MatKhauMoi_Textbox = new System.Windows.Forms.TextBox();
+            this.MatKhauCu_Textbox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -45,9 +45,9 @@
             // 
             this.panel2.Controls.Add(this.chgbtn);
             this.panel2.Controls.Add(this.escbtn);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.NhapLaiMatKhauMoi_Textbox);
+            this.panel2.Controls.Add(this.MatKhauMoi_Textbox);
+            this.panel2.Controls.Add(this.MatKhauCu_Textbox);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label6);
@@ -68,23 +68,23 @@
             this.escbtn.UseVisualStyleBackColor = true;
             this.escbtn.Click += new System.EventHandler(this.escbtn_Click);
             // 
-            // textBox5
+            // NhapLaiMatKhauMoi_Textbox
             // 
-            resources.ApplyResources(this.textBox5, "textBox5");
-            this.textBox5.Name = "textBox5";
-            this.textBox5.UseSystemPasswordChar = true;
+            resources.ApplyResources(this.NhapLaiMatKhauMoi_Textbox, "NhapLaiMatKhauMoi_Textbox");
+            this.NhapLaiMatKhauMoi_Textbox.Name = "NhapLaiMatKhauMoi_Textbox";
+            this.NhapLaiMatKhauMoi_Textbox.UseSystemPasswordChar = true;
             // 
-            // textBox3
+            // MatKhauMoi_Textbox
             // 
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
-            this.textBox3.UseSystemPasswordChar = true;
+            resources.ApplyResources(this.MatKhauMoi_Textbox, "MatKhauMoi_Textbox");
+            this.MatKhauMoi_Textbox.Name = "MatKhauMoi_Textbox";
+            this.MatKhauMoi_Textbox.UseSystemPasswordChar = true;
             // 
-            // textBox4
+            // MatKhauCu_Textbox
             // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
-            this.textBox4.UseSystemPasswordChar = true;
+            resources.ApplyResources(this.MatKhauCu_Textbox, "MatKhauCu_Textbox");
+            this.MatKhauCu_Textbox.Name = "MatKhauCu_Textbox";
+            this.MatKhauCu_Textbox.UseSystemPasswordChar = true;
             // 
             // label4
             // 
@@ -120,12 +120,12 @@
 
         #endregion
         private Panel panel2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox MatKhauMoi_Textbox;
+        private TextBox MatKhauCu_Textbox;
         private Label label4;
         private Label label5;
         private Label label6;
-        private TextBox textBox5;
+        private TextBox NhapLaiMatKhauMoi_Textbox;
         private Button chgbtn;
         private Button escbtn;
     }
