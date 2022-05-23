@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.thôngTinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.InfoToolScriptMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinCáNhânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.báoCáoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,19 +54,19 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.AddAccessoryButton = new System.Windows.Forms.Button();
+            this.CashButton = new System.Windows.Forms.Button();
+            this.RepairButton = new System.Windows.Forms.Button();
+            this.AddCarButton = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.button9 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.SearchLabel = new System.Windows.Forms.Label();
+            this.SearchTextbox = new System.Windows.Forms.TextBox();
+            this.NameSearchRadiobtn = new System.Windows.Forms.RadioButton();
+            this.PhoneSearchRadiobtn = new System.Windows.Forms.RadioButton();
+            this.LicenseSearchRadiobtn = new System.Windows.Forms.RadioButton();
+            this.SearchButton = new System.Windows.Forms.Button();
+            this.AllCarDataGridView = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,23 +75,23 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.BrandLabel = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.TenChuXe = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.LicenseLabel = new System.Windows.Forms.Label();
+            this.DateLabel = new System.Windows.Forms.Label();
+            this.NameLabel = new System.Windows.Forms.Label();
+            this.PhoneLabel = new System.Windows.Forms.Label();
+            this.BrandTextbox = new System.Windows.Forms.TextBox();
+            this.AddressLabel = new System.Windows.Forms.Label();
+            this.LicenseTextbox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.TenChuXe_Box = new System.Windows.Forms.TextBox();
+            this.NameTextbox = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AllCarDataGridView)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,7 +100,7 @@
             this.menuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.thôngTinToolStripMenuItem,
+            this.InfoToolScriptMenu,
             this.báoCáoToolStripMenuItem,
             this.danhSáchToolStripMenuItem,
             this.trợGiúpToolStripMenuItem});
@@ -110,15 +110,15 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // thôngTinToolStripMenuItem
+            // InfoToolScriptMenu
             // 
-            this.thôngTinToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.InfoToolScriptMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.thôngTinCáNhânToolStripMenuItem,
             this.đăngXuấtToolStripMenuItem});
-            this.thôngTinToolStripMenuItem.Name = "thôngTinToolStripMenuItem";
-            this.thôngTinToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
-            this.thôngTinToolStripMenuItem.Text = "Thông tin";
-            this.thôngTinToolStripMenuItem.Click += new System.EventHandler(this.thôngTinToolStripMenuItem_Click);
+            this.InfoToolScriptMenu.Name = "InfoToolScriptMenu";
+            this.InfoToolScriptMenu.Size = new System.Drawing.Size(86, 24);
+            this.InfoToolScriptMenu.Text = "Thông tin";
+            this.InfoToolScriptMenu.Click += new System.EventHandler(this.thôngTinToolStripMenuItem_Click);
             // 
             // thôngTinCáNhânToolStripMenuItem
             // 
@@ -184,6 +184,7 @@
             this.danhSáchLoạiTiềnCôngToolStripMenuItem.Name = "danhSáchLoạiTiềnCôngToolStripMenuItem";
             this.danhSáchLoạiTiềnCôngToolStripMenuItem.Size = new System.Drawing.Size(375, 26);
             this.danhSáchLoạiTiềnCôngToolStripMenuItem.Text = "Danh sách loại tiền công";
+            this.danhSáchLoạiTiềnCôngToolStripMenuItem.Click += new System.EventHandler(this.danhSáchLoạiTiềnCôngToolStripMenuItem_Click);
             // 
             // danhSáchHiệuXeToolStripMenuItem
             // 
@@ -221,6 +222,7 @@
             this.thayĐổiSốXeSToolStripMenuItem.Name = "thayĐổiSốXeSToolStripMenuItem";
             this.thayĐổiSốXeSToolStripMenuItem.Size = new System.Drawing.Size(375, 26);
             this.thayĐổiSốXeSToolStripMenuItem.Text = " Cập nhật số xe sửa chữa tối đa trong ngày";
+            this.thayĐổiSốXeSToolStripMenuItem.Click += new System.EventHandler(this.thayĐổiSốXeSToolStripMenuItem_Click);
             // 
             // cậpNhậtTỉLệLãiToolStripMenuItem
             // 
@@ -256,10 +258,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.AddAccessoryButton);
+            this.panel1.Controls.Add(this.CashButton);
+            this.panel1.Controls.Add(this.RepairButton);
+            this.panel1.Controls.Add(this.AddCarButton);
             this.panel1.Location = new System.Drawing.Point(0, 31);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(212, 1023);
@@ -321,78 +323,78 @@
             this.button7.Text = "Sửa thông tin xe";
             this.button7.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // AddAccessoryButton
             // 
-            this.button3.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Image = global::QLGROTO.Properties.Resources.scroll_35683_640__1_;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 182);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(209, 126);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Lập phiếu nhập kho vật tư phụ tùng";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.AddAccessoryButton.BackColor = System.Drawing.Color.MidnightBlue;
+            this.AddAccessoryButton.FlatAppearance.BorderSize = 0;
+            this.AddAccessoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddAccessoryButton.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.AddAccessoryButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.AddAccessoryButton.Image = global::QLGROTO.Properties.Resources.scroll_35683_640__1_;
+            this.AddAccessoryButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddAccessoryButton.Location = new System.Drawing.Point(0, 182);
+            this.AddAccessoryButton.Name = "AddAccessoryButton";
+            this.AddAccessoryButton.Size = new System.Drawing.Size(209, 126);
+            this.AddAccessoryButton.TabIndex = 2;
+            this.AddAccessoryButton.Text = "Lập phiếu nhập kho vật tư phụ tùng";
+            this.AddAccessoryButton.UseVisualStyleBackColor = false;
+            this.AddAccessoryButton.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button5
+            // CashButton
             // 
-            this.button5.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button5.Image = global::QLGROTO.Properties.Resources.banknotes_159085_640__1_;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(-3, 508);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(215, 76);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Lập phiếu thu\r\ntiền";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            this.CashButton.BackColor = System.Drawing.Color.MidnightBlue;
+            this.CashButton.FlatAppearance.BorderSize = 0;
+            this.CashButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CashButton.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.CashButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.CashButton.Image = global::QLGROTO.Properties.Resources.banknotes_159085_640__1_;
+            this.CashButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CashButton.Location = new System.Drawing.Point(-3, 508);
+            this.CashButton.Name = "CashButton";
+            this.CashButton.Size = new System.Drawing.Size(215, 76);
+            this.CashButton.TabIndex = 2;
+            this.CashButton.Text = "Lập phiếu thu\r\ntiền";
+            this.CashButton.UseVisualStyleBackColor = false;
+            this.CashButton.Click += new System.EventHandler(this.button5_Click_1);
             // 
-            // button4
+            // RepairButton
             // 
-            this.button4.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button4.Image = global::QLGROTO.Properties.Resources.hammer_28636_640__1_;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 364);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(212, 76);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Lập phiếu sửa chữa";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.RepairButton.BackColor = System.Drawing.Color.MidnightBlue;
+            this.RepairButton.FlatAppearance.BorderSize = 0;
+            this.RepairButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RepairButton.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.RepairButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.RepairButton.Image = global::QLGROTO.Properties.Resources.hammer_28636_640__1_;
+            this.RepairButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RepairButton.Location = new System.Drawing.Point(0, 364);
+            this.RepairButton.Name = "RepairButton";
+            this.RepairButton.Size = new System.Drawing.Size(212, 76);
+            this.RepairButton.TabIndex = 2;
+            this.RepairButton.Text = "Lập phiếu sửa chữa";
+            this.RepairButton.UseVisualStyleBackColor = false;
+            this.RepairButton.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button1
+            // AddCarButton
             // 
-            this.button1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Image = global::QLGROTO.Properties.Resources.plus_24844_640__2_;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 54);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 76);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Tiếp nhận xe";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.AddCarButton.BackColor = System.Drawing.Color.MidnightBlue;
+            this.AddCarButton.FlatAppearance.BorderSize = 0;
+            this.AddCarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddCarButton.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.AddCarButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.AddCarButton.Image = global::QLGROTO.Properties.Resources.plus_24844_640__2_;
+            this.AddCarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddCarButton.Location = new System.Drawing.Point(0, 54);
+            this.AddCarButton.Name = "AddCarButton";
+            this.AddCarButton.Size = new System.Drawing.Size(212, 76);
+            this.AddCarButton.TabIndex = 2;
+            this.AddCarButton.Text = "Tiếp nhận xe";
+            this.AddCarButton.UseVisualStyleBackColor = false;
+            this.AddCarButton.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button11
             // 
             this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button11.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button11.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button11.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button11.Image = global::QLGROTO.Properties.Resources.recycle_310938_640;
@@ -408,7 +410,7 @@
             // button10
             // 
             this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button10.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button10.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button10.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button10.Image = global::QLGROTO.Properties.Resources.tool_145375_640;
@@ -421,86 +423,86 @@
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
-            // label1
+            // SearchLabel
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(598, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 28);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Tìm kiếm:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.SearchLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.SearchLabel.AutoSize = true;
+            this.SearchLabel.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.SearchLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.SearchLabel.Location = new System.Drawing.Point(598, 41);
+            this.SearchLabel.Name = "SearchLabel";
+            this.SearchLabel.Size = new System.Drawing.Size(104, 28);
+            this.SearchLabel.TabIndex = 3;
+            this.SearchLabel.Text = "Tìm kiếm:";
+            this.SearchLabel.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // SearchTextbox
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.Location = new System.Drawing.Point(708, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(371, 27);
-            this.textBox1.TabIndex = 4;
+            this.SearchTextbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.SearchTextbox.Location = new System.Drawing.Point(708, 42);
+            this.SearchTextbox.Name = "SearchTextbox";
+            this.SearchTextbox.Size = new System.Drawing.Size(371, 27);
+            this.SearchTextbox.TabIndex = 4;
             // 
-            // radioButton1
+            // NameSearchRadiobtn
             // 
-            this.radioButton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.radioButton1.Location = new System.Drawing.Point(598, 75);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(160, 24);
-            this.radioButton1.TabIndex = 5;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Tìm theo tên chủ xe";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.NameSearchRadiobtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NameSearchRadiobtn.AutoSize = true;
+            this.NameSearchRadiobtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.NameSearchRadiobtn.Location = new System.Drawing.Point(598, 75);
+            this.NameSearchRadiobtn.Name = "NameSearchRadiobtn";
+            this.NameSearchRadiobtn.Size = new System.Drawing.Size(160, 24);
+            this.NameSearchRadiobtn.TabIndex = 5;
+            this.NameSearchRadiobtn.TabStop = true;
+            this.NameSearchRadiobtn.Text = "Tìm theo tên chủ xe";
+            this.NameSearchRadiobtn.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // PhoneSearchRadiobtn
             // 
-            this.radioButton2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.radioButton2.Location = new System.Drawing.Point(774, 75);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(225, 24);
-            this.radioButton2.TabIndex = 5;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Tìm theo số điện thoại chủ xe";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.PhoneSearchRadiobtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.PhoneSearchRadiobtn.AutoSize = true;
+            this.PhoneSearchRadiobtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.PhoneSearchRadiobtn.Location = new System.Drawing.Point(774, 75);
+            this.PhoneSearchRadiobtn.Name = "PhoneSearchRadiobtn";
+            this.PhoneSearchRadiobtn.Size = new System.Drawing.Size(225, 24);
+            this.PhoneSearchRadiobtn.TabIndex = 5;
+            this.PhoneSearchRadiobtn.TabStop = true;
+            this.PhoneSearchRadiobtn.Text = "Tìm theo số điện thoại chủ xe";
+            this.PhoneSearchRadiobtn.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // LicenseSearchRadiobtn
             // 
-            this.radioButton3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.radioButton3.Location = new System.Drawing.Point(1016, 75);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(160, 24);
-            this.radioButton3.TabIndex = 5;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Tìm theo tên chủ xe";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.LicenseSearchRadiobtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.LicenseSearchRadiobtn.AutoSize = true;
+            this.LicenseSearchRadiobtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LicenseSearchRadiobtn.Location = new System.Drawing.Point(1016, 75);
+            this.LicenseSearchRadiobtn.Name = "LicenseSearchRadiobtn";
+            this.LicenseSearchRadiobtn.Size = new System.Drawing.Size(160, 24);
+            this.LicenseSearchRadiobtn.TabIndex = 5;
+            this.LicenseSearchRadiobtn.TabStop = true;
+            this.LicenseSearchRadiobtn.Text = "Tìm theo biển số xe";
+            this.LicenseSearchRadiobtn.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // SearchButton
             // 
-            this.button9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button9.BackColor = System.Drawing.SystemColors.Info;
-            this.button9.Image = global::QLGROTO.Properties.Resources.search_6699087_640__1_;
-            this.button9.Location = new System.Drawing.Point(1085, 42);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(79, 27);
-            this.button9.TabIndex = 6;
-            this.button9.UseVisualStyleBackColor = false;
+            this.SearchButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.SearchButton.BackColor = System.Drawing.SystemColors.Info;
+            this.SearchButton.Image = global::QLGROTO.Properties.Resources.search_6699087_640__1_;
+            this.SearchButton.Location = new System.Drawing.Point(1085, 42);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(79, 27);
+            this.SearchButton.TabIndex = 6;
+            this.SearchButton.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // AllCarDataGridView
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.AllCarDataGridView.AllowUserToAddRows = false;
+            this.AllCarDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.AllCarDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.AllCarDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.AllCarDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
@@ -508,12 +510,12 @@
             this.Column5,
             this.Column6,
             this.Column7});
-            this.dataGridView1.Location = new System.Drawing.Point(218, 131);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(1279, 521);
-            this.dataGridView1.TabIndex = 7;
+            this.AllCarDataGridView.Location = new System.Drawing.Point(218, 121);
+            this.AllCarDataGridView.Name = "AllCarDataGridView";
+            this.AllCarDataGridView.RowHeadersWidth = 51;
+            this.AllCarDataGridView.RowTemplate.Height = 29;
+            this.AllCarDataGridView.Size = new System.Drawing.Size(1279, 531);
+            this.AllCarDataGridView.TabIndex = 7;
             // 
             // Column1
             // 
@@ -565,17 +567,17 @@
             // panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.BrandLabel);
             this.panel3.Controls.Add(this.dateTimePicker1);
-            this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.TenChuXe);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.textBox4);
+            this.panel3.Controls.Add(this.LicenseLabel);
+            this.panel3.Controls.Add(this.DateLabel);
+            this.panel3.Controls.Add(this.NameLabel);
+            this.panel3.Controls.Add(this.PhoneLabel);
+            this.panel3.Controls.Add(this.BrandTextbox);
+            this.panel3.Controls.Add(this.AddressLabel);
+            this.panel3.Controls.Add(this.LicenseTextbox);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.TenChuXe_Box);
+            this.panel3.Controls.Add(this.NameTextbox);
             this.panel3.Controls.Add(this.textBox5);
             this.panel3.Controls.Add(this.textBox3);
             this.panel3.Location = new System.Drawing.Point(220, 658);
@@ -583,17 +585,17 @@
             this.panel3.Size = new System.Drawing.Size(1072, 129);
             this.panel3.TabIndex = 8;
             // 
-            // label7
+            // BrandLabel
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(58, 56);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(95, 31);
-            this.label7.TabIndex = 33;
-            this.label7.Text = "Hiệu xe:";
+            this.BrandLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BrandLabel.AutoSize = true;
+            this.BrandLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BrandLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BrandLabel.Location = new System.Drawing.Point(58, 56);
+            this.BrandLabel.Name = "BrandLabel";
+            this.BrandLabel.Size = new System.Drawing.Size(95, 31);
+            this.BrandLabel.TabIndex = 33;
+            this.BrandLabel.Text = "Hiệu xe:";
             // 
             // dateTimePicker1
             // 
@@ -603,92 +605,92 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(360, 27);
             this.dateTimePicker1.TabIndex = 38;
             // 
-            // label8
+            // LicenseLabel
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(61, 25);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(92, 31);
-            this.label8.TabIndex = 34;
-            this.label8.Text = "Biển số:";
+            this.LicenseLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.LicenseLabel.AutoSize = true;
+            this.LicenseLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LicenseLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LicenseLabel.Location = new System.Drawing.Point(61, 25);
+            this.LicenseLabel.Name = "LicenseLabel";
+            this.LicenseLabel.Size = new System.Drawing.Size(92, 31);
+            this.LicenseLabel.TabIndex = 34;
+            this.LicenseLabel.Text = "Biển số:";
             // 
-            // label6
+            // DateLabel
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(526, 83);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(176, 31);
-            this.label6.TabIndex = 37;
-            this.label6.Text = "Ngày tiếp nhận:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DateLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.DateLabel.AutoSize = true;
+            this.DateLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DateLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.DateLabel.Location = new System.Drawing.Point(526, 83);
+            this.DateLabel.Name = "DateLabel";
+            this.DateLabel.Size = new System.Drawing.Size(176, 31);
+            this.DateLabel.TabIndex = 37;
+            this.DateLabel.Text = "Ngày tiếp nhận:";
+            this.DateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // TenChuXe
+            // NameLabel
             // 
-            this.TenChuXe.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.TenChuXe.AutoSize = true;
-            this.TenChuXe.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TenChuXe.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TenChuXe.Location = new System.Drawing.Point(27, 85);
-            this.TenChuXe.Name = "TenChuXe";
-            this.TenChuXe.Size = new System.Drawing.Size(126, 31);
-            this.TenChuXe.TabIndex = 35;
-            this.TenChuXe.Text = "Tên chủ xe:";
+            this.NameLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.NameLabel.AutoSize = true;
+            this.NameLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NameLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.NameLabel.Location = new System.Drawing.Point(27, 85);
+            this.NameLabel.Name = "NameLabel";
+            this.NameLabel.Size = new System.Drawing.Size(126, 31);
+            this.NameLabel.TabIndex = 35;
+            this.NameLabel.Text = "Tên chủ xe:";
             // 
-            // label5
+            // PhoneLabel
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(578, 52);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 31);
-            this.label5.TabIndex = 34;
-            this.label5.Text = "Điện thoại:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PhoneLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.PhoneLabel.AutoSize = true;
+            this.PhoneLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PhoneLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.PhoneLabel.Location = new System.Drawing.Point(578, 52);
+            this.PhoneLabel.Name = "PhoneLabel";
+            this.PhoneLabel.Size = new System.Drawing.Size(124, 31);
+            this.PhoneLabel.TabIndex = 34;
+            this.PhoneLabel.Text = "Điện thoại:";
+            this.PhoneLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox2
+            // BrandTextbox
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(159, 57);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.textBox2.Size = new System.Drawing.Size(360, 25);
-            this.textBox2.TabIndex = 30;
+            this.BrandTextbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BrandTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BrandTextbox.Location = new System.Drawing.Point(159, 57);
+            this.BrandTextbox.Multiline = true;
+            this.BrandTextbox.Name = "BrandTextbox";
+            this.BrandTextbox.ReadOnly = true;
+            this.BrandTextbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.BrandTextbox.Size = new System.Drawing.Size(360, 25);
+            this.BrandTextbox.TabIndex = 30;
             // 
-            // label3
+            // AddressLabel
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(613, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 31);
-            this.label3.TabIndex = 35;
-            this.label3.Text = "Địa chỉ:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddressLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.AddressLabel.AutoSize = true;
+            this.AddressLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AddressLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.AddressLabel.Location = new System.Drawing.Point(613, 21);
+            this.AddressLabel.Name = "AddressLabel";
+            this.AddressLabel.Size = new System.Drawing.Size(89, 31);
+            this.AddressLabel.TabIndex = 35;
+            this.AddressLabel.Text = "Địa chỉ:";
+            this.AddressLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox4
+            // LicenseTextbox
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(159, 27);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.textBox4.Size = new System.Drawing.Size(360, 25);
-            this.textBox4.TabIndex = 31;
+            this.LicenseTextbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.LicenseTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LicenseTextbox.Location = new System.Drawing.Point(159, 27);
+            this.LicenseTextbox.Multiline = true;
+            this.LicenseTextbox.Name = "LicenseTextbox";
+            this.LicenseTextbox.ReadOnly = true;
+            this.LicenseTextbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.LicenseTextbox.Size = new System.Drawing.Size(360, 25);
+            this.LicenseTextbox.TabIndex = 31;
             // 
             // label4
             // 
@@ -702,17 +704,17 @@
             this.label4.TabIndex = 36;
             this.label4.Text = "Hiệu xe:";
             // 
-            // TenChuXe_Box
+            // NameTextbox
             // 
-            this.TenChuXe_Box.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.TenChuXe_Box.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TenChuXe_Box.Location = new System.Drawing.Point(159, 87);
-            this.TenChuXe_Box.Multiline = true;
-            this.TenChuXe_Box.Name = "TenChuXe_Box";
-            this.TenChuXe_Box.ReadOnly = true;
-            this.TenChuXe_Box.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.TenChuXe_Box.Size = new System.Drawing.Size(360, 25);
-            this.TenChuXe_Box.TabIndex = 32;
+            this.NameTextbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.NameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NameTextbox.Location = new System.Drawing.Point(159, 87);
+            this.NameTextbox.Multiline = true;
+            this.NameTextbox.Name = "NameTextbox";
+            this.NameTextbox.ReadOnly = true;
+            this.NameTextbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.NameTextbox.Size = new System.Drawing.Size(360, 25);
+            this.NameTextbox.TabIndex = 32;
             // 
             // textBox5
             // 
@@ -745,13 +747,13 @@
             this.ClientSize = new System.Drawing.Size(1509, 801);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.button10);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.AllCarDataGridView);
+            this.Controls.Add(this.SearchButton);
+            this.Controls.Add(this.LicenseSearchRadiobtn);
+            this.Controls.Add(this.PhoneSearchRadiobtn);
+            this.Controls.Add(this.NameSearchRadiobtn);
+            this.Controls.Add(this.SearchTextbox);
+            this.Controls.Add(this.SearchLabel);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
@@ -767,7 +769,7 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AllCarDataGridView)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -778,7 +780,7 @@
         #endregion
 
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem thôngTinToolStripMenuItem;
+        private ToolStripMenuItem InfoToolScriptMenu;
         private ToolStripMenuItem báoCáoToolStripMenuItem;
         private ToolStripMenuItem trợGiúpToolStripMenuItem;
         private ToolStripMenuItem thôngTinPhầnMềmToolStripMenuItem;
@@ -788,23 +790,23 @@
         private ToolStripMenuItem báoCáoTồnVậtTưPhụTùngToolStripMenuItem;
         private ToolStripMenuItem báoCáoDoanhSốThángToolStripMenuItem;
         private Panel panel1;
-        private Button button1;
-        private Button button3;
-        private Button button4;
-        private Button button5;
+        private Button AddCarButton;
+        private Button AddAccessoryButton;
+        private Button RepairButton;
+        private Button CashButton;
         private Button button2;
         private Button button7;
         private Button button8;
         private Panel panel2;
         private Button button11;
         private Button button10;
-        private Label label1;
-        private TextBox textBox1;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
-        private RadioButton radioButton3;
-        private Button button9;
-        private DataGridView dataGridView1;
+        private Label SearchLabel;
+        private TextBox SearchTextbox;
+        private RadioButton NameSearchRadiobtn;
+        private RadioButton PhoneSearchRadiobtn;
+        private RadioButton LicenseSearchRadiobtn;
+        private Button SearchButton;
+        private DataGridView AllCarDataGridView;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
@@ -824,17 +826,17 @@
         private ToolStripMenuItem danhSáchNhânViênToolStripMenuItem;
         private Panel panel3;
         private DateTimePicker dateTimePicker1;
-        private Label label6;
-        private Label label5;
-        private Label label3;
+        private Label DateLabel;
+        private Label PhoneLabel;
+        private Label AddressLabel;
         private Label label4;
         private TextBox textBox5;
         private TextBox textBox3;
-        private Label label7;
-        private Label label8;
-        private Label TenChuXe;
-        private TextBox textBox2;
-        private TextBox textBox4;
-        private TextBox TenChuXe_Box;
+        private Label BrandLabel;
+        private Label LicenseLabel;
+        private Label NameLabel;
+        private TextBox BrandTextbox;
+        private TextBox LicenseTextbox;
+        private TextBox NameTextbox;
     }
 }

@@ -1,10 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
   <ItemGroup>
     <Compile Update="AboutForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="AccessoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AccessoryList.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="BAOCAOTON.cs">
@@ -13,10 +17,16 @@
     <Compile Update="ChangeForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ChangeWageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ContactForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="HIEUXE.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="InfoAccChangeForm.cs">
@@ -28,19 +38,19 @@
     <Compile Update="InfoCarForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="InfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="InterestRateForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="LogInForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="HIEUXE.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="InfoForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MaxCarForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="PassChangeForm.cs">
@@ -49,22 +59,22 @@
     <Compile Update="QUANLYTIENCONG.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AccessoryList.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="QUANLYVATTUPHUTUNG.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ReceiptForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="RepairForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="ReceiveForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="RepairForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="TIEPNHANSUACHUA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WageForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
