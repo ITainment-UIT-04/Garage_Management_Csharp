@@ -29,113 +29,113 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogInForm));
-            this.label1 = new System.Windows.Forms.Label();
+            this.TitleLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.escbtn = new System.Windows.Forms.Button();
-            this.lginbtn = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.EscapeButton = new System.Windows.Forms.Button();
+            this.LogInButtion = new System.Windows.Forms.Button();
+            this.PassTextbox = new System.Windows.Forms.TextBox();
+            this.UsernameTextbox = new System.Windows.Forms.TextBox();
+            this.PassLabel = new System.Windows.Forms.Label();
+            this.UsernameLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // TitleLabel
             // 
-            this.label1.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(498, 38);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "PHẦN MỀM QUẢN LÝ GARA Ô TÔ";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.TitleLabel.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.TitleLabel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TitleLabel.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TitleLabel.Location = new System.Drawing.Point(0, 0);
+            this.TitleLabel.Name = "TitleLabel";
+            this.TitleLabel.Size = new System.Drawing.Size(498, 38);
+            this.TitleLabel.TabIndex = 0;
+            this.TitleLabel.Text = "PHẦN MỀM QUẢN LÝ GARA Ô TÔ";
+            this.TitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TitleLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.escbtn);
-            this.panel1.Controls.Add(this.lginbtn);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.EscapeButton);
+            this.panel1.Controls.Add(this.LogInButtion);
+            this.panel1.Controls.Add(this.PassTextbox);
+            this.panel1.Controls.Add(this.UsernameTextbox);
+            this.panel1.Controls.Add(this.PassLabel);
+            this.panel1.Controls.Add(this.UsernameLabel);
             this.panel1.Location = new System.Drawing.Point(0, 41);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(498, 180);
             this.panel1.TabIndex = 1;
             // 
-            // escbtn
+            // EscapeButton
             // 
-            this.escbtn.Location = new System.Drawing.Point(323, 92);
-            this.escbtn.Name = "escbtn";
-            this.escbtn.Size = new System.Drawing.Size(94, 29);
-            this.escbtn.TabIndex = 4;
-            this.escbtn.Text = "Thoát";
-            this.escbtn.UseVisualStyleBackColor = true;
-            this.escbtn.Click += new System.EventHandler(this.escbtn_Click);
+            this.EscapeButton.Location = new System.Drawing.Point(323, 92);
+            this.EscapeButton.Name = "EscapeButton";
+            this.EscapeButton.Size = new System.Drawing.Size(94, 29);
+            this.EscapeButton.TabIndex = 4;
+            this.EscapeButton.Text = "Thoát";
+            this.EscapeButton.UseVisualStyleBackColor = true;
+            this.EscapeButton.Click += new System.EventHandler(this.escbtn_Click);
             // 
-            // lginbtn
+            // LogInButtion
             // 
-            this.lginbtn.Location = new System.Drawing.Point(72, 92);
-            this.lginbtn.Name = "lginbtn";
-            this.lginbtn.Size = new System.Drawing.Size(94, 29);
-            this.lginbtn.TabIndex = 3;
-            this.lginbtn.Text = "Đăng nhập";
-            this.lginbtn.UseVisualStyleBackColor = true;
-            this.lginbtn.Click += new System.EventHandler(this.lginbtn_Click);
+            this.LogInButtion.Location = new System.Drawing.Point(72, 92);
+            this.LogInButtion.Name = "LogInButtion";
+            this.LogInButtion.Size = new System.Drawing.Size(94, 29);
+            this.LogInButtion.TabIndex = 3;
+            this.LogInButtion.Text = "Đăng nhập";
+            this.LogInButtion.UseVisualStyleBackColor = true;
+            this.LogInButtion.Click += new System.EventHandler(this.lginbtn_Click);
             // 
-            // textBox2
+            // PassTextbox
             // 
-            this.textBox2.Location = new System.Drawing.Point(148, 50);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(338, 27);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.PassTextbox.Location = new System.Drawing.Point(148, 50);
+            this.PassTextbox.Name = "PassTextbox";
+            this.PassTextbox.Size = new System.Drawing.Size(338, 27);
+            this.PassTextbox.TabIndex = 2;
+            this.PassTextbox.UseSystemPasswordChar = true;
             // 
-            // textBox1
+            // UsernameTextbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(338, 27);
-            this.textBox1.TabIndex = 1;
+            this.UsernameTextbox.Location = new System.Drawing.Point(148, 15);
+            this.UsernameTextbox.Name = "UsernameTextbox";
+            this.UsernameTextbox.Size = new System.Drawing.Size(338, 27);
+            this.UsernameTextbox.TabIndex = 1;
             // 
-            // label3
+            // PassLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(44, 49);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 25);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Mật khẩu:";
-            this.label3.Click += new System.EventHandler(this.label2_Click);
+            this.PassLabel.AutoSize = true;
+            this.PassLabel.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.PassLabel.Location = new System.Drawing.Point(44, 49);
+            this.PassLabel.Name = "PassLabel";
+            this.PassLabel.Size = new System.Drawing.Size(98, 25);
+            this.PassLabel.TabIndex = 0;
+            this.PassLabel.Text = "Mật khẩu:";
+            this.PassLabel.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label2
+            // UsernameLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(3, 14);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(143, 25);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Tên đăng nhập:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.UsernameLabel.AutoSize = true;
+            this.UsernameLabel.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.UsernameLabel.Location = new System.Drawing.Point(3, 14);
+            this.UsernameLabel.Name = "UsernameLabel";
+            this.UsernameLabel.Size = new System.Drawing.Size(143, 25);
+            this.UsernameLabel.TabIndex = 0;
+            this.UsernameLabel.Text = "Tên đăng nhập:";
+            this.UsernameLabel.Click += new System.EventHandler(this.label2_Click);
             // 
-            // Form1
+            // LogInForm
             // 
-            this.AcceptButton = this.lginbtn;
+            this.AcceptButton = this.LogInButtion;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.escbtn;
+            this.CancelButton = this.EscapeButton;
             this.ClientSize = new System.Drawing.Size(498, 171);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.TitleLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "LogInForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
@@ -147,13 +147,13 @@
 
         #endregion
 
-        private Label label1;
+        private Label TitleLabel;
         private Panel panel1;
-        private Label label2;
-        private Button escbtn;
-        private Button lginbtn;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private Label label3;
+        private Label UsernameLabel;
+        private Button EscapeButton;
+        private Button LogInButtion;
+        private TextBox PassTextbox;
+        private TextBox UsernameTextbox;
+        private Label PassLabel;
     }
 }

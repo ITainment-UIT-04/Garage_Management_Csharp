@@ -13,7 +13,13 @@
     <Compile Update="BAOCAOTONVTPT.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="BrandList.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ChangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ChangeWageForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ContactForm.cs">
@@ -43,6 +49,9 @@
     <Compile Update="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="MaxCarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="PassChangeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +68,15 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ReceiveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ThemHieuXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ThemTienCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WageList.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

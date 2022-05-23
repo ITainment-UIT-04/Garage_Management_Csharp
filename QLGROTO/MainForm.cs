@@ -163,5 +163,23 @@ namespace QLGROTO
             InterestRateForm interestRateForm = new InterestRateForm();
             interestRateForm.ShowDialog();
         }
+
+        private void thayĐổiSốXeSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MaxCarForm maxCarForm = new MaxCarForm();
+            maxCarForm.ShowDialog();
+        }
+
+        private void danhSáchLoạiTiềnCôngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            WageList wageForm = new WageList();
+            wageForm.ShowDialog();
+        }
+
+        private void danhSáchHiệuXeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BrandList brandForm = new BrandList();
+            brandForm.ShowDialog();
+        }
     }
 }
