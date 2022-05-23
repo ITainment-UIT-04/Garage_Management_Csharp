@@ -10,16 +10,21 @@ using System.Windows.Forms;
 
 namespace QLGROTO
 {
-    public partial class ChangeWageForm : Form
+    public partial class ThemHieuXe : Form
     {
-        public ChangeWageForm()
+        public ThemHieuXe()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ThemHieuXe_Load(object sender, EventArgs e)
         {
-            this.Close();
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -27,9 +32,9 @@ namespace QLGROTO
             this.Close();
         }
 
-        private void ChangeWageForm_Load(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

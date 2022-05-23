@@ -191,6 +191,7 @@
             this.danhSáchHiệuXeToolStripMenuItem.Name = "danhSáchHiệuXeToolStripMenuItem";
             this.danhSáchHiệuXeToolStripMenuItem.Size = new System.Drawing.Size(375, 26);
             this.danhSáchHiệuXeToolStripMenuItem.Text = "Danh sách hiệu xe";
+            this.danhSáchHiệuXeToolStripMenuItem.Click += new System.EventHandler(this.danhSáchHiệuXeToolStripMenuItem_Click);
             // 
             // danhSáchNhânViênToolStripMenuItem
             // 
