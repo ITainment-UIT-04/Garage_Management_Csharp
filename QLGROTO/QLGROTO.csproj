@@ -9,10 +9,39 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.95.4" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="CHITIETPNK.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="CHITIETPSC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CHITIETPTT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SUATHONGTINADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="THONGTINADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="THEMNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SUANV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SUATHONGTINXE.cs">
+      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
 

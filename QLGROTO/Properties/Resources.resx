@@ -130,6 +130,9 @@
   <data name="gear-2128601_640 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gear-2128601_640 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="search-6699087_640 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search-6699087_640 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="scroll-35683_640" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\scroll-35683_640.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,7 +148,10 @@
   <data name="lens-1723832_640" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lens-1723832_640.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search-6699087_640 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search-6699087_640 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="certificate-g32c53cd83_640 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\certificate-g32c53cd83_640 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping-cart-gb4adf189b_640 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shopping-cart-gb4adf189b_640 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
