@@ -10,9 +10,9 @@ GO
 
 -- 1. XE
 create table XE(
-	BienSo char(10),
+	BienSo varchar(10),
 	TenChuXe nvarchar(50),
-	HieuXe char(20),
+	HieuXe varchar(20),
 	DiaChi nvarchar(50),
 	DienThoai varchar(50),
 	Email varchar(50),
@@ -23,14 +23,15 @@ create table XE(
 
 -- 2. HIEU XE
 create table HIEUXE(
-	HieuXe char(20)
+	HieuXe varchar(20)
 	constraint PK_HIEUXE primary key(HieuXe)
 )
 
 -- 3. PHIEU SUA CHUA
 create table PHIEUSUACHUA(
-	MaPSC char(10),
-	BienSo char(10),
+	IntMaPSC int identity(1,1),
+	MaPSC as RIGHT(CAST(IntMaPSC AS varchar(10)), 10) persisted,
+	BienSo varchar(10),
 	NgaySuaChua smalldatetime,
 	TongTien money
 	constraint PK_PHIEUSUACHUA primary key(MaPSC)
@@ -39,12 +40,12 @@ create table PHIEUSUACHUA(
 -- 4. CHI TIET PHIEU SUA CHUA
 create table CT_PSC(
 	
-	MaPSC char(10),
+	MaPSC varchar(10),
 	NoiDung nvarchar(200),
-	MaVTPT char(10),
+	MaVTPT varchar(10),
 	SoLuong int,
 	DonGia money,
-	MaTienCong char(10),
+	MaTienCong varchar(10),
 	TienCong money,
 	ThanhTien money,
 
@@ -52,7 +53,8 @@ create table CT_PSC(
 
 -- 5. PHU TUNG
 create table PHUTUNG(
-	MaVTPT char(10),
+	IntMaVTPT int identity(1,1),
+	MaVTPT as RIGHT(CAST(IntMaVTPT AS varchar(10)), 10) persisted,
 	TenVTPT nvarchar(50),
 	SoLuongTon int,
 	DonGia money,
@@ -61,7 +63,7 @@ create table PHUTUNG(
 
 -- 6. TIEN CONG
 create table TIENCONG(
-	MaTienCong char(10),
+	MaTienCong varchar(10),
 	NoiDung nvarchar(200),
 	TienCong money
 	constraint PK_TIENCONG primary key(MaTienCong)
@@ -76,8 +78,8 @@ create table QUYDINH(
 
 -- 8. PHIEU THU TIEN
 create table PHIEUTHUTIEN(
-	MaPTT char(10),
-	BienSo char(10),
+	MaPTT varchar(10),
+	BienSo varchar(10),
 	NgayThuTien smalldatetime,
 	SoTienThu money
 	constraint PK_PHIEUTHUTIEN primary key(MaPTT)
@@ -85,7 +87,8 @@ create table PHIEUTHUTIEN(
 
 -- 9.BAO CAO DOANH THU
 create table BAOCAODOANHTHU(
-	MaBCDT char(10),
+	IntMaBCDT int identity(1,1),
+	MaBCDT as RIGHT(CAST(IntMaBCDT AS varchar(10)), 10) persisted,
 	Thang int,
 	Nam int,
 	TongDoanhThu money
@@ -95,8 +98,8 @@ create table BAOCAODOANHTHU(
 -- 10. CHI TIET BAO CAO DOANH THU
 create table CT_BAOCAODOANHTHU(
 	
-	MaBCDT char(10),
-	HieuXe char(20),
+	MaBCDT varchar(10),
+	HieuXe varchar(20),
 	ThanhTien money,
 	TiLe float
 	
@@ -104,7 +107,8 @@ create table CT_BAOCAODOANHTHU(
 
 -- 11. BAO CAO TON VAT TU PHU TUNG 
 create table BAOCAOTONVTPT(
-	MaBCTVTPT char(10),
+	IntMaBCTVTPT int identity(1,1),
+	MaBCTVTPT as RIGHT(CAST(IntMaBCTVTPT AS varchar(10)), 10) persisted,
 	Thang int,
 	Nam int,
 	constraint PK_BAOCAOTONVTPT primary key(MaBCTVTPT)
@@ -113,8 +117,8 @@ create table BAOCAOTONVTPT(
 -- 12. CHI TIET BAO CAO TON VAT TU PHU TUNG 
 create table CT_BAOCAOTONVTPT(
 	
-	MaBCTVTPT char(10),
-	MaVTPT char(10),
+	MaBCTVTPT varchar(10),
+	MaVTPT varchar(10),
 	TonDau int,
 	PhatSinh int,
 	TonCuoi int,
@@ -123,15 +127,16 @@ create table CT_BAOCAOTONVTPT(
 
 -- 13. PHIEU NHAP KHO VAT TU PHU TUNG
 create table PHIEUNHAPKHOVTPT(
-	MaNKVTPT char(10),
+	IntMaNKVTPT int identity(1,1),
+	MaNKVTPT as RIGHT(CAST(IntMaNKVTPT AS varchar(10)), 10) persisted,
 	NgayNhap smalldatetime
 	constraint PK_PHIEUNHAPKHOVTPT primary key(MaNKVTPT)
 )
 
 -- 14. CHI TIET PHIEU NHAP KHO VAT TU PHU TUNG
 create table CT_PNKVTPT(
-	MaNKVTPT char(10),
-	MaVTPT char(10),
+	MaNKVTPT varchar(10),
+	MaVTPT varchar(10),
 	TenVTPT nvarchar(50),
 	SoLuong int,
 	GiaNhap money
@@ -211,6 +216,7 @@ BEGIN
 END
 GO
 
+-- Maso cua cac bang CT tu dong tang khi nhap vao
 
 /*USE MASTER
 GO
