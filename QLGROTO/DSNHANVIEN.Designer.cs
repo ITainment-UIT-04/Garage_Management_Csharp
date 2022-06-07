@@ -48,7 +48,7 @@
             this.suanvbtn = new System.Windows.Forms.Button();
             this.xoanvbtn = new System.Windows.Forms.Button();
             this.themnvbtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Thoatbtn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -79,8 +79,9 @@
             this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
             this.panel1.Controls.Add(this.VatTuPhuTung_Title);
             this.panel1.Location = new System.Drawing.Point(-1, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1406, 66);
+            this.panel1.Size = new System.Drawing.Size(1230, 50);
             this.panel1.TabIndex = 0;
             // 
             // VatTuPhuTung_Title
@@ -89,10 +90,10 @@
             this.VatTuPhuTung_Title.AutoSize = true;
             this.VatTuPhuTung_Title.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.VatTuPhuTung_Title.ForeColor = System.Drawing.Color.White;
-            this.VatTuPhuTung_Title.Location = new System.Drawing.Point(480, 9);
+            this.VatTuPhuTung_Title.Location = new System.Drawing.Point(420, 7);
             this.VatTuPhuTung_Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.VatTuPhuTung_Title.Name = "VatTuPhuTung_Title";
-            this.VatTuPhuTung_Title.Size = new System.Drawing.Size(409, 45);
+            this.VatTuPhuTung_Title.Size = new System.Drawing.Size(335, 37);
             this.VatTuPhuTung_Title.TabIndex = 6;
             this.VatTuPhuTung_Title.Text = "DANH SÁCH NHÂN VIÊN";
             // 
@@ -101,9 +102,10 @@
             this.timkiembtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.timkiembtn.BackColor = System.Drawing.SystemColors.Info;
             this.timkiembtn.Image = global::QLGROTO.Properties.Resources.search_6699087_640__1_;
-            this.timkiembtn.Location = new System.Drawing.Point(911, 81);
+            this.timkiembtn.Location = new System.Drawing.Point(797, 61);
+            this.timkiembtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.timkiembtn.Name = "timkiembtn";
-            this.timkiembtn.Size = new System.Drawing.Size(79, 27);
+            this.timkiembtn.Size = new System.Drawing.Size(69, 20);
             this.timkiembtn.TabIndex = 35;
             this.timkiembtn.UseVisualStyleBackColor = false;
             this.timkiembtn.Click += new System.EventHandler(this.timkiembtn_Click);
@@ -113,9 +115,10 @@
             this.tennvradiobtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tennvradiobtn.AutoSize = true;
             this.tennvradiobtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tennvradiobtn.Location = new System.Drawing.Point(592, 111);
+            this.tennvradiobtn.Location = new System.Drawing.Point(518, 83);
+            this.tennvradiobtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tennvradiobtn.Name = "tennvradiobtn";
-            this.tennvradiobtn.Size = new System.Drawing.Size(181, 24);
+            this.tennvradiobtn.Size = new System.Drawing.Size(147, 19);
             this.tennvradiobtn.TabIndex = 33;
             this.tennvradiobtn.TabStop = true;
             this.tennvradiobtn.Text = "Tìm theo tên nhân viên";
@@ -127,9 +130,10 @@
             this.tendnradio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tendnradio.AutoSize = true;
             this.tendnradio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tendnradio.Location = new System.Drawing.Point(397, 111);
+            this.tendnradio.Location = new System.Drawing.Point(347, 83);
+            this.tendnradio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tendnradio.Name = "tendnradio";
-            this.tendnradio.Size = new System.Drawing.Size(189, 24);
+            this.tendnradio.Size = new System.Drawing.Size(152, 19);
             this.tendnradio.TabIndex = 34;
             this.tendnradio.TabStop = true;
             this.tendnradio.Text = "Tìm theo tên đăng nhập";
@@ -139,9 +143,10 @@
             // timkiemtxtbox
             // 
             this.timkiemtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.timkiemtxtbox.Location = new System.Drawing.Point(534, 81);
+            this.timkiemtxtbox.Location = new System.Drawing.Point(467, 61);
+            this.timkiemtxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.timkiemtxtbox.Name = "timkiemtxtbox";
-            this.timkiemtxtbox.Size = new System.Drawing.Size(371, 27);
+            this.timkiemtxtbox.Size = new System.Drawing.Size(325, 23);
             this.timkiemtxtbox.TabIndex = 32;
             // 
             // SearchLabel
@@ -150,9 +155,9 @@
             this.SearchLabel.AutoSize = true;
             this.SearchLabel.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.SearchLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.SearchLabel.Location = new System.Drawing.Point(424, 80);
+            this.SearchLabel.Location = new System.Drawing.Point(371, 60);
             this.SearchLabel.Name = "SearchLabel";
-            this.SearchLabel.Size = new System.Drawing.Size(104, 28);
+            this.SearchLabel.Size = new System.Drawing.Size(84, 21);
             this.SearchLabel.TabIndex = 31;
             this.SearchLabel.Text = "Tìm kiếm:";
             // 
@@ -173,12 +178,13 @@
             this.DienThoai,
             this.Email,
             this.ChucVu});
-            this.nvdtgrid.Location = new System.Drawing.Point(12, 156);
+            this.nvdtgrid.Location = new System.Drawing.Point(10, 117);
+            this.nvdtgrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nvdtgrid.Name = "nvdtgrid";
             this.nvdtgrid.ReadOnly = true;
             this.nvdtgrid.RowHeadersWidth = 51;
             this.nvdtgrid.RowTemplate.Height = 29;
-            this.nvdtgrid.Size = new System.Drawing.Size(1380, 293);
+            this.nvdtgrid.Size = new System.Drawing.Size(1208, 220);
             this.nvdtgrid.TabIndex = 36;
             this.nvdtgrid.SelectionChanged += new System.EventHandler(this.nvdtgrid_SelectionChanged);
             // 
@@ -246,9 +252,10 @@
             this.suanvbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.suanvbtn.Image = global::QLGROTO.Properties.Resources.tool_145375_640;
             this.suanvbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.suanvbtn.Location = new System.Drawing.Point(387, 666);
+            this.suanvbtn.Location = new System.Drawing.Point(339, 500);
+            this.suanvbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.suanvbtn.Name = "suanvbtn";
-            this.suanvbtn.Size = new System.Drawing.Size(265, 65);
+            this.suanvbtn.Size = new System.Drawing.Size(232, 49);
             this.suanvbtn.TabIndex = 70;
             this.suanvbtn.Text = "Sửa thông tin nhân viên";
             this.suanvbtn.UseVisualStyleBackColor = false;
@@ -262,9 +269,10 @@
             this.xoanvbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.xoanvbtn.Image = global::QLGROTO.Properties.Resources.recycle_310938_640;
             this.xoanvbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.xoanvbtn.Location = new System.Drawing.Point(764, 666);
+            this.xoanvbtn.Location = new System.Drawing.Point(668, 500);
+            this.xoanvbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.xoanvbtn.Name = "xoanvbtn";
-            this.xoanvbtn.Size = new System.Drawing.Size(265, 65);
+            this.xoanvbtn.Size = new System.Drawing.Size(232, 49);
             this.xoanvbtn.TabIndex = 68;
             this.xoanvbtn.Text = "Xóa nhân viên";
             this.xoanvbtn.UseVisualStyleBackColor = false;
@@ -278,23 +286,26 @@
             this.themnvbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.themnvbtn.Image = ((System.Drawing.Image)(resources.GetObject("themnvbtn.Image")));
             this.themnvbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.themnvbtn.Location = new System.Drawing.Point(12, 666);
+            this.themnvbtn.Location = new System.Drawing.Point(10, 500);
+            this.themnvbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.themnvbtn.Name = "themnvbtn";
-            this.themnvbtn.Size = new System.Drawing.Size(265, 65);
+            this.themnvbtn.Size = new System.Drawing.Size(232, 49);
             this.themnvbtn.TabIndex = 69;
             this.themnvbtn.Text = "Thêm nhân viên";
             this.themnvbtn.UseVisualStyleBackColor = false;
             this.themnvbtn.Click += new System.EventHandler(this.themtiencong_btn_Click);
             // 
-            // button1
+            // Thoatbtn
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(1300, 737);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 71;
-            this.button1.Text = "Thoát";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Thoatbtn.Location = new System.Drawing.Point(1138, 553);
+            this.Thoatbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Thoatbtn.Name = "Thoatbtn";
+            this.Thoatbtn.Size = new System.Drawing.Size(82, 22);
+            this.Thoatbtn.TabIndex = 71;
+            this.Thoatbtn.Text = "Thoát";
+            this.Thoatbtn.UseVisualStyleBackColor = true;
+            this.Thoatbtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
@@ -314,9 +325,11 @@
             this.groupBox1.Controls.Add(this.dctxtbox);
             this.groupBox1.Controls.Add(this.mktxtbox);
             this.groupBox1.Controls.Add(this.tdntxtbox);
-            this.groupBox1.Location = new System.Drawing.Point(12, 455);
+            this.groupBox1.Location = new System.Drawing.Point(10, 341);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1380, 205);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(1208, 154);
             this.groupBox1.TabIndex = 72;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chi tiết";
@@ -325,9 +338,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(522, 158);
+            this.label3.Location = new System.Drawing.Point(457, 118);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 31);
+            this.label3.Size = new System.Drawing.Size(84, 25);
             this.label3.TabIndex = 33;
             this.label3.Text = "Chức vụ:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -336,9 +349,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(227, 112);
+            this.label2.Location = new System.Drawing.Point(199, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 31);
+            this.label2.Size = new System.Drawing.Size(103, 25);
             this.label2.TabIndex = 34;
             this.label2.Text = "Điện thoại:";
             // 
@@ -346,9 +359,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(765, 112);
+            this.label5.Location = new System.Drawing.Point(669, 84);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 31);
+            this.label5.Size = new System.Drawing.Size(62, 25);
             this.label5.TabIndex = 35;
             this.label5.Text = "Email:";
             // 
@@ -356,9 +369,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(751, 77);
+            this.label1.Location = new System.Drawing.Point(657, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 31);
+            this.label1.Size = new System.Drawing.Size(74, 25);
             this.label1.TabIndex = 35;
             this.label1.Text = "Địa chỉ:";
             // 
@@ -366,9 +379,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(235, 77);
+            this.label4.Location = new System.Drawing.Point(206, 58);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 31);
+            this.label4.Size = new System.Drawing.Size(96, 25);
             this.label4.TabIndex = 36;
             this.label4.Text = "Họ và tên:";
             // 
@@ -376,9 +389,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(725, 42);
+            this.label6.Location = new System.Drawing.Point(634, 32);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(115, 31);
+            this.label6.Size = new System.Drawing.Size(95, 25);
             this.label6.TabIndex = 36;
             this.label6.Text = "Mật khẩu:";
             // 
@@ -386,9 +399,9 @@
             // 
             this.TenChuXe.AutoSize = true;
             this.TenChuXe.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TenChuXe.Location = new System.Drawing.Point(180, 37);
+            this.TenChuXe.Location = new System.Drawing.Point(158, 28);
             this.TenChuXe.Name = "TenChuXe";
-            this.TenChuXe.Size = new System.Drawing.Size(171, 31);
+            this.TenChuXe.Size = new System.Drawing.Size(141, 25);
             this.TenChuXe.TabIndex = 36;
             this.TenChuXe.Text = "Tên đăng nhập:";
             // 
@@ -396,13 +409,14 @@
             // 
             this.chucvutxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.chucvutxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.chucvutxtbox.Location = new System.Drawing.Point(629, 160);
+            this.chucvutxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.chucvutxtbox.Location = new System.Drawing.Point(550, 120);
+            this.chucvutxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chucvutxtbox.Multiline = true;
             this.chucvutxtbox.Name = "chucvutxtbox";
             this.chucvutxtbox.ReadOnly = true;
             this.chucvutxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.chucvutxtbox.Size = new System.Drawing.Size(300, 29);
+            this.chucvutxtbox.Size = new System.Drawing.Size(263, 23);
             this.chucvutxtbox.TabIndex = 28;
             // 
             // textBox3
@@ -410,90 +424,97 @@
             this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(629, 160);
+            this.textBox3.Location = new System.Drawing.Point(550, 120);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
             this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.textBox3.Size = new System.Drawing.Size(300, 29);
+            this.textBox3.Size = new System.Drawing.Size(263, 23);
             this.textBox3.TabIndex = 29;
             // 
             // dthtxtbox
             // 
             this.dthtxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dthtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dthtxtbox.Location = new System.Drawing.Point(357, 114);
+            this.dthtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dthtxtbox.Location = new System.Drawing.Point(312, 86);
+            this.dthtxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dthtxtbox.Multiline = true;
             this.dthtxtbox.Name = "dthtxtbox";
             this.dthtxtbox.ReadOnly = true;
             this.dthtxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.dthtxtbox.Size = new System.Drawing.Size(300, 29);
+            this.dthtxtbox.Size = new System.Drawing.Size(263, 23);
             this.dthtxtbox.TabIndex = 31;
             // 
             // emailtxtbox
             // 
             this.emailtxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.emailtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.emailtxtbox.Location = new System.Drawing.Point(846, 114);
+            this.emailtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.emailtxtbox.Location = new System.Drawing.Point(740, 86);
+            this.emailtxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.emailtxtbox.Multiline = true;
             this.emailtxtbox.Name = "emailtxtbox";
             this.emailtxtbox.ReadOnly = true;
             this.emailtxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.emailtxtbox.Size = new System.Drawing.Size(300, 29);
+            this.emailtxtbox.Size = new System.Drawing.Size(263, 23);
             this.emailtxtbox.TabIndex = 30;
             // 
             // tentxtbox
             // 
             this.tentxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tentxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tentxtbox.Location = new System.Drawing.Point(357, 79);
+            this.tentxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tentxtbox.Location = new System.Drawing.Point(312, 59);
+            this.tentxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tentxtbox.Multiline = true;
             this.tentxtbox.Name = "tentxtbox";
             this.tentxtbox.ReadOnly = true;
             this.tentxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.tentxtbox.Size = new System.Drawing.Size(300, 29);
+            this.tentxtbox.Size = new System.Drawing.Size(263, 23);
             this.tentxtbox.TabIndex = 32;
             // 
             // dctxtbox
             // 
             this.dctxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dctxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dctxtbox.Location = new System.Drawing.Point(846, 79);
+            this.dctxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dctxtbox.Location = new System.Drawing.Point(740, 59);
+            this.dctxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dctxtbox.Multiline = true;
             this.dctxtbox.Name = "dctxtbox";
             this.dctxtbox.ReadOnly = true;
             this.dctxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.dctxtbox.Size = new System.Drawing.Size(300, 29);
+            this.dctxtbox.Size = new System.Drawing.Size(263, 23);
             this.dctxtbox.TabIndex = 31;
             // 
             // mktxtbox
             // 
             this.mktxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.mktxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.mktxtbox.Location = new System.Drawing.Point(846, 44);
+            this.mktxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.mktxtbox.Location = new System.Drawing.Point(740, 33);
+            this.mktxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mktxtbox.Multiline = true;
             this.mktxtbox.Name = "mktxtbox";
             this.mktxtbox.ReadOnly = true;
             this.mktxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.mktxtbox.Size = new System.Drawing.Size(300, 29);
+            this.mktxtbox.Size = new System.Drawing.Size(263, 23);
             this.mktxtbox.TabIndex = 32;
             // 
             // tdntxtbox
             // 
             this.tdntxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tdntxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tdntxtbox.Location = new System.Drawing.Point(357, 39);
+            this.tdntxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tdntxtbox.Location = new System.Drawing.Point(312, 29);
+            this.tdntxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tdntxtbox.Multiline = true;
             this.tdntxtbox.Name = "tdntxtbox";
             this.tdntxtbox.ReadOnly = true;
             this.tdntxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.tdntxtbox.Size = new System.Drawing.Size(300, 29);
+            this.tdntxtbox.Size = new System.Drawing.Size(263, 23);
             this.tdntxtbox.TabIndex = 32;
             // 
             // xuatbtn
@@ -504,9 +525,10 @@
             this.xuatbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.xuatbtn.Image = global::QLGROTO.Properties.Resources.certificate_g32c53cd83_640__1_;
             this.xuatbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.xuatbtn.Location = new System.Drawing.Point(1127, 666);
+            this.xuatbtn.Location = new System.Drawing.Point(986, 500);
+            this.xuatbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.xuatbtn.Name = "xuatbtn";
-            this.xuatbtn.Size = new System.Drawing.Size(265, 65);
+            this.xuatbtn.Size = new System.Drawing.Size(232, 49);
             this.xuatbtn.TabIndex = 73;
             this.xuatbtn.Text = "Xuất file danh sách";
             this.xuatbtn.UseVisualStyleBackColor = false;
@@ -517,9 +539,10 @@
             this.sdtradio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.sdtradio.AutoSize = true;
             this.sdtradio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.sdtradio.Location = new System.Drawing.Point(779, 111);
+            this.sdtradio.Location = new System.Drawing.Point(682, 83);
+            this.sdtradio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sdtradio.Name = "sdtradio";
-            this.sdtradio.Size = new System.Drawing.Size(246, 24);
+            this.sdtradio.Size = new System.Drawing.Size(198, 19);
             this.sdtradio.TabIndex = 74;
             this.sdtradio.TabStop = true;
             this.sdtradio.Text = "Tìm theo số điện thoại nhân viên";
@@ -528,13 +551,13 @@
             // 
             // DSNHANVIEN
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1404, 778);
+            this.ClientSize = new System.Drawing.Size(1228, 584);
             this.Controls.Add(this.sdtradio);
             this.Controls.Add(this.xuatbtn);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Thoatbtn);
             this.Controls.Add(this.suanvbtn);
             this.Controls.Add(this.xoanvbtn);
             this.Controls.Add(this.themnvbtn);
@@ -573,7 +596,7 @@
         private Button suanvbtn;
         private Button xoanvbtn;
         private Button themnvbtn;
-        private Button button1;
+        private Button Thoatbtn;
         private GroupBox groupBox1;
         private Label label3;
         private Label label2;
