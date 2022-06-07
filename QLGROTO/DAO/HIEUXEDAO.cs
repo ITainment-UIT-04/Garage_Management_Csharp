@@ -31,7 +31,6 @@ namespace QLGROTO.DAO
             con.Open();
             string sql = "SELECT * FROM HIEUXE";
             SqlCommand cmd = new SqlCommand(sql, con);
-            cmd.Connection = con;
             SqlDataReader dt = cmd.ExecuteReader();
             return dt;
         }
@@ -53,7 +52,7 @@ namespace QLGROTO.DAO
         {
             SqlConnection con = dc.getConnect();
             con.Open();
-            string sql = "SELECT * FROM HIEUXE WHERE dbo.fuConvertToUnsign1(HieuXe) LIKE N'%' +dbo.fuConvertToUnsign1(@ten) + '%'";
+            string sql = "SELECT * FROM HIEUXE WHERE dbo.fuConvertToUnsign1(HieuXe) LIKE N'%' +dbo.fuConvertToUnsign1(@hieuxe) + '%'";
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.Parameters.AddWithValue("@hieuxe", s);
             DataTable dt = new DataTable();

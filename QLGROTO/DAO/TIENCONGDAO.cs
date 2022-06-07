@@ -82,7 +82,7 @@ namespace QLGROTO.DAO
             try
             {
                 SqlCommand cmd = new SqlCommand(sql, con);
-
+                    
                 con.Open();
                 cmd.Parameters.AddWithValue("@mtc", mtc);
                 cmd.Parameters.AddWithValue("@tc", tc);
@@ -115,7 +115,7 @@ namespace QLGROTO.DAO
         {
             SqlConnection con = dc.getConnect();
             con.Open();
-            string sql = "SELECT * FROM TIENCONG WHERE dbo.fuConvertToUnsign1(NoiDung) LIKE N'%' +dbo.fuConvertToUnsign1(@ten) + '%'";
+            string sql = "SELECT * FROM TIENCONG WHERE dbo.fuConvertToUnsign1(NoiDung) LIKE N'%' + dbo.fuConvertToUnsign1(@ten) + '%'";
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.Parameters.AddWithValue("@ten", s);
             DataTable dt = new DataTable();

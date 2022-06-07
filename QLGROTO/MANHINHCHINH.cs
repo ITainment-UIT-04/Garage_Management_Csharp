@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,8 @@ namespace QLGROTO
     public partial class MANHINHCHINH : Form
     {
         int flag;
+        public string tendangnhap { get; set; }
+
         public MANHINHCHINH()
         {
            
@@ -52,15 +55,16 @@ namespace QLGROTO
 
         }
 
-        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+       
 
         private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            THONGTINADMIN infoForm = new THONGTINADMIN();
-            infoForm.ShowDialog();  
+            THONGTINADMIN t = new THONGTINADMIN();
+
+            t.tendangnhap = tendangnhap;      
+
+            
+
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -75,9 +79,15 @@ namespace QLGROTO
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            DataTable dt = NHANVIENDAO.Instance.HienThiThongTin(tendangnhap);   
+            foreach (DataRow dataRow in dt.Rows)
+            {
+                dangsudungtxtbox.Text = dataRow["TenNV"].ToString();
+            }
+            
 
         }
-
+        
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -95,7 +105,7 @@ namespace QLGROTO
 
         private void trợGiúpToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void quảnLýNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
@@ -351,7 +361,7 @@ namespace QLGROTO
             else
             {
                 THONGTINADMIN t = new THONGTINADMIN();
-                
+                t.tendangnhap = tendangnhap;
                 t.ShowDialog();
             }
         }
@@ -368,6 +378,11 @@ namespace QLGROTO
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void dangsudungtxtbox_TextChanged(object sender, EventArgs e)
         {
 
         }

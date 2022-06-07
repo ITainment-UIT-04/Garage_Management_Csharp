@@ -91,7 +91,7 @@ namespace QLGROTO.DAO
         {
             SqlConnection con = dc.getConnect();
             con.Open();
-            string sql = "SELECT * FROM PHUTUNG WHERE dbo.fuConvertToUnsign1(TenVTPT) LIKE N'%' +dbo.fuConvertToUnsign1(@ten) + '%'";
+            string sql = "SELECT * FROM PHUTUNG WHERE dbo.fuConvertToUnsign1(TenVTPT) LIKE N'%' + dbo.fuConvertToUnsign1(@ten) + '%'";
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.Parameters.AddWithValue("@ten", s);
             DataTable dt = new DataTable();

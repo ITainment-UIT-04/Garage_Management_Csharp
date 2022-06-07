@@ -1,6 +1,6 @@
 ﻿namespace QLGROTO
 {
-    partial class PassChangeForm
+    partial class DOIMATKHAU
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PassChangeForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DOIMATKHAU));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.chgbtn = new System.Windows.Forms.Button();
-            this.escbtn = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.doibtn = new System.Windows.Forms.Button();
+            this.thoatbtn = new System.Windows.Forms.Button();
+            this.nhaplaitxtbox = new System.Windows.Forms.TextBox();
+            this.mkmtxtbox = new System.Windows.Forms.TextBox();
+            this.mkctxtbox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -43,48 +43,48 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.chgbtn);
-            this.panel2.Controls.Add(this.escbtn);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.doibtn);
+            this.panel2.Controls.Add(this.thoatbtn);
+            this.panel2.Controls.Add(this.nhaplaitxtbox);
+            this.panel2.Controls.Add(this.mkmtxtbox);
+            this.panel2.Controls.Add(this.mkctxtbox);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label6);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
-            // chgbtn
+            // doibtn
             // 
-            resources.ApplyResources(this.chgbtn, "chgbtn");
-            this.chgbtn.Name = "chgbtn";
-            this.chgbtn.UseVisualStyleBackColor = true;
-            this.chgbtn.Click += new System.EventHandler(this.chgbtn_Click);
+            resources.ApplyResources(this.doibtn, "doibtn");
+            this.doibtn.Name = "doibtn";
+            this.doibtn.UseVisualStyleBackColor = true;
+            this.doibtn.Click += new System.EventHandler(this.chgbtn_Click);
             // 
-            // escbtn
+            // thoatbtn
             // 
-            resources.ApplyResources(this.escbtn, "escbtn");
-            this.escbtn.Name = "escbtn";
-            this.escbtn.UseVisualStyleBackColor = true;
-            this.escbtn.Click += new System.EventHandler(this.escbtn_Click);
+            resources.ApplyResources(this.thoatbtn, "thoatbtn");
+            this.thoatbtn.Name = "thoatbtn";
+            this.thoatbtn.UseVisualStyleBackColor = true;
+            this.thoatbtn.Click += new System.EventHandler(this.escbtn_Click);
             // 
-            // textBox5
+            // nhaplaitxtbox
             // 
-            resources.ApplyResources(this.textBox5, "textBox5");
-            this.textBox5.Name = "textBox5";
-            this.textBox5.UseSystemPasswordChar = true;
+            resources.ApplyResources(this.nhaplaitxtbox, "nhaplaitxtbox");
+            this.nhaplaitxtbox.Name = "nhaplaitxtbox";
+            this.nhaplaitxtbox.UseSystemPasswordChar = true;
             // 
-            // textBox3
+            // mkmtxtbox
             // 
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
-            this.textBox3.UseSystemPasswordChar = true;
+            resources.ApplyResources(this.mkmtxtbox, "mkmtxtbox");
+            this.mkmtxtbox.Name = "mkmtxtbox";
+            this.mkmtxtbox.UseSystemPasswordChar = true;
             // 
-            // textBox4
+            // mkctxtbox
             // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
-            this.textBox4.UseSystemPasswordChar = true;
+            resources.ApplyResources(this.mkctxtbox, "mkctxtbox");
+            this.mkctxtbox.Name = "mkctxtbox";
+            this.mkctxtbox.UseSystemPasswordChar = true;
             // 
             // label4
             // 
@@ -102,16 +102,17 @@
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
             // 
-            // PassChangeForm
+            // DOIMATKHAU
             // 
-            this.AcceptButton = this.chgbtn;
+            this.AcceptButton = this.doibtn;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.CancelButton = this.escbtn;
+            this.CancelButton = this.thoatbtn;
             this.Controls.Add(this.panel2);
             this.MaximizeBox = false;
-            this.Name = "PassChangeForm";
+            this.Name = "DOIMATKHAU";
+            this.Load += new System.EventHandler(this.DOIMATKHAU_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -120,13 +121,13 @@
 
         #endregion
         private Panel panel2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox mkmtxtbox;
+        private TextBox mkctxtbox;
         private Label label4;
         private Label label5;
         private Label label6;
-        private TextBox textBox5;
-        private Button chgbtn;
-        private Button escbtn;
+        private TextBox nhaplaitxtbox;
+        private Button doibtn;
+        private Button thoatbtn;
     }
 }

@@ -39,6 +39,9 @@ namespace QLGROTO
                         MessageBox.Show("Chào mừng nhân viên!");
                     MANHINHCHINH frm = new MANHINHCHINH();
                     this.Hide();
+                    frm.tendangnhap = username;
+                    
+                    
                     frm.ShowDialog();
                     this.Show();
                 }

@@ -42,6 +42,40 @@ namespace QLGROTO.DAO
             return dt;
 
         }
+        public bool DoiMatKhau(string tdn, string mk)
+        {
+            string sql = "UPDATE NHANVIEN SET MatKhau = @mk WHERE TenDangNhap = @tdn";
+            SqlConnection con = dc.getConnect();
+            try
+            {
+                SqlCommand cmd = new SqlCommand(sql, con);
+
+                con.Open();
+                cmd.Parameters.AddWithValue("@tdn", tdn);
+                cmd.Parameters.AddWithValue("@mk", mk);
+                
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            return true;
+        }
+        public DataTable HienThiThongTin(string tdn)
+        {
+            SqlConnection con = dc.getConnect();
+            con.Open();
+            string sql = "SELECT * FROM NHANVIEN WHERE TenDangNhap = @tdn";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@tdn", tdn);
+            da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
+            return dt;
+        }
         public bool SuaNhanVien(string tdn, string mk, string ten, string diachi, string dth, string email, string cv)
         {
             string sql = "UPDATE NHANVIEN SET MatKhau = @mk, TenNV = @ten, DienThoai = @dth, DiaChi = @dc, Email = @email, ChucVu = @cv WHERE TenDangNhap = @tdn";
@@ -53,6 +87,30 @@ namespace QLGROTO.DAO
                 con.Open();
                 cmd.Parameters.AddWithValue("@tdn", tdn);
                 cmd.Parameters.AddWithValue("@mk", mk);
+                cmd.Parameters.AddWithValue("@ten", ten);
+                cmd.Parameters.AddWithValue("@dth", dth);
+                cmd.Parameters.AddWithValue("@dc", diachi);
+                cmd.Parameters.AddWithValue("@email", email);
+                cmd.Parameters.AddWithValue("@cv", cv);
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            return true;
+        }
+        public bool SuaNhanVienAdmin(string tdn, string ten, string diachi, string dth, string email, string cv)
+        {
+            string sql = "UPDATE NHANVIEN SET TenNV = @ten, DienThoai = @dth, DiaChi = @dc, Email = @email, ChucVu = @cv WHERE TenDangNhap = @tdn";
+            SqlConnection con = dc.getConnect();
+            try
+            {
+                SqlCommand cmd = new SqlCommand(sql, con);
+
+                con.Open();
+                cmd.Parameters.AddWithValue("@tdn", tdn);
                 cmd.Parameters.AddWithValue("@ten", ten);
                 cmd.Parameters.AddWithValue("@dth", dth);
                 cmd.Parameters.AddWithValue("@dc", diachi);

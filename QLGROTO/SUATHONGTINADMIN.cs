@@ -32,7 +32,6 @@ namespace QLGROTO
         private void SUANV_Load(object sender, EventArgs e)
         {
             tdntxtbox.Text = tendangnhap;
-            mktxtbox.Text = matkhau;
             tentxtbox.Text = ten;
             dthtxtbox.Text = dth;
             dctxtbox.Text = diachi;
@@ -40,27 +39,21 @@ namespace QLGROTO
             emailtxtbox.Text = email;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void capnhatbtn_Click(object sender, EventArgs e)
         {
             string tdn = tdntxtbox.Text;
-            string mk = mktxtbox.Text;
             string ten = tentxtbox.Text;
-            string diachi = dctxtbox.Text;
+            string dc = dctxtbox.Text;
             string dth = dthtxtbox.Text;
             string email = emailtxtbox.Text;
             string cv = chucvutxtbox.Text;
-            if (NHANVIENDAO.Instance.SuaNhanVien(tdn, mk, ten, diachi, dth, email, cv)) 
+            if (NHANVIENDAO.Instance.SuaNhanVienAdmin(tdn, ten, dc, dth, email, cv))
             {
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Cập nhật thông tin nhân viên thất bại!");
+                MessageBox.Show("Cập nhật thông tin admin thất bại!");
                 this.Close();
             }
 

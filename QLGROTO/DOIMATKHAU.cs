@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLGROTO.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +11,13 @@ using System.Windows.Forms;
 
 namespace QLGROTO
 {
-    public partial class PassChangeForm : Form
+    public partial class DOIMATKHAU : Form
     {
-        public PassChangeForm()
+        
+        public string tendangnhap { get; set; }
+        public string matkhaucu { get; set; }
+
+        public DOIMATKHAU()
         {
             InitializeComponent();
         }
@@ -21,13 +26,29 @@ namespace QLGROTO
 
         private void chgbtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Đổi mật khẩu thành công!", "Đổi mật khẩu", MessageBoxButtons.OK);
-            this.Close(); 
+            string username = tendangnhap;
+            string password = mkctxtbox.Text;
+            if (!NHANVIENDAO.Instance.DangNhap(username, password))
+                MessageBox.Show("Mật khẩu cũ không đúng!");
+            else if (mkmtxtbox.Text != nhaplaitxtbox.Text)
+            {
+                MessageBox.Show("Vui lòng nhập lại mật khẩu trùng nhau!");
+            }
+            else
+            {
+                NHANVIENDAO.Instance.DoiMatKhau(tendangnhap, mkmtxtbox.Text);
+                this.Close();
+            }
         }
 
         private void escbtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void DOIMATKHAU_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

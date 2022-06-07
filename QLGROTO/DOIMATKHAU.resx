@@ -58,120 +58,120 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="chgbtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="doibtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="chgbtn.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="doibtn.Location" type="System.Drawing.Point, System.Drawing">
     <value>105, 180</value>
   </data>
-  <data name="chgbtn.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="doibtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 29</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="chgbtn.TabIndex" type="System.Int32, mscorlib">
+  <data name="doibtn.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="chgbtn.Text" xml:space="preserve">
+  <data name="doibtn.Text" xml:space="preserve">
     <value>OK</value>
   </data>
-  <data name="&gt;&gt;chgbtn.Name" xml:space="preserve">
-    <value>chgbtn</value>
+  <data name="&gt;&gt;doibtn.Name" xml:space="preserve">
+    <value>doibtn</value>
   </data>
-  <data name="&gt;&gt;chgbtn.Type" xml:space="preserve">
+  <data name="&gt;&gt;doibtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;chgbtn.Parent" xml:space="preserve">
+  <data name="&gt;&gt;doibtn.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;chgbtn.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;doibtn.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="escbtn.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="thoatbtn.Location" type="System.Drawing.Point, System.Drawing">
     <value>205, 180</value>
   </data>
-  <data name="escbtn.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="thoatbtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 29</value>
   </data>
-  <data name="escbtn.TabIndex" type="System.Int32, mscorlib">
+  <data name="thoatbtn.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="escbtn.Text" xml:space="preserve">
+  <data name="thoatbtn.Text" xml:space="preserve">
     <value>Thoát</value>
   </data>
-  <data name="&gt;&gt;escbtn.Name" xml:space="preserve">
-    <value>escbtn</value>
+  <data name="&gt;&gt;thoatbtn.Name" xml:space="preserve">
+    <value>thoatbtn</value>
   </data>
-  <data name="&gt;&gt;escbtn.Type" xml:space="preserve">
+  <data name="&gt;&gt;thoatbtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;escbtn.Parent" xml:space="preserve">
+  <data name="&gt;&gt;thoatbtn.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;escbtn.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;thoatbtn.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="nhaplaitxtbox.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 136</value>
   </data>
-  <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="nhaplaitxtbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>293, 27</value>
   </data>
-  <data name="textBox5.TabIndex" type="System.Int32, mscorlib">
+  <data name="nhaplaitxtbox.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
-    <value>textBox5</value>
+  <data name="&gt;&gt;nhaplaitxtbox.Name" xml:space="preserve">
+    <value>nhaplaitxtbox</value>
   </data>
-  <data name="&gt;&gt;textBox5.Type" xml:space="preserve">
+  <data name="&gt;&gt;nhaplaitxtbox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;nhaplaitxtbox.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;textBox5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;nhaplaitxtbox.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="mkmtxtbox.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 83</value>
   </data>
-  <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="mkmtxtbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>293, 27</value>
   </data>
-  <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
+  <data name="mkmtxtbox.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
-    <value>textBox3</value>
+  <data name="&gt;&gt;mkmtxtbox.Name" xml:space="preserve">
+    <value>mkmtxtbox</value>
   </data>
-  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
+  <data name="&gt;&gt;mkmtxtbox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;mkmtxtbox.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;mkmtxtbox.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="mkctxtbox.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 30</value>
   </data>
-  <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="mkctxtbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>293, 27</value>
   </data>
-  <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
+  <data name="mkctxtbox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;textBox4.Name" xml:space="preserve">
-    <value>textBox4</value>
+  <data name="&gt;&gt;mkctxtbox.Name" xml:space="preserve">
+    <value>mkctxtbox</value>
   </data>
-  <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
+  <data name="&gt;&gt;mkctxtbox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;mkctxtbox.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;mkctxtbox.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
@@ -292,7 +292,7 @@
     <value>Đổi mật khẩu</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>PassChangeForm</value>
+    <value>DOIMATKHAU</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

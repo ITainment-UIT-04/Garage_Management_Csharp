@@ -93,11 +93,15 @@
             this.NgayTiepNhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timkiembtn = new System.Windows.Forms.Button();
             this.xuatbtn = new System.Windows.Forms.Button();
+            this.dangsudungtxtbox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xedtgrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -590,6 +594,7 @@
             // hieuxetxtbox
             // 
             this.hieuxetxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.hieuxetxtbox.Enabled = false;
             this.hieuxetxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.hieuxetxtbox.Location = new System.Drawing.Point(155, 48);
             this.hieuxetxtbox.Multiline = true;
@@ -615,6 +620,7 @@
             // biensotxtbox
             // 
             this.biensotxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.biensotxtbox.Enabled = false;
             this.biensotxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.biensotxtbox.Location = new System.Drawing.Point(155, 18);
             this.biensotxtbox.Multiline = true;
@@ -639,6 +645,7 @@
             // notxtbox
             // 
             this.notxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.notxtbox.Enabled = false;
             this.notxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.notxtbox.Location = new System.Drawing.Point(155, 113);
             this.notxtbox.Multiline = true;
@@ -651,6 +658,7 @@
             // diachitxtbox
             // 
             this.diachitxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.diachitxtbox.Enabled = false;
             this.diachitxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.diachitxtbox.Location = new System.Drawing.Point(704, 47);
             this.diachitxtbox.Multiline = true;
@@ -663,6 +671,7 @@
             // tentxtbox
             // 
             this.tentxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.tentxtbox.Enabled = false;
             this.tentxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tentxtbox.Location = new System.Drawing.Point(704, 14);
             this.tentxtbox.Multiline = true;
@@ -714,6 +723,7 @@
             // emailtxtbox
             // 
             this.emailtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.emailtxtbox.Enabled = false;
             this.emailtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.emailtxtbox.Location = new System.Drawing.Point(704, 78);
             this.emailtxtbox.Multiline = true;
@@ -726,6 +736,7 @@
             // dthtxtbox
             // 
             this.dthtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.dthtxtbox.Enabled = false;
             this.dthtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dthtxtbox.Location = new System.Drawing.Point(155, 79);
             this.dthtxtbox.Multiline = true;
@@ -858,13 +869,50 @@
             this.xuatbtn.UseVisualStyleBackColor = false;
             this.xuatbtn.Click += new System.EventHandler(this.xuatbtn_Click);
             // 
+            // dangsudungtxtbox
+            // 
+            this.dangsudungtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dangsudungtxtbox.Enabled = false;
+            this.dangsudungtxtbox.Location = new System.Drawing.Point(283, 74);
+            this.dangsudungtxtbox.Name = "dangsudungtxtbox";
+            this.dangsudungtxtbox.ReadOnly = true;
+            this.dangsudungtxtbox.Size = new System.Drawing.Size(276, 27);
+            this.dangsudungtxtbox.TabIndex = 72;
+            this.dangsudungtxtbox.TextChanged += new System.EventHandler(this.dangsudungtxtbox_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(324, 48);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(173, 20);
+            this.label3.TabIndex = 73;
+            this.label3.Text = "Nhân viên đang sử dụng:";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(218, 48);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(45, 51);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 74;
+            this.pictureBox1.TabStop = false;
+            // 
             // MANHINHCHINH
             // 
             this.AcceptButton = this.timkiembtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(1509, 801);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.dangsudungtxtbox);
             this.Controls.Add(this.xuatbtn);
             this.Controls.Add(this.timkiembtn);
             this.Controls.Add(this.xedtgrid);
@@ -893,6 +941,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xedtgrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -964,5 +1013,8 @@
         private Button dangxuatbtn;
         private ToolStripMenuItem thôngTinCáNhânToolStripMenuItem;
         private ToolStripMenuItem quảnLýNhânViênToolStripMenuItem;
+        private TextBox dangsudungtxtbox;
+        private Label label3;
+        private PictureBox pictureBox1;
     }
 }
