@@ -26,5 +26,10 @@ namespace QLGROTO
         {
             this.Close();
         }
+
+        private void THUTIEN_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
