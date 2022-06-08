@@ -195,9 +195,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.Controls.Add(this.xoabtn);
             this.panel2.Controls.Add(this.tenvtcbbox);
             this.panel2.Controls.Add(this.slnum);
-            this.panel2.Controls.Add(this.xoabtn);
             this.panel2.Controls.Add(this.thembtn);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
@@ -225,7 +225,7 @@
             // 
             // thembtn
             // 
-            this.thembtn.Location = new System.Drawing.Point(1043, 9);
+            this.thembtn.Location = new System.Drawing.Point(1043, 13);
             this.thembtn.Name = "thembtn";
             this.thembtn.Size = new System.Drawing.Size(94, 29);
             this.thembtn.TabIndex = 68;
@@ -284,10 +284,10 @@
             this.xoabtn.Location = new System.Drawing.Point(1043, 51);
             this.xoabtn.Name = "xoabtn";
             this.xoabtn.Size = new System.Drawing.Size(94, 29);
-            this.xoabtn.TabIndex = 68;
+            this.xoabtn.TabIndex = 71;
             this.xoabtn.Text = "Xóa";
             this.xoabtn.UseVisualStyleBackColor = true;
-            this.xoabtn.Click += new System.EventHandler(this.thembtn_Click);
+            this.xoabtn.Click += new System.EventHandler(this.xoabtn_Click);
             // 
             // PHIEUNHAPVTPT
             // 

@@ -28,6 +28,19 @@ namespace QLGROTO.DAO
             }
             set { instance = value; }
         }
+        public void Xoa(string mank, string mavt)
+        {
+            SqlConnection con = dc.getConnect();
+            con.Open();
+
+            string sql = "DELETE FROM CT_PNKVTPT WHERE MaNKVTPT = @mank AND MaVTPT = @mavt";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@mank", mank);
+            cmd.Parameters.AddWithValue("@mavt", mavt);
+            cmd.Connection = con;
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
         public DataTable HienThi(string mank)
         {
             SqlConnection con = dc.getConnect();

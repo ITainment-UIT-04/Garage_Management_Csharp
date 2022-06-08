@@ -76,5 +76,20 @@ namespace QLGROTO
             }
             HienThi();
         }
+
+        private void xoabtn_Click(object sender, EventArgs e)
+        {
+            string mpn = mapntxtbox.Text;
+            string mapt = ctnkgrid.CurrentRow.Cells[1].Value.ToString();
+            if (mapt == null)
+            {
+                MessageBox.Show("Không có dòng nào để xóa!");
+            }
+            else
+            {
+                CT_PNKVTPTDAO.Instance.Xoa(mpn, mapt);
+                HienThi();
+            }
+        }
     }
 }
