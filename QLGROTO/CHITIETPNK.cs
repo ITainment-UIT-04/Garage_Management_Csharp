@@ -43,7 +43,7 @@ namespace QLGROTO
         {
             mpntxtbox.Text = maphieunhap;
             ngaynhapdtpicker.Text = ngaynhap;
-            pnkvtptdtgrid.DataSource = PNKVTPT.Instance.HienThiChiTiet(maphieunhap);
+            pnkvtptdtgrid.DataSource = PNKVTPTDAO.Instance.HienThiChiTiet(maphieunhap);
 
         }
     }

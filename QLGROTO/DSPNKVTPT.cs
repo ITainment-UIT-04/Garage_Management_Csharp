@@ -20,7 +20,7 @@ namespace QLGROTO
         }
         public void HienThi()
         {
-            phieunhapvtptdtgrid.DataSource = PNKVTPT.Instance.HienThi();
+            phieunhapvtptdtgrid.DataSource = PNKVTPTDAO.Instance.HienThi();
         }
         private void button1_Click(object sender, EventArgs e)
         {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\84981\\Downloads\\Garage_Management_Csharp-backend-2 (1)\\Garage_Management_Csharp-backend-2\\QLGROTO\\QLGROTO.csproj": {}
+    "C:\\Users\\84981\\source\\repos\\QLGROTO\\QLGROTO\\QLGROTO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\84981\\Downloads\\Garage_Management_Csharp-backend-2 (1)\\Garage_Management_Csharp-backend-2\\QLGROTO\\QLGROTO.csproj": {
+    "C:\\Users\\84981\\source\\repos\\QLGROTO\\QLGROTO\\QLGROTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\84981\\Downloads\\Garage_Management_Csharp-backend-2 (1)\\Garage_Management_Csharp-backend-2\\QLGROTO\\QLGROTO.csproj",
+        "projectUniqueName": "C:\\Users\\84981\\source\\repos\\QLGROTO\\QLGROTO\\QLGROTO.csproj",
         "projectName": "QLGROTO",
-        "projectPath": "C:\\Users\\84981\\Downloads\\Garage_Management_Csharp-backend-2 (1)\\Garage_Management_Csharp-backend-2\\QLGROTO\\QLGROTO.csproj",
+        "projectPath": "C:\\Users\\84981\\source\\repos\\QLGROTO\\QLGROTO\\QLGROTO.csproj",
         "packagesPath": "C:\\Users\\84981\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\84981\\Downloads\\Garage_Management_Csharp-backend-2 (1)\\Garage_Management_Csharp-backend-2\\QLGROTO\\obj\\",
+        "outputPath": "C:\\Users\\84981\\source\\repos\\QLGROTO\\QLGROTO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\84981\\AppData\\Roaming\\NuGet\\NuGet.Config",
