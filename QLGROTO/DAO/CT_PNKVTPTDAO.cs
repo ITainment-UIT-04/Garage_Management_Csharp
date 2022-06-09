@@ -28,6 +28,30 @@ namespace QLGROTO.DAO
             }
             set { instance = value; }
         }
+        public bool Them(string mank, string mavt, string tenvt, int sl, string gn)
+        {
+            string sql = "INSERT INTO CT_PNKVTPT (MaNKVTPT, MaVTPT, TenVTPT, SoLuong, GiaNhap)" +
+                "VALUES (@mank, @mavt, @tenvt, @sl, @gn)";
+            SqlConnection con = dc.getConnect();
+            try
+            {
+                SqlCommand cmd = new SqlCommand(sql, con);
+
+                con.Open();
+                cmd.Parameters.AddWithValue("@mank", mank);
+                cmd.Parameters.AddWithValue("@mavt", mavt);
+                cmd.Parameters.AddWithValue("@tenvt", tenvt);
+                cmd.Parameters.AddWithValue("@sl", sl);
+                cmd.Parameters.AddWithValue("@gn", gn);
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            return true;
+        }
         public void Xoa(string mank, string mavt)
         {
             SqlConnection con = dc.getConnect();

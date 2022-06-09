@@ -35,13 +35,14 @@
             this.TenVTPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GiaNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lpbtn = new System.Windows.Forms.Button();
+            this.huybtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.mapntxtbox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.xoabtn = new System.Windows.Forms.Button();
             this.tenvtcbbox = new System.Windows.Forms.ComboBox();
             this.slnum = new System.Windows.Forms.NumericUpDown();
             this.thembtn = new System.Windows.Forms.Button();
@@ -49,7 +50,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dgtxtbox = new System.Windows.Forms.TextBox();
-            this.xoabtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ctnkgrid)).BeginInit();
             this.panel2.SuspendLayout();
@@ -130,27 +130,27 @@
             this.GiaNhap.MinimumWidth = 6;
             this.GiaNhap.Name = "GiaNhap";
             // 
-            // button1
+            // lpbtn
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(972, 615);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Lập phiếu";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.lpbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lpbtn.Location = new System.Drawing.Point(972, 615);
+            this.lpbtn.Name = "lpbtn";
+            this.lpbtn.Size = new System.Drawing.Size(94, 29);
+            this.lpbtn.TabIndex = 2;
+            this.lpbtn.Text = "Lập phiếu";
+            this.lpbtn.UseVisualStyleBackColor = true;
+            this.lpbtn.Click += new System.EventHandler(this.lpbtn_Click);
             // 
-            // button2
+            // huybtn
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(1072, 615);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Hủy";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.huybtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.huybtn.Location = new System.Drawing.Point(1072, 615);
+            this.huybtn.Name = "huybtn";
+            this.huybtn.Size = new System.Drawing.Size(94, 29);
+            this.huybtn.TabIndex = 2;
+            this.huybtn.Text = "Hủy";
+            this.huybtn.UseVisualStyleBackColor = true;
+            this.huybtn.Click += new System.EventHandler(this.huybtn_Click);
             // 
             // label2
             // 
@@ -208,8 +208,19 @@
             this.panel2.Size = new System.Drawing.Size(1152, 94);
             this.panel2.TabIndex = 6;
             // 
+            // xoabtn
+            // 
+            this.xoabtn.Location = new System.Drawing.Point(1043, 51);
+            this.xoabtn.Name = "xoabtn";
+            this.xoabtn.Size = new System.Drawing.Size(94, 29);
+            this.xoabtn.TabIndex = 71;
+            this.xoabtn.Text = "Xóa";
+            this.xoabtn.UseVisualStyleBackColor = true;
+            this.xoabtn.Click += new System.EventHandler(this.xoabtn_Click);
+            // 
             // tenvtcbbox
             // 
+            this.tenvtcbbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.tenvtcbbox.FormattingEnabled = true;
             this.tenvtcbbox.Location = new System.Drawing.Point(183, 14);
             this.tenvtcbbox.Name = "tenvtcbbox";
@@ -279,16 +290,6 @@
             this.dgtxtbox.Size = new System.Drawing.Size(360, 25);
             this.dgtxtbox.TabIndex = 61;
             // 
-            // xoabtn
-            // 
-            this.xoabtn.Location = new System.Drawing.Point(1043, 51);
-            this.xoabtn.Name = "xoabtn";
-            this.xoabtn.Size = new System.Drawing.Size(94, 29);
-            this.xoabtn.TabIndex = 71;
-            this.xoabtn.Text = "Xóa";
-            this.xoabtn.UseVisualStyleBackColor = true;
-            this.xoabtn.Click += new System.EventHandler(this.xoabtn_Click);
-            // 
             // PHIEUNHAPVTPT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -299,8 +300,8 @@
             this.Controls.Add(this.mapntxtbox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.huybtn);
+            this.Controls.Add(this.lpbtn);
             this.Controls.Add(this.ctnkgrid);
             this.Controls.Add(this.panel1);
             this.Name = "PHIEUNHAPVTPT";
@@ -324,8 +325,8 @@
         private Panel panel1;
         private Label label1;
         private DataGridView ctnkgrid;
-        private Button button1;
-        private Button button2;
+        private Button lpbtn;
+        private Button huybtn;
         private Label label2;
         private TextBox mapntxtbox;
         private Label label3;

@@ -164,6 +164,7 @@
             // mpntxtbox
             // 
             this.mpntxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.mpntxtbox.Enabled = false;
             this.mpntxtbox.Location = new System.Drawing.Point(332, 87);
             this.mpntxtbox.Name = "mpntxtbox";
             this.mpntxtbox.ReadOnly = true;

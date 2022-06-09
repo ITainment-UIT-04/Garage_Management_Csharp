@@ -51,6 +51,32 @@ namespace QLGROTO.DAO
             cmd.ExecuteNonQuery();
             con.Close();
         }
+        public SqlDataReader LoadVTPT()
+        {
+            SqlConnection con = dc.getConnect();
+            con.Open();
+            string sql = "SELECT * FROM PHUTUNG";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dt = cmd.ExecuteReader();
+            return dt;
+        }
+        public DataTable LoadMaVTPT(string ten)
+        {
+            SqlConnection con = dc.getConnect();
+            con.Open();
+            string sql = "SELECT * FROM PHUTUNG WHERE TenVTPT = @ten";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@ten", ten);
+            da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            con.Close();
+
+            return dt;
+
+
+        }
         public bool SuaVTPT(string ma, string ten, int slt, string dg)
         {
             string sql = "UPDATE PHUTUNG SET TenVTPT = @ten, SoLuongTon = @slt, DonGia = @dg WHERE MaVTPT = @ma";

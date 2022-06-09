@@ -52,6 +52,32 @@ namespace QLGROTO.DAO
             cmd.ExecuteNonQuery();
             con.Close();
         }
+        public SqlDataReader LoadTienCong()
+        {
+            SqlConnection con = dc.getConnect();
+            con.Open();
+            string sql = "SELECT * FROM TIENCONG";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dt = cmd.ExecuteReader();
+            return dt;
+        }
+        public DataTable LoadMaVTPT(string ten)
+        {
+            SqlConnection con = dc.getConnect();
+            con.Open();
+            string sql = "SELECT * FROM PHUTUNG WHERE TenVTPT = @ten";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@ten", ten);
+            da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            con.Close();
+
+            return dt;
+
+
+        }
         public bool ThemTienCong(string mtc, string tc, string nd)
         {
             string sql = "INSERT INTO TIENCONG (MaTienCong, TienCong, NoiDung)" +

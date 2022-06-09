@@ -38,18 +38,18 @@ namespace QLGROTO.DAO
             da.Fill(dt);
             con.Close();
             return dt;
-
         }
-        public bool InsertPNK()
+        
+        public bool Them(string mnk)
         {
-            string sql = "INSERT INTO PHIEUNHAPKHOVTPT VALUES (GETDATE())";
+            string sql = "INSERT INTO PHIEUNHAPKHOVTPT (MaNKVTPT, NgayNhap) VALUES (@mank, GETDATE())";
             SqlConnection con = dc.getConnect();
             try
             {
                 SqlCommand cmd = new SqlCommand(sql, con);
-
+                
                 con.Open();
-              
+                cmd.Parameters.AddWithValue("@mank", mnk);
                 cmd.ExecuteNonQuery();
                 con.Close();
             }
@@ -59,89 +59,21 @@ namespace QLGROTO.DAO
             }
             return true;
         }
-        public bool ThemCTPNK(string mank, string mavt, string tenvt, int sl, string gn)
+        public string LoadMPN()
         {
-            string sql = "INSERT INTO CT_PNKVTPT (MaNKVTPT, MaVTPT, TenVTPT, SoLuong, GiaNhap)" +
-                "VALUES (@mank, @mavt, @tenvt, @sl, @gn)";
             SqlConnection con = dc.getConnect();
-            try
+            con.Open();
+            string sql = "SELECT COUNT(*) + 1 AS SO FROM PHIEUNHAPKHOVTPT";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            DataTable dt = new DataTable();
+            da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            string l = "1";
+            foreach(DataRow dr in dt.Rows)
             {
-                SqlCommand cmd = new SqlCommand(sql, con);
-
-                con.Open();
-                cmd.Parameters.AddWithValue("@mank", mank);
-                cmd.Parameters.AddWithValue("@mavt", mavt);
-                cmd.Parameters.AddWithValue("@tenvt", tenvt);
-                cmd.Parameters.AddWithValue("@sl", sl);
-                cmd.Parameters.AddWithValue("@gn", gn);
-                cmd.ExecuteNonQuery();
-                con.Close();
+                l = dr["SO"].ToString();
             }
-            catch (Exception ex)
-            {
-                return false;
-            }
-            return true;
-        }
-        public SqlDataReader LoadVTPT()
-        {
-            SqlConnection con = dc.getConnect();
-            con.Open();
-            string sql = "SELECT * FROM PHUTUNG";
-            SqlCommand cmd = new SqlCommand(sql, con);
-            SqlDataReader dt = cmd.ExecuteReader();
-            return dt;
-        }
-      
-        public DataTable LoadMaVTPT(string ten)
-        {
-            SqlConnection con = dc.getConnect();
-            con.Open();
-            string sql = "SELECT * FROM PHUTUNG WHERE TenVTPT = @ten";
-            SqlCommand cmd = new SqlCommand(sql, con);
-            cmd.Parameters.AddWithValue("@ten", ten);
-            da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            
-            con.Close();
-
-            return dt;
-
-
-        }
-        public DataTable HienThiMaPhieuNhap()
-        {
-
-            SqlConnection con = dc.getConnect();
-            con.Open();
-            string sql = "SELECT TOP 1 * FROM PHIEUNHAPKHOVTPT ORDER BY IntMaNKVTPT DESC";
-            SqlCommand cmd = new SqlCommand(sql, con);
-          
-            da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            con.Close();
-
-            return dt;
-        }
-        public DataTable HienThiChiTiet(string s)
-        {
-
-
-            SqlConnection con = dc.getConnect();
-            con.Open();
-            string sql = "SELECT C.MaVTPT, TenVTPT, SoLuong, GiaNhap FROM PHIEUNHAPKHOVTPT P, CT_PNKVTPT C WHERE P.MaNKVTPT = C.MaNKVTPT AND P.MaNKVTPT = @mank";
-            SqlCommand cmd = new SqlCommand(sql, con);
-            cmd.Parameters.AddWithValue("@mank", s);
-            da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            con.Close();
-
-            return dt;
-
-
+            return "NK" + l;
         }
     }
 }

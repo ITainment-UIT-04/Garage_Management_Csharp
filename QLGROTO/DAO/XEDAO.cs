@@ -31,6 +31,15 @@ namespace QLGROTO.DAO
             con.Close();
             return dt;
         }
+        public SqlDataReader LoadBienSo()
+        {
+            SqlConnection con = dc.getConnect();
+            con.Open();
+            string sql = "SELECT * FROM XE";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dt = cmd.ExecuteReader();
+            return dt;
+        }
         public static XEDAO Instance
         {
             get

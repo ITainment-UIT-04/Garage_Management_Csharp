@@ -18,12 +18,12 @@ namespace QLGROTO
         public CHITIETPNK()
         {
             InitializeComponent();
-            HienThi();
+            
         }
         public void HienThi()
         {
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -42,8 +42,9 @@ namespace QLGROTO
         private void CHITIETPNK_Load(object sender, EventArgs e)
         {
             mpntxtbox.Text = maphieunhap;
+
             ngaynhapdtpicker.Text = ngaynhap;
-            pnkvtptdtgrid.DataSource = PNKVTPTDAO.Instance.HienThiChiTiet(maphieunhap);
+            pnkvtptdtgrid.DataSource = CT_PNKVTPTDAO.Instance.HienThi(maphieunhap);
 
         }
     }
