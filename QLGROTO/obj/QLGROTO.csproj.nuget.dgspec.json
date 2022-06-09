@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\84981\\source\\repos\\QLGROTO\\QLGROTO\\QLGROTO.csproj": {}
+    "C:\\Users\\overl\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Tài liệu\\Thiên Phước\\Software Programming\\Garage_Management_Csharp\\QLGROTO\\QLGROTO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\84981\\source\\repos\\QLGROTO\\QLGROTO\\QLGROTO.csproj": {
+    "C:\\Users\\overl\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Tài liệu\\Thiên Phước\\Software Programming\\Garage_Management_Csharp\\QLGROTO\\QLGROTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\84981\\source\\repos\\QLGROTO\\QLGROTO\\QLGROTO.csproj",
+        "projectUniqueName": "C:\\Users\\overl\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Tài liệu\\Thiên Phước\\Software Programming\\Garage_Management_Csharp\\QLGROTO\\QLGROTO.csproj",
         "projectName": "QLGROTO",
-        "projectPath": "C:\\Users\\84981\\source\\repos\\QLGROTO\\QLGROTO\\QLGROTO.csproj",
-        "packagesPath": "C:\\Users\\84981\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\84981\\source\\repos\\QLGROTO\\QLGROTO\\obj\\",
+        "projectPath": "C:\\Users\\overl\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Tài liệu\\Thiên Phước\\Software Programming\\Garage_Management_Csharp\\QLGROTO\\QLGROTO.csproj",
+        "packagesPath": "C:\\Users\\overl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\overl\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Tài liệu\\Thiên Phước\\Software Programming\\Garage_Management_Csharp\\QLGROTO\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\84981\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\overl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +71,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

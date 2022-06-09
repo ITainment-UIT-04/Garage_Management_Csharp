@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QLGROTO.DAO;
+
 
 namespace QLGROTO
 {
@@ -20,6 +22,28 @@ namespace QLGROTO
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void themtiencong_btn_Click(object sender, EventArgs e)
+        {
+            
+            if (String.IsNullOrEmpty(ThangText.Text) && String.IsNullOrEmpty(NamText.Text))
+            {
+                MessageBox.Show("Vui lòng nhập đủ thông tin!");
+            }
+            else
+            {
+                int thang = Convert.ToInt32(ThangText.Text);
+                int nam = Convert.ToInt32(NamText.Text);
+                if (thang < 1 || thang > 12)
+                {
+                    MessageBox.Show("Đầu vào không hợp lệ!");
+                }
+                else
+                {
+                    BCDSgrid.DataSource = BAOCAODOANHSODAO.Instance.Hienthi(thang, nam);
+                }
+            }
         }
     }
 }
