@@ -221,6 +221,7 @@
             // tenvtcbbox
             // 
             this.tenvtcbbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.tenvtcbbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.tenvtcbbox.FormattingEnabled = true;
             this.tenvtcbbox.Location = new System.Drawing.Point(183, 14);
             this.tenvtcbbox.Name = "tenvtcbbox";

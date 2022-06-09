@@ -52,6 +52,19 @@ namespace QLGROTO.DAO
             cmd.ExecuteNonQuery();
             con.Close();
         }
+        public SqlDataReader LoadTienCongTheoNoiDung(string ten)
+        {
+            SqlConnection con = dc.getConnect();
+            con.Open();
+            string sql = "SELECT * FROM TIENCONG WHERE NoiDung = @ten";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@ten", ten);
+            SqlDataReader dt = cmd.ExecuteReader();
+            return dt;
+
+
+        }
+        
         public SqlDataReader LoadTienCong()
         {
             SqlConnection con = dc.getConnect();

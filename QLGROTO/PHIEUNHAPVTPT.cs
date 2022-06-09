@@ -56,27 +56,28 @@ namespace QLGROTO
         {
             ctnkgrid.Rows.RemoveAt(ctnkgrid.CurrentCell.RowIndex);
         }
-        
+
         private void lpbtn_Click(object sender, EventArgs e)
         {
-            string mpn = mapntxtbox.Text;
-            PNKVTPTDAO.Instance.Them(mpn);
-
-            foreach (DataGridViewRow dataRow in ctnkgrid.Rows)
+            if (ctnkgrid.Rows.Count == 0)
+                MessageBox.Show("Vui lòng nhập thông tin!");
+            else
             {
-                string mavt = ctnkgrid.CurrentRow.Cells["MaVTPT"].Value.ToString();
-                string dgn = ctnkgrid.CurrentRow.Cells["GiaNhap"].Value.ToString();
-                string ten = ctnkgrid.CurrentRow.Cells["TenVTPT"].Value.ToString();
-                int sl = Convert.ToInt32(ctnkgrid.CurrentRow.Cells["SoLuong"].Value);
-                if (CT_PNKVTPTDAO.Instance.Them(mpn, mavt, ten, sl, dgn))
+                string mpn = mapntxtbox.Text;
+                PNKVTPTDAO.Instance.Them(mpn);
+
+                foreach (DataGridViewRow dataRow in ctnkgrid.Rows)
                 {
-                    this.Close();
+                    string mavt = ctnkgrid.CurrentRow.Cells["MaVTPT"].Value.ToString();
+                    string dgn = ctnkgrid.CurrentRow.Cells["GiaNhap"].Value.ToString();
+                    string ten = ctnkgrid.CurrentRow.Cells["TenVTPT"].Value.ToString();
+                    int sl = Convert.ToInt32(ctnkgrid.CurrentRow.Cells["SoLuong"].Value);
+                    if (!CT_PNKVTPTDAO.Instance.Them(mpn, mavt, ten, sl, dgn))
+                    {
+                        MessageBox.Show("Lập phiếu thất bại!"); break;
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("Lập phiếu thất bại!");
-                    this.Close();
-                }
+                this.Close();
             }
         }
 

@@ -28,56 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ngaydtpicker = new System.Windows.Forms.DateTimePicker();
+            this.biensotxtbox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ttttxtbox = new System.Windows.Forms.TextBox();
+            this.thoatbtn = new System.Windows.Forms.Button();
+            this.pscdtgrid = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
+            this.masctxtbox = new System.Windows.Forms.TextBox();
+            this.NoiDung = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaVTPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenVTPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TienCong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pscdtgrid)).BeginInit();
             this.SuspendLayout();
             // 
-            // dateTimePicker1
+            // ngaydtpicker
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(652, 87);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(250, 27);
-            this.dateTimePicker1.TabIndex = 9;
+            this.ngaydtpicker.Enabled = false;
+            this.ngaydtpicker.Location = new System.Drawing.Point(991, 80);
+            this.ngaydtpicker.Name = "ngaydtpicker";
+            this.ngaydtpicker.Size = new System.Drawing.Size(250, 27);
+            this.ngaydtpicker.TabIndex = 9;
             // 
-            // textBox1
+            // biensotxtbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(258, 85);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 27);
-            this.textBox1.TabIndex = 8;
+            this.biensotxtbox.Enabled = false;
+            this.biensotxtbox.Location = new System.Drawing.Point(599, 82);
+            this.biensotxtbox.Name = "biensotxtbox";
+            this.biensotxtbox.Size = new System.Drawing.Size(220, 27);
+            this.biensotxtbox.TabIndex = 8;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(534, 85);
+            this.label3.Location = new System.Drawing.Point(840, 81);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 28);
+            this.label3.Size = new System.Drawing.Size(145, 28);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Ngày nhập:";
+            this.label3.Text = "Ngày sửa chữa:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(150, 84);
+            this.label2.Location = new System.Drawing.Point(491, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 28);
             this.label2.TabIndex = 7;
@@ -89,7 +93,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(360, 10);
+            this.label1.Location = new System.Drawing.Point(526, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(298, 45);
             this.label1.TabIndex = 10;
@@ -102,122 +106,154 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1015, 63);
+            this.panel1.Size = new System.Drawing.Size(1346, 63);
             this.panel1.TabIndex = 11;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 138);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(992, 331);
-            this.dataGridView1.TabIndex = 12;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "STT";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nội dung";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "VTPT";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Số lượng";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Đơn giá";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Tiền công";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Thành tiền";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(334, 496);
+            this.label4.Location = new System.Drawing.Point(491, 550);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(154, 28);
             this.label4.TabIndex = 7;
             this.label4.Text = "Tổng thành tiền:";
             // 
-            // textBox2
+            // ttttxtbox
             // 
-            this.textBox2.Location = new System.Drawing.Point(494, 496);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.ShortcutsEnabled = false;
-            this.textBox2.Size = new System.Drawing.Size(220, 27);
-            this.textBox2.TabIndex = 8;
+            this.ttttxtbox.Enabled = false;
+            this.ttttxtbox.Location = new System.Drawing.Point(651, 550);
+            this.ttttxtbox.Name = "ttttxtbox";
+            this.ttttxtbox.ReadOnly = true;
+            this.ttttxtbox.ShortcutsEnabled = false;
+            this.ttttxtbox.Size = new System.Drawing.Size(220, 27);
+            this.ttttxtbox.TabIndex = 8;
             // 
-            // button1
+            // thoatbtn
             // 
-            this.button1.Location = new System.Drawing.Point(910, 553);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Thoát";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.thoatbtn.Location = new System.Drawing.Point(1241, 553);
+            this.thoatbtn.Name = "thoatbtn";
+            this.thoatbtn.Size = new System.Drawing.Size(94, 29);
+            this.thoatbtn.TabIndex = 13;
+            this.thoatbtn.Text = "Thoát";
+            this.thoatbtn.UseVisualStyleBackColor = true;
+            this.thoatbtn.Click += new System.EventHandler(this.thoatbtn_Click);
+            // 
+            // pscdtgrid
+            // 
+            this.pscdtgrid.AllowUserToAddRows = false;
+            this.pscdtgrid.AllowUserToDeleteRows = false;
+            this.pscdtgrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pscdtgrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.pscdtgrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.pscdtgrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.NoiDung,
+            this.MaVTPT,
+            this.TenVTPT,
+            this.SoLuong,
+            this.DonGia,
+            this.TienCong,
+            this.ThanhTien});
+            this.pscdtgrid.Location = new System.Drawing.Point(12, 135);
+            this.pscdtgrid.Name = "pscdtgrid";
+            this.pscdtgrid.RowHeadersWidth = 51;
+            this.pscdtgrid.RowTemplate.Height = 29;
+            this.pscdtgrid.Size = new System.Drawing.Size(1323, 409);
+            this.pscdtgrid.TabIndex = 18;
+            this.pscdtgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.pscdtgrid_CellContentClick);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(55, 78);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(180, 28);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Mã phiếu sửa chữa:";
+            // 
+            // masctxtbox
+            // 
+            this.masctxtbox.Enabled = false;
+            this.masctxtbox.Location = new System.Drawing.Point(241, 82);
+            this.masctxtbox.Name = "masctxtbox";
+            this.masctxtbox.Size = new System.Drawing.Size(220, 27);
+            this.masctxtbox.TabIndex = 8;
+            // 
+            // NoiDung
+            // 
+            this.NoiDung.DataPropertyName = "NoiDung";
+            this.NoiDung.HeaderText = "Nội dung";
+            this.NoiDung.MinimumWidth = 6;
+            this.NoiDung.Name = "NoiDung";
+            // 
+            // MaVTPT
+            // 
+            this.MaVTPT.DataPropertyName = "MaVTPT";
+            this.MaVTPT.HeaderText = "Mã VTPT";
+            this.MaVTPT.MinimumWidth = 6;
+            this.MaVTPT.Name = "MaVTPT";
+            // 
+            // TenVTPT
+            // 
+            this.TenVTPT.DataPropertyName = "TenVTPT";
+            this.TenVTPT.HeaderText = "Tên VTPT";
+            this.TenVTPT.MinimumWidth = 6;
+            this.TenVTPT.Name = "TenVTPT";
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.DataPropertyName = "SoLuong";
+            this.SoLuong.HeaderText = "Số lượng";
+            this.SoLuong.MinimumWidth = 6;
+            this.SoLuong.Name = "SoLuong";
+            // 
+            // DonGia
+            // 
+            this.DonGia.DataPropertyName = "DonGia";
+            this.DonGia.HeaderText = "Đơn giá";
+            this.DonGia.MinimumWidth = 6;
+            this.DonGia.Name = "DonGia";
+            // 
+            // TienCong
+            // 
+            this.TienCong.DataPropertyName = "TienCong";
+            this.TienCong.HeaderText = "Tiền công";
+            this.TienCong.MinimumWidth = 6;
+            this.TienCong.Name = "TienCong";
+            // 
+            // ThanhTien
+            // 
+            this.ThanhTien.DataPropertyName = "ThanhTien";
+            this.ThanhTien.HeaderText = "Thành tiền";
+            this.ThanhTien.MinimumWidth = 6;
+            this.ThanhTien.Name = "ThanhTien";
             // 
             // CHITIETPSC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 594);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(1347, 594);
+            this.Controls.Add(this.pscdtgrid);
+            this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ngaydtpicker);
+            this.Controls.Add(this.ttttxtbox);
+            this.Controls.Add(this.masctxtbox);
+            this.Controls.Add(this.biensotxtbox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Name = "CHITIETPSC";
             this.ShowIcon = false;
             this.Text = "Chi tiết phiếu sửa chữa";
+            this.Load += new System.EventHandler(this.CHITIETPSC_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pscdtgrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,22 +261,24 @@
 
         #endregion
 
-        private DateTimePicker dateTimePicker1;
-        private TextBox textBox1;
+        private DateTimePicker ngaydtpicker;
+        private TextBox biensotxtbox;
         private Label label3;
         private Label label2;
         private Label label1;
         private Panel panel1;
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
-        private DataGridViewTextBoxColumn Column6;
-        private DataGridViewTextBoxColumn Column7;
         private Label label4;
-        private TextBox textBox2;
-        private Button button1;
+        private TextBox ttttxtbox;
+        private Button thoatbtn;
+        private DataGridView pscdtgrid;
+        private Label label5;
+        private TextBox masctxtbox;
+        private DataGridViewTextBoxColumn NoiDung;
+        private DataGridViewTextBoxColumn MaVTPT;
+        private DataGridViewTextBoxColumn TenVTPT;
+        private DataGridViewTextBoxColumn SoLuong;
+        private DataGridViewTextBoxColumn DonGia;
+        private DataGridViewTextBoxColumn TienCong;
+        private DataGridViewTextBoxColumn ThanhTien;
     }
 }

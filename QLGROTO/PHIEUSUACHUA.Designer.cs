@@ -33,13 +33,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.huybtn = new System.Windows.Forms.Button();
+            this.lapphieubtn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.mapsctxtbox = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.slnumeric = new System.Windows.Forms.NumericUpDown();
+            this.thembtn = new System.Windows.Forms.Button();
             this.thanhtientxtbox = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.dgtxtbox = new System.Windows.Forms.TextBox();
             this.tctxtbox = new System.Windows.Forms.TextBox();
             this.ptcbbox = new System.Windows.Forms.ComboBox();
@@ -60,15 +62,13 @@
             this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TienCong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.ttttxtbox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.biensocbbox = new System.Windows.Forms.ComboBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.slnumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pscdtgrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // ngaynhapdtpicker
@@ -125,25 +125,25 @@
             this.panel1.Size = new System.Drawing.Size(1385, 63);
             this.panel1.TabIndex = 11;
             // 
-            // button1
+            // huybtn
             // 
-            this.button1.Location = new System.Drawing.Point(1280, 708);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Thoát";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.huybtn.Location = new System.Drawing.Point(1280, 708);
+            this.huybtn.Name = "huybtn";
+            this.huybtn.Size = new System.Drawing.Size(94, 29);
+            this.huybtn.TabIndex = 13;
+            this.huybtn.Text = "Hủy";
+            this.huybtn.UseVisualStyleBackColor = true;
+            this.huybtn.Click += new System.EventHandler(this.huybtn_Click);
             // 
-            // button2
+            // lapphieubtn
             // 
-            this.button2.Location = new System.Drawing.Point(1180, 708);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Lập phiếu";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.lapphieubtn.Location = new System.Drawing.Point(1180, 708);
+            this.lapphieubtn.Name = "lapphieubtn";
+            this.lapphieubtn.Size = new System.Drawing.Size(94, 29);
+            this.lapphieubtn.TabIndex = 13;
+            this.lapphieubtn.Text = "Lập phiếu";
+            this.lapphieubtn.UseVisualStyleBackColor = true;
+            this.lapphieubtn.Click += new System.EventHandler(this.lapphieubtn_Click);
             // 
             // label5
             // 
@@ -171,9 +171,10 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel2.Controls.Add(this.numericUpDown1);
-            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.slnumeric);
+            this.panel2.Controls.Add(this.thembtn);
             this.panel2.Controls.Add(this.thanhtientxtbox);
+            this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.dgtxtbox);
             this.panel2.Controls.Add(this.tctxtbox);
             this.panel2.Controls.Add(this.ptcbbox);
@@ -190,15 +191,24 @@
             this.panel2.TabIndex = 14;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // button3
+            // slnumeric
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button3.Location = new System.Drawing.Point(1226, 106);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 29);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Thêm";
-            this.button3.UseVisualStyleBackColor = true;
+            this.slnumeric.Location = new System.Drawing.Point(1075, 62);
+            this.slnumeric.Name = "slnumeric";
+            this.slnumeric.Size = new System.Drawing.Size(245, 27);
+            this.slnumeric.TabIndex = 5;
+            this.slnumeric.ValueChanged += new System.EventHandler(this.slnumeric_ValueChanged);
+            // 
+            // thembtn
+            // 
+            this.thembtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.thembtn.Location = new System.Drawing.Point(1126, 106);
+            this.thembtn.Name = "thembtn";
+            this.thembtn.Size = new System.Drawing.Size(94, 29);
+            this.thembtn.TabIndex = 4;
+            this.thembtn.Text = "Thêm";
+            this.thembtn.UseVisualStyleBackColor = true;
+            this.thembtn.Click += new System.EventHandler(this.button3_Click);
             // 
             // thanhtientxtbox
             // 
@@ -208,6 +218,17 @@
             this.thanhtientxtbox.Name = "thanhtientxtbox";
             this.thanhtientxtbox.Size = new System.Drawing.Size(423, 27);
             this.thanhtientxtbox.TabIndex = 3;
+            // 
+            // button6
+            // 
+            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button6.Location = new System.Drawing.Point(1226, 106);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(94, 29);
+            this.button6.TabIndex = 18;
+            this.button6.Text = "Xóa";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // dgtxtbox
             // 
@@ -230,22 +251,26 @@
             // ptcbbox
             // 
             this.ptcbbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ptcbbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.ptcbbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.ptcbbox.FormattingEnabled = true;
             this.ptcbbox.Location = new System.Drawing.Point(130, 61);
             this.ptcbbox.Name = "ptcbbox";
             this.ptcbbox.Size = new System.Drawing.Size(423, 28);
             this.ptcbbox.TabIndex = 1;
-            this.ptcbbox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.ptcbbox.SelectedIndexChanged += new System.EventHandler(this.ptcbbox_SelectedIndexChanged);
             // 
             // ndcbbox
             // 
             this.ndcbbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ndcbbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.ndcbbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.ndcbbox.FormattingEnabled = true;
             this.ndcbbox.Location = new System.Drawing.Point(130, 18);
             this.ndcbbox.Name = "ndcbbox";
             this.ndcbbox.Size = new System.Drawing.Size(818, 28);
             this.ndcbbox.TabIndex = 1;
-            this.ndcbbox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.ndcbbox.SelectedIndexChanged += new System.EventHandler(this.ndcbbox_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -400,23 +425,14 @@
             this.ThanhTien.MinimumWidth = 6;
             this.ThanhTien.Name = "ThanhTien";
             // 
-            // button6
+            // ttttxtbox
             // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button6.Location = new System.Drawing.Point(1040, 677);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(94, 29);
-            this.button6.TabIndex = 18;
-            this.button6.Text = "Xóa";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.textBox7.Location = new System.Drawing.Point(592, 679);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(397, 27);
-            this.textBox7.TabIndex = 6;
+            this.ttttxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.ttttxtbox.Enabled = false;
+            this.ttttxtbox.Location = new System.Drawing.Point(592, 679);
+            this.ttttxtbox.Name = "ttttxtbox";
+            this.ttttxtbox.Size = new System.Drawing.Size(397, 27);
+            this.ttttxtbox.TabIndex = 6;
             // 
             // label11
             // 
@@ -431,18 +447,13 @@
             // 
             // biensocbbox
             // 
+            this.biensocbbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.biensocbbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.biensocbbox.FormattingEnabled = true;
             this.biensocbbox.Location = new System.Drawing.Point(592, 83);
             this.biensocbbox.Name = "biensocbbox";
             this.biensocbbox.Size = new System.Drawing.Size(223, 28);
             this.biensocbbox.TabIndex = 19;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(1075, 62);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(245, 27);
-            this.numericUpDown1.TabIndex = 5;
             // 
             // PHIEUSUACHUA
             // 
@@ -450,15 +461,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1386, 749);
             this.Controls.Add(this.biensocbbox);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.ttttxtbox);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.button6);
             this.Controls.Add(this.pscdtgrid);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lapphieubtn);
+            this.Controls.Add(this.huybtn);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ngaynhapdtpicker);
             this.Controls.Add(this.mapsctxtbox);
@@ -472,8 +482,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.slnumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pscdtgrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -486,15 +496,15 @@
         private Label label2;
         private Label label1;
         private Panel panel1;
-        private Button button1;
-        private Button button2;
+        private Button huybtn;
+        private Button lapphieubtn;
         private Label label5;
         private TextBox mapsctxtbox;
         private Panel panel2;
         private ComboBox ndcbbox;
         private Label label6;
         private Label label4;
-        private Button button3;
+        private Button thembtn;
         private TextBox thanhtientxtbox;
         private TextBox dgtxtbox;
         private TextBox tctxtbox;
@@ -507,7 +517,7 @@
         private Button button5;
         private DataGridView pscdtgrid;
         private Button button6;
-        private TextBox textBox7;
+        private TextBox ttttxtbox;
         private Label label11;
         private DataGridViewTextBoxColumn NoiDung;
         private DataGridViewTextBoxColumn MaVTPT;
@@ -517,6 +527,6 @@
         private DataGridViewTextBoxColumn TienCong;
         private DataGridViewTextBoxColumn ThanhTien;
         private ComboBox biensocbbox;
-        private NumericUpDown numericUpDown1;
+        private NumericUpDown slnumeric;
     }
 }

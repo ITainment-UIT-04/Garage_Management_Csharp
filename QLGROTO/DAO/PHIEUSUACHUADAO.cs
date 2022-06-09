@@ -27,6 +27,27 @@ namespace QLGROTO.DAO
             }
             set { instance = value; }
         }
+        public bool Them(string masc, string bienso, double tongtien)
+        {
+            string sql = "INSERT INTO PHIEUSUACHUA (MaPSC, BienSo, NgaySuaChua, TongTien) VALUES (@masc, @bienso, GETDATE(), @tongtien)";
+            SqlConnection con = dc.getConnect();
+            try
+            {
+                SqlCommand cmd = new SqlCommand(sql, con);
+
+                con.Open();
+                cmd.Parameters.AddWithValue("@masc", masc);
+                cmd.Parameters.AddWithValue("@bienso", bienso);
+                cmd.Parameters.AddWithValue("@tongtien", tongtien);
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            return true;
+        }
         public string LoadMPSC()
         {
             SqlConnection con = dc.getConnect();
@@ -38,6 +59,18 @@ namespace QLGROTO.DAO
             if (dr.Read())
                 l = dr["SO"].ToString();
             return "SC" + l;
+        }
+        public DataTable HienThi()
+        {
+            SqlConnection con = dc.getConnect();
+            con.Open();
+            string sql = "SELECT * FROM PHIEUSUACHUA";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
+            return dt;
         }
     }
 }

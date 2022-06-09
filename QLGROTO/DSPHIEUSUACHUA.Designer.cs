@@ -39,13 +39,15 @@
             this.NameSearchRadiobtn = new System.Windows.Forms.RadioButton();
             this.SearchTextbox = new System.Windows.Forms.TextBox();
             this.SearchLabel = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.themtiencong_btn = new System.Windows.Forms.Button();
+            this.xembtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pscdtgrid = new System.Windows.Forms.DataGridView();
+            this.MaPSC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BienSo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgaySuaChua = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TongTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pscdtgrid)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -167,41 +169,21 @@
             this.SearchLabel.TabIndex = 26;
             this.SearchLabel.Text = "Tìm kiếm:";
             // 
-            // dataGridView1
+            // xembtn
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 192);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(1159, 395);
-            this.dataGridView1.TabIndex = 35;
-            // 
-            // themtiencong_btn
-            // 
-            this.themtiencong_btn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.themtiencong_btn.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.themtiencong_btn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.themtiencong_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.themtiencong_btn.Image = global::QLGROTO.Properties.Resources.lens_1723832_640;
-            this.themtiencong_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.themtiencong_btn.Location = new System.Drawing.Point(460, 593);
-            this.themtiencong_btn.Name = "themtiencong_btn";
-            this.themtiencong_btn.Size = new System.Drawing.Size(265, 65);
-            this.themtiencong_btn.TabIndex = 36;
-            this.themtiencong_btn.Text = "Xem chi tiết";
-            this.themtiencong_btn.UseVisualStyleBackColor = false;
-            this.themtiencong_btn.Click += new System.EventHandler(this.themtiencong_btn_Click);
+            this.xembtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.xembtn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.xembtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.xembtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.xembtn.Image = global::QLGROTO.Properties.Resources.lens_1723832_640;
+            this.xembtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.xembtn.Location = new System.Drawing.Point(460, 593);
+            this.xembtn.Name = "xembtn";
+            this.xembtn.Size = new System.Drawing.Size(265, 65);
+            this.xembtn.TabIndex = 36;
+            this.xembtn.Text = "Xem chi tiết";
+            this.xembtn.UseVisualStyleBackColor = false;
+            this.xembtn.Click += new System.EventHandler(this.xembtn_Click);
             // 
             // button1
             // 
@@ -214,19 +196,59 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Column1
+            // pscdtgrid
             // 
-            this.Column1.HeaderText = "Số phiếu sửa chữa";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
+            this.pscdtgrid.AllowUserToAddRows = false;
+            this.pscdtgrid.AllowUserToDeleteRows = false;
+            this.pscdtgrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pscdtgrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.pscdtgrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.pscdtgrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaPSC,
+            this.BienSo,
+            this.NgaySuaChua,
+            this.TongTien});
+            this.pscdtgrid.Location = new System.Drawing.Point(12, 192);
+            this.pscdtgrid.Name = "pscdtgrid";
+            this.pscdtgrid.ReadOnly = true;
+            this.pscdtgrid.RowHeadersWidth = 51;
+            this.pscdtgrid.RowTemplate.Height = 29;
+            this.pscdtgrid.Size = new System.Drawing.Size(1159, 395);
+            this.pscdtgrid.TabIndex = 35;
             // 
-            // Column2
+            // MaPSC
             // 
-            this.Column2.HeaderText = "Ngày sửa chữa";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
+            this.MaPSC.DataPropertyName = "MaPSC";
+            this.MaPSC.HeaderText = "Mã phiếu sửa chữa";
+            this.MaPSC.MinimumWidth = 6;
+            this.MaPSC.Name = "MaPSC";
+            this.MaPSC.ReadOnly = true;
+            // 
+            // BienSo
+            // 
+            this.BienSo.DataPropertyName = "BienSo";
+            this.BienSo.HeaderText = "Biển số xe";
+            this.BienSo.MinimumWidth = 6;
+            this.BienSo.Name = "BienSo";
+            this.BienSo.ReadOnly = true;
+            // 
+            // NgaySuaChua
+            // 
+            this.NgaySuaChua.DataPropertyName = "NgaySuaChua";
+            this.NgaySuaChua.HeaderText = "Ngày sửa chữa";
+            this.NgaySuaChua.MinimumWidth = 6;
+            this.NgaySuaChua.Name = "NgaySuaChua";
+            this.NgaySuaChua.ReadOnly = true;
+            // 
+            // TongTien
+            // 
+            this.TongTien.DataPropertyName = "TongTien";
+            this.TongTien.HeaderText = "Tổng thành tiền";
+            this.TongTien.MinimumWidth = 6;
+            this.TongTien.Name = "TongTien";
+            this.TongTien.ReadOnly = true;
             // 
             // DSPHIEUSUACHUA
             // 
@@ -234,8 +256,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1183, 670);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.themtiencong_btn);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.xembtn);
+            this.Controls.Add(this.pscdtgrid);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimePicker2);
@@ -249,9 +271,10 @@
             this.Name = "DSPHIEUSUACHUA";
             this.ShowIcon = false;
             this.Text = "Danh sách phiếu sửa chữa";
+            this.Load += new System.EventHandler(this.DSPHIEUSUACHUA_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pscdtgrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,10 +293,12 @@
         private RadioButton NameSearchRadiobtn;
         private TextBox SearchTextbox;
         private Label SearchLabel;
-        private DataGridView dataGridView1;
-        private Button themtiencong_btn;
+        private Button xembtn;
         private Button button1;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
+        private DataGridView pscdtgrid;
+        private DataGridViewTextBoxColumn MaPSC;
+        private DataGridViewTextBoxColumn BienSo;
+        private DataGridViewTextBoxColumn NgaySuaChua;
+        private DataGridViewTextBoxColumn TongTien;
     }
 }
