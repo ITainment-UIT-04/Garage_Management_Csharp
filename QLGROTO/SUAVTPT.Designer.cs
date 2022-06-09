@@ -58,7 +58,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(177, 180);
+            this.label5.Location = new System.Drawing.Point(79, 180);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 31);
             this.label5.TabIndex = 57;
@@ -70,7 +70,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(126, 147);
+            this.label3.Location = new System.Drawing.Point(28, 147);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(151, 31);
             this.label3.TabIndex = 58;
@@ -82,7 +82,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(166, 116);
+            this.label7.Location = new System.Drawing.Point(68, 116);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(111, 31);
             this.label7.TabIndex = 59;
@@ -93,7 +93,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(168, 86);
+            this.label8.Location = new System.Drawing.Point(70, 86);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(109, 31);
             this.label8.TabIndex = 60;
@@ -103,7 +103,7 @@
             // 
             this.dgtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dgtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dgtxtbox.Location = new System.Drawing.Point(283, 182);
+            this.dgtxtbox.Location = new System.Drawing.Point(185, 182);
             this.dgtxtbox.Multiline = true;
             this.dgtxtbox.Name = "dgtxtbox";
             this.dgtxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -114,7 +114,7 @@
             // 
             this.sltxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.sltxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.sltxtbox.Location = new System.Drawing.Point(283, 149);
+            this.sltxtbox.Location = new System.Drawing.Point(185, 149);
             this.sltxtbox.Multiline = true;
             this.sltxtbox.Name = "sltxtbox";
             this.sltxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -125,7 +125,7 @@
             // 
             this.tenvtpttxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tenvtpttxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tenvtpttxtbox.Location = new System.Drawing.Point(283, 118);
+            this.tenvtpttxtbox.Location = new System.Drawing.Point(185, 118);
             this.tenvtpttxtbox.Multiline = true;
             this.tenvtpttxtbox.Name = "tenvtpttxtbox";
             this.tenvtpttxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -136,7 +136,7 @@
             // 
             this.mavtpttxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.mavtpttxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.mavtpttxtbox.Location = new System.Drawing.Point(283, 88);
+            this.mavtpttxtbox.Location = new System.Drawing.Point(185, 88);
             this.mavtpttxtbox.Multiline = true;
             this.mavtpttxtbox.Name = "mavtpttxtbox";
             this.mavtpttxtbox.ReadOnly = true;
@@ -159,7 +159,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(102, 9);
+            this.label1.Location = new System.Drawing.Point(11, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(585, 45);
             this.label1.TabIndex = 0;
@@ -168,7 +168,7 @@
             // suabtn
             // 
             this.suabtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.suabtn.Location = new System.Drawing.Point(594, 218);
+            this.suabtn.Location = new System.Drawing.Point(399, 218);
             this.suabtn.Name = "suabtn";
             this.suabtn.Size = new System.Drawing.Size(94, 29);
             this.suabtn.TabIndex = 65;
@@ -179,7 +179,7 @@
             // thoatbtn
             // 
             this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.thoatbtn.Location = new System.Drawing.Point(694, 218);
+            this.thoatbtn.Location = new System.Drawing.Point(499, 218);
             this.thoatbtn.Name = "thoatbtn";
             this.thoatbtn.Size = new System.Drawing.Size(94, 29);
             this.thoatbtn.TabIndex = 65;
@@ -191,7 +191,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 259);
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.ClientSize = new System.Drawing.Size(605, 259);
             this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.suabtn);
             this.Controls.Add(this.label5);

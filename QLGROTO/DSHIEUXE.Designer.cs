@@ -120,7 +120,7 @@
             // xoahieuxebtn
             // 
             this.xoahieuxebtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.xoahieuxebtn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.xoahieuxebtn.BackColor = System.Drawing.SystemColors.HighlightText;
             this.xoahieuxebtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.xoahieuxebtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.xoahieuxebtn.Image = global::QLGROTO.Properties.Resources.recycle_310938_640;
@@ -136,7 +136,7 @@
             // themhieuxebtn
             // 
             this.themhieuxebtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.themhieuxebtn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.themhieuxebtn.BackColor = System.Drawing.SystemColors.HighlightText;
             this.themhieuxebtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.themhieuxebtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.themhieuxebtn.Image = ((System.Drawing.Image)(resources.GetObject("themhieuxebtn.Image")));
@@ -175,7 +175,7 @@
             // xuatbtn
             // 
             this.xuatbtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.xuatbtn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.xuatbtn.BackColor = System.Drawing.SystemColors.HighlightText;
             this.xuatbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.xuatbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.xuatbtn.Image = global::QLGROTO.Properties.Resources.certificate_g32c53cd83_640__1_;
@@ -192,6 +192,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(800, 505);
             this.Controls.Add(this.xuatbtn);
             this.Controls.Add(this.timkiembtn);

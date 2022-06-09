@@ -8,42 +8,30 @@ using System.Threading.Tasks;
 
 namespace QLGROTO.DAO
 {
-    internal class PNKVTPTDAO
+    internal class PHIEUTHUTIENDAO
     {
         DataConnection dc;
         SqlDataAdapter da;
-        private static PNKVTPTDAO instance;
-        private PNKVTPTDAO()
+        private static PHIEUTHUTIENDAO instance;
+        private PHIEUTHUTIENDAO()
         {
             dc = new DataConnection();
         }
-        public static PNKVTPTDAO Instance
+        public static PHIEUTHUTIENDAO Instance
         {
             get
             {
                 if (instance == null)
-                    instance = new PNKVTPTDAO();
+                    instance = new PHIEUTHUTIENDAO();
                 return instance;
             }
             set { instance = value; }
-        }
-        public DataTable HienThi()
-        {
-            SqlConnection con = dc.getConnect();
-            con.Open();
-            string sql = "SELECT * FROM PHIEUNHAPKHOVTPT";
-            SqlCommand cmd = new SqlCommand(sql, con);
-            da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            con.Close();
-            return dt;
         }
         public DataTable TimKiemTheoMa(string s)
         {
             SqlConnection con = dc.getConnect();
             con.Open();
-            string sql = "SELECT * FROM PHIEUNHAPKHOVTPT WHERE MaNKVTPT LIKE CONCAT('%', @ten, '%')";
+            string sql = "SELECT * FROM PHIEUTHUTIEN WHERE MaPTT LIKE CONCAT('%', @ten, '%')";
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.Parameters.AddWithValue("@ten", s);
             DataTable dt = new DataTable();
@@ -55,7 +43,7 @@ namespace QLGROTO.DAO
         {
             SqlConnection con = dc.getConnect();
             con.Open();
-            string sql = "SELECT * FROM PHIEUNHAPKHOVTPT WHERE (MONTH(NgayNhap) BETWEEN &tbd AND @tkt) " +
+            string sql = "SELECT * FROM PHIEUTHUTIEN WHERE (MONTH(NgayNhap) BETWEEN &tbd AND @tkt) " +
                 "AND (YEAR(NgayNhap) BETWEEN @nbd AND @nkt)";
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.Parameters.AddWithValue("@tbd", tbd);
@@ -67,16 +55,42 @@ namespace QLGROTO.DAO
             da.Fill(dt);
             return dt;
         }
-        public bool Them(string mnk)
+        public string LoadMaPTT()
         {
-            string sql = "INSERT INTO PHIEUNHAPKHOVTPT (MaNKVTPT, NgayNhap) VALUES (@mank, GETDATE())";
+            SqlConnection con = dc.getConnect();
+            con.Open();
+            string sql = "SELECT COUNT(*) + 1 AS SO FROM PHIEUTHUTIEN";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dr = cmd.ExecuteReader();
+            string l = "";
+            if (dr.Read())
+                l = dr["SO"].ToString();
+            return "TT" + l;
+        }
+        public DataTable HienThi()
+        {
+            SqlConnection con = dc.getConnect();
+            con.Open();
+            string sql = "SELECT * FROM PHIEUTHUTIEN";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
+            return dt;
+        }
+        public bool Them(string maptt, string bienso, string sotienthu)
+        {
+            string sql = "INSERT INTO PHIEUTHUTIEN (MaPTT, BienSo, NgayThuTien, SoTienThu) VALUES (@maptt, @bienso, GETDATE(), @sotienthu)";
             SqlConnection con = dc.getConnect();
             try
             {
                 SqlCommand cmd = new SqlCommand(sql, con);
-                
+
                 con.Open();
-                cmd.Parameters.AddWithValue("@mank", mnk);
+                cmd.Parameters.AddWithValue("@maptt", maptt);
+                cmd.Parameters.AddWithValue("@bienso", bienso);
+                cmd.Parameters.AddWithValue("@sotienthu", sotienthu);
                 cmd.ExecuteNonQuery();
                 con.Close();
             }
@@ -85,18 +99,6 @@ namespace QLGROTO.DAO
                 return false;
             }
             return true;
-        }
-        public string LoadMPN()
-        {
-            SqlConnection con = dc.getConnect();
-            con.Open();
-            string sql = "SELECT COUNT(*) + 1 AS SO FROM PHIEUNHAPKHOVTPT";
-            SqlCommand cmd = new SqlCommand(sql, con);
-            SqlDataReader dr = cmd.ExecuteReader();
-            string l = "";
-            if (dr.Read())
-                l = dr["SO"].ToString();
-            return "NK" + l;
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using QLGROTO.DAO;
+﻿using ClosedXML.Excel;
+using QLGROTO.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ namespace QLGROTO
 {
     public partial class DSPNKVTPT : Form
     {
+        int flag;
         public DSPNKVTPT()
         {
             InitializeComponent();
@@ -40,6 +42,60 @@ namespace QLGROTO
             c.maphieunhap = phieunhapvtptdtgrid.CurrentRow.Cells[0].Value.ToString();
             c.ngaynhap = phieunhapvtptdtgrid.CurrentRow.Cells[1].Value.ToString();
             c.ShowDialog();
+        }
+
+        private void xuatbtn_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
+            {
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        using (XLWorkbook workbook = new XLWorkbook())
+                        {
+                            workbook.Worksheets.Add(phieunhapvtptdtgrid.DataSource as DataTable, "PNKVTPT");
+
+                            workbook.SaveAs(saveFileDialog.FileName);
+
+
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Xuất file không thành công!");
+                    }
+                }
+            }
+        }
+
+        private void timtheomaradio_CheckedChanged(object sender, EventArgs e)
+        {
+            flag = 1;
+        }
+
+        private void timtheokhoangngayradio_CheckedChanged(object sender, EventArgs e)
+        {
+            flag = 2;
+        }
+
+        private void timkiembtn_Click(object sender, EventArgs e)
+        {
+            string s = timkiemtxtbox.Text;
+            int tbd = tudtpicker.Value.Month;
+            int nbd = tudtpicker.Value.Year;
+            int tkt = dendtpicker.Value.Month;
+            int nkt = dendtpicker.Value.Year; 
+            if (!string.IsNullOrEmpty(s))
+            {
+                if (flag == 1)
+                    phieunhapvtptdtgrid.DataSource = PNKVTPTDAO.Instance.TimKiemTheoMa(s);
+                else if (flag == 2)
+                    phieunhapvtptdtgrid.DataSource = PNKVTPTDAO.Instance.TimKiemTheoKhoangNgay(tbd, nbd, tkt, nkt);
+              
+            }
+            else
+                HienThi();
         }
     }
 }

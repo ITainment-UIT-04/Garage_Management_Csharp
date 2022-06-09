@@ -40,6 +40,16 @@ namespace QLGROTO.DAO
             SqlDataReader dt = cmd.ExecuteReader();
             return dt;
         }
+        public SqlDataReader LoadThongTinTheoBienSo(string bienso)
+        {
+            SqlConnection con = dc.getConnect();
+            con.Open();
+            string sql = "SELECT * FROM XE WHERE BienSo = @bienso";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@bienso", bienso);
+            SqlDataReader dt = cmd.ExecuteReader();
+            return dt;
+        }
         public static XEDAO Instance
         {
             get
@@ -153,6 +163,7 @@ namespace QLGROTO.DAO
             }
             return true;
         }
+        
 
     }
 }

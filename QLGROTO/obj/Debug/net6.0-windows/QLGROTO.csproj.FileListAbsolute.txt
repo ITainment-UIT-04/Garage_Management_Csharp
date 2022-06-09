@@ -16,7 +16,6 @@ C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.gen
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\ref\QLGROTO.dll
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.Properties.Resources.resources
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.csproj.CopyComplete
-C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\UI.QUANLYTIENCONG.resources
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.ThemTienCong.resources
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.ThemHieuXe.resources
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.DSNHANVIEN.resources

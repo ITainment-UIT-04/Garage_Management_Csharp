@@ -187,7 +187,7 @@
             // xoavtptbtn
             // 
             this.xoavtptbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.xoavtptbtn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.xoavtptbtn.BackColor = System.Drawing.SystemColors.HighlightText;
             this.xoavtptbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.xoavtptbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.xoavtptbtn.Image = global::QLGROTO.Properties.Resources.recycle_310938_640;
@@ -203,7 +203,7 @@
             // suavtptbtn
             // 
             this.suavtptbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.suavtptbtn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.suavtptbtn.BackColor = System.Drawing.SystemColors.HighlightText;
             this.suavtptbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.suavtptbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.suavtptbtn.Image = global::QLGROTO.Properties.Resources.tool_145375_640;
@@ -219,7 +219,7 @@
             // xuatbtn
             // 
             this.xuatbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.xuatbtn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.xuatbtn.BackColor = System.Drawing.SystemColors.HighlightText;
             this.xuatbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.xuatbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.xuatbtn.Image = global::QLGROTO.Properties.Resources.certificate_g32c53cd83_640__1_;
@@ -371,6 +371,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(1135, 857);
             this.Controls.Add(this.timkiembtn);
             this.Controls.Add(this.groupBox1);

@@ -266,10 +266,11 @@
             this.label4.Text = "Ghi chú:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // InfoAccessoryForm
+            // THONGTINVTPT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(800, 397);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
@@ -289,7 +290,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.TenChuXe_Box);
             this.Controls.Add(this.panel1);
-            this.Name = "InfoAccessoryForm";
+            this.Name = "THONGTINVTPT";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông tin vật tư phụ tùng";
             this.panel1.ResumeLayout(false);

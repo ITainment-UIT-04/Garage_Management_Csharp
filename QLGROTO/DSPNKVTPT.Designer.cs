@@ -33,17 +33,18 @@
             this.phieunhapvtptdtgrid = new System.Windows.Forms.DataGridView();
             this.MaNKVTPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SearchButton = new System.Windows.Forms.Button();
-            this.PhoneSearchRadiobtn = new System.Windows.Forms.RadioButton();
-            this.NameSearchRadiobtn = new System.Windows.Forms.RadioButton();
-            this.SearchTextbox = new System.Windows.Forms.TextBox();
+            this.timkiembtn = new System.Windows.Forms.Button();
+            this.timtheokhoangngayradio = new System.Windows.Forms.RadioButton();
+            this.timtheomaradio = new System.Windows.Forms.RadioButton();
+            this.timkiemtxtbox = new System.Windows.Forms.TextBox();
             this.SearchLabel = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.tudtpicker = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dendtpicker = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.xemctbtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.xuatbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.phieunhapvtptdtgrid)).BeginInit();
             this.SuspendLayout();
@@ -109,50 +110,53 @@
             this.NgayNhap.Name = "NgayNhap";
             this.NgayNhap.ReadOnly = true;
             // 
-            // SearchButton
+            // timkiembtn
             // 
-            this.SearchButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.SearchButton.BackColor = System.Drawing.SystemColors.Info;
-            this.SearchButton.Image = global::QLGROTO.Properties.Resources.search_6699087_640__1_;
-            this.SearchButton.Location = new System.Drawing.Point(820, 85);
-            this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(79, 27);
-            this.SearchButton.TabIndex = 23;
-            this.SearchButton.UseVisualStyleBackColor = false;
+            this.timkiembtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.timkiembtn.BackColor = System.Drawing.SystemColors.Info;
+            this.timkiembtn.Image = global::QLGROTO.Properties.Resources.search_6699087_640__1_;
+            this.timkiembtn.Location = new System.Drawing.Point(820, 85);
+            this.timkiembtn.Name = "timkiembtn";
+            this.timkiembtn.Size = new System.Drawing.Size(79, 27);
+            this.timkiembtn.TabIndex = 23;
+            this.timkiembtn.UseVisualStyleBackColor = false;
+            this.timkiembtn.Click += new System.EventHandler(this.timkiembtn_Click);
             // 
-            // PhoneSearchRadiobtn
+            // timtheokhoangngayradio
             // 
-            this.PhoneSearchRadiobtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.PhoneSearchRadiobtn.AutoSize = true;
-            this.PhoneSearchRadiobtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.PhoneSearchRadiobtn.Location = new System.Drawing.Point(636, 118);
-            this.PhoneSearchRadiobtn.Name = "PhoneSearchRadiobtn";
-            this.PhoneSearchRadiobtn.Size = new System.Drawing.Size(178, 24);
-            this.PhoneSearchRadiobtn.TabIndex = 21;
-            this.PhoneSearchRadiobtn.TabStop = true;
-            this.PhoneSearchRadiobtn.Text = "Tìm theo khoảng ngày";
-            this.PhoneSearchRadiobtn.UseVisualStyleBackColor = true;
+            this.timtheokhoangngayradio.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.timtheokhoangngayradio.AutoSize = true;
+            this.timtheokhoangngayradio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.timtheokhoangngayradio.Location = new System.Drawing.Point(636, 118);
+            this.timtheokhoangngayradio.Name = "timtheokhoangngayradio";
+            this.timtheokhoangngayradio.Size = new System.Drawing.Size(178, 24);
+            this.timtheokhoangngayradio.TabIndex = 21;
+            this.timtheokhoangngayradio.TabStop = true;
+            this.timtheokhoangngayradio.Text = "Tìm theo khoảng ngày";
+            this.timtheokhoangngayradio.UseVisualStyleBackColor = true;
+            this.timtheokhoangngayradio.CheckedChanged += new System.EventHandler(this.timtheokhoangngayradio_CheckedChanged);
             // 
-            // NameSearchRadiobtn
+            // timtheomaradio
             // 
-            this.NameSearchRadiobtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.NameSearchRadiobtn.AutoSize = true;
-            this.NameSearchRadiobtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.NameSearchRadiobtn.Location = new System.Drawing.Point(443, 118);
-            this.NameSearchRadiobtn.Name = "NameSearchRadiobtn";
-            this.NameSearchRadiobtn.Size = new System.Drawing.Size(186, 24);
-            this.NameSearchRadiobtn.TabIndex = 22;
-            this.NameSearchRadiobtn.TabStop = true;
-            this.NameSearchRadiobtn.Text = "Tìm theo số phiếu nhập";
-            this.NameSearchRadiobtn.UseVisualStyleBackColor = true;
+            this.timtheomaradio.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.timtheomaradio.AutoSize = true;
+            this.timtheomaradio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.timtheomaradio.Location = new System.Drawing.Point(443, 118);
+            this.timtheomaradio.Name = "timtheomaradio";
+            this.timtheomaradio.Size = new System.Drawing.Size(192, 24);
+            this.timtheomaradio.TabIndex = 22;
+            this.timtheomaradio.TabStop = true;
+            this.timtheomaradio.Text = "Tìm theo mã phiếu nhập";
+            this.timtheomaradio.UseVisualStyleBackColor = true;
+            this.timtheomaradio.CheckedChanged += new System.EventHandler(this.timtheomaradio_CheckedChanged);
             // 
-            // SearchTextbox
+            // timkiemtxtbox
             // 
-            this.SearchTextbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.SearchTextbox.Location = new System.Drawing.Point(443, 85);
-            this.SearchTextbox.Name = "SearchTextbox";
-            this.SearchTextbox.Size = new System.Drawing.Size(371, 27);
-            this.SearchTextbox.TabIndex = 20;
+            this.timkiemtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.timkiemtxtbox.Location = new System.Drawing.Point(443, 85);
+            this.timkiemtxtbox.Name = "timkiemtxtbox";
+            this.timkiemtxtbox.Size = new System.Drawing.Size(371, 27);
+            this.timkiemtxtbox.TabIndex = 20;
             // 
             // SearchLabel
             // 
@@ -166,13 +170,13 @@
             this.SearchLabel.TabIndex = 19;
             this.SearchLabel.Text = "Tìm kiếm:";
             // 
-            // dateTimePicker1
+            // tudtpicker
             // 
-            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dateTimePicker1.Location = new System.Drawing.Point(350, 148);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(250, 27);
-            this.dateTimePicker1.TabIndex = 24;
+            this.tudtpicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tudtpicker.Location = new System.Drawing.Point(350, 148);
+            this.tudtpicker.Name = "tudtpicker";
+            this.tudtpicker.Size = new System.Drawing.Size(250, 27);
+            this.tudtpicker.TabIndex = 24;
             // 
             // label1
             // 
@@ -185,13 +189,13 @@
             this.label1.TabIndex = 25;
             this.label1.Text = "Từ:";
             // 
-            // dateTimePicker2
+            // dendtpicker
             // 
-            this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dateTimePicker2.Location = new System.Drawing.Point(688, 148);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(250, 27);
-            this.dateTimePicker2.TabIndex = 24;
+            this.dendtpicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dendtpicker.Location = new System.Drawing.Point(688, 148);
+            this.dendtpicker.Name = "dendtpicker";
+            this.dendtpicker.Size = new System.Drawing.Size(250, 27);
+            this.dendtpicker.TabIndex = 24;
             // 
             // label2
             // 
@@ -207,12 +211,12 @@
             // xemctbtn
             // 
             this.xemctbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.xemctbtn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.xemctbtn.BackColor = System.Drawing.SystemColors.HighlightText;
             this.xemctbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.xemctbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.xemctbtn.Image = global::QLGROTO.Properties.Resources.lens_1723832_640;
             this.xemctbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.xemctbtn.Location = new System.Drawing.Point(462, 593);
+            this.xemctbtn.Location = new System.Drawing.Point(333, 593);
             this.xemctbtn.Name = "xemctbtn";
             this.xemctbtn.Size = new System.Drawing.Size(265, 65);
             this.xemctbtn.TabIndex = 26;
@@ -231,25 +235,42 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // DSPHIEUNHAPKHO
+            // xuatbtn
+            // 
+            this.xuatbtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.xuatbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.xuatbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.xuatbtn.Image = global::QLGROTO.Properties.Resources.certificate_g32c53cd83_640__1_;
+            this.xuatbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.xuatbtn.Location = new System.Drawing.Point(636, 593);
+            this.xuatbtn.Name = "xuatbtn";
+            this.xuatbtn.Size = new System.Drawing.Size(265, 65);
+            this.xuatbtn.TabIndex = 72;
+            this.xuatbtn.Text = "Xuất file danh sách";
+            this.xuatbtn.UseVisualStyleBackColor = false;
+            this.xuatbtn.Click += new System.EventHandler(this.xuatbtn_Click);
+            // 
+            // DSPNKVTPT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(1183, 670);
+            this.Controls.Add(this.xuatbtn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.xemctbtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.SearchButton);
-            this.Controls.Add(this.PhoneSearchRadiobtn);
-            this.Controls.Add(this.NameSearchRadiobtn);
-            this.Controls.Add(this.SearchTextbox);
+            this.Controls.Add(this.dendtpicker);
+            this.Controls.Add(this.tudtpicker);
+            this.Controls.Add(this.timkiembtn);
+            this.Controls.Add(this.timtheokhoangngayradio);
+            this.Controls.Add(this.timtheomaradio);
+            this.Controls.Add(this.timkiemtxtbox);
             this.Controls.Add(this.SearchLabel);
             this.Controls.Add(this.phieunhapvtptdtgrid);
             this.Controls.Add(this.panel1);
-            this.Name = "DSPHIEUNHAPKHO";
+            this.Name = "DSPNKVTPT";
             this.ShowIcon = false;
             this.Text = "Danh sách phiếu nhập kho";
             this.panel1.ResumeLayout(false);
@@ -265,18 +286,19 @@
         private Panel panel1;
         private Label VatTuPhuTung_Title;
         private DataGridView phieunhapvtptdtgrid;
-        private Button SearchButton;
-        private RadioButton PhoneSearchRadiobtn;
-        private RadioButton NameSearchRadiobtn;
-        private TextBox SearchTextbox;
+        private Button timkiembtn;
+        private RadioButton timtheokhoangngayradio;
+        private RadioButton timtheomaradio;
+        private TextBox timkiemtxtbox;
         private Label SearchLabel;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker tudtpicker;
         private Label label1;
-        private DateTimePicker dateTimePicker2;
+        private DateTimePicker dendtpicker;
         private Label label2;
         private Button xemctbtn;
         private Button button1;
         private DataGridViewTextBoxColumn MaNKVTPT;
         private DataGridViewTextBoxColumn NgayNhap;
+        private Button xuatbtn;
     }
 }

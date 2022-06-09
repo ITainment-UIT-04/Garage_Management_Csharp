@@ -241,7 +241,7 @@
             // suanvbtn
             // 
             this.suanvbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.suanvbtn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.suanvbtn.BackColor = System.Drawing.SystemColors.HighlightText;
             this.suanvbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.suanvbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.suanvbtn.Image = global::QLGROTO.Properties.Resources.tool_145375_640;
@@ -257,7 +257,7 @@
             // xoanvbtn
             // 
             this.xoanvbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.xoanvbtn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.xoanvbtn.BackColor = System.Drawing.SystemColors.HighlightText;
             this.xoanvbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.xoanvbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.xoanvbtn.Image = global::QLGROTO.Properties.Resources.recycle_310938_640;
@@ -273,7 +273,7 @@
             // themnvbtn
             // 
             this.themnvbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.themnvbtn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.themnvbtn.BackColor = System.Drawing.SystemColors.HighlightText;
             this.themnvbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.themnvbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.themnvbtn.Image = ((System.Drawing.Image)(resources.GetObject("themnvbtn.Image")));
@@ -499,7 +499,7 @@
             // xuatbtn
             // 
             this.xuatbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.xuatbtn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.xuatbtn.BackColor = System.Drawing.SystemColors.HighlightText;
             this.xuatbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.xuatbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.xuatbtn.Image = global::QLGROTO.Properties.Resources.certificate_g32c53cd83_640__1_;
@@ -530,6 +530,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(1404, 778);
             this.Controls.Add(this.sdtradio);
             this.Controls.Add(this.xuatbtn);

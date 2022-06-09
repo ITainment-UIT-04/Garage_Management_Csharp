@@ -61,7 +61,7 @@
             // thembtn
             // 
             this.thembtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.thembtn.Location = new System.Drawing.Point(335, 130);
+            this.thembtn.Location = new System.Drawing.Point(335, 121);
             this.thembtn.Name = "thembtn";
             this.thembtn.Size = new System.Drawing.Size(94, 29);
             this.thembtn.TabIndex = 62;
@@ -72,7 +72,7 @@
             // thoatbtn
             // 
             this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.thoatbtn.Location = new System.Drawing.Point(435, 130);
+            this.thoatbtn.Location = new System.Drawing.Point(435, 121);
             this.thoatbtn.Name = "thoatbtn";
             this.thoatbtn.Size = new System.Drawing.Size(94, 29);
             this.thoatbtn.TabIndex = 63;
@@ -85,7 +85,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(49, 84);
+            this.label8.Location = new System.Drawing.Point(33, 84);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(95, 31);
             this.label8.TabIndex = 68;
@@ -95,7 +95,7 @@
             // 
             this.themtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.themtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.themtxtbox.Location = new System.Drawing.Point(150, 86);
+            this.themtxtbox.Location = new System.Drawing.Point(134, 86);
             this.themtxtbox.Multiline = true;
             this.themtxtbox.Name = "themtxtbox";
             this.themtxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -107,7 +107,8 @@
             this.AcceptButton = this.thembtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(541, 171);
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.ClientSize = new System.Drawing.Size(541, 162);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.themtxtbox);
             this.Controls.Add(this.thembtn);

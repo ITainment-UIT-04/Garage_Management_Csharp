@@ -108,10 +108,12 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.CancelButton = this.thoatbtn;
             this.Controls.Add(this.panel2);
             this.MaximizeBox = false;
             this.Name = "DOIMATKHAU";
+            this.ShowIcon = false;
             this.Load += new System.EventHandler(this.DOIMATKHAU_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

@@ -72,5 +72,33 @@ namespace QLGROTO.DAO
             con.Close();
             return dt;
         }
+        public DataTable TimKiemTheoMa(string s)
+        {
+            SqlConnection con = dc.getConnect();
+            con.Open();
+            string sql = "SELECT * FROM PHIEUSUACHUA WHERE MaPSC LIKE CONCAT('%', @ten, '%')";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@ten", s);
+            DataTable dt = new DataTable();
+            da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            return dt;
+        }
+        public DataTable TimKiemTheoKhoangNgay(int tbd, int tkt, int nbd, int nkt)
+        {
+            SqlConnection con = dc.getConnect();
+            con.Open();
+            string sql = "SELECT * FROM PHIEUSUACHUA WHERE (MONTH(NgayNhap) BETWEEN &tbd AND @tkt) " +
+                "AND (YEAR(NgayNhap) BETWEEN @nbd AND @nkt)";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@tbd", tbd);
+            cmd.Parameters.AddWithValue("@tkt", tkt);
+            cmd.Parameters.AddWithValue("@nbd", nbd);
+            cmd.Parameters.AddWithValue("@nkt", nkt);
+            DataTable dt = new DataTable();
+            da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            return dt;
+        }
     }
 }

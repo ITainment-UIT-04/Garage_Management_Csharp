@@ -38,8 +38,6 @@
             this.ttttxtbox = new System.Windows.Forms.TextBox();
             this.thoatbtn = new System.Windows.Forms.Button();
             this.pscdtgrid = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.masctxtbox = new System.Windows.Forms.TextBox();
             this.NoiDung = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaVTPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenVTPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,6 +45,8 @@
             this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TienCong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label5 = new System.Windows.Forms.Label();
+            this.masctxtbox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pscdtgrid)).BeginInit();
             this.SuspendLayout();
@@ -164,24 +164,6 @@
             this.pscdtgrid.TabIndex = 18;
             this.pscdtgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.pscdtgrid_CellContentClick);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(55, 78);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(180, 28);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Mã phiếu sửa chữa:";
-            // 
-            // masctxtbox
-            // 
-            this.masctxtbox.Enabled = false;
-            this.masctxtbox.Location = new System.Drawing.Point(241, 82);
-            this.masctxtbox.Name = "masctxtbox";
-            this.masctxtbox.Size = new System.Drawing.Size(220, 27);
-            this.masctxtbox.TabIndex = 8;
-            // 
             // NoiDung
             // 
             this.NoiDung.DataPropertyName = "NoiDung";
@@ -231,10 +213,29 @@
             this.ThanhTien.MinimumWidth = 6;
             this.ThanhTien.Name = "ThanhTien";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(55, 78);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(180, 28);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Mã phiếu sửa chữa:";
+            // 
+            // masctxtbox
+            // 
+            this.masctxtbox.Enabled = false;
+            this.masctxtbox.Location = new System.Drawing.Point(241, 82);
+            this.masctxtbox.Name = "masctxtbox";
+            this.masctxtbox.Size = new System.Drawing.Size(220, 27);
+            this.masctxtbox.TabIndex = 8;
+            // 
             // CHITIETPSC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(1347, 594);
             this.Controls.Add(this.pscdtgrid);
             this.Controls.Add(this.thoatbtn);

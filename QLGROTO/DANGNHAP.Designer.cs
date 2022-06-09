@@ -129,6 +129,7 @@
             this.AcceptButton = this.LogInButtion;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.CancelButton = this.EscapeButton;
             this.ClientSize = new System.Drawing.Size(498, 171);
             this.Controls.Add(this.panel1);

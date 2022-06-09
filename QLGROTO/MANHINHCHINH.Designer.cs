@@ -427,7 +427,7 @@
             // button11
             // 
             this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button11.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button11.BackColor = System.Drawing.SystemColors.HighlightText;
             this.button11.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button11.Image = global::QLGROTO.Properties.Resources.recycle_310938_640;
@@ -443,7 +443,7 @@
             // button10
             // 
             this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button10.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button10.BackColor = System.Drawing.SystemColors.HighlightText;
             this.button10.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button10.Image = global::QLGROTO.Properties.Resources.tool_145375_640;
@@ -856,7 +856,6 @@
             // xuatbtn
             // 
             this.xuatbtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.xuatbtn.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.xuatbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.xuatbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.xuatbtn.Image = global::QLGROTO.Properties.Resources.certificate_g32c53cd83_640__1_;
