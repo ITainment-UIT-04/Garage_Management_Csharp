@@ -43,6 +43,7 @@ create table CT_PSC(
 	MaPSC char(10),
 	NoiDung nvarchar(200),
 	MaVTPT char(10),
+	TenVTPT nvarchar(50),
 	SoLuong int,
 	DonGia money,
 	MaTienCong char(10),
