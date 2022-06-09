@@ -35,15 +35,14 @@ namespace QLGROTO
             {
                 int thang = Convert.ToInt32(ThangText.Text);
                 int nam = Convert.ToInt32(NamText.Text);
-                if (thang < 1 || thang > 12)
-                {
-                    MessageBox.Show("Đầu vào không hợp lệ!");
-                }
-                else
-                {
-                    BCDSgrid.DataSource = BAOCAODOANHSODAO.Instance.Hienthi(thang, nam);
-                }
+                BCDSgrid.DataSource = BAOCAODOANHSODAO.Instance.Hienthi(thang, nam);
+                
             }
+        }
+
+        private void InBCDS_btn_Click(object sender, EventArgs e)
+        {
+            // Cái này là của btn in
         }
     }
 }

@@ -34,21 +34,23 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.NamText = new System.Windows.Forms.TextBox();
-            this.ThangText = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.InBCDS_btn = new System.Windows.Forms.Button();
             this.themtiencong_btn = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.BCDSgrid = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
             this.MaBCDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HieuXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TiLe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button2 = new System.Windows.Forms.Button();
+            this.NamText = new System.Windows.Forms.NumericUpDown();
+            this.ThangText = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BCDSgrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NamText)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ThangText)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -81,11 +83,11 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.NamText);
             this.groupBox1.Controls.Add(this.ThangText);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.InBCDS_btn);
             this.groupBox1.Controls.Add(this.themtiencong_btn);
             this.groupBox1.Location = new System.Drawing.Point(10, 53);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -116,37 +118,22 @@
             this.label1.TabIndex = 44;
             this.label1.Text = "Tháng:";
             // 
-            // NamText
+            // InBCDS_btn
             // 
-            this.NamText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.NamText.Location = new System.Drawing.Point(297, 35);
-            this.NamText.Name = "NamText";
-            this.NamText.Size = new System.Drawing.Size(144, 25);
-            this.NamText.TabIndex = 43;
-            // 
-            // ThangText
-            // 
-            this.ThangText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ThangText.Location = new System.Drawing.Point(85, 34);
-            this.ThangText.Name = "ThangText";
-            this.ThangText.Size = new System.Drawing.Size(138, 25);
-            this.ThangText.TabIndex = 42;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(709, 20);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(232, 49);
-            this.button1.TabIndex = 40;
-            this.button1.Text = "In báo cáo";
-            this.button1.UseVisualStyleBackColor = false;
+            this.InBCDS_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.InBCDS_btn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.InBCDS_btn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.InBCDS_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.InBCDS_btn.Image = ((System.Drawing.Image)(resources.GetObject("InBCDS_btn.Image")));
+            this.InBCDS_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.InBCDS_btn.Location = new System.Drawing.Point(709, 20);
+            this.InBCDS_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.InBCDS_btn.Name = "InBCDS_btn";
+            this.InBCDS_btn.Size = new System.Drawing.Size(232, 49);
+            this.InBCDS_btn.TabIndex = 40;
+            this.InBCDS_btn.Text = "In báo cáo";
+            this.InBCDS_btn.UseVisualStyleBackColor = false;
+            this.InBCDS_btn.Click += new System.EventHandler(this.InBCDS_btn_Click);
             // 
             // themtiencong_btn
             // 
@@ -203,6 +190,37 @@
             this.BCDSgrid.Size = new System.Drawing.Size(934, 326);
             this.BCDSgrid.TabIndex = 0;
             // 
+            // MaBCDT
+            // 
+            this.MaBCDT.DataPropertyName = "MaBCDT";
+            this.MaBCDT.HeaderText = "Mã BCDT";
+            this.MaBCDT.Name = "MaBCDT";
+            this.MaBCDT.ReadOnly = true;
+            // 
+            // HieuXe
+            // 
+            this.HieuXe.DataPropertyName = "HieuXe";
+            this.HieuXe.HeaderText = "Hiệu xe";
+            this.HieuXe.MinimumWidth = 6;
+            this.HieuXe.Name = "HieuXe";
+            this.HieuXe.ReadOnly = true;
+            // 
+            // ThanhTien
+            // 
+            this.ThanhTien.DataPropertyName = "ThanhTien";
+            this.ThanhTien.HeaderText = "Thành tiền";
+            this.ThanhTien.MinimumWidth = 6;
+            this.ThanhTien.Name = "ThanhTien";
+            this.ThanhTien.ReadOnly = true;
+            // 
+            // TiLe
+            // 
+            this.TiLe.DataPropertyName = "TiLe";
+            this.TiLe.HeaderText = "Tỉ lệ";
+            this.TiLe.MinimumWidth = 6;
+            this.TiLe.Name = "TiLe";
+            this.TiLe.ReadOnly = true;
+            // 
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -215,32 +233,51 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // MaBCDT
+            // NamText
             // 
-            this.MaBCDT.HeaderText = "Mã BCDT";
-            this.MaBCDT.Name = "MaBCDT";
-            this.MaBCDT.ReadOnly = true;
+            this.NamText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NamText.Location = new System.Drawing.Point(297, 35);
+            this.NamText.Maximum = new decimal(new int[] {
+            2030,
+            0,
+            0,
+            0});
+            this.NamText.Minimum = new decimal(new int[] {
+            2000,
+            0,
+            0,
+            0});
+            this.NamText.Name = "NamText";
+            this.NamText.Size = new System.Drawing.Size(120, 25);
+            this.NamText.TabIndex = 53;
+            this.NamText.Value = new decimal(new int[] {
+            2022,
+            0,
+            0,
+            0});
             // 
-            // HieuXe
+            // ThangText
             // 
-            this.HieuXe.HeaderText = "Hiệu xe";
-            this.HieuXe.MinimumWidth = 6;
-            this.HieuXe.Name = "HieuXe";
-            this.HieuXe.ReadOnly = true;
-            // 
-            // ThanhTien
-            // 
-            this.ThanhTien.HeaderText = "Thành tiền";
-            this.ThanhTien.MinimumWidth = 6;
-            this.ThanhTien.Name = "ThanhTien";
-            this.ThanhTien.ReadOnly = true;
-            // 
-            // TiLe
-            // 
-            this.TiLe.HeaderText = "Tỉ lệ";
-            this.TiLe.MinimumWidth = 6;
-            this.TiLe.Name = "TiLe";
-            this.TiLe.ReadOnly = true;
+            this.ThangText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ThangText.Location = new System.Drawing.Point(85, 35);
+            this.ThangText.Maximum = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            this.ThangText.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.ThangText.Name = "ThangText";
+            this.ThangText.Size = new System.Drawing.Size(120, 25);
+            this.ThangText.TabIndex = 52;
+            this.ThangText.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // BAOCAODOANHSO
             // 
@@ -260,6 +297,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BCDSgrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NamText)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ThangText)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -269,18 +308,18 @@
         private Panel panel1;
         private Label ReportDoanhSo_Title;
         private GroupBox groupBox1;
-        private Button button1;
+        private Button InBCDS_btn;
         private Button themtiencong_btn;
         private GroupBox groupBox2;
         private Button button2;
         private DataGridView BCDSgrid;
         private Label label2;
         private Label label1;
-        private TextBox NamText;
-        private TextBox ThangText;
         private DataGridViewTextBoxColumn MaBCDT;
         private DataGridViewTextBoxColumn HieuXe;
         private DataGridViewTextBoxColumn ThanhTien;
         private DataGridViewTextBoxColumn TiLe;
+        private NumericUpDown NamText;
+        private NumericUpDown ThangText;
     }
 }

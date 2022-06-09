@@ -8,30 +8,29 @@ using System.Data.SqlClient;
 
 namespace QLGROTO.DAO
 {
-    internal class BAOCAODOANHSODAO
+    internal class BAOCAOTONDAO
     {
         DataConnection dc;
         SqlDataAdapter da;
-        private static BAOCAODOANHSODAO instance;
-        private BAOCAODOANHSODAO()
+        private static BAOCAOTONDAO instance;
+        private BAOCAOTONDAO()
         {
             dc = new DataConnection();
         }
-
-        public static BAOCAODOANHSODAO Instance
+        public static BAOCAOTONDAO Instance
         {
             get
             {
                 if (instance == null)
-                    instance = new BAOCAODOANHSODAO();
+                    instance = new BAOCAOTONDAO();
                 return instance;
             }
             set { instance = value; }
         }
 
-        public DataTable Hienthi(int thang, int nam)
+        public DataTable HienThi(int thang, int nam)
         {
-            string sql = "SELECT CT_BAOCAODOANHTHU.MaBCDT, HieuXe, ThanhTien, TiLe FROM BAOCAODOANHTHU FULL JOIN CT_BAOCAODOANHTHU ON BAOCAODOANHTHU.MaBCDT = CT_BAOCAODOANHTHU.MaBCDT WHERE Thang = @Thang AND Nam = @Nam";
+            string sql = "SELECT A.MaVTPT, TenVTPT, TonDau, PhatSinh, TonCuoi FROM (CT_BAOCAOTONVTPT A FULL JOIN BAOCAOTONVTPT B ON A.MaBCTVTPT = B.MaBCTVTPT) FULL JOIN PHUTUNG C ON A.MaVTPT = C.MaVTPT WHERE Thang = @Thang AND Nam = @Nam";
             SqlConnection con = dc.getConnect();
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
