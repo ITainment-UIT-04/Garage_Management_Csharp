@@ -24,8 +24,8 @@ namespace QLGROTO
         }
         public void HienThi()
         {
-            DataTable dt = NHANVIENDAO.Instance.HienThiThongTin(tendangnhap);
-            foreach (DataRow dr in dt.Rows)
+            SqlDataReader dr = NHANVIENDAO.Instance.HienThiThongTin(tendangnhap);
+            if (dr.Read())
             {
                 tentxtbox.Text = dr["TenNV"].ToString();
                 dctxtbox.Text = dr["DiaChi"].ToString();
@@ -55,15 +55,15 @@ namespace QLGROTO
         {
             
                 tdntxtbox.Text = tendangnhap;
-                DataTable dt = NHANVIENDAO.Instance.HienThiThongTin(tendangnhap);
-                foreach (DataRow dr in dt.Rows)
-                {
-                    tentxtbox.Text = dr["TenNV"].ToString();
-                    dctxtbox.Text = dr["DiaChi"].ToString();
-                    dthtxtbox.Text = dr["DienThoai"].ToString();
-                    emailtxtbox.Text = dr["Email"].ToString();
-                    chucvutxtbox.Text = dr["ChucVu"].ToString();
-                }
+                SqlDataReader dr = NHANVIENDAO.Instance.HienThiThongTin(tendangnhap);
+            if (dr.Read())
+            {
+                tentxtbox.Text = dr["TenNV"].ToString();
+                dctxtbox.Text = dr["DiaChi"].ToString();
+                dthtxtbox.Text = dr["DienThoai"].ToString();
+                emailtxtbox.Text = dr["Email"].ToString();
+                chucvutxtbox.Text = dr["ChucVu"].ToString();
+            }
 
             
         }

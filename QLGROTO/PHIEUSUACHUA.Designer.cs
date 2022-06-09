@@ -202,6 +202,7 @@
             // thanhtientxtbox
             // 
             this.thanhtientxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.thanhtientxtbox.Enabled = false;
             this.thanhtientxtbox.Location = new System.Drawing.Point(130, 106);
             this.thanhtientxtbox.Name = "thanhtientxtbox";
             this.thanhtientxtbox.Size = new System.Drawing.Size(423, 27);
@@ -210,6 +211,7 @@
             // dgtxtbox
             // 
             this.dgtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dgtxtbox.Enabled = false;
             this.dgtxtbox.Location = new System.Drawing.Point(677, 61);
             this.dgtxtbox.Name = "dgtxtbox";
             this.dgtxtbox.Size = new System.Drawing.Size(271, 27);
@@ -226,6 +228,7 @@
             // tctxtbox
             // 
             this.tctxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tctxtbox.Enabled = false;
             this.tctxtbox.Location = new System.Drawing.Point(1075, 18);
             this.tctxtbox.Name = "tctxtbox";
             this.tctxtbox.Size = new System.Drawing.Size(245, 27);

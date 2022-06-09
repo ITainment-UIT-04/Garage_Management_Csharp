@@ -44,13 +44,11 @@ namespace QLGROTO
             string ten = tenvtcbbox.Text;
             string dgn = dgtxtbox.Text;
             int sl = Convert.ToInt32(slnum.Value);
-            string l = "1";
-            DataTable dt = VTPTDAO.Instance.LoadMaVTPT(ten);
-            foreach (DataRow dataRow in dt.Rows)
-            {
-                l = dataRow["MaVTPT"].ToString();
-            }
-            ctnkgrid.Rows.Add(l, ten, dgn, sl);
+            string mavt;
+            SqlDataReader dr = VTPTDAO.Instance.LoadMaVTPT(ten);
+            if (dr.Read())
+                mavt = dr["MaVTPT"].ToString();
+            ctnkgrid.Rows.Add(dr, ten, dgn, sl);
            
         }
 

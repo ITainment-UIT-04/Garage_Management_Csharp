@@ -65,14 +65,10 @@ namespace QLGROTO.DAO
             con.Open();
             string sql = "SELECT COUNT(*) + 1 AS SO FROM PHIEUNHAPKHOVTPT";
             SqlCommand cmd = new SqlCommand(sql, con);
-            DataTable dt = new DataTable();
-            da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
-            string l = "1";
-            foreach(DataRow dr in dt.Rows)
-            {
+            SqlDataReader dr = cmd.ExecuteReader();
+            string l = "";
+            if (dr.Read())
                 l = dr["SO"].ToString();
-            }
             return "NK" + l;
         }
     }

@@ -79,11 +79,12 @@ namespace QLGROTO
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            DataTable dt = NHANVIENDAO.Instance.HienThiThongTin(tendangnhap);   
-            foreach (DataRow dataRow in dt.Rows)
-            {
-                dangsudungtxtbox.Text = dataRow["TenNV"].ToString();
-            }
+            SqlDataReader dr = NHANVIENDAO.Instance.HienThiThongTin(tendangnhap);
+            if (dr.Read())
+                dangsudungtxtbox.Text = dr["TenNV"].ToString();
+
+            
+            
             
 
         }

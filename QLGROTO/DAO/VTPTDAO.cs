@@ -60,19 +60,26 @@ namespace QLGROTO.DAO
             SqlDataReader dt = cmd.ExecuteReader();
             return dt;
         }
-        public DataTable LoadMaVTPT(string ten)
+        public SqlDataReader LoadMaVTPT(string ten)
         {
+           
             SqlConnection con = dc.getConnect();
             con.Open();
             string sql = "SELECT * FROM PHUTUNG WHERE TenVTPT = @ten";
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.Parameters.AddWithValue("@ten", ten);
-            da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
+            cmd.ExecuteNonQuery();
+            SqlDataReader dt = cmd.ExecuteReader();
+            return dt;
 
-            con.Close();
-
+        }
+        public SqlDataReader LoadDonGia(string ten)
+        {
+            SqlConnection con = dc.getConnect();
+            con.Open();
+            string sql = "SELECT * FROM PHUTUNG WHERE TenVTPT = @ten" ;
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dt = cmd.ExecuteReader();
             return dt;
 
 

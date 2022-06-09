@@ -63,18 +63,18 @@ namespace QLGROTO.DAO
             }
             return true;
         }
-        public DataTable HienThiThongTin(string tdn)
+        public SqlDataReader HienThiThongTin(string tdn)
         {
             SqlConnection con = dc.getConnect();
             con.Open();
             string sql = "SELECT * FROM NHANVIEN WHERE TenDangNhap = @tdn";
+
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.Parameters.AddWithValue("@tdn", tdn);
-            da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            con.Close();
+            cmd.ExecuteNonQuery();
+            SqlDataReader dt = cmd.ExecuteReader();
             return dt;
+           
         }
         public bool SuaNhanVien(string tdn, string mk, string ten, string diachi, string dth, string email, string cv)
         {
