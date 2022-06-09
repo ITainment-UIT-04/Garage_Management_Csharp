@@ -41,7 +41,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.thanhtientxtbox = new System.Windows.Forms.TextBox();
             this.dgtxtbox = new System.Windows.Forms.TextBox();
-            this.sltxtbox = new System.Windows.Forms.TextBox();
             this.tctxtbox = new System.Windows.Forms.TextBox();
             this.ptcbbox = new System.Windows.Forms.ComboBox();
             this.ndcbbox = new System.Windows.Forms.ComboBox();
@@ -65,9 +64,11 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.biensocbbox = new System.Windows.Forms.ComboBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pscdtgrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // ngaynhapdtpicker
@@ -170,10 +171,10 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.Controls.Add(this.numericUpDown1);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.thanhtientxtbox);
             this.panel2.Controls.Add(this.dgtxtbox);
-            this.panel2.Controls.Add(this.sltxtbox);
             this.panel2.Controls.Add(this.tctxtbox);
             this.panel2.Controls.Add(this.ptcbbox);
             this.panel2.Controls.Add(this.ndcbbox);
@@ -216,14 +217,6 @@
             this.dgtxtbox.Name = "dgtxtbox";
             this.dgtxtbox.Size = new System.Drawing.Size(271, 27);
             this.dgtxtbox.TabIndex = 3;
-            // 
-            // sltxtbox
-            // 
-            this.sltxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.sltxtbox.Location = new System.Drawing.Point(1075, 61);
-            this.sltxtbox.Name = "sltxtbox";
-            this.sltxtbox.Size = new System.Drawing.Size(245, 27);
-            this.sltxtbox.TabIndex = 2;
             // 
             // tctxtbox
             // 
@@ -444,6 +437,13 @@
             this.biensocbbox.Size = new System.Drawing.Size(223, 28);
             this.biensocbbox.TabIndex = 19;
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(1075, 62);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(245, 27);
+            this.numericUpDown1.TabIndex = 5;
+            // 
             // PHIEUSUACHUA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -473,6 +473,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pscdtgrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -496,7 +497,6 @@
         private Button button3;
         private TextBox thanhtientxtbox;
         private TextBox dgtxtbox;
-        private TextBox sltxtbox;
         private TextBox tctxtbox;
         private ComboBox ptcbbox;
         private Label label8;
@@ -517,5 +517,6 @@
         private DataGridViewTextBoxColumn TienCong;
         private DataGridViewTextBoxColumn ThanhTien;
         private ComboBox biensocbbox;
+        private NumericUpDown numericUpDown1;
     }
 }

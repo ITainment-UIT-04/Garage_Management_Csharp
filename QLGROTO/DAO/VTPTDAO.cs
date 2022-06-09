@@ -68,7 +68,6 @@ namespace QLGROTO.DAO
             string sql = "SELECT * FROM PHUTUNG WHERE TenVTPT = @ten";
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.Parameters.AddWithValue("@ten", ten);
-            cmd.ExecuteNonQuery();
             SqlDataReader dt = cmd.ExecuteReader();
             return dt;
 
