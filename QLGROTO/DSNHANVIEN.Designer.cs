@@ -48,7 +48,7 @@
             this.suanvbtn = new System.Windows.Forms.Button();
             this.xoanvbtn = new System.Windows.Forms.Button();
             this.themnvbtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.thoatbtn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -104,7 +104,7 @@
             this.timkiembtn.Location = new System.Drawing.Point(911, 81);
             this.timkiembtn.Name = "timkiembtn";
             this.timkiembtn.Size = new System.Drawing.Size(79, 27);
-            this.timkiembtn.TabIndex = 35;
+            this.timkiembtn.TabIndex = 2;
             this.timkiembtn.UseVisualStyleBackColor = false;
             this.timkiembtn.Click += new System.EventHandler(this.timkiembtn_Click);
             // 
@@ -116,7 +116,7 @@
             this.tennvradiobtn.Location = new System.Drawing.Point(592, 111);
             this.tennvradiobtn.Name = "tennvradiobtn";
             this.tennvradiobtn.Size = new System.Drawing.Size(181, 24);
-            this.tennvradiobtn.TabIndex = 33;
+            this.tennvradiobtn.TabIndex = 4;
             this.tennvradiobtn.TabStop = true;
             this.tennvradiobtn.Text = "Tìm theo tên nhân viên";
             this.tennvradiobtn.UseVisualStyleBackColor = true;
@@ -130,7 +130,7 @@
             this.tendnradio.Location = new System.Drawing.Point(397, 111);
             this.tendnradio.Name = "tendnradio";
             this.tendnradio.Size = new System.Drawing.Size(189, 24);
-            this.tendnradio.TabIndex = 34;
+            this.tendnradio.TabIndex = 3;
             this.tendnradio.TabStop = true;
             this.tendnradio.Text = "Tìm theo tên đăng nhập";
             this.tendnradio.UseVisualStyleBackColor = true;
@@ -142,7 +142,7 @@
             this.timkiemtxtbox.Location = new System.Drawing.Point(534, 81);
             this.timkiemtxtbox.Name = "timkiemtxtbox";
             this.timkiemtxtbox.Size = new System.Drawing.Size(371, 27);
-            this.timkiemtxtbox.TabIndex = 32;
+            this.timkiemtxtbox.TabIndex = 1;
             // 
             // SearchLabel
             // 
@@ -173,13 +173,14 @@
             this.DienThoai,
             this.Email,
             this.ChucVu});
+            this.nvdtgrid.Enabled = false;
             this.nvdtgrid.Location = new System.Drawing.Point(12, 156);
             this.nvdtgrid.Name = "nvdtgrid";
             this.nvdtgrid.ReadOnly = true;
             this.nvdtgrid.RowHeadersWidth = 51;
             this.nvdtgrid.RowTemplate.Height = 29;
             this.nvdtgrid.Size = new System.Drawing.Size(1380, 293);
-            this.nvdtgrid.TabIndex = 36;
+            this.nvdtgrid.TabIndex = 6;
             this.nvdtgrid.SelectionChanged += new System.EventHandler(this.nvdtgrid_SelectionChanged);
             // 
             // TenDangNhap
@@ -249,7 +250,7 @@
             this.suanvbtn.Location = new System.Drawing.Point(387, 666);
             this.suanvbtn.Name = "suanvbtn";
             this.suanvbtn.Size = new System.Drawing.Size(265, 65);
-            this.suanvbtn.TabIndex = 70;
+            this.suanvbtn.TabIndex = 8;
             this.suanvbtn.Text = "Sửa thông tin nhân viên";
             this.suanvbtn.UseVisualStyleBackColor = false;
             this.suanvbtn.Click += new System.EventHandler(this.suanvbtn_Click);
@@ -265,7 +266,7 @@
             this.xoanvbtn.Location = new System.Drawing.Point(764, 666);
             this.xoanvbtn.Name = "xoanvbtn";
             this.xoanvbtn.Size = new System.Drawing.Size(265, 65);
-            this.xoanvbtn.TabIndex = 68;
+            this.xoanvbtn.TabIndex = 9;
             this.xoanvbtn.Text = "Xóa nhân viên";
             this.xoanvbtn.UseVisualStyleBackColor = false;
             this.xoanvbtn.Click += new System.EventHandler(this.xoanvbtn_Click);
@@ -281,20 +282,20 @@
             this.themnvbtn.Location = new System.Drawing.Point(12, 666);
             this.themnvbtn.Name = "themnvbtn";
             this.themnvbtn.Size = new System.Drawing.Size(265, 65);
-            this.themnvbtn.TabIndex = 69;
+            this.themnvbtn.TabIndex = 7;
             this.themnvbtn.Text = "Thêm nhân viên";
             this.themnvbtn.UseVisualStyleBackColor = false;
             this.themnvbtn.Click += new System.EventHandler(this.themtiencong_btn_Click);
             // 
-            // button1
+            // thoatbtn
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(1300, 737);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 71;
-            this.button1.Text = "Thoát";
-            this.button1.UseVisualStyleBackColor = true;
+            this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.thoatbtn.Location = new System.Drawing.Point(1300, 737);
+            this.thoatbtn.Name = "thoatbtn";
+            this.thoatbtn.Size = new System.Drawing.Size(94, 29);
+            this.thoatbtn.TabIndex = 11;
+            this.thoatbtn.Text = "Thoát";
+            this.thoatbtn.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -396,6 +397,7 @@
             // 
             this.chucvutxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.chucvutxtbox.Enabled = false;
             this.chucvutxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.chucvutxtbox.Location = new System.Drawing.Point(629, 160);
             this.chucvutxtbox.Multiline = true;
@@ -422,6 +424,7 @@
             // 
             this.dthtxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dthtxtbox.Enabled = false;
             this.dthtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dthtxtbox.Location = new System.Drawing.Point(357, 114);
             this.dthtxtbox.Multiline = true;
@@ -435,6 +438,7 @@
             // 
             this.emailtxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.emailtxtbox.Enabled = false;
             this.emailtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.emailtxtbox.Location = new System.Drawing.Point(846, 114);
             this.emailtxtbox.Multiline = true;
@@ -448,6 +452,7 @@
             // 
             this.tentxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tentxtbox.Enabled = false;
             this.tentxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tentxtbox.Location = new System.Drawing.Point(357, 79);
             this.tentxtbox.Multiline = true;
@@ -461,6 +466,7 @@
             // 
             this.dctxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dctxtbox.Enabled = false;
             this.dctxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dctxtbox.Location = new System.Drawing.Point(846, 79);
             this.dctxtbox.Multiline = true;
@@ -474,6 +480,7 @@
             // 
             this.mktxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.mktxtbox.Enabled = false;
             this.mktxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.mktxtbox.Location = new System.Drawing.Point(846, 44);
             this.mktxtbox.Multiline = true;
@@ -487,6 +494,7 @@
             // 
             this.tdntxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tdntxtbox.Enabled = false;
             this.tdntxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tdntxtbox.Location = new System.Drawing.Point(357, 39);
             this.tdntxtbox.Multiline = true;
@@ -507,7 +515,7 @@
             this.xuatbtn.Location = new System.Drawing.Point(1127, 666);
             this.xuatbtn.Name = "xuatbtn";
             this.xuatbtn.Size = new System.Drawing.Size(265, 65);
-            this.xuatbtn.TabIndex = 73;
+            this.xuatbtn.TabIndex = 10;
             this.xuatbtn.Text = "Xuất file danh sách";
             this.xuatbtn.UseVisualStyleBackColor = false;
             this.xuatbtn.Click += new System.EventHandler(this.xuatbtn_Click);
@@ -520,7 +528,7 @@
             this.sdtradio.Location = new System.Drawing.Point(779, 111);
             this.sdtradio.Name = "sdtradio";
             this.sdtradio.Size = new System.Drawing.Size(246, 24);
-            this.sdtradio.TabIndex = 74;
+            this.sdtradio.TabIndex = 5;
             this.sdtradio.TabStop = true;
             this.sdtradio.Text = "Tìm theo số điện thoại nhân viên";
             this.sdtradio.UseVisualStyleBackColor = true;
@@ -528,14 +536,16 @@
             // 
             // DSNHANVIEN
             // 
+            this.AcceptButton = this.timkiembtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.CancelButton = this.thoatbtn;
             this.ClientSize = new System.Drawing.Size(1404, 778);
             this.Controls.Add(this.sdtradio);
             this.Controls.Add(this.xuatbtn);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.suanvbtn);
             this.Controls.Add(this.xoanvbtn);
             this.Controls.Add(this.themnvbtn);
@@ -546,9 +556,9 @@
             this.Controls.Add(this.timkiemtxtbox);
             this.Controls.Add(this.SearchLabel);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DSNHANVIEN";
-            this.ShowIcon = false;
             this.Text = "Danh sách nhân viên";
             this.Load += new System.EventHandler(this.DSNHANVIEN_Load);
             this.panel1.ResumeLayout(false);
@@ -574,7 +584,7 @@
         private Button suanvbtn;
         private Button xoanvbtn;
         private Button themnvbtn;
-        private Button button1;
+        private Button thoatbtn;
         private GroupBox groupBox1;
         private Label label3;
         private Label label2;

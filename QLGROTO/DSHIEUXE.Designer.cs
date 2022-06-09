@@ -37,7 +37,7 @@
             this.HieuXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.xoahieuxebtn = new System.Windows.Forms.Button();
             this.themhieuxebtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.thoatbtn = new System.Windows.Forms.Button();
             this.timkiembtn = new System.Windows.Forms.Button();
             this.xuatbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -74,7 +74,7 @@
             this.timhieuxetxtbox.Location = new System.Drawing.Point(231, 84);
             this.timhieuxetxtbox.Name = "timhieuxetxtbox";
             this.timhieuxetxtbox.Size = new System.Drawing.Size(371, 27);
-            this.timhieuxetxtbox.TabIndex = 14;
+            this.timhieuxetxtbox.TabIndex = 1;
             this.timhieuxetxtbox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
@@ -106,7 +106,7 @@
             this.hieuxedtgrid.RowHeadersWidth = 51;
             this.hieuxedtgrid.RowTemplate.Height = 29;
             this.hieuxedtgrid.Size = new System.Drawing.Size(776, 257);
-            this.hieuxedtgrid.TabIndex = 16;
+            this.hieuxedtgrid.TabIndex = 2;
             this.hieuxedtgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // HieuXe
@@ -128,7 +128,7 @@
             this.xoahieuxebtn.Location = new System.Drawing.Point(263, 396);
             this.xoahieuxebtn.Name = "xoahieuxebtn";
             this.xoahieuxebtn.Size = new System.Drawing.Size(265, 65);
-            this.xoahieuxebtn.TabIndex = 68;
+            this.xoahieuxebtn.TabIndex = 4;
             this.xoahieuxebtn.Text = "Xóa hiệu xe";
             this.xoahieuxebtn.UseVisualStyleBackColor = false;
             this.xoahieuxebtn.Click += new System.EventHandler(this.xoahieuxebtn_Click);
@@ -144,21 +144,21 @@
             this.themhieuxebtn.Location = new System.Drawing.Point(12, 396);
             this.themhieuxebtn.Name = "themhieuxebtn";
             this.themhieuxebtn.Size = new System.Drawing.Size(265, 65);
-            this.themhieuxebtn.TabIndex = 69;
+            this.themhieuxebtn.TabIndex = 3;
             this.themhieuxebtn.Text = "Thêm hiệu xe";
             this.themhieuxebtn.UseVisualStyleBackColor = false;
             this.themhieuxebtn.Click += new System.EventHandler(this.themhieuxebtn_Click);
             // 
-            // button1
+            // thoatbtn
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(694, 464);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 70;
-            this.button1.Text = "Thoát";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.thoatbtn.Location = new System.Drawing.Point(694, 464);
+            this.thoatbtn.Name = "thoatbtn";
+            this.thoatbtn.Size = new System.Drawing.Size(94, 29);
+            this.thoatbtn.TabIndex = 6;
+            this.thoatbtn.Text = "Thoát";
+            this.thoatbtn.UseVisualStyleBackColor = true;
+            this.thoatbtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // timkiembtn
             // 
@@ -168,13 +168,13 @@
             this.timkiembtn.Location = new System.Drawing.Point(608, 84);
             this.timkiembtn.Name = "timkiembtn";
             this.timkiembtn.Size = new System.Drawing.Size(79, 27);
-            this.timkiembtn.TabIndex = 71;
+            this.timkiembtn.TabIndex = 2;
             this.timkiembtn.UseVisualStyleBackColor = false;
             this.timkiembtn.Click += new System.EventHandler(this.timkiembtn_Click);
             // 
             // xuatbtn
             // 
-            this.xuatbtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.xuatbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.xuatbtn.BackColor = System.Drawing.SystemColors.HighlightText;
             this.xuatbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.xuatbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -183,28 +183,30 @@
             this.xuatbtn.Location = new System.Drawing.Point(523, 396);
             this.xuatbtn.Name = "xuatbtn";
             this.xuatbtn.Size = new System.Drawing.Size(265, 65);
-            this.xuatbtn.TabIndex = 72;
+            this.xuatbtn.TabIndex = 5;
             this.xuatbtn.Text = "Xuất file danh sách";
             this.xuatbtn.UseVisualStyleBackColor = false;
             this.xuatbtn.Click += new System.EventHandler(this.xuatbtn_Click);
             // 
             // DSHIEUXE
             // 
+            this.AcceptButton = this.timkiembtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.CancelButton = this.thoatbtn;
             this.ClientSize = new System.Drawing.Size(800, 505);
             this.Controls.Add(this.xuatbtn);
             this.Controls.Add(this.timkiembtn);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.xoahieuxebtn);
             this.Controls.Add(this.themhieuxebtn);
             this.Controls.Add(this.hieuxedtgrid);
             this.Controls.Add(this.timhieuxetxtbox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DSHIEUXE";
-            this.ShowIcon = false;
             this.Text = "Danh sách hiệu xe";
             this.Load += new System.EventHandler(this.BrandList_Load);
             this.panel1.ResumeLayout(false);
@@ -224,7 +226,7 @@
         private DataGridView hieuxedtgrid;
         private Button xoahieuxebtn;
         private Button themhieuxebtn;
-        private Button button1;
+        private Button thoatbtn;
         private DataGridViewTextBoxColumn HieuXe;
         private Button timkiembtn;
         private Button xuatbtn;

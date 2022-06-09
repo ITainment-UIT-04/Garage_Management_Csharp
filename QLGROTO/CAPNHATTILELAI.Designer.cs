@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CAPNHATTILELAI));
             this.tilenumeric = new System.Windows.Forms.NumericUpDown();
             this.thoatbtn = new System.Windows.Forms.Button();
             this.capnhatbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tilenumeric)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -41,7 +41,7 @@
             // tilenumeric
             // 
             this.tilenumeric.DecimalPlaces = 2;
-            this.tilenumeric.Location = new System.Drawing.Point(78, 60);
+            this.tilenumeric.Location = new System.Drawing.Point(97, 60);
             this.tilenumeric.Name = "tilenumeric";
             this.tilenumeric.Size = new System.Drawing.Size(150, 27);
             this.tilenumeric.TabIndex = 0;
@@ -90,38 +90,27 @@
             this.panel1.Size = new System.Drawing.Size(341, 54);
             this.panel1.TabIndex = 3;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(234, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 31);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "%";
-            // 
             // CAPNHATTILELAI
             // 
             this.AcceptButton = this.capnhatbtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.CancelButton = this.thoatbtn;
             this.ClientSize = new System.Drawing.Size(340, 138);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.capnhatbtn);
             this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.tilenumeric);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "CAPNHATTILELAI";
-            this.ShowIcon = false;
-            this.Text = "Cập nhật tỉ lệ lãi";
+            this.Text = " ";
             ((System.ComponentModel.ISupportInitialize)(this.tilenumeric)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -132,6 +121,5 @@
         private Button capnhatbtn;
         private Label label1;
         private Panel panel1;
-        private Label label2;
     }
 }

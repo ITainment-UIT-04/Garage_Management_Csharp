@@ -68,11 +68,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(134, 9);
+            this.label1.Location = new System.Drawing.Point(212, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(416, 45);
+            this.label1.Size = new System.Drawing.Size(276, 45);
             this.label1.TabIndex = 1;
-            this.label1.Text = "CHI TIẾT PHIẾU THU TIỀN";
+            this.label1.Text = "PHIẾU THU TIỀN";
             // 
             // label2
             // 

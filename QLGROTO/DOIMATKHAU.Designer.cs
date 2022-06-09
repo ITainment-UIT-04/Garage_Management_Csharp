@@ -111,9 +111,9 @@
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.CancelButton = this.thoatbtn;
             this.Controls.Add(this.panel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "DOIMATKHAU";
-            this.ShowIcon = false;
             this.Load += new System.EventHandler(this.DOIMATKHAU_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
