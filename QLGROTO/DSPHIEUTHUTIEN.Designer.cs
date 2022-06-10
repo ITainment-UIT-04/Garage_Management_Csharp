@@ -106,7 +106,7 @@
             this.dendtpicker.Location = new System.Drawing.Point(683, 145);
             this.dendtpicker.Name = "dendtpicker";
             this.dendtpicker.Size = new System.Drawing.Size(250, 27);
-            this.dendtpicker.TabIndex = 5;
+            this.dendtpicker.TabIndex = 4;
             this.dendtpicker.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // tudtpicker
@@ -115,7 +115,7 @@
             this.tudtpicker.Location = new System.Drawing.Point(345, 145);
             this.tudtpicker.Name = "tudtpicker";
             this.tudtpicker.Size = new System.Drawing.Size(250, 27);
-            this.tudtpicker.TabIndex = 4;
+            this.tudtpicker.TabIndex = 3;
             this.tudtpicker.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // timkiembtn
@@ -126,7 +126,7 @@
             this.timkiembtn.Location = new System.Drawing.Point(815, 82);
             this.timkiembtn.Name = "timkiembtn";
             this.timkiembtn.Size = new System.Drawing.Size(79, 27);
-            this.timkiembtn.TabIndex = 2;
+            this.timkiembtn.TabIndex = 5;
             this.timkiembtn.UseVisualStyleBackColor = false;
             this.timkiembtn.Click += new System.EventHandler(this.SearchButton_Click);
             // 
@@ -152,7 +152,7 @@
             this.mapttradio.Location = new System.Drawing.Point(416, 115);
             this.mapttradio.Name = "mapttradio";
             this.mapttradio.Size = new System.Drawing.Size(209, 24);
-            this.mapttradio.TabIndex = 3;
+            this.mapttradio.TabIndex = 2;
             this.mapttradio.TabStop = true;
             this.mapttradio.Text = "Tìm theo mã phiếu thu tiền";
             this.mapttradio.UseVisualStyleBackColor = true;

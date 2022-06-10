@@ -104,7 +104,7 @@
             this.timkiembtn.Location = new System.Drawing.Point(911, 81);
             this.timkiembtn.Name = "timkiembtn";
             this.timkiembtn.Size = new System.Drawing.Size(79, 27);
-            this.timkiembtn.TabIndex = 2;
+            this.timkiembtn.TabIndex = 3;
             this.timkiembtn.UseVisualStyleBackColor = false;
             this.timkiembtn.Click += new System.EventHandler(this.timkiembtn_Click);
             // 
@@ -130,7 +130,7 @@
             this.tendnradio.Location = new System.Drawing.Point(397, 111);
             this.tendnradio.Name = "tendnradio";
             this.tendnradio.Size = new System.Drawing.Size(189, 24);
-            this.tendnradio.TabIndex = 3;
+            this.tendnradio.TabIndex = 2;
             this.tendnradio.TabStop = true;
             this.tendnradio.Text = "Tìm theo tên đăng nhập";
             this.tendnradio.UseVisualStyleBackColor = true;

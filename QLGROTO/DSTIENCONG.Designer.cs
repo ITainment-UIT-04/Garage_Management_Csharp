@@ -88,7 +88,7 @@
             this.ndtcbtn.Location = new System.Drawing.Point(623, 114);
             this.ndtcbtn.Name = "ndtcbtn";
             this.ndtcbtn.Size = new System.Drawing.Size(152, 24);
-            this.ndtcbtn.TabIndex = 10;
+            this.ndtcbtn.TabIndex = 2;
             this.ndtcbtn.TabStop = true;
             this.ndtcbtn.Text = "Tìm theo nội dung";
             this.ndtcbtn.UseVisualStyleBackColor = true;
@@ -102,7 +102,7 @@
             this.matcradio.Location = new System.Drawing.Point(408, 114);
             this.matcradio.Name = "matcradio";
             this.matcradio.Size = new System.Drawing.Size(209, 24);
-            this.matcradio.TabIndex = 3;
+            this.matcradio.TabIndex = 2;
             this.matcradio.TabStop = true;
             this.matcradio.Text = "Tìm theo mã loại tiền công";
             this.matcradio.UseVisualStyleBackColor = true;
@@ -329,7 +329,7 @@
             this.timkiembtn.Location = new System.Drawing.Point(797, 84);
             this.timkiembtn.Name = "timkiembtn";
             this.timkiembtn.Size = new System.Drawing.Size(79, 27);
-            this.timkiembtn.TabIndex = 2;
+            this.timkiembtn.TabIndex = 3;
             this.timkiembtn.UseVisualStyleBackColor = false;
             this.timkiembtn.Click += new System.EventHandler(this.timkiembtn_Click);
             // 

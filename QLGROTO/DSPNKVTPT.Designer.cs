@@ -92,7 +92,7 @@
             this.phieunhapvtptdtgrid.RowHeadersWidth = 51;
             this.phieunhapvtptdtgrid.RowTemplate.Height = 29;
             this.phieunhapvtptdtgrid.Size = new System.Drawing.Size(1159, 393);
-            this.phieunhapvtptdtgrid.TabIndex = 7;
+            this.phieunhapvtptdtgrid.TabIndex = 6;
             this.phieunhapvtptdtgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // MaNKVTPT
@@ -119,7 +119,7 @@
             this.timkiembtn.Location = new System.Drawing.Point(820, 85);
             this.timkiembtn.Name = "timkiembtn";
             this.timkiembtn.Size = new System.Drawing.Size(79, 27);
-            this.timkiembtn.TabIndex = 2;
+            this.timkiembtn.TabIndex = 5;
             this.timkiembtn.UseVisualStyleBackColor = false;
             this.timkiembtn.Click += new System.EventHandler(this.timkiembtn_Click);
             // 
@@ -145,7 +145,7 @@
             this.timtheomaradio.Location = new System.Drawing.Point(443, 118);
             this.timtheomaradio.Name = "timtheomaradio";
             this.timtheomaradio.Size = new System.Drawing.Size(192, 24);
-            this.timtheomaradio.TabIndex = 3;
+            this.timtheomaradio.TabIndex = 2;
             this.timtheomaradio.TabStop = true;
             this.timtheomaradio.Text = "Tìm theo mã phiếu nhập";
             this.timtheomaradio.UseVisualStyleBackColor = true;
@@ -177,7 +177,7 @@
             this.tudtpicker.Location = new System.Drawing.Point(350, 148);
             this.tudtpicker.Name = "tudtpicker";
             this.tudtpicker.Size = new System.Drawing.Size(250, 27);
-            this.tudtpicker.TabIndex = 4;
+            this.tudtpicker.TabIndex = 3;
             // 
             // label1
             // 
@@ -196,7 +196,7 @@
             this.dendtpicker.Location = new System.Drawing.Point(688, 148);
             this.dendtpicker.Name = "dendtpicker";
             this.dendtpicker.Size = new System.Drawing.Size(250, 27);
-            this.dendtpicker.TabIndex = 6;
+            this.dendtpicker.TabIndex = 4;
             // 
             // label2
             // 
@@ -220,7 +220,7 @@
             this.xemctbtn.Location = new System.Drawing.Point(333, 593);
             this.xemctbtn.Name = "xemctbtn";
             this.xemctbtn.Size = new System.Drawing.Size(265, 65);
-            this.xemctbtn.TabIndex = 8;
+            this.xemctbtn.TabIndex = 7;
             this.xemctbtn.Text = "Xem chi tiết";
             this.xemctbtn.UseVisualStyleBackColor = false;
             this.xemctbtn.Click += new System.EventHandler(this.xemctbtn_Click);
@@ -231,7 +231,7 @@
             this.thoatbtn.Location = new System.Drawing.Point(1077, 629);
             this.thoatbtn.Name = "thoatbtn";
             this.thoatbtn.Size = new System.Drawing.Size(94, 29);
-            this.thoatbtn.TabIndex = 10;
+            this.thoatbtn.TabIndex = 9;
             this.thoatbtn.Text = "Thoát";
             this.thoatbtn.UseVisualStyleBackColor = true;
             this.thoatbtn.Click += new System.EventHandler(this.button1_Click);
@@ -246,7 +246,7 @@
             this.xuatbtn.Location = new System.Drawing.Point(636, 593);
             this.xuatbtn.Name = "xuatbtn";
             this.xuatbtn.Size = new System.Drawing.Size(265, 65);
-            this.xuatbtn.TabIndex = 9;
+            this.xuatbtn.TabIndex = 8;
             this.xuatbtn.Text = "Xuất file danh sách";
             this.xuatbtn.UseVisualStyleBackColor = false;
             this.xuatbtn.Click += new System.EventHandler(this.xuatbtn_Click);

@@ -104,7 +104,7 @@
             this.dendtpicker.Location = new System.Drawing.Point(675, 145);
             this.dendtpicker.Name = "dendtpicker";
             this.dendtpicker.Size = new System.Drawing.Size(250, 27);
-            this.dendtpicker.TabIndex = 5;
+            this.dendtpicker.TabIndex = 4;
             // 
             // tudtpicker
             // 
@@ -112,7 +112,7 @@
             this.tudtpicker.Location = new System.Drawing.Point(337, 145);
             this.tudtpicker.Name = "tudtpicker";
             this.tudtpicker.Size = new System.Drawing.Size(250, 27);
-            this.tudtpicker.TabIndex = 4;
+            this.tudtpicker.TabIndex = 3;
             // 
             // timkiembtn
             // 
@@ -122,7 +122,7 @@
             this.timkiembtn.Location = new System.Drawing.Point(807, 82);
             this.timkiembtn.Name = "timkiembtn";
             this.timkiembtn.Size = new System.Drawing.Size(79, 27);
-            this.timkiembtn.TabIndex = 2;
+            this.timkiembtn.TabIndex = 5;
             this.timkiembtn.UseVisualStyleBackColor = false;
             this.timkiembtn.Click += new System.EventHandler(this.timkiembtn_Click);
             // 
@@ -148,7 +148,7 @@
             this.mapscradio.Location = new System.Drawing.Point(399, 115);
             this.mapscradio.Name = "mapscradio";
             this.mapscradio.Size = new System.Drawing.Size(218, 24);
-            this.mapscradio.TabIndex = 3;
+            this.mapscradio.TabIndex = 2;
             this.mapscradio.TabStop = true;
             this.mapscradio.Text = "Tìm theo mã phiếu sửa chữa";
             this.mapscradio.UseVisualStyleBackColor = true;

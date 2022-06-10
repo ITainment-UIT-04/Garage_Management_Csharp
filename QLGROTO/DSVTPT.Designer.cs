@@ -106,7 +106,7 @@
             this.theomaradio.Location = new System.Drawing.Point(406, 124);
             this.theomaradio.Name = "theomaradio";
             this.theomaradio.Size = new System.Drawing.Size(151, 24);
-            this.theomaradio.TabIndex = 3;
+            this.theomaradio.TabIndex = 2;
             this.theomaradio.TabStop = true;
             this.theomaradio.Text = "Tìm theo mã VTPT";
             this.theomaradio.UseVisualStyleBackColor = true;
@@ -368,7 +368,7 @@
             this.timkiembtn.Location = new System.Drawing.Point(776, 91);
             this.timkiembtn.Name = "timkiembtn";
             this.timkiembtn.Size = new System.Drawing.Size(79, 27);
-            this.timkiembtn.TabIndex = 2;
+            this.timkiembtn.TabIndex = 3;
             this.timkiembtn.UseVisualStyleBackColor = false;
             this.timkiembtn.Click += new System.EventHandler(this.timkiembtn_Click);
             // 
