@@ -39,17 +39,25 @@ namespace QLGROTO.DAO
             con.Close();
             return dt;
         }
-        public void XoaVTPT(string mavtpt)
+        public bool XoaVTPT(string mavtpt)
         {
             SqlConnection con = dc.getConnect();
-            con.Open();
+            try
+            {
+                con.Open();
 
-            string sql = "DELETE FROM PHUTUNG WHERE MaVTPT = @mavtpt";
-            SqlCommand cmd = new SqlCommand(sql, con);
-            cmd.Parameters.AddWithValue("@mavtpt", mavtpt);
-            cmd.Connection = con;
-            cmd.ExecuteNonQuery();
-            con.Close();
+                string sql = "DELETE FROM PHUTUNG WHERE MaVTPT = @mavtpt";
+                SqlCommand cmd = new SqlCommand(sql, con);
+                cmd.Parameters.AddWithValue("@mavtpt", mavtpt);
+                cmd.Connection = con;
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            return true;
         }
         public SqlDataReader LoadVTPT()
         {

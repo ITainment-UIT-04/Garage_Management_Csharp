@@ -48,9 +48,19 @@ namespace QLGROTO
 
         private void xoahieuxebtn_Click(object sender, EventArgs e)
         {
-            string s = hieuxedtgrid.CurrentRow.Cells[0].Value.ToString();
-            HIEUXEDAO.Instance.XoaHieuXe(s);
-            HienThi();
+            if (hieuxedtgrid.Rows.Count > 0)
+            {
+                string s = hieuxedtgrid.CurrentRow.Cells[0].Value.ToString();
+                if (!HIEUXEDAO.Instance.XoaHieuXe(s))
+
+
+                    MessageBox.Show("Không thể xóa hiệu xe!");
+                HienThi();
+            }
+            else
+            {
+                MessageBox.Show("Không có thông tin để xóa!");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

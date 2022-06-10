@@ -86,7 +86,8 @@ namespace QLGROTO
         private void xoavtptbtn_Click(object sender, EventArgs e)
         {
             string ma = mavtpttxtbox.Text;
-            VTPTDAO.Instance.XoaVTPT(ma);
+            if (!VTPTDAO.Instance.XoaVTPT(ma))
+                MessageBox.Show("Không thể xóa vật tư phụ tùng!");
             HienThi();
         }
 

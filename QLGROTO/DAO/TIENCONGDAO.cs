@@ -40,17 +40,26 @@ namespace QLGROTO.DAO
             return dt;
 
         }
-        public void XoaTienCong(string mtc)
+        public bool XoaTienCong(string mtc)
         {
-            SqlConnection con = dc.getConnect();
-            con.Open();
 
-            string sql = "DELETE FROM TIENCONG WHERE MaTienCong = @mtc";
-            SqlCommand cmd = new SqlCommand(sql, con);
-            cmd.Parameters.AddWithValue("@mtc", mtc);
-            cmd.Connection = con;
-            cmd.ExecuteNonQuery();
-            con.Close();
+            SqlConnection con = dc.getConnect();
+            try
+            {
+                con.Open();
+
+                string sql = "DELETE FROM TIENCONG WHERE MaTienCong = @mtc";
+                SqlCommand cmd = new SqlCommand(sql, con);
+                cmd.Parameters.AddWithValue("@mtc", mtc);
+                cmd.Connection = con;
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            return true;
         }
         public SqlDataReader LoadTienCongTheoNoiDung(string ten)
         {

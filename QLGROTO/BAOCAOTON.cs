@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClosedXML.Excel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,6 +41,32 @@ namespace QLGROTO
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void xuatbtn_Click(object sender, EventArgs e)
+        {
+            
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
+            {
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        using (XLWorkbook workbook = new XLWorkbook())
+                        {
+                            workbook.Worksheets.Add(bctdtgrid.DataSource as DataTable, "BAOCAOTON");
+
+                            workbook.SaveAs(saveFileDialog.FileName);
+
+
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Xuất file không thành công!");
+                    }
+                }
+            }
         }
     }
 }

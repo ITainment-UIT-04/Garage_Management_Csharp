@@ -106,7 +106,7 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.thôngTinCáNhânToolStripMenuItem,
@@ -116,7 +116,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1509, 28);
-            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
@@ -355,7 +355,7 @@
             this.lapphieuvtptbtn.Location = new System.Drawing.Point(0, 182);
             this.lapphieuvtptbtn.Name = "lapphieuvtptbtn";
             this.lapphieuvtptbtn.Size = new System.Drawing.Size(209, 126);
-            this.lapphieuvtptbtn.TabIndex = 7;
+            this.lapphieuvtptbtn.TabIndex = 8;
             this.lapphieuvtptbtn.Text = "Lập phiếu nhập kho vật tư phụ tùng";
             this.lapphieuvtptbtn.UseVisualStyleBackColor = false;
             this.lapphieuvtptbtn.Click += new System.EventHandler(this.lapphieuvtptbtn_Click);
@@ -372,7 +372,7 @@
             this.dangxuatbtn.Location = new System.Drawing.Point(-3, 648);
             this.dangxuatbtn.Name = "dangxuatbtn";
             this.dangxuatbtn.Size = new System.Drawing.Size(212, 76);
-            this.dangxuatbtn.TabIndex = 10;
+            this.dangxuatbtn.TabIndex = 11;
             this.dangxuatbtn.Text = "Đăng xuất";
             this.dangxuatbtn.UseVisualStyleBackColor = false;
             this.dangxuatbtn.Click += new System.EventHandler(this.dangxuatbtn_Click);
@@ -389,7 +389,7 @@
             this.thutienbtn.Location = new System.Drawing.Point(-3, 508);
             this.thutienbtn.Name = "thutienbtn";
             this.thutienbtn.Size = new System.Drawing.Size(215, 76);
-            this.thutienbtn.TabIndex = 9;
+            this.thutienbtn.TabIndex = 10;
             this.thutienbtn.Text = "Lập phiếu thu\r\ntiền";
             this.thutienbtn.UseVisualStyleBackColor = false;
             this.thutienbtn.Click += new System.EventHandler(this.thutienbtn_Click);
@@ -406,7 +406,7 @@
             this.RepairButton.Location = new System.Drawing.Point(0, 364);
             this.RepairButton.Name = "RepairButton";
             this.RepairButton.Size = new System.Drawing.Size(212, 76);
-            this.RepairButton.TabIndex = 8;
+            this.RepairButton.TabIndex = 9;
             this.RepairButton.Text = "Lập phiếu sửa chữa";
             this.RepairButton.UseVisualStyleBackColor = false;
             this.RepairButton.Click += new System.EventHandler(this.button4_Click);
@@ -423,7 +423,7 @@
             this.AddCarButton.Location = new System.Drawing.Point(0, 54);
             this.AddCarButton.Name = "AddCarButton";
             this.AddCarButton.Size = new System.Drawing.Size(212, 76);
-            this.AddCarButton.TabIndex = 2;
+            this.AddCarButton.TabIndex = 7;
             this.AddCarButton.Text = "Tiếp nhận xe";
             this.AddCarButton.UseVisualStyleBackColor = false;
             this.AddCarButton.Click += new System.EventHandler(this.button1_Click_1);
@@ -439,7 +439,7 @@
             this.button11.Location = new System.Drawing.Point(1298, 722);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(199, 65);
-            this.button11.TabIndex = 13;
+            this.button11.TabIndex = 5;
             this.button11.Text = "Xoá xe";
             this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.button11_Click);
@@ -455,7 +455,7 @@
             this.button10.Location = new System.Drawing.Point(1298, 646);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(199, 65);
-            this.button10.TabIndex = 12;
+            this.button10.TabIndex = 4;
             this.button10.Text = "Sửa thông tin xe";
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
@@ -479,7 +479,7 @@
             this.timtxtbox.Location = new System.Drawing.Point(710, 42);
             this.timtxtbox.Name = "timtxtbox";
             this.timtxtbox.Size = new System.Drawing.Size(371, 27);
-            this.timtxtbox.TabIndex = 2;
+            this.timtxtbox.TabIndex = 0;
             this.timtxtbox.TextChanged += new System.EventHandler(this.SearchTextbox_TextChanged);
             // 
             // NameSearchRadiobtn
@@ -490,7 +490,7 @@
             this.NameSearchRadiobtn.Location = new System.Drawing.Point(598, 75);
             this.NameSearchRadiobtn.Name = "NameSearchRadiobtn";
             this.NameSearchRadiobtn.Size = new System.Drawing.Size(160, 24);
-            this.NameSearchRadiobtn.TabIndex = 2;
+            this.NameSearchRadiobtn.TabIndex = 1;
             this.NameSearchRadiobtn.TabStop = true;
             this.NameSearchRadiobtn.Text = "Tìm theo tên chủ xe";
             this.NameSearchRadiobtn.UseVisualStyleBackColor = true;
@@ -504,7 +504,7 @@
             this.sdttimradio.Location = new System.Drawing.Point(774, 75);
             this.sdttimradio.Name = "sdttimradio";
             this.sdttimradio.Size = new System.Drawing.Size(225, 24);
-            this.sdttimradio.TabIndex = 4;
+            this.sdttimradio.TabIndex = 1;
             this.sdttimradio.TabStop = true;
             this.sdttimradio.Text = "Tìm theo số điện thoại chủ xe";
             this.sdttimradio.UseVisualStyleBackColor = true;
@@ -518,7 +518,7 @@
             this.biensotimradio.Location = new System.Drawing.Point(1016, 75);
             this.biensotimradio.Name = "biensotimradio";
             this.biensotimradio.Size = new System.Drawing.Size(160, 24);
-            this.biensotimradio.TabIndex = 5;
+            this.biensotimradio.TabIndex = 1;
             this.biensotimradio.TabStop = true;
             this.biensotimradio.Text = "Tìm theo biển số xe";
             this.biensotimradio.UseVisualStyleBackColor = true;
@@ -786,7 +786,7 @@
             this.xedtgrid.RowHeadersWidth = 51;
             this.xedtgrid.RowTemplate.Height = 29;
             this.xedtgrid.Size = new System.Drawing.Size(1279, 498);
-            this.xedtgrid.TabIndex = 11;
+            this.xedtgrid.TabIndex = 3;
             this.xedtgrid.SelectionChanged += new System.EventHandler(this.xedtgrid_SelectionChanged_1);
             // 
             // BienSo
@@ -853,7 +853,7 @@
             this.timkiembtn.Location = new System.Drawing.Point(1087, 42);
             this.timkiembtn.Name = "timkiembtn";
             this.timkiembtn.Size = new System.Drawing.Size(79, 27);
-            this.timkiembtn.TabIndex = 3;
+            this.timkiembtn.TabIndex = 2;
             this.timkiembtn.UseVisualStyleBackColor = false;
             this.timkiembtn.Click += new System.EventHandler(this.timkiembtn_Click);
             // 
@@ -867,7 +867,7 @@
             this.xuatbtn.Location = new System.Drawing.Point(1232, 42);
             this.xuatbtn.Name = "xuatbtn";
             this.xuatbtn.Size = new System.Drawing.Size(265, 65);
-            this.xuatbtn.TabIndex = 14;
+            this.xuatbtn.TabIndex = 6;
             this.xuatbtn.Text = "Xuất file danh sách";
             this.xuatbtn.UseVisualStyleBackColor = false;
             this.xuatbtn.Click += new System.EventHandler(this.xuatbtn_Click);

@@ -82,17 +82,26 @@ namespace QLGROTO.DAO
             }
             return true;
         }
-        public void XoaHieuXe(string s)
+        public bool XoaHieuXe(string s)
         {
             SqlConnection con = dc.getConnect();
-            con.Open();
+            try
+            {
+                con.Open();
 
-            string sql = "DELETE FROM HIEUXE WHERE HieuXe = @h";
-            SqlCommand cmd = new SqlCommand(sql, con);
-            cmd.Parameters.AddWithValue("@h", s);
-            cmd.Connection = con;
-            cmd.ExecuteNonQuery();
-            con.Close();
+                string sql = "DELETE FROM HIEUXE WHERE HieuXe = @h";
+                SqlCommand cmd = new SqlCommand(sql, con);
+                cmd.Parameters.AddWithValue("@h", s);
+                cmd.Connection = con;
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch(Exception ex)
+            {
+                return false;
+                
+            }
+            return true;
         }
     }
 }
