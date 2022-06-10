@@ -45,7 +45,6 @@
             this.NgayThuTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BienSo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoTienThu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.themtiencong_btn = new System.Windows.Forms.Button();
             this.thoatbtn = new System.Windows.Forms.Button();
             this.xuatbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -236,21 +235,6 @@
             this.SoTienThu.Name = "SoTienThu";
             this.SoTienThu.ReadOnly = true;
             // 
-            // themtiencong_btn
-            // 
-            this.themtiencong_btn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.themtiencong_btn.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.themtiencong_btn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.themtiencong_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.themtiencong_btn.Image = global::QLGROTO.Properties.Resources.lens_1723832_640;
-            this.themtiencong_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.themtiencong_btn.Location = new System.Drawing.Point(345, 593);
-            this.themtiencong_btn.Name = "themtiencong_btn";
-            this.themtiencong_btn.Size = new System.Drawing.Size(265, 65);
-            this.themtiencong_btn.TabIndex = 2;
-            this.themtiencong_btn.Text = "Xem chi tiết";
-            this.themtiencong_btn.UseVisualStyleBackColor = false;
-            // 
             // thoatbtn
             // 
             this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -269,7 +253,7 @@
             this.xuatbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.xuatbtn.Image = global::QLGROTO.Properties.Resources.certificate_g32c53cd83_640__1_;
             this.xuatbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.xuatbtn.Location = new System.Drawing.Point(645, 593);
+            this.xuatbtn.Location = new System.Drawing.Point(437, 593);
             this.xuatbtn.Name = "xuatbtn";
             this.xuatbtn.Size = new System.Drawing.Size(265, 65);
             this.xuatbtn.TabIndex = 3;
@@ -287,7 +271,6 @@
             this.ClientSize = new System.Drawing.Size(1183, 670);
             this.Controls.Add(this.xuatbtn);
             this.Controls.Add(this.thoatbtn);
-            this.Controls.Add(this.themtiencong_btn);
             this.Controls.Add(this.pttdtgrid);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -326,7 +309,6 @@
         private TextBox timkiemtxtbox;
         private Label SearchLabel;
         private DataGridView pttdtgrid;
-        private Button themtiencong_btn;
         private Button thoatbtn;
         private DataGridViewTextBoxColumn MaPTT;
         private DataGridViewTextBoxColumn NgayThuTien;

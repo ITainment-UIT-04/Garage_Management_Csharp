@@ -247,6 +247,7 @@
             // 
             this.ttttxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ttttxtbox.Enabled = false;
+            this.ttttxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ttttxtbox.Location = new System.Drawing.Point(432, 650);
             this.ttttxtbox.Name = "ttttxtbox";
             this.ttttxtbox.Size = new System.Drawing.Size(397, 27);

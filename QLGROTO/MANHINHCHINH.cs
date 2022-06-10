@@ -393,5 +393,40 @@ namespace QLGROTO
         {
 
         }
+
+        private void xedtgrid_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void biensotxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hieuxetxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dthtxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void notxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void diachitxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

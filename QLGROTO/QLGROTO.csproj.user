@@ -40,9 +40,6 @@
     <Compile Update="SUAVTPT.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="THONGTINVTPT.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="CAPNHATTILELAI.cs">
       <SubType>Form</SubType>
     </Compile>

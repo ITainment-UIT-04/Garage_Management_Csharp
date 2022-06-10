@@ -81,7 +81,7 @@ namespace QLGROTO
             double tienconno;
            
             
-                            if (!Double.TryParse(tienthutxtbox.Text, out output) && !String.IsNullOrEmpty(tienthutxtbox.Text))
+                if (!Double.TryParse(tienthutxtbox.Text, out output) && !String.IsNullOrEmpty(tienthutxtbox.Text))
                 {
                     MessageBox.Show("Vui lòng nhập tiền thu thích hợp!");
                     tienthutxtbox.Clear();

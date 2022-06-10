@@ -54,11 +54,7 @@ namespace QLGROTO
             this.Close();
         }
 
-        private void infocarbtn_Click(object sender, EventArgs e)
-        {
-            THONGTINVTPT infoAccessoryForm = new THONGTINVTPT();
-            infoAccessoryForm.ShowDialog();
-        }
+       
 
         private void button10_Click(object sender, EventArgs e)
         {

@@ -95,7 +95,7 @@
             // themtxtbox
             // 
             this.themtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.themtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.themtxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.themtxtbox.Location = new System.Drawing.Point(136, 70);
             this.themtxtbox.Multiline = true;
             this.themtxtbox.Name = "themtxtbox";

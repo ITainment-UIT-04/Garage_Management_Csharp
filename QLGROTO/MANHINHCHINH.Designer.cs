@@ -597,7 +597,7 @@
             // 
             this.hieuxetxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.hieuxetxtbox.Enabled = false;
-            this.hieuxetxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.hieuxetxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.hieuxetxtbox.Location = new System.Drawing.Point(155, 48);
             this.hieuxetxtbox.Multiline = true;
             this.hieuxetxtbox.Name = "hieuxetxtbox";
@@ -606,6 +606,7 @@
             this.hieuxetxtbox.Size = new System.Drawing.Size(360, 25);
             this.hieuxetxtbox.TabIndex = 30;
             this.hieuxetxtbox.TabStop = false;
+            this.hieuxetxtbox.TextChanged += new System.EventHandler(this.hieuxetxtbox_TextChanged);
             // 
             // AddressLabel
             // 
@@ -624,7 +625,7 @@
             // 
             this.biensotxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.biensotxtbox.Enabled = false;
-            this.biensotxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.biensotxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.biensotxtbox.Location = new System.Drawing.Point(155, 18);
             this.biensotxtbox.Multiline = true;
             this.biensotxtbox.Name = "biensotxtbox";
@@ -633,6 +634,7 @@
             this.biensotxtbox.Size = new System.Drawing.Size(360, 25);
             this.biensotxtbox.TabIndex = 31;
             this.biensotxtbox.TabStop = false;
+            this.biensotxtbox.TextChanged += new System.EventHandler(this.biensotxtbox_TextChanged);
             // 
             // label4
             // 
@@ -650,7 +652,7 @@
             // 
             this.notxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.notxtbox.Enabled = false;
-            this.notxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.notxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.notxtbox.Location = new System.Drawing.Point(155, 113);
             this.notxtbox.Multiline = true;
             this.notxtbox.Name = "notxtbox";
@@ -659,12 +661,13 @@
             this.notxtbox.Size = new System.Drawing.Size(360, 25);
             this.notxtbox.TabIndex = 32;
             this.notxtbox.TabStop = false;
+            this.notxtbox.TextChanged += new System.EventHandler(this.notxtbox_TextChanged);
             // 
             // diachitxtbox
             // 
             this.diachitxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.diachitxtbox.Enabled = false;
-            this.diachitxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.diachitxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.diachitxtbox.Location = new System.Drawing.Point(704, 47);
             this.diachitxtbox.Multiline = true;
             this.diachitxtbox.Name = "diachitxtbox";
@@ -673,12 +676,13 @@
             this.diachitxtbox.Size = new System.Drawing.Size(360, 25);
             this.diachitxtbox.TabIndex = 32;
             this.diachitxtbox.TabStop = false;
+            this.diachitxtbox.TextChanged += new System.EventHandler(this.diachitxtbox_TextChanged);
             // 
             // tentxtbox
             // 
             this.tentxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.tentxtbox.Enabled = false;
-            this.tentxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tentxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tentxtbox.Location = new System.Drawing.Point(704, 14);
             this.tentxtbox.Multiline = true;
             this.tentxtbox.Name = "tentxtbox";
@@ -714,6 +718,7 @@
             this.groupBox1.TabIndex = 39;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chi tiết";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label2
             // 
@@ -731,7 +736,7 @@
             // 
             this.emailtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.emailtxtbox.Enabled = false;
-            this.emailtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.emailtxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.emailtxtbox.Location = new System.Drawing.Point(704, 78);
             this.emailtxtbox.Multiline = true;
             this.emailtxtbox.Name = "emailtxtbox";
@@ -745,7 +750,7 @@
             // 
             this.dthtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.dthtxtbox.Enabled = false;
-            this.dthtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dthtxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dthtxtbox.Location = new System.Drawing.Point(155, 79);
             this.dthtxtbox.Multiline = true;
             this.dthtxtbox.Name = "dthtxtbox";
@@ -754,6 +759,7 @@
             this.dthtxtbox.Size = new System.Drawing.Size(360, 25);
             this.dthtxtbox.TabIndex = 30;
             this.dthtxtbox.TabStop = false;
+            this.dthtxtbox.TextChanged += new System.EventHandler(this.dthtxtbox_TextChanged);
             // 
             // label1
             // 
@@ -793,6 +799,7 @@
             this.xedtgrid.Size = new System.Drawing.Size(1279, 515);
             this.xedtgrid.TabIndex = 4;
             this.xedtgrid.TabStop = false;
+            this.xedtgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.xedtgrid_CellContentClick_1);
             this.xedtgrid.SelectionChanged += new System.EventHandler(this.xedtgrid_SelectionChanged_1);
             // 
             // BienSo

@@ -237,7 +237,7 @@
             // 
             this.tctxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.tctxtbox.Enabled = false;
-            this.tctxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tctxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tctxtbox.Location = new System.Drawing.Point(231, 57);
             this.tctxtbox.Multiline = true;
             this.tctxtbox.Name = "tctxtbox";
@@ -250,7 +250,7 @@
             // 
             this.matctxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.matctxtbox.Enabled = false;
-            this.matctxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.matctxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.matctxtbox.Location = new System.Drawing.Point(231, 27);
             this.matctxtbox.Multiline = true;
             this.matctxtbox.Name = "matctxtbox";
@@ -263,7 +263,7 @@
             // 
             this.ndtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ndtxtbox.Enabled = false;
-            this.ndtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ndtxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ndtxtbox.Location = new System.Drawing.Point(149, 89);
             this.ndtxtbox.Multiline = true;
             this.ndtxtbox.Name = "ndtxtbox";
