@@ -75,11 +75,7 @@ namespace QLGROTO
 
         }
 
-        private void themtiencong_btn_Click(object sender, EventArgs e)
-        {
-            CHITIETPTT cHITIETPTT = new CHITIETPTT();
-            cHITIETPTT.ShowDialog();    
-        }
+      
 
         private void button1_Click(object sender, EventArgs e)
         {

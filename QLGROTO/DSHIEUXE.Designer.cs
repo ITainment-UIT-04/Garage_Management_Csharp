@@ -125,7 +125,7 @@
             this.xoahieuxebtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.xoahieuxebtn.Image = global::QLGROTO.Properties.Resources.recycle_310938_640;
             this.xoahieuxebtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.xoahieuxebtn.Location = new System.Drawing.Point(263, 396);
+            this.xoahieuxebtn.Location = new System.Drawing.Point(263, 401);
             this.xoahieuxebtn.Name = "xoahieuxebtn";
             this.xoahieuxebtn.Size = new System.Drawing.Size(265, 65);
             this.xoahieuxebtn.TabIndex = 4;
@@ -141,7 +141,7 @@
             this.themhieuxebtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.themhieuxebtn.Image = ((System.Drawing.Image)(resources.GetObject("themhieuxebtn.Image")));
             this.themhieuxebtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.themhieuxebtn.Location = new System.Drawing.Point(12, 396);
+            this.themhieuxebtn.Location = new System.Drawing.Point(12, 401);
             this.themhieuxebtn.Name = "themhieuxebtn";
             this.themhieuxebtn.Size = new System.Drawing.Size(265, 65);
             this.themhieuxebtn.TabIndex = 3;
@@ -152,7 +152,7 @@
             // thoatbtn
             // 
             this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.thoatbtn.Location = new System.Drawing.Point(694, 464);
+            this.thoatbtn.Location = new System.Drawing.Point(694, 473);
             this.thoatbtn.Name = "thoatbtn";
             this.thoatbtn.Size = new System.Drawing.Size(94, 29);
             this.thoatbtn.TabIndex = 6;
@@ -180,7 +180,7 @@
             this.xuatbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.xuatbtn.Image = global::QLGROTO.Properties.Resources.certificate_g32c53cd83_640__1_;
             this.xuatbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.xuatbtn.Location = new System.Drawing.Point(523, 396);
+            this.xuatbtn.Location = new System.Drawing.Point(523, 401);
             this.xuatbtn.Name = "xuatbtn";
             this.xuatbtn.Size = new System.Drawing.Size(265, 65);
             this.xuatbtn.TabIndex = 5;
@@ -195,7 +195,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.CancelButton = this.thoatbtn;
-            this.ClientSize = new System.Drawing.Size(800, 505);
+            this.ClientSize = new System.Drawing.Size(800, 514);
             this.Controls.Add(this.xuatbtn);
             this.Controls.Add(this.timkiembtn);
             this.Controls.Add(this.thoatbtn);

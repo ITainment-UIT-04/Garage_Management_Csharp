@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DSPNKVTPT));
             this.panel1 = new System.Windows.Forms.Panel();
             this.VatTuPhuTung_Title = new System.Windows.Forms.Label();
             this.phieunhapvtptdtgrid = new System.Windows.Forms.DataGridView();
@@ -43,7 +44,7 @@
             this.dendtpicker = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.xemctbtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.thoatbtn = new System.Windows.Forms.Button();
             this.xuatbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.phieunhapvtptdtgrid)).BeginInit();
@@ -91,7 +92,7 @@
             this.phieunhapvtptdtgrid.RowHeadersWidth = 51;
             this.phieunhapvtptdtgrid.RowTemplate.Height = 29;
             this.phieunhapvtptdtgrid.Size = new System.Drawing.Size(1159, 393);
-            this.phieunhapvtptdtgrid.TabIndex = 18;
+            this.phieunhapvtptdtgrid.TabIndex = 7;
             this.phieunhapvtptdtgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // MaNKVTPT
@@ -118,7 +119,7 @@
             this.timkiembtn.Location = new System.Drawing.Point(820, 85);
             this.timkiembtn.Name = "timkiembtn";
             this.timkiembtn.Size = new System.Drawing.Size(79, 27);
-            this.timkiembtn.TabIndex = 23;
+            this.timkiembtn.TabIndex = 2;
             this.timkiembtn.UseVisualStyleBackColor = false;
             this.timkiembtn.Click += new System.EventHandler(this.timkiembtn_Click);
             // 
@@ -144,7 +145,7 @@
             this.timtheomaradio.Location = new System.Drawing.Point(443, 118);
             this.timtheomaradio.Name = "timtheomaradio";
             this.timtheomaradio.Size = new System.Drawing.Size(192, 24);
-            this.timtheomaradio.TabIndex = 22;
+            this.timtheomaradio.TabIndex = 3;
             this.timtheomaradio.TabStop = true;
             this.timtheomaradio.Text = "Tìm theo mã phiếu nhập";
             this.timtheomaradio.UseVisualStyleBackColor = true;
@@ -156,7 +157,7 @@
             this.timkiemtxtbox.Location = new System.Drawing.Point(443, 85);
             this.timkiemtxtbox.Name = "timkiemtxtbox";
             this.timkiemtxtbox.Size = new System.Drawing.Size(371, 27);
-            this.timkiemtxtbox.TabIndex = 20;
+            this.timkiemtxtbox.TabIndex = 1;
             // 
             // SearchLabel
             // 
@@ -176,7 +177,7 @@
             this.tudtpicker.Location = new System.Drawing.Point(350, 148);
             this.tudtpicker.Name = "tudtpicker";
             this.tudtpicker.Size = new System.Drawing.Size(250, 27);
-            this.tudtpicker.TabIndex = 24;
+            this.tudtpicker.TabIndex = 4;
             // 
             // label1
             // 
@@ -195,7 +196,7 @@
             this.dendtpicker.Location = new System.Drawing.Point(688, 148);
             this.dendtpicker.Name = "dendtpicker";
             this.dendtpicker.Size = new System.Drawing.Size(250, 27);
-            this.dendtpicker.TabIndex = 24;
+            this.dendtpicker.TabIndex = 6;
             // 
             // label2
             // 
@@ -219,25 +220,25 @@
             this.xemctbtn.Location = new System.Drawing.Point(333, 593);
             this.xemctbtn.Name = "xemctbtn";
             this.xemctbtn.Size = new System.Drawing.Size(265, 65);
-            this.xemctbtn.TabIndex = 26;
+            this.xemctbtn.TabIndex = 8;
             this.xemctbtn.Text = "Xem chi tiết";
             this.xemctbtn.UseVisualStyleBackColor = false;
             this.xemctbtn.Click += new System.EventHandler(this.xemctbtn_Click);
             // 
-            // button1
+            // thoatbtn
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(1077, 629);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Thoát";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.thoatbtn.Location = new System.Drawing.Point(1077, 629);
+            this.thoatbtn.Name = "thoatbtn";
+            this.thoatbtn.Size = new System.Drawing.Size(94, 29);
+            this.thoatbtn.TabIndex = 10;
+            this.thoatbtn.Text = "Thoát";
+            this.thoatbtn.UseVisualStyleBackColor = true;
+            this.thoatbtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // xuatbtn
             // 
-            this.xuatbtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.xuatbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.xuatbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.xuatbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.xuatbtn.Image = global::QLGROTO.Properties.Resources.certificate_g32c53cd83_640__1_;
@@ -245,19 +246,21 @@
             this.xuatbtn.Location = new System.Drawing.Point(636, 593);
             this.xuatbtn.Name = "xuatbtn";
             this.xuatbtn.Size = new System.Drawing.Size(265, 65);
-            this.xuatbtn.TabIndex = 72;
+            this.xuatbtn.TabIndex = 9;
             this.xuatbtn.Text = "Xuất file danh sách";
             this.xuatbtn.UseVisualStyleBackColor = false;
             this.xuatbtn.Click += new System.EventHandler(this.xuatbtn_Click);
             // 
             // DSPNKVTPT
             // 
+            this.AcceptButton = this.timkiembtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.CancelButton = this.thoatbtn;
             this.ClientSize = new System.Drawing.Size(1183, 670);
             this.Controls.Add(this.xuatbtn);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.xemctbtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -270,8 +273,8 @@
             this.Controls.Add(this.SearchLabel);
             this.Controls.Add(this.phieunhapvtptdtgrid);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DSPNKVTPT";
-            this.ShowIcon = false;
             this.Text = "Danh sách phiếu nhập kho";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -296,7 +299,7 @@
         private DateTimePicker dendtpicker;
         private Label label2;
         private Button xemctbtn;
-        private Button button1;
+        private Button thoatbtn;
         private DataGridViewTextBoxColumn MaNKVTPT;
         private DataGridViewTextBoxColumn NgayNhap;
         private Button xuatbtn;

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DSVTPT));
             this.panel1 = new System.Windows.Forms.Panel();
             this.VatTuPhuTung_Title = new System.Windows.Forms.Label();
             this.theotenradio = new System.Windows.Forms.RadioButton();
@@ -42,7 +43,7 @@
             this.xoavtptbtn = new System.Windows.Forms.Button();
             this.suavtptbtn = new System.Windows.Forms.Button();
             this.xuatbtn = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.thoatbtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -105,7 +106,7 @@
             this.theomaradio.Location = new System.Drawing.Point(406, 124);
             this.theomaradio.Name = "theomaradio";
             this.theomaradio.Size = new System.Drawing.Size(151, 24);
-            this.theomaradio.TabIndex = 11;
+            this.theomaradio.TabIndex = 3;
             this.theomaradio.TabStop = true;
             this.theomaradio.Text = "Tìm theo mã VTPT";
             this.theomaradio.UseVisualStyleBackColor = true;
@@ -117,7 +118,7 @@
             this.timkiemtxtbox.Location = new System.Drawing.Point(399, 91);
             this.timkiemtxtbox.Name = "timkiemtxtbox";
             this.timkiemtxtbox.Size = new System.Drawing.Size(371, 27);
-            this.timkiemtxtbox.TabIndex = 8;
+            this.timkiemtxtbox.TabIndex = 1;
             this.timkiemtxtbox.TextChanged += new System.EventHandler(this.timkiemtxtbox_TextChanged);
             // 
             // label1
@@ -153,7 +154,7 @@
             this.ptdtgrid.RowTemplate.Height = 29;
             this.ptdtgrid.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.ptdtgrid.Size = new System.Drawing.Size(1111, 479);
-            this.ptdtgrid.TabIndex = 13;
+            this.ptdtgrid.TabIndex = 4;
             this.ptdtgrid.SelectionChanged += new System.EventHandler(this.ptdtgrid_SelectionChanged);
             // 
             // MaVTPT
@@ -195,7 +196,7 @@
             this.xoavtptbtn.Location = new System.Drawing.Point(431, 745);
             this.xoavtptbtn.Name = "xoavtptbtn";
             this.xoavtptbtn.Size = new System.Drawing.Size(265, 65);
-            this.xoavtptbtn.TabIndex = 14;
+            this.xoavtptbtn.TabIndex = 6;
             this.xoavtptbtn.Text = "Xoá VTPT";
             this.xoavtptbtn.UseVisualStyleBackColor = false;
             this.xoavtptbtn.Click += new System.EventHandler(this.xoavtptbtn_Click);
@@ -211,7 +212,7 @@
             this.suavtptbtn.Location = new System.Drawing.Point(12, 745);
             this.suavtptbtn.Name = "suavtptbtn";
             this.suavtptbtn.Size = new System.Drawing.Size(265, 65);
-            this.suavtptbtn.TabIndex = 16;
+            this.suavtptbtn.TabIndex = 5;
             this.suavtptbtn.Text = "Sửa thông tin VTPT";
             this.suavtptbtn.UseVisualStyleBackColor = false;
             this.suavtptbtn.Click += new System.EventHandler(this.button10_Click);
@@ -227,21 +228,21 @@
             this.xuatbtn.Location = new System.Drawing.Point(858, 745);
             this.xuatbtn.Name = "xuatbtn";
             this.xuatbtn.Size = new System.Drawing.Size(265, 65);
-            this.xuatbtn.TabIndex = 14;
+            this.xuatbtn.TabIndex = 7;
             this.xuatbtn.Text = "Xuất file danh sách";
             this.xuatbtn.UseVisualStyleBackColor = false;
             this.xuatbtn.Click += new System.EventHandler(this.xuatbtn_Click);
             // 
-            // button2
+            // thoatbtn
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(1029, 816);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Thoát";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.thoatbtn.Location = new System.Drawing.Point(1029, 816);
+            this.thoatbtn.Name = "thoatbtn";
+            this.thoatbtn.Size = new System.Drawing.Size(94, 29);
+            this.thoatbtn.TabIndex = 17;
+            this.thoatbtn.Text = "Thoát";
+            this.thoatbtn.UseVisualStyleBackColor = true;
+            this.thoatbtn.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 
@@ -280,6 +281,7 @@
             // sltxtbox
             // 
             this.sltxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.sltxtbox.Enabled = false;
             this.sltxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.sltxtbox.Location = new System.Drawing.Point(698, 24);
             this.sltxtbox.Multiline = true;
@@ -292,6 +294,7 @@
             // tenvtpttxtbox
             // 
             this.tenvtpttxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.tenvtpttxtbox.Enabled = false;
             this.tenvtpttxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tenvtpttxtbox.Location = new System.Drawing.Point(158, 54);
             this.tenvtpttxtbox.Multiline = true;
@@ -304,6 +307,7 @@
             // mavtpttxtbox
             // 
             this.mavtpttxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.mavtpttxtbox.Enabled = false;
             this.mavtpttxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.mavtpttxtbox.Location = new System.Drawing.Point(158, 24);
             this.mavtpttxtbox.Multiline = true;
@@ -334,6 +338,7 @@
             // dgtxtbox
             // 
             this.dgtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.dgtxtbox.Enabled = false;
             this.dgtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dgtxtbox.Location = new System.Drawing.Point(698, 52);
             this.dgtxtbox.Multiline = true;
@@ -363,19 +368,21 @@
             this.timkiembtn.Location = new System.Drawing.Point(776, 91);
             this.timkiembtn.Name = "timkiembtn";
             this.timkiembtn.Size = new System.Drawing.Size(79, 27);
-            this.timkiembtn.TabIndex = 70;
+            this.timkiembtn.TabIndex = 2;
             this.timkiembtn.UseVisualStyleBackColor = false;
             this.timkiembtn.Click += new System.EventHandler(this.timkiembtn_Click);
             // 
             // DSVTPT
             // 
+            this.AcceptButton = this.timkiembtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.CancelButton = this.thoatbtn;
             this.ClientSize = new System.Drawing.Size(1135, 857);
             this.Controls.Add(this.timkiembtn);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.xuatbtn);
             this.Controls.Add(this.xoavtptbtn);
             this.Controls.Add(this.suavtptbtn);
@@ -386,9 +393,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "DSVTPT";
-            this.ShowIcon = false;
             this.Text = "Danh sách vật tư phụ tùng";
             this.Load += new System.EventHandler(this.QUANLYVATTUPHUTUNG_Load);
             this.panel1.ResumeLayout(false);
@@ -412,7 +419,7 @@
         private Button xoavtptbtn;
         private Button suavtptbtn;
         private Button xuatbtn;
-        private Button button2;
+        private Button thoatbtn;
         private Label label3;
         private Label label7;
         private Label label8;

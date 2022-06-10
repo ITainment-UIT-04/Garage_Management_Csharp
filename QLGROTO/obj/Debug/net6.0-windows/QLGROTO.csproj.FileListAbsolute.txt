@@ -22,7 +22,6 @@ C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.DSN
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.CHITIETPNK.resources
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.CHITIETPSC.resources
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.DSPHIEUSUACHUA.resources
-C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.CHITIETPTT.resources
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.DSPHIEUTHUTIEN.resources
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.DSVTPT.resources
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.DSHIEUXE.resources
