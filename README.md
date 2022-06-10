@@ -1,2 +1,2 @@
-# Garage_Management_Csharp
-Phần mềm quản lý gara ô tô
+# Đồ án SE104: Phần mềm quản lý gara ô tô
+
