@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(THEMVTPT));
             this.thembtn = new System.Windows.Forms.Button();
             this.thoatbtn = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -66,7 +67,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(37, 95);
+            this.label7.Location = new System.Drawing.Point(37, 94);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(111, 31);
             this.label7.TabIndex = 65;
@@ -77,7 +78,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(39, 64);
+            this.label8.Location = new System.Drawing.Point(39, 63);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(109, 31);
             this.label8.TabIndex = 66;
@@ -87,7 +88,7 @@
             // 
             this.tenvttxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tenvttxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tenvttxtbox.Location = new System.Drawing.Point(154, 97);
+            this.tenvttxtbox.Location = new System.Drawing.Point(154, 96);
             this.tenvttxtbox.Multiline = true;
             this.tenvttxtbox.Name = "tenvttxtbox";
             this.tenvttxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -99,7 +100,7 @@
             this.mavttxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.mavttxtbox.Enabled = false;
             this.mavttxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.mavttxtbox.Location = new System.Drawing.Point(154, 66);
+            this.mavttxtbox.Location = new System.Drawing.Point(154, 65);
             this.mavttxtbox.Multiline = true;
             this.mavttxtbox.Name = "mavttxtbox";
             this.mavttxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -134,6 +135,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.CancelButton = this.thoatbtn;
             this.ClientSize = new System.Drawing.Size(560, 175);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.thembtn);
@@ -142,6 +144,9 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.tenvttxtbox);
             this.Controls.Add(this.mavttxtbox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "THEMVTPT";
             this.Text = "Thêm vật tư phụ tùng";
             this.Load += new System.EventHandler(this.THEMVTPT_Load);

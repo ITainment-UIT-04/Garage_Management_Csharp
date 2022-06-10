@@ -285,7 +285,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 31);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(212, 770);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 3;
             // 
             // panel2
             // 
@@ -355,7 +355,7 @@
             this.lapphieuvtptbtn.Location = new System.Drawing.Point(0, 182);
             this.lapphieuvtptbtn.Name = "lapphieuvtptbtn";
             this.lapphieuvtptbtn.Size = new System.Drawing.Size(209, 126);
-            this.lapphieuvtptbtn.TabIndex = 8;
+            this.lapphieuvtptbtn.TabIndex = 3;
             this.lapphieuvtptbtn.Text = "Lập phiếu nhập kho vật tư phụ tùng";
             this.lapphieuvtptbtn.UseVisualStyleBackColor = false;
             this.lapphieuvtptbtn.Click += new System.EventHandler(this.lapphieuvtptbtn_Click);
@@ -372,7 +372,7 @@
             this.dangxuatbtn.Location = new System.Drawing.Point(-3, 648);
             this.dangxuatbtn.Name = "dangxuatbtn";
             this.dangxuatbtn.Size = new System.Drawing.Size(212, 76);
-            this.dangxuatbtn.TabIndex = 11;
+            this.dangxuatbtn.TabIndex = 7;
             this.dangxuatbtn.Text = "Đăng xuất";
             this.dangxuatbtn.UseVisualStyleBackColor = false;
             this.dangxuatbtn.Click += new System.EventHandler(this.dangxuatbtn_Click);
@@ -389,7 +389,7 @@
             this.thutienbtn.Location = new System.Drawing.Point(-3, 508);
             this.thutienbtn.Name = "thutienbtn";
             this.thutienbtn.Size = new System.Drawing.Size(215, 76);
-            this.thutienbtn.TabIndex = 10;
+            this.thutienbtn.TabIndex = 6;
             this.thutienbtn.Text = "Lập phiếu thu\r\ntiền";
             this.thutienbtn.UseVisualStyleBackColor = false;
             this.thutienbtn.Click += new System.EventHandler(this.thutienbtn_Click);
@@ -406,7 +406,7 @@
             this.RepairButton.Location = new System.Drawing.Point(0, 364);
             this.RepairButton.Name = "RepairButton";
             this.RepairButton.Size = new System.Drawing.Size(212, 76);
-            this.RepairButton.TabIndex = 9;
+            this.RepairButton.TabIndex = 2;
             this.RepairButton.Text = "Lập phiếu sửa chữa";
             this.RepairButton.UseVisualStyleBackColor = false;
             this.RepairButton.Click += new System.EventHandler(this.button4_Click);
@@ -423,7 +423,7 @@
             this.AddCarButton.Location = new System.Drawing.Point(0, 54);
             this.AddCarButton.Name = "AddCarButton";
             this.AddCarButton.Size = new System.Drawing.Size(212, 76);
-            this.AddCarButton.TabIndex = 7;
+            this.AddCarButton.TabIndex = 0;
             this.AddCarButton.Text = "Tiếp nhận xe";
             this.AddCarButton.UseVisualStyleBackColor = false;
             this.AddCarButton.Click += new System.EventHandler(this.button1_Click_1);
@@ -439,7 +439,7 @@
             this.button11.Location = new System.Drawing.Point(1298, 722);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(199, 65);
-            this.button11.TabIndex = 5;
+            this.button11.TabIndex = 9;
             this.button11.Text = "Xoá xe";
             this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.button11_Click);
@@ -455,7 +455,7 @@
             this.button10.Location = new System.Drawing.Point(1298, 646);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(199, 65);
-            this.button10.TabIndex = 4;
+            this.button10.TabIndex = 8;
             this.button10.Text = "Cập nhật thông tin xe";
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
@@ -491,7 +491,6 @@
             this.NameSearchRadiobtn.Name = "NameSearchRadiobtn";
             this.NameSearchRadiobtn.Size = new System.Drawing.Size(160, 24);
             this.NameSearchRadiobtn.TabIndex = 1;
-            this.NameSearchRadiobtn.TabStop = true;
             this.NameSearchRadiobtn.Text = "Tìm theo tên chủ xe";
             this.NameSearchRadiobtn.UseVisualStyleBackColor = true;
             this.NameSearchRadiobtn.CheckedChanged += new System.EventHandler(this.NameSearchRadiobtn_CheckedChanged);
@@ -504,8 +503,7 @@
             this.sdttimradio.Location = new System.Drawing.Point(774, 75);
             this.sdttimradio.Name = "sdttimradio";
             this.sdttimradio.Size = new System.Drawing.Size(225, 24);
-            this.sdttimradio.TabIndex = 2;
-            this.sdttimradio.TabStop = true;
+            this.sdttimradio.TabIndex = 1;
             this.sdttimradio.Text = "Tìm theo số điện thoại chủ xe";
             this.sdttimradio.UseVisualStyleBackColor = true;
             this.sdttimradio.CheckedChanged += new System.EventHandler(this.sdttimradio_CheckedChanged);
@@ -518,8 +516,7 @@
             this.biensotimradio.Location = new System.Drawing.Point(1016, 75);
             this.biensotimradio.Name = "biensotimradio";
             this.biensotimradio.Size = new System.Drawing.Size(160, 24);
-            this.biensotimradio.TabIndex = 3;
-            this.biensotimradio.TabStop = true;
+            this.biensotimradio.TabIndex = 1;
             this.biensotimradio.Text = "Tìm theo biển số xe";
             this.biensotimradio.UseVisualStyleBackColor = true;
             this.biensotimradio.CheckedChanged += new System.EventHandler(this.biensotimradio_CheckedChanged);
@@ -544,6 +541,7 @@
             this.ngaydtpicker.Name = "ngaydtpicker";
             this.ngaydtpicker.Size = new System.Drawing.Size(360, 27);
             this.ngaydtpicker.TabIndex = 38;
+            this.ngaydtpicker.TabStop = false;
             // 
             // LicenseLabel
             // 
@@ -607,6 +605,7 @@
             this.hieuxetxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.hieuxetxtbox.Size = new System.Drawing.Size(360, 25);
             this.hieuxetxtbox.TabIndex = 30;
+            this.hieuxetxtbox.TabStop = false;
             // 
             // AddressLabel
             // 
@@ -633,6 +632,7 @@
             this.biensotxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.biensotxtbox.Size = new System.Drawing.Size(360, 25);
             this.biensotxtbox.TabIndex = 31;
+            this.biensotxtbox.TabStop = false;
             // 
             // label4
             // 
@@ -658,6 +658,7 @@
             this.notxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.notxtbox.Size = new System.Drawing.Size(360, 25);
             this.notxtbox.TabIndex = 32;
+            this.notxtbox.TabStop = false;
             // 
             // diachitxtbox
             // 
@@ -671,6 +672,7 @@
             this.diachitxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.diachitxtbox.Size = new System.Drawing.Size(360, 25);
             this.diachitxtbox.TabIndex = 32;
+            this.diachitxtbox.TabStop = false;
             // 
             // tentxtbox
             // 
@@ -684,6 +686,7 @@
             this.tentxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.tentxtbox.Size = new System.Drawing.Size(360, 25);
             this.tentxtbox.TabIndex = 33;
+            this.tentxtbox.TabStop = false;
             // 
             // groupBox1
             // 
@@ -736,6 +739,7 @@
             this.emailtxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.emailtxtbox.Size = new System.Drawing.Size(360, 25);
             this.emailtxtbox.TabIndex = 32;
+            this.emailtxtbox.TabStop = false;
             // 
             // dthtxtbox
             // 
@@ -749,6 +753,7 @@
             this.dthtxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.dthtxtbox.Size = new System.Drawing.Size(360, 25);
             this.dthtxtbox.TabIndex = 30;
+            this.dthtxtbox.TabStop = false;
             // 
             // label1
             // 
@@ -782,12 +787,13 @@
             this.TienNo,
             this.NgayTiepNhan});
             this.xedtgrid.Enabled = false;
-            this.xedtgrid.Location = new System.Drawing.Point(218, 130);
+            this.xedtgrid.Location = new System.Drawing.Point(218, 113);
             this.xedtgrid.Name = "xedtgrid";
             this.xedtgrid.RowHeadersWidth = 51;
             this.xedtgrid.RowTemplate.Height = 29;
-            this.xedtgrid.Size = new System.Drawing.Size(1279, 498);
-            this.xedtgrid.TabIndex = 3;
+            this.xedtgrid.Size = new System.Drawing.Size(1279, 515);
+            this.xedtgrid.TabIndex = 4;
+            this.xedtgrid.TabStop = false;
             this.xedtgrid.SelectionChanged += new System.EventHandler(this.xedtgrid_SelectionChanged_1);
             // 
             // BienSo
@@ -854,7 +860,7 @@
             this.timkiembtn.Location = new System.Drawing.Point(1087, 42);
             this.timkiembtn.Name = "timkiembtn";
             this.timkiembtn.Size = new System.Drawing.Size(79, 27);
-            this.timkiembtn.TabIndex = 2;
+            this.timkiembtn.TabIndex = 1;
             this.timkiembtn.UseVisualStyleBackColor = false;
             this.timkiembtn.Click += new System.EventHandler(this.timkiembtn_Click);
             // 
@@ -868,7 +874,7 @@
             this.xuatbtn.Location = new System.Drawing.Point(1232, 42);
             this.xuatbtn.Name = "xuatbtn";
             this.xuatbtn.Size = new System.Drawing.Size(265, 65);
-            this.xuatbtn.TabIndex = 6;
+            this.xuatbtn.TabIndex = 10;
             this.xuatbtn.Text = "Xuất file danh sách";
             this.xuatbtn.UseVisualStyleBackColor = false;
             this.xuatbtn.Click += new System.EventHandler(this.xuatbtn_Click);
@@ -882,6 +888,7 @@
             this.dangsudungtxtbox.ReadOnly = true;
             this.dangsudungtxtbox.Size = new System.Drawing.Size(276, 27);
             this.dangsudungtxtbox.TabIndex = 72;
+            this.dangsudungtxtbox.TabStop = false;
             this.dangsudungtxtbox.TextChanged += new System.EventHandler(this.dangsudungtxtbox_TextChanged);
             // 
             // label3

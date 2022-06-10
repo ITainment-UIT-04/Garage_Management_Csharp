@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(THONGTINADMIN));
             this.panel1 = new System.Windows.Forms.Panel();
             this.title = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,14 +40,14 @@
             this.dthtxtbox = new System.Windows.Forms.TextBox();
             this.dctxtbox = new System.Windows.Forms.TextBox();
             this.tentxtbox = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.thoatbtn = new System.Windows.Forms.Button();
+            this.doimkbtn = new System.Windows.Forms.Button();
             this.tdntxtbox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.chucvutxtbox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.capnhatbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -185,27 +186,27 @@
             this.tentxtbox.Size = new System.Drawing.Size(300, 29);
             this.tentxtbox.TabIndex = 23;
             // 
-            // button1
+            // thoatbtn
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(527, 289);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Thoát";
-            this.button1.UseVisualStyleBackColor = true;
+            this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.thoatbtn.Location = new System.Drawing.Point(527, 286);
+            this.thoatbtn.Name = "thoatbtn";
+            this.thoatbtn.Size = new System.Drawing.Size(94, 29);
+            this.thoatbtn.TabIndex = 28;
+            this.thoatbtn.Text = "Thoát";
+            this.thoatbtn.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // doimkbtn
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.AutoSize = true;
-            this.button2.Location = new System.Drawing.Point(413, 288);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 30);
-            this.button2.TabIndex = 28;
-            this.button2.Text = "Đổi mật khẩu";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.doimkbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.doimkbtn.AutoSize = true;
+            this.doimkbtn.Location = new System.Drawing.Point(413, 285);
+            this.doimkbtn.Name = "doimkbtn";
+            this.doimkbtn.Size = new System.Drawing.Size(108, 30);
+            this.doimkbtn.TabIndex = 28;
+            this.doimkbtn.Text = "Đổi mật khẩu";
+            this.doimkbtn.UseVisualStyleBackColor = true;
+            this.doimkbtn.Click += new System.EventHandler(this.button2_Click);
             // 
             // tdntxtbox
             // 
@@ -270,27 +271,28 @@
             this.label5.Text = "Chức vụ:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // button3
+            // capnhatbtn
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.AutoSize = true;
-            this.button3.Location = new System.Drawing.Point(265, 288);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(142, 30);
-            this.button3.TabIndex = 28;
-            this.button3.Text = "Cập nhật thông tin";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.capnhatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.capnhatbtn.AutoSize = true;
+            this.capnhatbtn.Location = new System.Drawing.Point(265, 285);
+            this.capnhatbtn.Name = "capnhatbtn";
+            this.capnhatbtn.Size = new System.Drawing.Size(142, 30);
+            this.capnhatbtn.TabIndex = 28;
+            this.capnhatbtn.Text = "Cập nhật thông tin";
+            this.capnhatbtn.UseVisualStyleBackColor = true;
+            this.capnhatbtn.Click += new System.EventHandler(this.button3_Click);
             // 
             // THONGTINADMIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.ClientSize = new System.Drawing.Size(633, 330);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.CancelButton = this.thoatbtn;
+            this.ClientSize = new System.Drawing.Size(633, 327);
+            this.Controls.Add(this.capnhatbtn);
+            this.Controls.Add(this.doimkbtn);
+            this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -306,8 +308,11 @@
             this.Controls.Add(this.tdntxtbox);
             this.Controls.Add(this.tentxtbox);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "THONGTINADMIN";
-            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông tin nhân viên quản lý";
             this.Load += new System.EventHandler(this.THONGTINADMIN_Load);
             this.panel1.ResumeLayout(false);
@@ -330,13 +335,13 @@
         private TextBox dthtxtbox;
         private TextBox dctxtbox;
         private TextBox tentxtbox;
-        private Button button1;
-        private Button button2;
+        private Button thoatbtn;
+        private Button doimkbtn;
         private TextBox tdntxtbox;
         private Label label4;
         private TextBox textBox6;
         private TextBox chucvutxtbox;
         private Label label5;
-        private Button button3;
+        private Button capnhatbtn;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PHIEUNHAPVTPT));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.ctnkgrid = new System.Windows.Forms.DataGridView();
@@ -36,7 +37,7 @@
             this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GiaNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lpbtn = new System.Windows.Forms.Button();
-            this.huybtn = new System.Windows.Forms.Button();
+            this.thoatbtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.mapntxtbox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -100,7 +101,7 @@
             this.ctnkgrid.RowTemplate.Height = 29;
             this.ctnkgrid.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.ctnkgrid.Size = new System.Drawing.Size(1152, 394);
-            this.ctnkgrid.TabIndex = 1;
+            this.ctnkgrid.TabIndex = 5;
             // 
             // MaVTPT
             // 
@@ -136,21 +137,21 @@
             this.lpbtn.Location = new System.Drawing.Point(972, 615);
             this.lpbtn.Name = "lpbtn";
             this.lpbtn.Size = new System.Drawing.Size(94, 29);
-            this.lpbtn.TabIndex = 2;
+            this.lpbtn.TabIndex = 5;
             this.lpbtn.Text = "Lập phiếu";
             this.lpbtn.UseVisualStyleBackColor = true;
             this.lpbtn.Click += new System.EventHandler(this.lpbtn_Click);
             // 
-            // huybtn
+            // thoatbtn
             // 
-            this.huybtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.huybtn.Location = new System.Drawing.Point(1072, 615);
-            this.huybtn.Name = "huybtn";
-            this.huybtn.Size = new System.Drawing.Size(94, 29);
-            this.huybtn.TabIndex = 2;
-            this.huybtn.Text = "Hủy";
-            this.huybtn.UseVisualStyleBackColor = true;
-            this.huybtn.Click += new System.EventHandler(this.huybtn_Click);
+            this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.thoatbtn.Location = new System.Drawing.Point(1072, 615);
+            this.thoatbtn.Name = "thoatbtn";
+            this.thoatbtn.Size = new System.Drawing.Size(94, 29);
+            this.thoatbtn.TabIndex = 87;
+            this.thoatbtn.Text = "Thoát";
+            this.thoatbtn.UseVisualStyleBackColor = true;
+            this.thoatbtn.Click += new System.EventHandler(this.huybtn_Click);
             // 
             // label2
             // 
@@ -178,7 +179,7 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(602, 80);
+            this.label3.Location = new System.Drawing.Point(593, 76);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(112, 28);
             this.label3.TabIndex = 3;
@@ -187,13 +188,16 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(720, 82);
+            this.dateTimePicker1.Location = new System.Drawing.Point(711, 78);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(250, 27);
             this.dateTimePicker1.TabIndex = 5;
+            this.dateTimePicker1.TabStop = false;
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel2.Controls.Add(this.xoabtn);
             this.panel2.Controls.Add(this.tenvtcbbox);
@@ -210,37 +214,41 @@
             // 
             // xoabtn
             // 
+            this.xoabtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.xoabtn.Location = new System.Drawing.Point(1043, 51);
             this.xoabtn.Name = "xoabtn";
             this.xoabtn.Size = new System.Drawing.Size(94, 29);
-            this.xoabtn.TabIndex = 71;
+            this.xoabtn.TabIndex = 4;
             this.xoabtn.Text = "Xóa";
             this.xoabtn.UseVisualStyleBackColor = true;
             this.xoabtn.Click += new System.EventHandler(this.xoabtn_Click);
             // 
             // tenvtcbbox
             // 
+            this.tenvtcbbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tenvtcbbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.tenvtcbbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.tenvtcbbox.FormattingEnabled = true;
             this.tenvtcbbox.Location = new System.Drawing.Point(183, 14);
             this.tenvtcbbox.Name = "tenvtcbbox";
             this.tenvtcbbox.Size = new System.Drawing.Size(360, 28);
-            this.tenvtcbbox.TabIndex = 70;
+            this.tenvtcbbox.TabIndex = 0;
             // 
             // slnum
             // 
+            this.slnum.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.slnum.Location = new System.Drawing.Point(847, 30);
             this.slnum.Name = "slnum";
             this.slnum.Size = new System.Drawing.Size(150, 27);
-            this.slnum.TabIndex = 69;
+            this.slnum.TabIndex = 2;
             // 
             // thembtn
             // 
+            this.thembtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.thembtn.Location = new System.Drawing.Point(1043, 13);
             this.thembtn.Name = "thembtn";
             this.thembtn.Size = new System.Drawing.Size(94, 29);
-            this.thembtn.TabIndex = 68;
+            this.thembtn.TabIndex = 3;
             this.thembtn.Text = "Thêm";
             this.thembtn.UseVisualStyleBackColor = true;
             this.thembtn.Click += new System.EventHandler(this.thembtn_Click);
@@ -289,26 +297,28 @@
             this.dgtxtbox.Name = "dgtxtbox";
             this.dgtxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.dgtxtbox.Size = new System.Drawing.Size(360, 25);
-            this.dgtxtbox.TabIndex = 61;
+            this.dgtxtbox.TabIndex = 1;
             this.dgtxtbox.TextChanged += new System.EventHandler(this.dgtxtbox_TextChanged);
             // 
             // PHIEUNHAPVTPT
             // 
+            this.AcceptButton = this.lpbtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.CancelButton = this.thoatbtn;
             this.ClientSize = new System.Drawing.Size(1178, 656);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.mapntxtbox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.huybtn);
+            this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.lpbtn);
             this.Controls.Add(this.ctnkgrid);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PHIEUNHAPVTPT";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nhập vật tư phụ tùng";
             this.Load += new System.EventHandler(this.AccessoryForm_Load);
@@ -329,7 +339,7 @@
         private Label label1;
         private DataGridView ctnkgrid;
         private Button lpbtn;
-        private Button huybtn;
+        private Button thoatbtn;
         private Label label2;
         private TextBox mapntxtbox;
         private Label label3;

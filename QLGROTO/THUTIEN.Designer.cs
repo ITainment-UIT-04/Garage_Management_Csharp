@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(THUTIEN));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -41,7 +42,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.hieuxetxtbox = new System.Windows.Forms.TextBox();
             this.tentxtbox = new System.Windows.Forms.TextBox();
-            this.huybtn = new System.Windows.Forms.Button();
+            this.thoatbtn = new System.Windows.Forms.Button();
             this.lapphieubtn = new System.Windows.Forms.Button();
             this.tiennotxtbox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -74,7 +75,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(194, 9);
+            this.label1.Location = new System.Drawing.Point(203, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(276, 45);
             this.label1.TabIndex = 1;
@@ -212,16 +213,16 @@
             this.tentxtbox.Size = new System.Drawing.Size(360, 25);
             this.tentxtbox.TabIndex = 10;
             // 
-            // huybtn
+            // thoatbtn
             // 
-            this.huybtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.huybtn.Location = new System.Drawing.Point(578, 413);
-            this.huybtn.Name = "huybtn";
-            this.huybtn.Size = new System.Drawing.Size(94, 29);
-            this.huybtn.TabIndex = 18;
-            this.huybtn.Text = "Hủy";
-            this.huybtn.UseVisualStyleBackColor = true;
-            this.huybtn.Click += new System.EventHandler(this.huybtn_Click);
+            this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.thoatbtn.Location = new System.Drawing.Point(578, 413);
+            this.thoatbtn.Name = "thoatbtn";
+            this.thoatbtn.Size = new System.Drawing.Size(94, 29);
+            this.thoatbtn.TabIndex = 18;
+            this.thoatbtn.Text = "Thoát";
+            this.thoatbtn.UseVisualStyleBackColor = true;
+            this.thoatbtn.Click += new System.EventHandler(this.huybtn_Click);
             // 
             // lapphieubtn
             // 
@@ -399,7 +400,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.CancelButton = this.huybtn;
+            this.CancelButton = this.thoatbtn;
             this.ClientSize = new System.Drawing.Size(684, 454);
             this.Controls.Add(this.biensocbbox);
             this.Controls.Add(this.label11);
@@ -407,7 +408,7 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.tienthutxtbox);
             this.Controls.Add(this.lapphieubtn);
-            this.Controls.Add(this.huybtn);
+            this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label13);
@@ -431,9 +432,9 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "THUTIEN";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phiếu thu tiền";
             this.Load += new System.EventHandler(this.THUTIEN_Load);
@@ -459,7 +460,7 @@
         private TextBox textBox3;
         private TextBox hieuxetxtbox;
         private TextBox tentxtbox;
-        private Button huybtn;
+        private Button thoatbtn;
         private Button lapphieubtn;
         private TextBox tiennotxtbox;
         private Label label6;

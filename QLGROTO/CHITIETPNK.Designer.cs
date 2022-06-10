@@ -82,14 +82,15 @@
             this.TenVTPT,
             this.SoLuong,
             this.GiaNhap});
-            this.pnkvtptdtgrid.Location = new System.Drawing.Point(14, 132);
+            this.pnkvtptdtgrid.Location = new System.Drawing.Point(14, 112);
             this.pnkvtptdtgrid.Name = "pnkvtptdtgrid";
             this.pnkvtptdtgrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.pnkvtptdtgrid.RowHeadersWidth = 51;
             this.pnkvtptdtgrid.RowTemplate.Height = 29;
             this.pnkvtptdtgrid.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.pnkvtptdtgrid.Size = new System.Drawing.Size(1152, 468);
-            this.pnkvtptdtgrid.TabIndex = 1;
+            this.pnkvtptdtgrid.Size = new System.Drawing.Size(1152, 488);
+            this.pnkvtptdtgrid.TabIndex = 3;
+            this.pnkvtptdtgrid.TabStop = false;
             this.pnkvtptdtgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.pnkvtptdtgrid_CellContentClick);
             // 
             // MaVTPT
@@ -136,7 +137,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(179, 87);
+            this.label2.Location = new System.Drawing.Point(178, 79);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(147, 28);
             this.label2.TabIndex = 3;
@@ -147,7 +148,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(608, 83);
+            this.label3.Location = new System.Drawing.Point(607, 75);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(112, 28);
             this.label3.TabIndex = 3;
@@ -157,7 +158,7 @@
             // 
             this.ngaynhapdtpicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ngaynhapdtpicker.Enabled = false;
-            this.ngaynhapdtpicker.Location = new System.Drawing.Point(726, 85);
+            this.ngaynhapdtpicker.Location = new System.Drawing.Point(725, 77);
             this.ngaynhapdtpicker.Name = "ngaynhapdtpicker";
             this.ngaynhapdtpicker.Size = new System.Drawing.Size(250, 27);
             this.ngaynhapdtpicker.TabIndex = 5;
@@ -166,7 +167,7 @@
             // 
             this.mpntxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.mpntxtbox.Enabled = false;
-            this.mpntxtbox.Location = new System.Drawing.Point(332, 87);
+            this.mpntxtbox.Location = new System.Drawing.Point(331, 79);
             this.mpntxtbox.Name = "mpntxtbox";
             this.mpntxtbox.ReadOnly = true;
             this.mpntxtbox.Size = new System.Drawing.Size(220, 27);

@@ -93,7 +93,7 @@
             this.VatTuPhuTung_Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.VatTuPhuTung_Title.Name = "VatTuPhuTung_Title";
             this.VatTuPhuTung_Title.Size = new System.Drawing.Size(409, 45);
-            this.VatTuPhuTung_Title.TabIndex = 6;
+            this.VatTuPhuTung_Title.TabIndex = 0;
             this.VatTuPhuTung_Title.Text = "DANH SÁCH NHÂN VIÊN";
             // 
             // timkiembtn
@@ -101,10 +101,10 @@
             this.timkiembtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.timkiembtn.BackColor = System.Drawing.SystemColors.Info;
             this.timkiembtn.Image = global::QLGROTO.Properties.Resources.search_6699087_640__1_;
-            this.timkiembtn.Location = new System.Drawing.Point(911, 81);
+            this.timkiembtn.Location = new System.Drawing.Point(909, 70);
             this.timkiembtn.Name = "timkiembtn";
             this.timkiembtn.Size = new System.Drawing.Size(79, 27);
-            this.timkiembtn.TabIndex = 3;
+            this.timkiembtn.TabIndex = 1;
             this.timkiembtn.UseVisualStyleBackColor = false;
             this.timkiembtn.Click += new System.EventHandler(this.timkiembtn_Click);
             // 
@@ -113,11 +113,10 @@
             this.tennvradiobtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tennvradiobtn.AutoSize = true;
             this.tennvradiobtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tennvradiobtn.Location = new System.Drawing.Point(592, 111);
+            this.tennvradiobtn.Location = new System.Drawing.Point(590, 100);
             this.tennvradiobtn.Name = "tennvradiobtn";
             this.tennvradiobtn.Size = new System.Drawing.Size(181, 24);
             this.tennvradiobtn.TabIndex = 4;
-            this.tennvradiobtn.TabStop = true;
             this.tennvradiobtn.Text = "Tìm theo tên nhân viên";
             this.tennvradiobtn.UseVisualStyleBackColor = true;
             this.tennvradiobtn.CheckedChanged += new System.EventHandler(this.tennvradiobtn_CheckedChanged);
@@ -127,11 +126,10 @@
             this.tendnradio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tendnradio.AutoSize = true;
             this.tendnradio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tendnradio.Location = new System.Drawing.Point(397, 111);
+            this.tendnradio.Location = new System.Drawing.Point(395, 100);
             this.tendnradio.Name = "tendnradio";
             this.tendnradio.Size = new System.Drawing.Size(189, 24);
-            this.tendnradio.TabIndex = 2;
-            this.tendnradio.TabStop = true;
+            this.tendnradio.TabIndex = 3;
             this.tendnradio.Text = "Tìm theo tên đăng nhập";
             this.tendnradio.UseVisualStyleBackColor = true;
             this.tendnradio.CheckedChanged += new System.EventHandler(this.manvradio_CheckedChanged);
@@ -139,10 +137,10 @@
             // timkiemtxtbox
             // 
             this.timkiemtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.timkiemtxtbox.Location = new System.Drawing.Point(534, 81);
+            this.timkiemtxtbox.Location = new System.Drawing.Point(532, 70);
             this.timkiemtxtbox.Name = "timkiemtxtbox";
             this.timkiemtxtbox.Size = new System.Drawing.Size(371, 27);
-            this.timkiemtxtbox.TabIndex = 1;
+            this.timkiemtxtbox.TabIndex = 0;
             // 
             // SearchLabel
             // 
@@ -150,7 +148,7 @@
             this.SearchLabel.AutoSize = true;
             this.SearchLabel.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.SearchLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.SearchLabel.Location = new System.Drawing.Point(424, 80);
+            this.SearchLabel.Location = new System.Drawing.Point(422, 69);
             this.SearchLabel.Name = "SearchLabel";
             this.SearchLabel.Size = new System.Drawing.Size(104, 28);
             this.SearchLabel.TabIndex = 31;
@@ -173,14 +171,14 @@
             this.DienThoai,
             this.Email,
             this.ChucVu});
-            this.nvdtgrid.Enabled = false;
-            this.nvdtgrid.Location = new System.Drawing.Point(12, 156);
+            this.nvdtgrid.Location = new System.Drawing.Point(12, 130);
             this.nvdtgrid.Name = "nvdtgrid";
             this.nvdtgrid.ReadOnly = true;
             this.nvdtgrid.RowHeadersWidth = 51;
             this.nvdtgrid.RowTemplate.Height = 29;
-            this.nvdtgrid.Size = new System.Drawing.Size(1380, 293);
-            this.nvdtgrid.TabIndex = 6;
+            this.nvdtgrid.Size = new System.Drawing.Size(1380, 319);
+            this.nvdtgrid.TabIndex = 500;
+            this.nvdtgrid.TabStop = false;
             this.nvdtgrid.SelectionChanged += new System.EventHandler(this.nvdtgrid_SelectionChanged);
             // 
             // TenDangNhap
@@ -247,10 +245,10 @@
             this.suanvbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.suanvbtn.Image = ((System.Drawing.Image)(resources.GetObject("suanvbtn.Image")));
             this.suanvbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.suanvbtn.Location = new System.Drawing.Point(387, 666);
+            this.suanvbtn.Location = new System.Drawing.Point(370, 666);
             this.suanvbtn.Name = "suanvbtn";
             this.suanvbtn.Size = new System.Drawing.Size(265, 65);
-            this.suanvbtn.TabIndex = 8;
+            this.suanvbtn.TabIndex = 4;
             this.suanvbtn.Text = "Cập nhật thông tin nhân viên";
             this.suanvbtn.UseVisualStyleBackColor = false;
             this.suanvbtn.Click += new System.EventHandler(this.suanvbtn_Click);
@@ -266,7 +264,7 @@
             this.xoanvbtn.Location = new System.Drawing.Point(764, 666);
             this.xoanvbtn.Name = "xoanvbtn";
             this.xoanvbtn.Size = new System.Drawing.Size(265, 65);
-            this.xoanvbtn.TabIndex = 9;
+            this.xoanvbtn.TabIndex = 5;
             this.xoanvbtn.Text = "Xóa nhân viên";
             this.xoanvbtn.UseVisualStyleBackColor = false;
             this.xoanvbtn.Click += new System.EventHandler(this.xoanvbtn_Click);
@@ -282,7 +280,7 @@
             this.themnvbtn.Location = new System.Drawing.Point(12, 666);
             this.themnvbtn.Name = "themnvbtn";
             this.themnvbtn.Size = new System.Drawing.Size(265, 65);
-            this.themnvbtn.TabIndex = 7;
+            this.themnvbtn.TabIndex = 3;
             this.themnvbtn.Text = "Thêm nhân viên";
             this.themnvbtn.UseVisualStyleBackColor = false;
             this.themnvbtn.Click += new System.EventHandler(this.themtiencong_btn_Click);
@@ -293,7 +291,7 @@
             this.thoatbtn.Location = new System.Drawing.Point(1300, 737);
             this.thoatbtn.Name = "thoatbtn";
             this.thoatbtn.Size = new System.Drawing.Size(94, 29);
-            this.thoatbtn.TabIndex = 11;
+            this.thoatbtn.TabIndex = 7;
             this.thoatbtn.Text = "Thoát";
             this.thoatbtn.UseVisualStyleBackColor = true;
             // 
@@ -406,6 +404,7 @@
             this.chucvutxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.chucvutxtbox.Size = new System.Drawing.Size(300, 29);
             this.chucvutxtbox.TabIndex = 28;
+            this.chucvutxtbox.TabStop = false;
             // 
             // textBox3
             // 
@@ -433,6 +432,7 @@
             this.dthtxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.dthtxtbox.Size = new System.Drawing.Size(300, 29);
             this.dthtxtbox.TabIndex = 31;
+            this.dthtxtbox.TabStop = false;
             // 
             // emailtxtbox
             // 
@@ -447,6 +447,7 @@
             this.emailtxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.emailtxtbox.Size = new System.Drawing.Size(300, 29);
             this.emailtxtbox.TabIndex = 30;
+            this.emailtxtbox.TabStop = false;
             // 
             // tentxtbox
             // 
@@ -461,6 +462,7 @@
             this.tentxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.tentxtbox.Size = new System.Drawing.Size(300, 29);
             this.tentxtbox.TabIndex = 32;
+            this.tentxtbox.TabStop = false;
             // 
             // dctxtbox
             // 
@@ -475,6 +477,7 @@
             this.dctxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.dctxtbox.Size = new System.Drawing.Size(300, 29);
             this.dctxtbox.TabIndex = 31;
+            this.dctxtbox.TabStop = false;
             // 
             // mktxtbox
             // 
@@ -489,6 +492,7 @@
             this.mktxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.mktxtbox.Size = new System.Drawing.Size(300, 29);
             this.mktxtbox.TabIndex = 32;
+            this.mktxtbox.TabStop = false;
             // 
             // tdntxtbox
             // 
@@ -503,6 +507,7 @@
             this.tdntxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.tdntxtbox.Size = new System.Drawing.Size(300, 29);
             this.tdntxtbox.TabIndex = 32;
+            this.tdntxtbox.TabStop = false;
             // 
             // xuatbtn
             // 
@@ -515,7 +520,7 @@
             this.xuatbtn.Location = new System.Drawing.Point(1127, 666);
             this.xuatbtn.Name = "xuatbtn";
             this.xuatbtn.Size = new System.Drawing.Size(265, 65);
-            this.xuatbtn.TabIndex = 10;
+            this.xuatbtn.TabIndex = 6;
             this.xuatbtn.Text = "Xuất file danh sách";
             this.xuatbtn.UseVisualStyleBackColor = false;
             this.xuatbtn.Click += new System.EventHandler(this.xuatbtn_Click);
@@ -525,11 +530,10 @@
             this.sdtradio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.sdtradio.AutoSize = true;
             this.sdtradio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.sdtradio.Location = new System.Drawing.Point(779, 111);
+            this.sdtradio.Location = new System.Drawing.Point(777, 100);
             this.sdtradio.Name = "sdtradio";
             this.sdtradio.Size = new System.Drawing.Size(246, 24);
             this.sdtradio.TabIndex = 5;
-            this.sdtradio.TabStop = true;
             this.sdtradio.Text = "Tìm theo số điện thoại nhân viên";
             this.sdtradio.UseVisualStyleBackColor = true;
             this.sdtradio.CheckedChanged += new System.EventHandler(this.sdtradio_CheckedChanged);
@@ -559,6 +563,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DSNHANVIEN";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh sách nhân viên";
             this.Load += new System.EventHandler(this.DSNHANVIEN_Load);
             this.panel1.ResumeLayout(false);

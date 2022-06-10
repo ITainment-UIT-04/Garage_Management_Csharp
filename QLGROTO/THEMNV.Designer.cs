@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(THEMNV));
             this.panel1 = new System.Windows.Forms.Panel();
             this.title = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -279,9 +280,11 @@
             // 
             // THEMNV
             // 
+            this.AcceptButton = this.thembtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.CancelButton = this.thoatbtn;
             this.ClientSize = new System.Drawing.Size(633, 363);
             this.Controls.Add(this.thembtn);
             this.Controls.Add(this.thoatbtn);
@@ -302,8 +305,11 @@
             this.Controls.Add(this.tdntxtbox);
             this.Controls.Add(this.tentxtbox);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "THEMNV";
-            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm nhân viên";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

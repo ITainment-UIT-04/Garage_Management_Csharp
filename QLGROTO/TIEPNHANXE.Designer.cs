@@ -43,8 +43,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.huybtn = new System.Windows.Forms.Button();
-            this.xacnhanbtn = new System.Windows.Forms.Button();
+            this.thoatbtn = new System.Windows.Forms.Button();
+            this.tiepnhanbtn = new System.Windows.Forms.Button();
             this.ngaydtpicker = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.emailtxtbox = new System.Windows.Forms.TextBox();
@@ -223,31 +223,31 @@
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label6.Click += new System.EventHandler(this.label2_Click);
             // 
-            // huybtn
+            // thoatbtn
             // 
-            this.huybtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.huybtn.BackColor = System.Drawing.Color.White;
-            this.huybtn.Location = new System.Drawing.Point(591, 316);
-            this.huybtn.Name = "huybtn";
-            this.huybtn.Size = new System.Drawing.Size(94, 29);
-            this.huybtn.TabIndex = 8;
-            this.huybtn.Text = "Hủy";
-            this.huybtn.UseVisualStyleBackColor = false;
-            this.huybtn.Click += new System.EventHandler(this.huybtn_Click);
+            this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.thoatbtn.BackColor = System.Drawing.Color.White;
+            this.thoatbtn.Location = new System.Drawing.Point(591, 316);
+            this.thoatbtn.Name = "thoatbtn";
+            this.thoatbtn.Size = new System.Drawing.Size(94, 29);
+            this.thoatbtn.TabIndex = 8;
+            this.thoatbtn.Text = "Thoát";
+            this.thoatbtn.UseVisualStyleBackColor = false;
+            this.thoatbtn.Click += new System.EventHandler(this.huybtn_Click);
             // 
-            // xacnhanbtn
+            // tiepnhanbtn
             // 
-            this.xacnhanbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.xacnhanbtn.BackColor = System.Drawing.Color.White;
-            this.xacnhanbtn.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.xacnhanbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.xacnhanbtn.Location = new System.Drawing.Point(491, 316);
-            this.xacnhanbtn.Name = "xacnhanbtn";
-            this.xacnhanbtn.Size = new System.Drawing.Size(94, 29);
-            this.xacnhanbtn.TabIndex = 7;
-            this.xacnhanbtn.Text = "Xác nhận";
-            this.xacnhanbtn.UseVisualStyleBackColor = false;
-            this.xacnhanbtn.Click += new System.EventHandler(this.xacnhanbtn_Click);
+            this.tiepnhanbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.tiepnhanbtn.BackColor = System.Drawing.Color.White;
+            this.tiepnhanbtn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.tiepnhanbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tiepnhanbtn.Location = new System.Drawing.Point(491, 316);
+            this.tiepnhanbtn.Name = "tiepnhanbtn";
+            this.tiepnhanbtn.Size = new System.Drawing.Size(94, 29);
+            this.tiepnhanbtn.TabIndex = 7;
+            this.tiepnhanbtn.Text = "Tiếp nhận";
+            this.tiepnhanbtn.UseVisualStyleBackColor = false;
+            this.tiepnhanbtn.Click += new System.EventHandler(this.xacnhanbtn_Click);
             // 
             // ngaydtpicker
             // 
@@ -293,19 +293,20 @@
             // 
             // TIEPNHANXE
             // 
-            this.AcceptButton = this.xacnhanbtn;
+            this.AcceptButton = this.tiepnhanbtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CancelButton = this.thoatbtn;
             this.ClientSize = new System.Drawing.Size(697, 357);
             this.Controls.Add(this.hieuxecbbox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.emailtxtbox);
             this.Controls.Add(this.ngaydtpicker);
-            this.Controls.Add(this.xacnhanbtn);
-            this.Controls.Add(this.huybtn);
+            this.Controls.Add(this.tiepnhanbtn);
+            this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
@@ -320,11 +321,10 @@
             this.Controls.Add(this.biensotxtbox);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "TIEPNHANXE";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tiếp nhận xe sửa";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -351,8 +351,8 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private Button huybtn;
-        private Button xacnhanbtn;
+        private Button thoatbtn;
+        private Button tiepnhanbtn;
         private DateTimePicker ngaydtpicker;
         private Label label7;
         private TextBox emailtxtbox;

@@ -97,5 +97,10 @@ namespace QLGROTO
             else
                 HienThi();
         }
+
+        private void DSPNKVTPT_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

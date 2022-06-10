@@ -85,11 +85,10 @@
             this.ndtcbtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ndtcbtn.AutoSize = true;
             this.ndtcbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ndtcbtn.Location = new System.Drawing.Point(623, 114);
+            this.ndtcbtn.Location = new System.Drawing.Point(620, 98);
             this.ndtcbtn.Name = "ndtcbtn";
             this.ndtcbtn.Size = new System.Drawing.Size(152, 24);
             this.ndtcbtn.TabIndex = 2;
-            this.ndtcbtn.TabStop = true;
             this.ndtcbtn.Text = "Tìm theo nội dung";
             this.ndtcbtn.UseVisualStyleBackColor = true;
             this.ndtcbtn.CheckedChanged += new System.EventHandler(this.ndtcbtn_CheckedChanged);
@@ -99,11 +98,10 @@
             this.matcradio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.matcradio.AutoSize = true;
             this.matcradio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.matcradio.Location = new System.Drawing.Point(408, 114);
+            this.matcradio.Location = new System.Drawing.Point(405, 98);
             this.matcradio.Name = "matcradio";
             this.matcradio.Size = new System.Drawing.Size(209, 24);
             this.matcradio.TabIndex = 2;
-            this.matcradio.TabStop = true;
             this.matcradio.Text = "Tìm theo mã loại tiền công";
             this.matcradio.UseVisualStyleBackColor = true;
             this.matcradio.CheckedChanged += new System.EventHandler(this.matcradio_CheckedChanged);
@@ -111,10 +109,10 @@
             // timkiemtxtbox
             // 
             this.timkiemtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.timkiemtxtbox.Location = new System.Drawing.Point(420, 84);
+            this.timkiemtxtbox.Location = new System.Drawing.Point(417, 68);
             this.timkiemtxtbox.Name = "timkiemtxtbox";
             this.timkiemtxtbox.Size = new System.Drawing.Size(371, 27);
-            this.timkiemtxtbox.TabIndex = 1;
+            this.timkiemtxtbox.TabIndex = 0;
             this.timkiemtxtbox.TextChanged += new System.EventHandler(this.timkiemtxtbox_TextChanged);
             // 
             // SearchLabel
@@ -123,7 +121,7 @@
             this.SearchLabel.AutoSize = true;
             this.SearchLabel.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.SearchLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.SearchLabel.Location = new System.Drawing.Point(310, 83);
+            this.SearchLabel.Location = new System.Drawing.Point(307, 67);
             this.SearchLabel.Name = "SearchLabel";
             this.SearchLabel.Size = new System.Drawing.Size(104, 28);
             this.SearchLabel.TabIndex = 7;
@@ -143,12 +141,13 @@
             this.MaTienCong,
             this.TienCong,
             this.NoiDung});
-            this.tcdtgrid.Location = new System.Drawing.Point(12, 157);
+            this.tcdtgrid.Location = new System.Drawing.Point(12, 128);
             this.tcdtgrid.Name = "tcdtgrid";
             this.tcdtgrid.RowHeadersWidth = 51;
             this.tcdtgrid.RowTemplate.Height = 29;
-            this.tcdtgrid.Size = new System.Drawing.Size(1147, 448);
+            this.tcdtgrid.Size = new System.Drawing.Size(1147, 477);
             this.tcdtgrid.TabIndex = 4;
+            this.tcdtgrid.TabStop = false;
             this.tcdtgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.tcdtgrid.SelectionChanged += new System.EventHandler(this.tcdtgrid_SelectionChanged);
             // 
@@ -185,7 +184,7 @@
             this.xoatcbtn.Location = new System.Drawing.Point(623, 682);
             this.xoatcbtn.Name = "xoatcbtn";
             this.xoatcbtn.Size = new System.Drawing.Size(265, 65);
-            this.xoatcbtn.TabIndex = 7;
+            this.xoatcbtn.TabIndex = 4;
             this.xoatcbtn.Text = "Xoá loại tiền công";
             this.xoatcbtn.UseVisualStyleBackColor = false;
             this.xoatcbtn.Click += new System.EventHandler(this.xoatcbtn_Click);
@@ -196,7 +195,7 @@
             this.thoatbtn.Location = new System.Drawing.Point(1065, 753);
             this.thoatbtn.Name = "thoatbtn";
             this.thoatbtn.Size = new System.Drawing.Size(94, 29);
-            this.thoatbtn.TabIndex = 9;
+            this.thoatbtn.TabIndex = 6;
             this.thoatbtn.Text = "Thoát";
             this.thoatbtn.UseVisualStyleBackColor = true;
             this.thoatbtn.Click += new System.EventHandler(this.button1_Click);
@@ -284,7 +283,7 @@
             this.themtcbtn.Location = new System.Drawing.Point(626, 611);
             this.themtcbtn.Name = "themtcbtn";
             this.themtcbtn.Size = new System.Drawing.Size(265, 65);
-            this.themtcbtn.TabIndex = 5;
+            this.themtcbtn.TabIndex = 2;
             this.themtcbtn.Text = "Thêm loại tiền công";
             this.themtcbtn.UseVisualStyleBackColor = false;
             this.themtcbtn.Click += new System.EventHandler(this.themtiencong_btn_Click);
@@ -300,7 +299,7 @@
             this.suatcbtn.Location = new System.Drawing.Point(894, 611);
             this.suatcbtn.Name = "suatcbtn";
             this.suatcbtn.Size = new System.Drawing.Size(265, 65);
-            this.suatcbtn.TabIndex = 6;
+            this.suatcbtn.TabIndex = 3;
             this.suatcbtn.Text = "Cập nhật loại tiền công";
             this.suatcbtn.UseVisualStyleBackColor = false;
             this.suatcbtn.Click += new System.EventHandler(this.suatiencong_btn_Click);
@@ -326,10 +325,10 @@
             this.timkiembtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.timkiembtn.BackColor = System.Drawing.SystemColors.Info;
             this.timkiembtn.Image = global::QLGROTO.Properties.Resources.search_6699087_640__1_;
-            this.timkiembtn.Location = new System.Drawing.Point(797, 84);
+            this.timkiembtn.Location = new System.Drawing.Point(794, 68);
             this.timkiembtn.Name = "timkiembtn";
             this.timkiembtn.Size = new System.Drawing.Size(79, 27);
-            this.timkiembtn.TabIndex = 3;
+            this.timkiembtn.TabIndex = 1;
             this.timkiembtn.UseVisualStyleBackColor = false;
             this.timkiembtn.Click += new System.EventHandler(this.timkiembtn_Click);
             // 
@@ -344,7 +343,7 @@
             this.xuatbtn.Location = new System.Drawing.Point(894, 682);
             this.xuatbtn.Name = "xuatbtn";
             this.xuatbtn.Size = new System.Drawing.Size(265, 65);
-            this.xuatbtn.TabIndex = 8;
+            this.xuatbtn.TabIndex = 5;
             this.xuatbtn.Text = "Xuất file danh sách";
             this.xuatbtn.UseVisualStyleBackColor = false;
             this.xuatbtn.Click += new System.EventHandler(this.xuatbtn_Click);
@@ -372,6 +371,7 @@
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DSTIENCONG";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh sách loại tiền công";
             this.Load += new System.EventHandler(this.WageForm_Load);
             this.panel1.ResumeLayout(false);

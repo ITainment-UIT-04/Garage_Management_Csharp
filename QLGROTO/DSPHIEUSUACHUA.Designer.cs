@@ -81,7 +81,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(609, 141);
+            this.label2.Location = new System.Drawing.Point(611, 130);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 31);
             this.label2.TabIndex = 33;
@@ -92,7 +92,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(286, 141);
+            this.label1.Location = new System.Drawing.Point(288, 130);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 31);
             this.label1.TabIndex = 34;
@@ -101,28 +101,30 @@
             // dendtpicker
             // 
             this.dendtpicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dendtpicker.Location = new System.Drawing.Point(675, 145);
+            this.dendtpicker.Location = new System.Drawing.Point(677, 134);
             this.dendtpicker.Name = "dendtpicker";
             this.dendtpicker.Size = new System.Drawing.Size(250, 27);
-            this.dendtpicker.TabIndex = 4;
+            this.dendtpicker.TabIndex = 3;
+            this.dendtpicker.TabStop = false;
             // 
             // tudtpicker
             // 
             this.tudtpicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tudtpicker.Location = new System.Drawing.Point(337, 145);
+            this.tudtpicker.Location = new System.Drawing.Point(339, 134);
             this.tudtpicker.Name = "tudtpicker";
             this.tudtpicker.Size = new System.Drawing.Size(250, 27);
-            this.tudtpicker.TabIndex = 3;
+            this.tudtpicker.TabIndex = 2;
+            this.tudtpicker.TabStop = false;
             // 
             // timkiembtn
             // 
             this.timkiembtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.timkiembtn.BackColor = System.Drawing.SystemColors.Info;
             this.timkiembtn.Image = global::QLGROTO.Properties.Resources.search_6699087_640__1_;
-            this.timkiembtn.Location = new System.Drawing.Point(807, 82);
+            this.timkiembtn.Location = new System.Drawing.Point(809, 71);
             this.timkiembtn.Name = "timkiembtn";
             this.timkiembtn.Size = new System.Drawing.Size(79, 27);
-            this.timkiembtn.TabIndex = 5;
+            this.timkiembtn.TabIndex = 1;
             this.timkiembtn.UseVisualStyleBackColor = false;
             this.timkiembtn.Click += new System.EventHandler(this.timkiembtn_Click);
             // 
@@ -131,11 +133,10 @@
             this.khoangngayradio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.khoangngayradio.AutoSize = true;
             this.khoangngayradio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.khoangngayradio.Location = new System.Drawing.Point(623, 115);
+            this.khoangngayradio.Location = new System.Drawing.Point(625, 104);
             this.khoangngayradio.Name = "khoangngayradio";
             this.khoangngayradio.Size = new System.Drawing.Size(178, 24);
             this.khoangngayradio.TabIndex = 28;
-            this.khoangngayradio.TabStop = true;
             this.khoangngayradio.Text = "Tìm theo khoảng ngày";
             this.khoangngayradio.UseVisualStyleBackColor = true;
             this.khoangngayradio.CheckedChanged += new System.EventHandler(this.khoangngayradio_CheckedChanged);
@@ -145,11 +146,10 @@
             this.mapscradio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.mapscradio.AutoSize = true;
             this.mapscradio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.mapscradio.Location = new System.Drawing.Point(399, 115);
+            this.mapscradio.Location = new System.Drawing.Point(401, 104);
             this.mapscradio.Name = "mapscradio";
             this.mapscradio.Size = new System.Drawing.Size(218, 24);
             this.mapscradio.TabIndex = 2;
-            this.mapscradio.TabStop = true;
             this.mapscradio.Text = "Tìm theo mã phiếu sửa chữa";
             this.mapscradio.UseVisualStyleBackColor = true;
             this.mapscradio.CheckedChanged += new System.EventHandler(this.mapscradio_CheckedChanged);
@@ -157,10 +157,10 @@
             // timkiemtxtbox
             // 
             this.timkiemtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.timkiemtxtbox.Location = new System.Drawing.Point(430, 82);
+            this.timkiemtxtbox.Location = new System.Drawing.Point(432, 71);
             this.timkiemtxtbox.Name = "timkiemtxtbox";
             this.timkiemtxtbox.Size = new System.Drawing.Size(371, 27);
-            this.timkiemtxtbox.TabIndex = 1;
+            this.timkiemtxtbox.TabIndex = 0;
             // 
             // SearchLabel
             // 
@@ -168,7 +168,7 @@
             this.SearchLabel.AutoSize = true;
             this.SearchLabel.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.SearchLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.SearchLabel.Location = new System.Drawing.Point(320, 81);
+            this.SearchLabel.Location = new System.Drawing.Point(322, 70);
             this.SearchLabel.Name = "SearchLabel";
             this.SearchLabel.Size = new System.Drawing.Size(104, 28);
             this.SearchLabel.TabIndex = 26;
@@ -185,7 +185,7 @@
             this.xembtn.Location = new System.Drawing.Point(322, 593);
             this.xembtn.Name = "xembtn";
             this.xembtn.Size = new System.Drawing.Size(265, 65);
-            this.xembtn.TabIndex = 7;
+            this.xembtn.TabIndex = 2;
             this.xembtn.Text = "Xem chi tiết";
             this.xembtn.UseVisualStyleBackColor = false;
             this.xembtn.Click += new System.EventHandler(this.xembtn_Click);
@@ -196,7 +196,7 @@
             this.thoatbtn.Location = new System.Drawing.Point(1077, 629);
             this.thoatbtn.Name = "thoatbtn";
             this.thoatbtn.Size = new System.Drawing.Size(94, 29);
-            this.thoatbtn.TabIndex = 9;
+            this.thoatbtn.TabIndex = 4;
             this.thoatbtn.Text = "Thoát";
             this.thoatbtn.UseVisualStyleBackColor = true;
             this.thoatbtn.Click += new System.EventHandler(this.button1_Click);
@@ -215,13 +215,14 @@
             this.BienSo,
             this.NgaySuaChua,
             this.TongTien});
-            this.pscdtgrid.Location = new System.Drawing.Point(12, 192);
+            this.pscdtgrid.Location = new System.Drawing.Point(12, 167);
             this.pscdtgrid.Name = "pscdtgrid";
             this.pscdtgrid.ReadOnly = true;
             this.pscdtgrid.RowHeadersWidth = 51;
             this.pscdtgrid.RowTemplate.Height = 29;
-            this.pscdtgrid.Size = new System.Drawing.Size(1159, 395);
-            this.pscdtgrid.TabIndex = 6;
+            this.pscdtgrid.Size = new System.Drawing.Size(1159, 420);
+            this.pscdtgrid.TabIndex = 8;
+            this.pscdtgrid.TabStop = false;
             // 
             // MaPSC
             // 
@@ -265,7 +266,7 @@
             this.xuatbtn.Location = new System.Drawing.Point(623, 593);
             this.xuatbtn.Name = "xuatbtn";
             this.xuatbtn.Size = new System.Drawing.Size(265, 65);
-            this.xuatbtn.TabIndex = 8;
+            this.xuatbtn.TabIndex = 3;
             this.xuatbtn.Text = "Xuất file danh sách";
             this.xuatbtn.UseVisualStyleBackColor = false;
             this.xuatbtn.Click += new System.EventHandler(this.xuatbtn_Click);
@@ -294,6 +295,7 @@
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DSPHIEUSUACHUA";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh sách phiếu sửa chữa";
             this.Load += new System.EventHandler(this.DSPHIEUSUACHUA_Load);
             this.panel1.ResumeLayout(false);

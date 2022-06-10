@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThemTienCong));
             this.thembtn = new System.Windows.Forms.Button();
             this.thoatbtn = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -44,7 +45,7 @@
             // thembtn
             // 
             this.thembtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.thembtn.Location = new System.Drawing.Point(427, 181);
+            this.thembtn.Location = new System.Drawing.Point(427, 160);
             this.thembtn.Name = "thembtn";
             this.thembtn.Size = new System.Drawing.Size(94, 29);
             this.thembtn.TabIndex = 68;
@@ -55,7 +56,7 @@
             // thoatbtn
             // 
             this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.thoatbtn.Location = new System.Drawing.Point(527, 181);
+            this.thoatbtn.Location = new System.Drawing.Point(527, 160);
             this.thoatbtn.Name = "thoatbtn";
             this.thoatbtn.Size = new System.Drawing.Size(94, 29);
             this.thoatbtn.TabIndex = 69;
@@ -68,7 +69,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(111, 108);
+            this.label7.Location = new System.Drawing.Point(111, 92);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(119, 31);
             this.label7.TabIndex = 65;
@@ -79,7 +80,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(33, 79);
+            this.label8.Location = new System.Drawing.Point(33, 63);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(197, 31);
             this.label8.TabIndex = 66;
@@ -90,7 +91,7 @@
             this.TenChuXe.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.TenChuXe.AutoSize = true;
             this.TenChuXe.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TenChuXe.Location = new System.Drawing.Point(115, 139);
+            this.TenChuXe.Location = new System.Drawing.Point(115, 123);
             this.TenChuXe.Name = "TenChuXe";
             this.TenChuXe.Size = new System.Drawing.Size(115, 31);
             this.TenChuXe.TabIndex = 67;
@@ -100,7 +101,7 @@
             // 
             this.tctxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tctxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tctxtbox.Location = new System.Drawing.Point(236, 111);
+            this.tctxtbox.Location = new System.Drawing.Point(236, 95);
             this.tctxtbox.Multiline = true;
             this.tctxtbox.Name = "tctxtbox";
             this.tctxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -112,7 +113,7 @@
             this.matctxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.matctxtbox.Enabled = false;
             this.matctxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.matctxtbox.Location = new System.Drawing.Point(236, 81);
+            this.matctxtbox.Location = new System.Drawing.Point(236, 65);
             this.matctxtbox.Multiline = true;
             this.matctxtbox.Name = "matctxtbox";
             this.matctxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -123,7 +124,7 @@
             // 
             this.ndtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ndtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ndtxtbox.Location = new System.Drawing.Point(236, 141);
+            this.ndtxtbox.Location = new System.Drawing.Point(236, 125);
             this.ndtxtbox.Multiline = true;
             this.ndtxtbox.Name = "ndtxtbox";
             this.ndtxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -145,7 +146,7 @@
             this.VatTuPhuTung_Title.AutoSize = true;
             this.VatTuPhuTung_Title.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.VatTuPhuTung_Title.ForeColor = System.Drawing.Color.White;
-            this.VatTuPhuTung_Title.Location = new System.Drawing.Point(139, 9);
+            this.VatTuPhuTung_Title.Location = new System.Drawing.Point(115, 9);
             this.VatTuPhuTung_Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.VatTuPhuTung_Title.Name = "VatTuPhuTung_Title";
             this.VatTuPhuTung_Title.Size = new System.Drawing.Size(382, 45);
@@ -158,7 +159,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.ClientSize = new System.Drawing.Size(633, 222);
+            this.CancelButton = this.thoatbtn;
+            this.ClientSize = new System.Drawing.Size(633, 201);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.thembtn);
             this.Controls.Add(this.thoatbtn);
@@ -168,7 +170,10 @@
             this.Controls.Add(this.tctxtbox);
             this.Controls.Add(this.matctxtbox);
             this.Controls.Add(this.ndtxtbox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ThemTienCong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm loại tiền công";
             this.Load += new System.EventHandler(this.ThemTienCong_Load);
             this.panel1.ResumeLayout(false);

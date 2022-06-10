@@ -56,7 +56,7 @@
             // 
             this.ngaydtpicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ngaydtpicker.Enabled = false;
-            this.ngaydtpicker.Location = new System.Drawing.Point(991, 80);
+            this.ngaydtpicker.Location = new System.Drawing.Point(1001, 67);
             this.ngaydtpicker.Name = "ngaydtpicker";
             this.ngaydtpicker.Size = new System.Drawing.Size(250, 27);
             this.ngaydtpicker.TabIndex = 9;
@@ -65,7 +65,7 @@
             // 
             this.biensotxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.biensotxtbox.Enabled = false;
-            this.biensotxtbox.Location = new System.Drawing.Point(599, 82);
+            this.biensotxtbox.Location = new System.Drawing.Point(609, 69);
             this.biensotxtbox.Name = "biensotxtbox";
             this.biensotxtbox.Size = new System.Drawing.Size(220, 27);
             this.biensotxtbox.TabIndex = 8;
@@ -75,7 +75,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(840, 81);
+            this.label3.Location = new System.Drawing.Point(850, 68);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(145, 28);
             this.label3.TabIndex = 6;
@@ -86,7 +86,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(491, 81);
+            this.label2.Location = new System.Drawing.Point(501, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 28);
             this.label2.TabIndex = 7;
@@ -143,7 +143,7 @@
             this.thoatbtn.Location = new System.Drawing.Point(1241, 553);
             this.thoatbtn.Name = "thoatbtn";
             this.thoatbtn.Size = new System.Drawing.Size(94, 29);
-            this.thoatbtn.TabIndex = 1;
+            this.thoatbtn.TabIndex = 0;
             this.thoatbtn.Text = "Thoát";
             this.thoatbtn.UseVisualStyleBackColor = true;
             this.thoatbtn.Click += new System.EventHandler(this.thoatbtn_Click);
@@ -165,12 +165,13 @@
             this.DonGia,
             this.TienCong,
             this.ThanhTien});
-            this.pscdtgrid.Location = new System.Drawing.Point(12, 135);
+            this.pscdtgrid.Location = new System.Drawing.Point(12, 102);
             this.pscdtgrid.Name = "pscdtgrid";
             this.pscdtgrid.RowHeadersWidth = 51;
             this.pscdtgrid.RowTemplate.Height = 29;
-            this.pscdtgrid.Size = new System.Drawing.Size(1323, 409);
-            this.pscdtgrid.TabIndex = 18;
+            this.pscdtgrid.Size = new System.Drawing.Size(1323, 442);
+            this.pscdtgrid.TabIndex = 0;
+            this.pscdtgrid.TabStop = false;
             this.pscdtgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.pscdtgrid_CellContentClick);
             // 
             // NoiDung
@@ -227,7 +228,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(55, 78);
+            this.label5.Location = new System.Drawing.Point(65, 65);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(180, 28);
             this.label5.TabIndex = 7;
@@ -237,7 +238,7 @@
             // 
             this.masctxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.masctxtbox.Enabled = false;
-            this.masctxtbox.Location = new System.Drawing.Point(241, 82);
+            this.masctxtbox.Location = new System.Drawing.Point(251, 69);
             this.masctxtbox.Name = "masctxtbox";
             this.masctxtbox.Size = new System.Drawing.Size(220, 27);
             this.masctxtbox.TabIndex = 8;
@@ -263,6 +264,7 @@
             this.Controls.Add(this.label2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CHITIETPSC";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phiếu sửa chữa";
             this.Load += new System.EventHandler(this.CHITIETPSC_Load);
             this.panel1.ResumeLayout(false);

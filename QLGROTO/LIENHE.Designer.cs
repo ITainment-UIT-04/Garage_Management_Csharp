@@ -38,6 +38,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.thoatbtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -130,6 +132,15 @@
             this.thoatbtn.UseVisualStyleBackColor = true;
             this.thoatbtn.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(277, 64);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(321, 184);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // LIENHE
             // 
             this.AcceptButton = this.thoatbtn;
@@ -138,6 +149,7 @@
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.CancelButton = this.thoatbtn;
             this.ClientSize = new System.Drawing.Size(631, 291);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -154,6 +166,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Liên hệ";
             this.Load += new System.EventHandler(this.ContactForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,5 +183,6 @@
         private Label label7;
         private Label label8;
         private Button thoatbtn;
+        private PictureBox pictureBox1;
     }
 }

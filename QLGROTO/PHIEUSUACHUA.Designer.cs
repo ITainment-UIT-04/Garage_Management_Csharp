@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PHIEUSUACHUA));
             this.ngaynhapdtpicker = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.huybtn = new System.Windows.Forms.Button();
+            this.thoatbtn = new System.Windows.Forms.Button();
             this.lapphieubtn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.mapsctxtbox = new System.Windows.Forms.TextBox();
@@ -75,7 +76,7 @@
             // 
             this.ngaynhapdtpicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ngaynhapdtpicker.Enabled = false;
-            this.ngaynhapdtpicker.Location = new System.Drawing.Point(939, 81);
+            this.ngaynhapdtpicker.Location = new System.Drawing.Point(940, 67);
             this.ngaynhapdtpicker.Name = "ngaynhapdtpicker";
             this.ngaynhapdtpicker.Size = new System.Drawing.Size(250, 27);
             this.ngaynhapdtpicker.TabIndex = 9;
@@ -85,7 +86,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(821, 79);
+            this.label3.Location = new System.Drawing.Point(822, 65);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(112, 28);
             this.label3.TabIndex = 6;
@@ -96,7 +97,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(484, 79);
+            this.label2.Location = new System.Drawing.Point(485, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 28);
             this.label2.TabIndex = 7;
@@ -125,18 +126,20 @@
             this.panel1.Size = new System.Drawing.Size(1385, 63);
             this.panel1.TabIndex = 11;
             // 
-            // huybtn
+            // thoatbtn
             // 
-            this.huybtn.Location = new System.Drawing.Point(1280, 708);
-            this.huybtn.Name = "huybtn";
-            this.huybtn.Size = new System.Drawing.Size(94, 29);
-            this.huybtn.TabIndex = 13;
-            this.huybtn.Text = "Hủy";
-            this.huybtn.UseVisualStyleBackColor = true;
-            this.huybtn.Click += new System.EventHandler(this.huybtn_Click);
+            this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.thoatbtn.Location = new System.Drawing.Point(1280, 708);
+            this.thoatbtn.Name = "thoatbtn";
+            this.thoatbtn.Size = new System.Drawing.Size(94, 29);
+            this.thoatbtn.TabIndex = 13;
+            this.thoatbtn.Text = "Thoát";
+            this.thoatbtn.UseVisualStyleBackColor = true;
+            this.thoatbtn.Click += new System.EventHandler(this.huybtn_Click);
             // 
             // lapphieubtn
             // 
+            this.lapphieubtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lapphieubtn.Location = new System.Drawing.Point(1180, 708);
             this.lapphieubtn.Name = "lapphieubtn";
             this.lapphieubtn.Size = new System.Drawing.Size(94, 29);
@@ -150,7 +153,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(197, 79);
+            this.label5.Location = new System.Drawing.Point(198, 65);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(98, 28);
             this.label5.TabIndex = 7;
@@ -160,7 +163,7 @@
             // 
             this.mapsctxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.mapsctxtbox.Enabled = false;
-            this.mapsctxtbox.Location = new System.Drawing.Point(297, 80);
+            this.mapsctxtbox.Location = new System.Drawing.Point(298, 66);
             this.mapsctxtbox.Name = "mapsctxtbox";
             this.mapsctxtbox.ReadOnly = true;
             this.mapsctxtbox.Size = new System.Drawing.Size(166, 27);
@@ -185,7 +188,7 @@
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(12, 123);
+            this.panel2.Location = new System.Drawing.Point(12, 103);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1362, 155);
             this.panel2.TabIndex = 14;
@@ -193,7 +196,8 @@
             // 
             // slnumeric
             // 
-            this.slnumeric.Location = new System.Drawing.Point(1075, 62);
+            this.slnumeric.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.slnumeric.Location = new System.Drawing.Point(1099, 62);
             this.slnumeric.Name = "slnumeric";
             this.slnumeric.Size = new System.Drawing.Size(245, 27);
             this.slnumeric.TabIndex = 5;
@@ -202,7 +206,7 @@
             // thembtn
             // 
             this.thembtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.thembtn.Location = new System.Drawing.Point(1126, 106);
+            this.thembtn.Location = new System.Drawing.Point(1150, 106);
             this.thembtn.Name = "thembtn";
             this.thembtn.Size = new System.Drawing.Size(94, 29);
             this.thembtn.TabIndex = 4;
@@ -221,8 +225,8 @@
             // 
             // button6
             // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button6.Location = new System.Drawing.Point(1226, 106);
+            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button6.Location = new System.Drawing.Point(1250, 106);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(94, 29);
             this.button6.TabIndex = 18;
@@ -243,7 +247,7 @@
             // 
             this.tctxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tctxtbox.Enabled = false;
-            this.tctxtbox.Location = new System.Drawing.Point(1075, 18);
+            this.tctxtbox.Location = new System.Drawing.Point(1099, 18);
             this.tctxtbox.Name = "tctxtbox";
             this.tctxtbox.Size = new System.Drawing.Size(245, 27);
             this.tctxtbox.TabIndex = 2;
@@ -310,7 +314,7 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(973, 57);
+            this.label9.Location = new System.Drawing.Point(997, 57);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(96, 28);
             this.label9.TabIndex = 0;
@@ -322,7 +326,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(968, 14);
+            this.label7.Location = new System.Drawing.Point(992, 14);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(101, 28);
             this.label7.TabIndex = 0;
@@ -376,11 +380,11 @@
             this.DonGia,
             this.TienCong,
             this.ThanhTien});
-            this.pscdtgrid.Location = new System.Drawing.Point(12, 284);
+            this.pscdtgrid.Location = new System.Drawing.Point(12, 264);
             this.pscdtgrid.Name = "pscdtgrid";
             this.pscdtgrid.RowHeadersWidth = 51;
             this.pscdtgrid.RowTemplate.Height = 29;
-            this.pscdtgrid.Size = new System.Drawing.Size(1362, 388);
+            this.pscdtgrid.Size = new System.Drawing.Size(1362, 408);
             this.pscdtgrid.TabIndex = 17;
             // 
             // NoiDung
@@ -447,19 +451,22 @@
             // 
             // biensocbbox
             // 
+            this.biensocbbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.biensocbbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.biensocbbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.biensocbbox.FormattingEnabled = true;
-            this.biensocbbox.Location = new System.Drawing.Point(592, 83);
+            this.biensocbbox.Location = new System.Drawing.Point(593, 69);
             this.biensocbbox.Name = "biensocbbox";
             this.biensocbbox.Size = new System.Drawing.Size(223, 28);
             this.biensocbbox.TabIndex = 19;
             // 
             // PHIEUSUACHUA
             // 
+            this.AcceptButton = this.lapphieubtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.CancelButton = this.thoatbtn;
             this.ClientSize = new System.Drawing.Size(1386, 749);
             this.Controls.Add(this.biensocbbox);
             this.Controls.Add(this.ttttxtbox);
@@ -469,14 +476,16 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lapphieubtn);
-            this.Controls.Add(this.huybtn);
+            this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ngaynhapdtpicker);
             this.Controls.Add(this.mapsctxtbox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PHIEUSUACHUA";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phiếu sửa chữa";
             this.Load += new System.EventHandler(this.PHIEUSUACHUA_Load);
             this.panel1.ResumeLayout(false);
@@ -497,7 +506,7 @@
         private Label label2;
         private Label label1;
         private Panel panel1;
-        private Button huybtn;
+        private Button thoatbtn;
         private Button lapphieubtn;
         private Label label5;
         private TextBox mapsctxtbox;

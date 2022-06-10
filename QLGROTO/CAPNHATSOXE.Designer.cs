@@ -66,7 +66,7 @@
             this.maxxenumeric.Location = new System.Drawing.Point(223, 72);
             this.maxxenumeric.Name = "maxxenumeric";
             this.maxxenumeric.Size = new System.Drawing.Size(210, 27);
-            this.maxxenumeric.TabIndex = 1;
+            this.maxxenumeric.TabIndex = 0;
             // 
             // label2
             // 
@@ -75,7 +75,7 @@
             this.label2.Location = new System.Drawing.Point(439, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 25);
-            this.label2.TabIndex = 2;
+            this.label2.TabIndex = 1;
             this.label2.Text = "Xe";
             // 
             // thoatbtn
@@ -117,6 +117,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "CAPNHATSOXE";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cập nhật số xe sửa chữa tối đa trong ngày";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(THEMHIEUXE));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.thembtn = new System.Windows.Forms.Button();
@@ -61,7 +62,7 @@
             // thembtn
             // 
             this.thembtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.thembtn.Location = new System.Drawing.Point(335, 121);
+            this.thembtn.Location = new System.Drawing.Point(335, 105);
             this.thembtn.Name = "thembtn";
             this.thembtn.Size = new System.Drawing.Size(94, 29);
             this.thembtn.TabIndex = 62;
@@ -72,7 +73,7 @@
             // thoatbtn
             // 
             this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.thoatbtn.Location = new System.Drawing.Point(435, 121);
+            this.thoatbtn.Location = new System.Drawing.Point(435, 105);
             this.thoatbtn.Name = "thoatbtn";
             this.thoatbtn.Size = new System.Drawing.Size(94, 29);
             this.thoatbtn.TabIndex = 63;
@@ -85,7 +86,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(33, 84);
+            this.label8.Location = new System.Drawing.Point(35, 68);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(95, 31);
             this.label8.TabIndex = 68;
@@ -95,7 +96,7 @@
             // 
             this.themtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.themtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.themtxtbox.Location = new System.Drawing.Point(134, 86);
+            this.themtxtbox.Location = new System.Drawing.Point(136, 70);
             this.themtxtbox.Multiline = true;
             this.themtxtbox.Name = "themtxtbox";
             this.themtxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -108,16 +109,18 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.ClientSize = new System.Drawing.Size(541, 162);
+            this.CancelButton = this.thoatbtn;
+            this.ClientSize = new System.Drawing.Size(541, 146);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.themtxtbox);
             this.Controls.Add(this.thembtn);
             this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "THEMHIEUXE";
-            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm hiệu xe";
             this.Load += new System.EventHandler(this.ThemHieuXe_Load);
             this.panel1.ResumeLayout(false);

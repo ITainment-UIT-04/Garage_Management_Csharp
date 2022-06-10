@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SUATIENCONG));
             this.panel1 = new System.Windows.Forms.Panel();
             this.VatTuPhuTung_Title = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -37,7 +38,7 @@
             this.matctxtbox = new System.Windows.Forms.TextBox();
             this.ndtxtbox = new System.Windows.Forms.TextBox();
             this.thoatbtn = new System.Windows.Forms.Button();
-            this.suabtn = new System.Windows.Forms.Button();
+            this.capnhatbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,12 +59,12 @@
             this.VatTuPhuTung_Title.AutoSize = true;
             this.VatTuPhuTung_Title.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.VatTuPhuTung_Title.ForeColor = System.Drawing.Color.White;
-            this.VatTuPhuTung_Title.Location = new System.Drawing.Point(151, 8);
+            this.VatTuPhuTung_Title.Location = new System.Drawing.Point(94, 8);
             this.VatTuPhuTung_Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.VatTuPhuTung_Title.Name = "VatTuPhuTung_Title";
-            this.VatTuPhuTung_Title.Size = new System.Drawing.Size(356, 45);
+            this.VatTuPhuTung_Title.Size = new System.Drawing.Size(454, 45);
             this.VatTuPhuTung_Title.TabIndex = 3;
-            this.VatTuPhuTung_Title.Text = "SỬA LOẠI TIỀN CÔNG";
+            this.VatTuPhuTung_Title.Text = "CẬP NHẬT LOẠI TIỀN CÔNG";
             // 
             // label7
             // 
@@ -143,24 +144,26 @@
             this.thoatbtn.UseVisualStyleBackColor = true;
             this.thoatbtn.Click += new System.EventHandler(this.thoatbtn_Click);
             // 
-            // suabtn
+            // capnhatbtn
             // 
-            this.suabtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.suabtn.Location = new System.Drawing.Point(423, 161);
-            this.suabtn.Name = "suabtn";
-            this.suabtn.Size = new System.Drawing.Size(94, 29);
-            this.suabtn.TabIndex = 61;
-            this.suabtn.Text = "Sửa";
-            this.suabtn.UseVisualStyleBackColor = true;
-            this.suabtn.Click += new System.EventHandler(this.suabtn_Click);
+            this.capnhatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.capnhatbtn.Location = new System.Drawing.Point(423, 161);
+            this.capnhatbtn.Name = "capnhatbtn";
+            this.capnhatbtn.Size = new System.Drawing.Size(94, 29);
+            this.capnhatbtn.TabIndex = 61;
+            this.capnhatbtn.Text = "Cập nhật";
+            this.capnhatbtn.UseVisualStyleBackColor = true;
+            this.capnhatbtn.Click += new System.EventHandler(this.suabtn_Click);
             // 
             // SUATIENCONG
             // 
+            this.AcceptButton = this.capnhatbtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.CancelButton = this.thoatbtn;
             this.ClientSize = new System.Drawing.Size(629, 202);
-            this.Controls.Add(this.suabtn);
+            this.Controls.Add(this.capnhatbtn);
             this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
@@ -170,10 +173,11 @@
             this.Controls.Add(this.ndtxtbox);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "SUATIENCONG";
-            this.ShowIcon = false;
-            this.Text = "Sửa loại tiền công";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cập nhật loại tiền công";
             this.Load += new System.EventHandler(this.ChangeWageForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -193,6 +197,6 @@
         private TextBox matctxtbox;
         private TextBox ndtxtbox;
         private Button thoatbtn;
-        private Button suabtn;
+        private Button capnhatbtn;
     }
 }

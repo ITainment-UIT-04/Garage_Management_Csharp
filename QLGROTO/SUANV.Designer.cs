@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SUANV));
             this.panel1 = new System.Windows.Forms.Panel();
             this.title = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,8 +40,8 @@
             this.dthtxtbox = new System.Windows.Forms.TextBox();
             this.dctxtbox = new System.Windows.Forms.TextBox();
             this.tentxtbox = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.thoatbtn = new System.Windows.Forms.Button();
+            this.capnhatbtn = new System.Windows.Forms.Button();
             this.tdntxtbox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -176,32 +177,33 @@
             this.tentxtbox.Size = new System.Drawing.Size(300, 29);
             this.tentxtbox.TabIndex = 23;
             // 
-            // button1
+            // thoatbtn
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(527, 322);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Thoát";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.thoatbtn.Location = new System.Drawing.Point(527, 322);
+            this.thoatbtn.Name = "thoatbtn";
+            this.thoatbtn.Size = new System.Drawing.Size(94, 29);
+            this.thoatbtn.TabIndex = 28;
+            this.thoatbtn.Text = "Thoát";
+            this.thoatbtn.UseVisualStyleBackColor = true;
+            this.thoatbtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // capnhatbtn
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(427, 322);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
-            this.button2.TabIndex = 28;
-            this.button2.Text = "Cập nhật";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.capnhatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.capnhatbtn.Location = new System.Drawing.Point(427, 322);
+            this.capnhatbtn.Name = "capnhatbtn";
+            this.capnhatbtn.Size = new System.Drawing.Size(94, 29);
+            this.capnhatbtn.TabIndex = 28;
+            this.capnhatbtn.Text = "Cập nhật";
+            this.capnhatbtn.UseVisualStyleBackColor = true;
+            this.capnhatbtn.Click += new System.EventHandler(this.button2_Click);
             // 
             // tdntxtbox
             // 
             this.tdntxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tdntxtbox.Enabled = false;
             this.tdntxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tdntxtbox.Location = new System.Drawing.Point(240, 71);
             this.tdntxtbox.Multiline = true;
@@ -280,12 +282,14 @@
             // 
             // SUANV
             // 
+            this.AcceptButton = this.capnhatbtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.CancelButton = this.thoatbtn;
             this.ClientSize = new System.Drawing.Size(633, 363);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.capnhatbtn);
+            this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -303,9 +307,12 @@
             this.Controls.Add(this.tdntxtbox);
             this.Controls.Add(this.tentxtbox);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "SUANV";
-            this.ShowIcon = false;
-            this.Text = "Sửa thông tin nhân viên";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cập nhật thông tin nhân viên";
             this.Load += new System.EventHandler(this.SUANV_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -327,8 +334,8 @@
         private TextBox dthtxtbox;
         private TextBox dctxtbox;
         private TextBox tentxtbox;
-        private Button button1;
-        private Button button2;
+        private Button thoatbtn;
+        private Button capnhatbtn;
         private TextBox tdntxtbox;
         private Label label4;
         private TextBox textBox6;

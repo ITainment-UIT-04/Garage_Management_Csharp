@@ -52,7 +52,7 @@
             this.thoatbtn.Location = new System.Drawing.Point(234, 97);
             this.thoatbtn.Name = "thoatbtn";
             this.thoatbtn.Size = new System.Drawing.Size(94, 29);
-            this.thoatbtn.TabIndex = 1;
+            this.thoatbtn.TabIndex = 2;
             this.thoatbtn.Text = "Thoát";
             this.thoatbtn.UseVisualStyleBackColor = true;
             this.thoatbtn.Click += new System.EventHandler(this.thoatbtn_Click);
@@ -106,7 +106,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "CAPNHATTILELAI";
-            this.Text = " ";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = " Cập nhật tỉ lệ lãi";
             ((System.ComponentModel.ISupportInitialize)(this.tilenumeric)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
