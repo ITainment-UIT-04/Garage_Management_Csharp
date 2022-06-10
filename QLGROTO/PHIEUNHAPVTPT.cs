@@ -51,7 +51,7 @@ namespace QLGROTO
                 string dgn = dgtxtbox.Text;
                 int sl = Convert.ToInt32(slnum.Value);
                 string mavt = "";
-                SqlDataReader dr = VTPTDAO.Instance.LoadMaVTPT(ten);
+                SqlDataReader dr = VTPTDAO.Instance.LoadVTPTTheoTen(ten);
                 if (dr.Read())
                     mavt = dr["MaVTPT"].ToString();
                 ctnkgrid.Rows.Add(mavt, ten, sl, dgn);
@@ -80,13 +80,22 @@ namespace QLGROTO
                 foreach (DataGridViewRow dataRow in ctnkgrid.Rows)
                 {
                     string mavt = dataRow.Cells["MaVTPT"].Value.ToString();
-                    string dgn = dataRow.Cells["GiaNhap"].Value.ToString();
+                    double dgn = Convert.ToDouble(dataRow.Cells["GiaNhap"].Value);
                     string ten = dataRow.Cells["TenVTPT"].Value.ToString();
                     int sl = Convert.ToInt32(dataRow.Cells["SoLuong"].Value);
-                    if (!CT_PNKVTPTDAO.Instance.Them(mpn, mavt, ten, sl, dgn))
+                    CT_PNKVTPTDAO.Instance.Them(mpn, mavt, ten, sl, dgn);
+                    double tile = QUYDINHDAO.Instance.LoadTiLeLai();
+                    SqlDataReader dr = VTPTDAO.Instance.LoadVTPTTheoTen(ten);
+                    int slcu = 0;
+                   
+                    if (dr.Read())
                     {
-                        MessageBox.Show("Lập phiếu thất bại!"); break;
+                        slcu = Convert.ToInt32(dr["SoLuongTon"]);
                     }
+                    int slmoi = sl + slcu;
+                    double dgm = dgn * tile;
+                    VTPTDAO.Instance.SuaSLDG(mavt, slmoi, dgm);
+
                 }
                 this.Close();
             }
@@ -105,6 +114,11 @@ namespace QLGROTO
                 MessageBox.Show("Vui lòng nhập đơn giá thích hợp!");
                 dgtxtbox.Clear();
             }
+        }
+
+        private void ctnkgrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

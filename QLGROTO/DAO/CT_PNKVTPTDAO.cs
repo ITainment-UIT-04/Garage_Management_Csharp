@@ -28,7 +28,7 @@ namespace QLGROTO.DAO
             }
             set { instance = value; }
         }
-        public bool Them(string mank, string mavt, string tenvt, int sl, string gn)
+        public bool Them(string mank, string mavt, string tenvt, int sl, double gn)
         {
             string sql = "INSERT INTO CT_PNKVTPT (MaNKVTPT, MaVTPT, TenVTPT, SoLuong, GiaNhap)" +
                 "VALUES (@mank, @mavt, @tenvt, @sl, @gn)";

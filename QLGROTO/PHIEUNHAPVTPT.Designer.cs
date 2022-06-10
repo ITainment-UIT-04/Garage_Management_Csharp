@@ -102,6 +102,7 @@
             this.ctnkgrid.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.ctnkgrid.Size = new System.Drawing.Size(1152, 394);
             this.ctnkgrid.TabIndex = 5;
+            this.ctnkgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ctnkgrid_CellContentClick);
             // 
             // MaVTPT
             // 
@@ -229,7 +230,7 @@
             this.tenvtcbbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.tenvtcbbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.tenvtcbbox.FormattingEnabled = true;
-            this.tenvtcbbox.Location = new System.Drawing.Point(183, 14);
+            this.tenvtcbbox.Location = new System.Drawing.Point(174, 12);
             this.tenvtcbbox.Name = "tenvtcbbox";
             this.tenvtcbbox.Size = new System.Drawing.Size(360, 28);
             this.tenvtcbbox.TabIndex = 0;
@@ -273,7 +274,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(19, 46);
+            this.label5.Location = new System.Drawing.Point(10, 44);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(158, 31);
             this.label5.TabIndex = 65;
@@ -297,7 +298,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(66, 15);
+            this.label7.Location = new System.Drawing.Point(57, 13);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(111, 31);
             this.label7.TabIndex = 67;
@@ -307,7 +308,7 @@
             // 
             this.dgtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dgtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dgtxtbox.Location = new System.Drawing.Point(183, 48);
+            this.dgtxtbox.Location = new System.Drawing.Point(174, 46);
             this.dgtxtbox.Multiline = true;
             this.dgtxtbox.Name = "dgtxtbox";
             this.dgtxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;

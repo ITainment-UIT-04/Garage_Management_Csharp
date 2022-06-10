@@ -59,6 +59,17 @@ namespace QLGROTO.DAO
             return n;
 
         }
+        public double LoadTiLeLai()
+        {
+            SqlConnection con = dc.getConnect();
+            string sql = "SELECT TiLeLai FROM QUYDINH";
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            var result = cmd.ExecuteScalar();
+            double n = Convert.ToDouble(result);
+            con.Close();
+            return n;
+        }
         public decimal HienThiTiLeLai()
         {
             SqlConnection con = dc.getConnect();

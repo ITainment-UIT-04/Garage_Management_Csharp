@@ -102,7 +102,7 @@ namespace QLGROTO.DAO
             SqlDataReader dt = cmd.ExecuteReader();
             return dt;
         }
-        public SqlDataReader LoadMaVTPT(string ten)
+        public SqlDataReader LoadVTPTTheoTen(string ten)
         {
            
             SqlConnection con = dc.getConnect();
@@ -114,17 +114,27 @@ namespace QLGROTO.DAO
             return dt;
 
         }
-        public SqlDataReader LoadDonGia(string ten)
+        
+        public bool SuaSLDG(string ma, int sl, double dg)
         {
+            string sql = "UPDATE PHUTUNG SET SoLuongTon = @sl, DonGia = @dg WHERE MaVTPT = @ma";
             SqlConnection con = dc.getConnect();
-            con.Open();
-            string sql = "SELECT * FROM PHUTUNG WHERE TenVTPT = @ten" ;
-            SqlCommand cmd = new SqlCommand(sql, con);
-            cmd.Parameters.AddWithValue("@ten", ten);
-            SqlDataReader dt = cmd.ExecuteReader();
-            return dt;
+            try
+            {
+                SqlCommand cmd = new SqlCommand(sql, con);
 
-
+                con.Open();
+                cmd.Parameters.AddWithValue("@ma", ma);
+                cmd.Parameters.AddWithValue("@sl", sl);
+                cmd.Parameters.AddWithValue("@dg", dg);
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            return true;
         }
         public bool SuaVTPT(string ma, string ten, double dg)
         {

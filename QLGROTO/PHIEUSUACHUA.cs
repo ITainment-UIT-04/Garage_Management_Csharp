@@ -64,7 +64,7 @@ namespace QLGROTO
 
         private void ptcbbox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SqlDataReader dr = VTPTDAO.Instance.LoadDonGia(ptcbbox.Text);
+            SqlDataReader dr = VTPTDAO.Instance.LoadVTPTTheoTen(ptcbbox.Text);
             if (dr.Read())
                 dgtxtbox.Text = dr["DonGia"].ToString();
             int sl = Convert.ToInt32(slnumeric.Value);
@@ -126,7 +126,7 @@ namespace QLGROTO
                 string tc = tctxtbox.Text;
                 int sl = Convert.ToInt32(slnumeric.Value);
                 string mavt = "";
-                SqlDataReader dr = VTPTDAO.Instance.LoadMaVTPT(tenvt);
+                SqlDataReader dr = VTPTDAO.Instance.LoadVTPTTheoTen(tenvt);
                 if (dr.Read())
                     mavt = dr["MaVTPT"].ToString();
 

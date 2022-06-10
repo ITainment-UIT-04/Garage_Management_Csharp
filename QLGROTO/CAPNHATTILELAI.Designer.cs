@@ -42,9 +42,24 @@
             // 
             this.tilenumeric.DecimalPlaces = 2;
             this.tilenumeric.Location = new System.Drawing.Point(97, 60);
+            this.tilenumeric.Maximum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.tilenumeric.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.tilenumeric.Name = "tilenumeric";
             this.tilenumeric.Size = new System.Drawing.Size(150, 27);
             this.tilenumeric.TabIndex = 0;
+            this.tilenumeric.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // thoatbtn
             // 

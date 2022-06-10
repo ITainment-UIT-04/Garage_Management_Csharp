@@ -64,9 +64,24 @@
             // maxxenumeric
             // 
             this.maxxenumeric.Location = new System.Drawing.Point(223, 72);
+            this.maxxenumeric.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.maxxenumeric.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.maxxenumeric.Name = "maxxenumeric";
             this.maxxenumeric.Size = new System.Drawing.Size(210, 27);
             this.maxxenumeric.TabIndex = 0;
+            this.maxxenumeric.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label2
             // 
