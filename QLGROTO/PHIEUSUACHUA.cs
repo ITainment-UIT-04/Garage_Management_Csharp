@@ -158,7 +158,7 @@ namespace QLGROTO
 
 
 
-            if (pscdtgrid.Rows.Count == 0)
+            else if (pscdtgrid.Rows.Count == 0)
             {
                 MessageBox.Show("Vui lòng nhập thông tin!");
             }
