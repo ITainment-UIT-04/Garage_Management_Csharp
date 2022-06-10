@@ -29,32 +29,33 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BAOCAOTON));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Group1 = new System.Windows.Forms.GroupBox();
-            this.themtiencong_btn = new System.Windows.Forms.Button();
-            this.GroupBox2 = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.ReportDoanhSo_Title = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.bctdtgrid = new System.Windows.Forms.DataGridView();
-            this.MaVTPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenVTPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TonDau = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PhatSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TonCuoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xuatbtn = new System.Windows.Forms.Button();
             this.namnumeric = new System.Windows.Forms.NumericUpDown();
             this.thangnumeric = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.xuatbtn = new System.Windows.Forms.Button();
+            this.themtiencong_btn = new System.Windows.Forms.Button();
+            this.GroupBox2 = new System.Windows.Forms.GroupBox();
+            this.bctdtgrid = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.ReportDoanhSo_Title = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.MaVTPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenVTPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TonDau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PhatSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SuDung = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TonCuoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Group1.SuspendLayout();
-            this.GroupBox2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bctdtgrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.namnumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.thangnumeric)).BeginInit();
+            this.GroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bctdtgrid)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Group1
@@ -78,152 +79,21 @@
             this.Group1.TabStop = false;
             this.Group1.Text = "Báo cáo tháng, năm";
             // 
-            // themtiencong_btn
+            // xuatbtn
             // 
-            this.themtiencong_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.themtiencong_btn.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.themtiencong_btn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.themtiencong_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.themtiencong_btn.Image = ((System.Drawing.Image)(resources.GetObject("themtiencong_btn.Image")));
-            this.themtiencong_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.themtiencong_btn.Location = new System.Drawing.Point(538, 26);
-            this.themtiencong_btn.Name = "themtiencong_btn";
-            this.themtiencong_btn.Size = new System.Drawing.Size(265, 65);
-            this.themtiencong_btn.TabIndex = 38;
-            this.themtiencong_btn.Text = "Hiện báo cáo";
-            this.themtiencong_btn.UseVisualStyleBackColor = false;
-            // 
-            // GroupBox2
-            // 
-            this.GroupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.GroupBox2.Controls.Add(this.bctdtgrid);
-            this.GroupBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.GroupBox2.Location = new System.Drawing.Point(13, 183);
-            this.GroupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.GroupBox2.Name = "GroupBox2";
-            this.GroupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.GroupBox2.Size = new System.Drawing.Size(1081, 458);
-            this.GroupBox2.TabIndex = 5;
-            this.GroupBox2.TabStop = false;
-            this.GroupBox2.Text = "Chi tiết báo cáo";
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel1.Controls.Add(this.ReportDoanhSo_Title);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1108, 66);
-            this.panel1.TabIndex = 6;
-            // 
-            // ReportDoanhSo_Title
-            // 
-            this.ReportDoanhSo_Title.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.ReportDoanhSo_Title.AutoSize = true;
-            this.ReportDoanhSo_Title.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ReportDoanhSo_Title.ForeColor = System.Drawing.Color.White;
-            this.ReportDoanhSo_Title.Location = new System.Drawing.Point(378, 9);
-            this.ReportDoanhSo_Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.ReportDoanhSo_Title.Name = "ReportDoanhSo_Title";
-            this.ReportDoanhSo_Title.Size = new System.Drawing.Size(326, 45);
-            this.ReportDoanhSo_Title.TabIndex = 3;
-            this.ReportDoanhSo_Title.Text = "BÁO CÁO TỒN KHO";
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(1000, 649);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Thoát";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // bctdtgrid
-            // 
-            this.bctdtgrid.AllowUserToAddRows = false;
-            this.bctdtgrid.AllowUserToDeleteRows = false;
-            this.bctdtgrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.bctdtgrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bctdtgrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
-            this.bctdtgrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bctdtgrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaVTPT,
-            this.TenVTPT,
-            this.TonDau,
-            this.PhatSinh,
-            this.TonCuoi});
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bctdtgrid.DefaultCellStyle = dataGridViewCellStyle14;
-            this.bctdtgrid.Location = new System.Drawing.Point(8, 28);
-            this.bctdtgrid.Name = "bctdtgrid";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bctdtgrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
-            this.bctdtgrid.RowHeadersWidth = 51;
-            this.bctdtgrid.RowTemplate.Height = 29;
-            this.bctdtgrid.Size = new System.Drawing.Size(1066, 421);
-            this.bctdtgrid.TabIndex = 1;
-            // 
-            // MaVTPT
-            // 
-            this.MaVTPT.DataPropertyName = "MaVTPT";
-            this.MaVTPT.HeaderText = "Mã VTPT";
-            this.MaVTPT.MinimumWidth = 6;
-            this.MaVTPT.Name = "MaVTPT";
-            // 
-            // TenVTPT
-            // 
-            this.TenVTPT.DataPropertyName = "TenVTPT";
-            this.TenVTPT.HeaderText = "Tên VTPT";
-            this.TenVTPT.MinimumWidth = 6;
-            this.TenVTPT.Name = "TenVTPT";
-            // 
-            // TonDau
-            // 
-            this.TonDau.DataPropertyName = "TonDau";
-            this.TonDau.HeaderText = "Tồn đầu";
-            this.TonDau.MinimumWidth = 6;
-            this.TonDau.Name = "TonDau";
-            // 
-            // PhatSinh
-            // 
-            this.PhatSinh.DataPropertyName = "PhatSinh";
-            this.PhatSinh.HeaderText = "Phát sinh";
-            this.PhatSinh.MinimumWidth = 6;
-            this.PhatSinh.Name = "PhatSinh";
-            // 
-            // TonCuoi
-            // 
-            this.TonCuoi.DataPropertyName = "TonCuoi";
-            this.TonCuoi.HeaderText = "Tồn cuối";
-            this.TonCuoi.MinimumWidth = 6;
-            this.TonCuoi.Name = "TonCuoi";
+            this.xuatbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.xuatbtn.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.xuatbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.xuatbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.xuatbtn.Image = global::QLGROTO.Properties.Resources.certificate_g32c53cd83_640__1_;
+            this.xuatbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.xuatbtn.Location = new System.Drawing.Point(809, 26);
+            this.xuatbtn.Name = "xuatbtn";
+            this.xuatbtn.Size = new System.Drawing.Size(265, 65);
+            this.xuatbtn.TabIndex = 8;
+            this.xuatbtn.Text = "Xuất báo cáo";
+            this.xuatbtn.UseVisualStyleBackColor = false;
+            this.xuatbtn.Click += new System.EventHandler(this.xuatbtn_Click);
             // 
             // namnumeric
             // 
@@ -293,21 +163,159 @@
             this.label1.TabIndex = 58;
             this.label1.Text = "Tháng:";
             // 
-            // xuatbtn
+            // themtiencong_btn
             // 
-            this.xuatbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.xuatbtn.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.xuatbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.xuatbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.xuatbtn.Image = global::QLGROTO.Properties.Resources.certificate_g32c53cd83_640__1_;
-            this.xuatbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.xuatbtn.Location = new System.Drawing.Point(809, 26);
-            this.xuatbtn.Name = "xuatbtn";
-            this.xuatbtn.Size = new System.Drawing.Size(265, 65);
-            this.xuatbtn.TabIndex = 8;
-            this.xuatbtn.Text = "Xuất báo cáo";
-            this.xuatbtn.UseVisualStyleBackColor = false;
-            this.xuatbtn.Click += new System.EventHandler(this.xuatbtn_Click);
+            this.themtiencong_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.themtiencong_btn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.themtiencong_btn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.themtiencong_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.themtiencong_btn.Image = ((System.Drawing.Image)(resources.GetObject("themtiencong_btn.Image")));
+            this.themtiencong_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.themtiencong_btn.Location = new System.Drawing.Point(538, 26);
+            this.themtiencong_btn.Name = "themtiencong_btn";
+            this.themtiencong_btn.Size = new System.Drawing.Size(265, 65);
+            this.themtiencong_btn.TabIndex = 38;
+            this.themtiencong_btn.Text = "Hiện báo cáo";
+            this.themtiencong_btn.UseVisualStyleBackColor = false;
+            // 
+            // GroupBox2
+            // 
+            this.GroupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.GroupBox2.Controls.Add(this.bctdtgrid);
+            this.GroupBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.GroupBox2.Location = new System.Drawing.Point(13, 183);
+            this.GroupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.GroupBox2.Name = "GroupBox2";
+            this.GroupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.GroupBox2.Size = new System.Drawing.Size(1081, 458);
+            this.GroupBox2.TabIndex = 5;
+            this.GroupBox2.TabStop = false;
+            this.GroupBox2.Text = "Chi tiết báo cáo";
+            // 
+            // bctdtgrid
+            // 
+            this.bctdtgrid.AllowUserToAddRows = false;
+            this.bctdtgrid.AllowUserToDeleteRows = false;
+            this.bctdtgrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bctdtgrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bctdtgrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.bctdtgrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bctdtgrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaVTPT,
+            this.TenVTPT,
+            this.TonDau,
+            this.PhatSinh,
+            this.SuDung,
+            this.TonCuoi});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bctdtgrid.DefaultCellStyle = dataGridViewCellStyle2;
+            this.bctdtgrid.Location = new System.Drawing.Point(8, 28);
+            this.bctdtgrid.Name = "bctdtgrid";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bctdtgrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.bctdtgrid.RowHeadersWidth = 51;
+            this.bctdtgrid.RowTemplate.Height = 29;
+            this.bctdtgrid.Size = new System.Drawing.Size(1066, 421);
+            this.bctdtgrid.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel1.Controls.Add(this.ReportDoanhSo_Title);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1108, 66);
+            this.panel1.TabIndex = 6;
+            // 
+            // ReportDoanhSo_Title
+            // 
+            this.ReportDoanhSo_Title.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ReportDoanhSo_Title.AutoSize = true;
+            this.ReportDoanhSo_Title.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ReportDoanhSo_Title.ForeColor = System.Drawing.Color.White;
+            this.ReportDoanhSo_Title.Location = new System.Drawing.Point(378, 9);
+            this.ReportDoanhSo_Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ReportDoanhSo_Title.Name = "ReportDoanhSo_Title";
+            this.ReportDoanhSo_Title.Size = new System.Drawing.Size(326, 45);
+            this.ReportDoanhSo_Title.TabIndex = 3;
+            this.ReportDoanhSo_Title.Text = "BÁO CÁO TỒN KHO";
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(1000, 649);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(94, 29);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Thoát";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // MaVTPT
+            // 
+            this.MaVTPT.DataPropertyName = "MaVTPT";
+            this.MaVTPT.HeaderText = "Mã VTPT";
+            this.MaVTPT.MinimumWidth = 6;
+            this.MaVTPT.Name = "MaVTPT";
+            // 
+            // TenVTPT
+            // 
+            this.TenVTPT.DataPropertyName = "TenVTPT";
+            this.TenVTPT.HeaderText = "Tên VTPT";
+            this.TenVTPT.MinimumWidth = 6;
+            this.TenVTPT.Name = "TenVTPT";
+            // 
+            // TonDau
+            // 
+            this.TonDau.DataPropertyName = "TonDau";
+            this.TonDau.HeaderText = "Tồn đầu";
+            this.TonDau.MinimumWidth = 6;
+            this.TonDau.Name = "TonDau";
+            // 
+            // PhatSinh
+            // 
+            this.PhatSinh.DataPropertyName = "PhatSinh";
+            this.PhatSinh.HeaderText = "Phát sinh";
+            this.PhatSinh.MinimumWidth = 6;
+            this.PhatSinh.Name = "PhatSinh";
+            // 
+            // SuDung
+            // 
+            this.SuDung.HeaderText = "Sử dụng";
+            this.SuDung.MinimumWidth = 6;
+            this.SuDung.Name = "SuDung";
+            // 
+            // TonCuoi
+            // 
+            this.TonCuoi.DataPropertyName = "TonCuoi";
+            this.TonCuoi.HeaderText = "Tồn cuối";
+            this.TonCuoi.MinimumWidth = 6;
+            this.TonCuoi.Name = "TonCuoi";
             // 
             // BAOCAOTON
             // 
@@ -325,12 +333,12 @@
             this.Text = "Báo cáo tồn kho";
             this.Group1.ResumeLayout(false);
             this.Group1.PerformLayout();
-            this.GroupBox2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bctdtgrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.namnumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.thangnumeric)).EndInit();
+            this.GroupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bctdtgrid)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -343,15 +351,16 @@
         private Button themtiencong_btn;
         private Button button2;
         private DataGridView bctdtgrid;
-        private DataGridViewTextBoxColumn MaVTPT;
-        private DataGridViewTextBoxColumn TenVTPT;
-        private DataGridViewTextBoxColumn TonDau;
-        private DataGridViewTextBoxColumn PhatSinh;
-        private DataGridViewTextBoxColumn TonCuoi;
         private NumericUpDown namnumeric;
         private NumericUpDown thangnumeric;
         private Label label2;
         private Label label1;
         private Button xuatbtn;
+        private DataGridViewTextBoxColumn MaVTPT;
+        private DataGridViewTextBoxColumn TenVTPT;
+        private DataGridViewTextBoxColumn TonDau;
+        private DataGridViewTextBoxColumn PhatSinh;
+        private DataGridViewTextBoxColumn SuDung;
+        private DataGridViewTextBoxColumn TonCuoi;
     }
 }

@@ -37,7 +37,7 @@
             this.thangnumeric = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.themtiencong_btn = new System.Windows.Forms.Button();
+            this.hienbcbtn = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.bcdsdtgrid = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
@@ -45,8 +45,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.HieuXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOLUOT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TiLe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -90,7 +90,7 @@
             this.groupBox1.Controls.Add(this.thangnumeric);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.themtiencong_btn);
+            this.groupBox1.Controls.Add(this.hienbcbtn);
             this.groupBox1.Location = new System.Drawing.Point(12, 71);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1081, 99);
@@ -100,7 +100,7 @@
             // 
             // xuatbtn
             // 
-            this.xuatbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.xuatbtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.xuatbtn.BackColor = System.Drawing.SystemColors.HighlightText;
             this.xuatbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.xuatbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -116,6 +116,7 @@
             // 
             // namnumeric
             // 
+            this.namnumeric.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.namnumeric.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.namnumeric.Location = new System.Drawing.Point(362, 47);
             this.namnumeric.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -140,6 +141,7 @@
             // 
             // thangnumeric
             // 
+            this.thangnumeric.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.thangnumeric.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.thangnumeric.Location = new System.Drawing.Point(120, 47);
             this.thangnumeric.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -164,6 +166,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(298, 45);
@@ -174,6 +177,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(44, 43);
@@ -182,20 +186,21 @@
             this.label1.TabIndex = 54;
             this.label1.Text = "Tháng:";
             // 
-            // themtiencong_btn
+            // hienbcbtn
             // 
-            this.themtiencong_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.themtiencong_btn.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.themtiencong_btn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.themtiencong_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.themtiencong_btn.Image = ((System.Drawing.Image)(resources.GetObject("themtiencong_btn.Image")));
-            this.themtiencong_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.themtiencong_btn.Location = new System.Drawing.Point(539, 26);
-            this.themtiencong_btn.Name = "themtiencong_btn";
-            this.themtiencong_btn.Size = new System.Drawing.Size(265, 65);
-            this.themtiencong_btn.TabIndex = 41;
-            this.themtiencong_btn.Text = "Hiện báo cáo";
-            this.themtiencong_btn.UseVisualStyleBackColor = false;
+            this.hienbcbtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.hienbcbtn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.hienbcbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.hienbcbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.hienbcbtn.Image = ((System.Drawing.Image)(resources.GetObject("hienbcbtn.Image")));
+            this.hienbcbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.hienbcbtn.Location = new System.Drawing.Point(539, 26);
+            this.hienbcbtn.Name = "hienbcbtn";
+            this.hienbcbtn.Size = new System.Drawing.Size(265, 65);
+            this.hienbcbtn.TabIndex = 41;
+            this.hienbcbtn.Text = "Hiện báo cáo";
+            this.hienbcbtn.UseVisualStyleBackColor = false;
+            this.hienbcbtn.Click += new System.EventHandler(this.hienbcbtn_Click);
             // 
             // groupBox2
             // 
@@ -221,8 +226,8 @@
             this.bcdsdtgrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bcdsdtgrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.HieuXe,
-            this.Column1,
             this.ThanhTien,
+            this.SOLUOT,
             this.TiLe});
             this.bcdsdtgrid.Location = new System.Drawing.Point(8, 26);
             this.bcdsdtgrid.Name = "bcdsdtgrid";
@@ -231,6 +236,7 @@
             this.bcdsdtgrid.RowTemplate.Height = 29;
             this.bcdsdtgrid.Size = new System.Drawing.Size(1067, 435);
             this.bcdsdtgrid.TabIndex = 1;
+            this.bcdsdtgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bcdsdtgrid_CellContentClick);
             // 
             // button2
             // 
@@ -282,20 +288,21 @@
             this.HieuXe.Name = "HieuXe";
             this.HieuXe.ReadOnly = true;
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Số lượt sửa";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
             // ThanhTien
             // 
-            this.ThanhTien.DataPropertyName = "ThanhTien";
+            this.ThanhTien.DataPropertyName = "THANHTIEN";
             this.ThanhTien.HeaderText = "Thành tiền";
             this.ThanhTien.MinimumWidth = 6;
             this.ThanhTien.Name = "ThanhTien";
             this.ThanhTien.ReadOnly = true;
+            // 
+            // SOLUOT
+            // 
+            this.SOLUOT.DataPropertyName = "SOLUOT";
+            this.SOLUOT.HeaderText = "Số lượt thu tiền";
+            this.SOLUOT.MinimumWidth = 6;
+            this.SOLUOT.Name = "SOLUOT";
+            this.SOLUOT.ReadOnly = true;
             // 
             // TiLe
             // 
@@ -338,7 +345,7 @@
         private Panel panel1;
         private Label ReportDoanhSo_Title;
         private GroupBox groupBox1;
-        private Button themtiencong_btn;
+        private Button hienbcbtn;
         private GroupBox groupBox2;
         private Button button2;
         private NumericUpDown namnumeric;
@@ -351,8 +358,8 @@
         private Label label11;
         private Button button4;
         private DataGridViewTextBoxColumn HieuXe;
-        private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn ThanhTien;
+        private DataGridViewTextBoxColumn SOLUOT;
         private DataGridViewTextBoxColumn TiLe;
     }
 }

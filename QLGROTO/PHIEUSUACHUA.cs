@@ -140,7 +140,7 @@ namespace QLGROTO
         {
             if (pscdtgrid.Rows.Count > 0)
             {
-                double tt = Convert.ToDouble(pscdtgrid.CurrentRow.Cells["ThanhTien"].Value.ToString());
+                double tt = Convert.ToDouble(pscdtgrid.CurrentRow.Cells["ThanhTien"].Value);
                 pscdtgrid.Rows.RemoveAt(pscdtgrid.CurrentCell.RowIndex);
                 s -= tt;
                 ttttxtbox.Text = s.ToString();
