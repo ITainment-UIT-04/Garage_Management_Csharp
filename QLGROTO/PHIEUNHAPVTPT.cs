@@ -48,7 +48,7 @@ namespace QLGROTO
             SqlDataReader dr = VTPTDAO.Instance.LoadMaVTPT(ten);
             if (dr.Read())
                 mavt = dr["MaVTPT"].ToString();
-            ctnkgrid.Rows.Add(mavt, ten, dgn, sl);
+            ctnkgrid.Rows.Add(mavt, ten, sl, dgn);
            
         }
 
@@ -84,6 +84,11 @@ namespace QLGROTO
         private void huybtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dgtxtbox_TextChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }

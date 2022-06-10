@@ -450,13 +450,13 @@
             this.button10.BackColor = System.Drawing.SystemColors.HighlightText;
             this.button10.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button10.Image = global::QLGROTO.Properties.Resources.tool_145375_640;
+            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
             this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button10.Location = new System.Drawing.Point(1298, 646);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(199, 65);
             this.button10.TabIndex = 4;
-            this.button10.Text = "Sửa thông tin xe";
+            this.button10.Text = "Cập nhật thông tin xe";
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
@@ -504,7 +504,7 @@
             this.sdttimradio.Location = new System.Drawing.Point(774, 75);
             this.sdttimradio.Name = "sdttimradio";
             this.sdttimradio.Size = new System.Drawing.Size(225, 24);
-            this.sdttimradio.TabIndex = 1;
+            this.sdttimradio.TabIndex = 2;
             this.sdttimradio.TabStop = true;
             this.sdttimradio.Text = "Tìm theo số điện thoại chủ xe";
             this.sdttimradio.UseVisualStyleBackColor = true;
@@ -518,7 +518,7 @@
             this.biensotimradio.Location = new System.Drawing.Point(1016, 75);
             this.biensotimradio.Name = "biensotimradio";
             this.biensotimradio.Size = new System.Drawing.Size(160, 24);
-            this.biensotimradio.TabIndex = 1;
+            this.biensotimradio.TabIndex = 3;
             this.biensotimradio.TabStop = true;
             this.biensotimradio.Text = "Tìm theo biển số xe";
             this.biensotimradio.UseVisualStyleBackColor = true;
@@ -781,6 +781,7 @@
             this.Email,
             this.TienNo,
             this.NgayTiepNhan});
+            this.xedtgrid.Enabled = false;
             this.xedtgrid.Location = new System.Drawing.Point(218, 130);
             this.xedtgrid.Name = "xedtgrid";
             this.xedtgrid.RowHeadersWidth = 51;

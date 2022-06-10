@@ -295,13 +295,13 @@
             this.suatcbtn.BackColor = System.Drawing.SystemColors.HighlightText;
             this.suatcbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.suatcbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.suatcbtn.Image = global::QLGROTO.Properties.Resources.tool_145375_640;
+            this.suatcbtn.Image = ((System.Drawing.Image)(resources.GetObject("suatcbtn.Image")));
             this.suatcbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.suatcbtn.Location = new System.Drawing.Point(894, 611);
             this.suatcbtn.Name = "suatcbtn";
             this.suatcbtn.Size = new System.Drawing.Size(265, 65);
             this.suatcbtn.TabIndex = 6;
-            this.suatcbtn.Text = "Sửa loại tiền công";
+            this.suatcbtn.Text = "Cập nhật loại tiền công";
             this.suatcbtn.UseVisualStyleBackColor = false;
             this.suatcbtn.Click += new System.EventHandler(this.suatiencong_btn_Click);
             // 

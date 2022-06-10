@@ -13,7 +13,7 @@ namespace QLGROTO
 {
     public partial class DOIMATKHAU : Form
     {
-        
+
         public string tendangnhap { get; set; }
         public string matkhaucu { get; set; }
 
@@ -22,22 +22,27 @@ namespace QLGROTO
             InitializeComponent();
         }
 
-       
+
 
         private void chgbtn_Click(object sender, EventArgs e)
         {
-            string username = tendangnhap;
-            string password = mkctxtbox.Text;
-            if (!NHANVIENDAO.Instance.DangNhap(username, password))
-                MessageBox.Show("Mật khẩu cũ không đúng!");
-            else if (mkmtxtbox.Text != nhaplaitxtbox.Text)
-            {
-                MessageBox.Show("Vui lòng nhập lại mật khẩu trùng nhau!");
-            }
+            if (String.IsNullOrEmpty(mkctxtbox.Text) || String.IsNullOrEmpty(nhaplaitxtbox.Text) || String.IsNullOrEmpty(mkmtxtbox.Text))
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
             else
             {
-                NHANVIENDAO.Instance.DoiMatKhau(tendangnhap, mkmtxtbox.Text);
-                this.Close();
+                string username = tendangnhap;
+                string password = mkctxtbox.Text;
+                if (!NHANVIENDAO.Instance.DangNhap(username, password))
+                    MessageBox.Show("Mật khẩu cũ không đúng!");
+                else if (mkmtxtbox.Text != nhaplaitxtbox.Text)
+                {
+                    MessageBox.Show("Vui lòng nhập lại mật khẩu trùng nhau!");
+                }
+                else
+                {
+                    NHANVIENDAO.Instance.DoiMatKhau(tendangnhap, mkmtxtbox.Text);
+                    this.Close();
+                }
             }
         }
 

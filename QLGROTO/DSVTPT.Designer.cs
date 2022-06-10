@@ -207,13 +207,13 @@
             this.suavtptbtn.BackColor = System.Drawing.SystemColors.HighlightText;
             this.suavtptbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.suavtptbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.suavtptbtn.Image = global::QLGROTO.Properties.Resources.tool_145375_640;
+            this.suavtptbtn.Image = ((System.Drawing.Image)(resources.GetObject("suavtptbtn.Image")));
             this.suavtptbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.suavtptbtn.Location = new System.Drawing.Point(12, 745);
             this.suavtptbtn.Name = "suavtptbtn";
             this.suavtptbtn.Size = new System.Drawing.Size(265, 65);
             this.suavtptbtn.TabIndex = 5;
-            this.suavtptbtn.Text = "Sửa thông tin VTPT";
+            this.suavtptbtn.Text = "Cập nhật VTPT";
             this.suavtptbtn.UseVisualStyleBackColor = false;
             this.suavtptbtn.Click += new System.EventHandler(this.button10_Click);
             // 

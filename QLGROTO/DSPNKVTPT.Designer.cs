@@ -131,7 +131,7 @@
             this.timtheokhoangngayradio.Location = new System.Drawing.Point(636, 118);
             this.timtheokhoangngayradio.Name = "timtheokhoangngayradio";
             this.timtheokhoangngayradio.Size = new System.Drawing.Size(178, 24);
-            this.timtheokhoangngayradio.TabIndex = 21;
+            this.timtheokhoangngayradio.TabIndex = 2;
             this.timtheokhoangngayradio.TabStop = true;
             this.timtheokhoangngayradio.Text = "Tìm theo khoảng ngày";
             this.timtheokhoangngayradio.UseVisualStyleBackColor = true;

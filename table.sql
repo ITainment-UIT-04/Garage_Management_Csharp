@@ -211,7 +211,16 @@ BEGIN
 END
 GO
 
-
+create trigger tr_SoXeSuaChuaToiDaTrongNgay on XE for insert
+as
+	declare @SoXeToiDa int = (select SoXeSuaChuaToiDa from QUYDINH)
+	if (select count(distinct BienSo) 
+		from XE where Convert(date,NgayTiepNhan) = Convert(date, getdate())) > @SoXeToiDa
+		Begin
+			print N'Vượt quá số lượng xe sửa chữa tối đa trong ngày!'
+			Rollback Tran
+		End
+go
 /*USE MASTER
 GO
 ALTER DATABASE QUANLIGARA

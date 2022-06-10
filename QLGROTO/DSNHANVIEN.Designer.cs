@@ -245,13 +245,13 @@
             this.suanvbtn.BackColor = System.Drawing.SystemColors.HighlightText;
             this.suanvbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.suanvbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.suanvbtn.Image = global::QLGROTO.Properties.Resources.tool_145375_640;
+            this.suanvbtn.Image = ((System.Drawing.Image)(resources.GetObject("suanvbtn.Image")));
             this.suanvbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.suanvbtn.Location = new System.Drawing.Point(387, 666);
             this.suanvbtn.Name = "suanvbtn";
             this.suanvbtn.Size = new System.Drawing.Size(265, 65);
             this.suanvbtn.TabIndex = 8;
-            this.suanvbtn.Text = "Sửa thông tin nhân viên";
+            this.suanvbtn.Text = "Cập nhật thông tin nhân viên";
             this.suanvbtn.UseVisualStyleBackColor = false;
             this.suanvbtn.Click += new System.EventHandler(this.suanvbtn_Click);
             // 

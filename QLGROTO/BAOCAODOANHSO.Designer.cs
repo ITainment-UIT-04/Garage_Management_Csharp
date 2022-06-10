@@ -45,6 +45,9 @@
             this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TiLe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
+            this.ttttxtbox = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.namnumeric)).BeginInit();
@@ -272,12 +275,45 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // ttttxtbox
+            // 
+            this.ttttxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.ttttxtbox.Enabled = false;
+            this.ttttxtbox.Location = new System.Drawing.Point(432, 650);
+            this.ttttxtbox.Name = "ttttxtbox";
+            this.ttttxtbox.Size = new System.Drawing.Size(397, 27);
+            this.ttttxtbox.TabIndex = 17;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(272, 646);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(154, 28);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "Tổng thành tiền:";
+            // 
+            // button4
+            // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button4.Location = new System.Drawing.Point(755, 650);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(9, 8);
+            this.button4.TabIndex = 18;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // BAOCAODOANHSO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1107, 690);
+            this.Controls.Add(this.ttttxtbox);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.button2);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
@@ -293,6 +329,7 @@
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bcdsdtgrid)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -314,5 +351,8 @@
         private DataGridViewTextBoxColumn ThanhTien;
         private DataGridViewTextBoxColumn TiLe;
         private Button xuatbtn;
+        private TextBox ttttxtbox;
+        private Label label11;
+        private Button button4;
     }
 }
