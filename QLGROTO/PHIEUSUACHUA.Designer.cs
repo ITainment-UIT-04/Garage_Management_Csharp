@@ -198,9 +198,24 @@
             // 
             this.slnumeric.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.slnumeric.Location = new System.Drawing.Point(1099, 62);
+            this.slnumeric.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.slnumeric.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.slnumeric.Name = "slnumeric";
             this.slnumeric.Size = new System.Drawing.Size(245, 27);
             this.slnumeric.TabIndex = 5;
+            this.slnumeric.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.slnumeric.ValueChanged += new System.EventHandler(this.slnumeric_ValueChanged);
             // 
             // thembtn

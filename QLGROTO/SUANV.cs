@@ -47,21 +47,27 @@ namespace QLGROTO
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string tdn = tdntxtbox.Text;
-            string mk = mktxtbox.Text;
-            string ten = tentxtbox.Text;
-            string diachi = dctxtbox.Text;
-            string dth = dthtxtbox.Text;
-            string email = emailtxtbox.Text;
-            string cv = chucvutxtbox.Text;
-            if (NHANVIENDAO.Instance.SuaNhanVien(tdn, mk, ten, diachi, dth, email, cv)) 
-            {
-                this.Close();
-            }
+            if (String.IsNullOrEmpty(mktxtbox.Text) || String.IsNullOrEmpty(tentxtbox.Text) ||
+                String.IsNullOrEmpty(dctxtbox.Text) || String.IsNullOrEmpty(dthtxtbox.Text) || String.IsNullOrEmpty(chucvutxtbox.Text))
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
             else
             {
-                MessageBox.Show("Cập nhật thông tin nhân viên thất bại!");
-                this.Close();
+                string tdn = tdntxtbox.Text;
+                string mk = mktxtbox.Text;
+                string ten = tentxtbox.Text;
+                string diachi = dctxtbox.Text;
+                string dth = dthtxtbox.Text;
+                string email = emailtxtbox.Text;
+                string cv = chucvutxtbox.Text;
+                if (NHANVIENDAO.Instance.SuaNhanVien(tdn, mk, ten, diachi, dth, email, cv))
+                {
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Cập nhật thông tin nhân viên thất bại!");
+                    this.Close();
+                }
             }
 
         }

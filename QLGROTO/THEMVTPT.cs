@@ -25,16 +25,22 @@ namespace QLGROTO
 
         private void thembtn_Click(object sender, EventArgs e)
         {
-            string ma = mavttxtbox.Text;
-            string ten = tenvttxtbox.Text;
-            if (VTPTDAO.Instance.ThemVTPT(ma, ten))
-            {
-                this.Close();
-            }
+            if (String.IsNullOrEmpty(tenvttxtbox.Text))
+
+                MessageBox.Show("Vui lòng nhập tiền công thích hợp!");
             else
             {
-                MessageBox.Show("Thêm thất bại!");
-                this.Close();
+                string ma = mavttxtbox.Text;
+                string ten = tenvttxtbox.Text;
+                if (VTPTDAO.Instance.ThemVTPT(ma, ten))
+                {
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Thêm thất bại!");
+                    this.Close();
+                }
             }
         }
 

@@ -30,11 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SUAVTPT));
             this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.dgtxtbox = new System.Windows.Forms.TextBox();
-            this.sltxtbox = new System.Windows.Forms.TextBox();
             this.tenvtpttxtbox = new System.Windows.Forms.TextBox();
             this.mavtpttxtbox = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -49,24 +47,12 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(82, 165);
+            this.label5.Location = new System.Drawing.Point(82, 132);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 31);
             this.label5.TabIndex = 57;
             this.label5.Text = "Đơn giá:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(31, 132);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(151, 31);
-            this.label3.TabIndex = 58;
-            this.label3.Text = "Số lượng tồn:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label7
             // 
@@ -94,23 +80,12 @@
             // 
             this.dgtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dgtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dgtxtbox.Location = new System.Drawing.Point(188, 167);
+            this.dgtxtbox.Location = new System.Drawing.Point(188, 134);
             this.dgtxtbox.Multiline = true;
             this.dgtxtbox.Name = "dgtxtbox";
             this.dgtxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.dgtxtbox.Size = new System.Drawing.Size(360, 25);
             this.dgtxtbox.TabIndex = 51;
-            // 
-            // sltxtbox
-            // 
-            this.sltxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.sltxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.sltxtbox.Location = new System.Drawing.Point(188, 134);
-            this.sltxtbox.Multiline = true;
-            this.sltxtbox.Name = "sltxtbox";
-            this.sltxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.sltxtbox.Size = new System.Drawing.Size(360, 25);
-            this.sltxtbox.TabIndex = 53;
             // 
             // tenvtpttxtbox
             // 
@@ -159,7 +134,7 @@
             // capnhatbtn
             // 
             this.capnhatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.capnhatbtn.Location = new System.Drawing.Point(399, 202);
+            this.capnhatbtn.Location = new System.Drawing.Point(399, 170);
             this.capnhatbtn.Name = "capnhatbtn";
             this.capnhatbtn.Size = new System.Drawing.Size(94, 29);
             this.capnhatbtn.TabIndex = 65;
@@ -170,7 +145,7 @@
             // thoatbtn
             // 
             this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.thoatbtn.Location = new System.Drawing.Point(499, 202);
+            this.thoatbtn.Location = new System.Drawing.Point(499, 170);
             this.thoatbtn.Name = "thoatbtn";
             this.thoatbtn.Size = new System.Drawing.Size(94, 29);
             this.thoatbtn.TabIndex = 65;
@@ -184,15 +159,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.ClientSize = new System.Drawing.Size(605, 243);
+            this.ClientSize = new System.Drawing.Size(605, 211);
             this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.capnhatbtn);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dgtxtbox);
-            this.Controls.Add(this.sltxtbox);
             this.Controls.Add(this.tenvtpttxtbox);
             this.Controls.Add(this.mavtpttxtbox);
             this.Controls.Add(this.panel1);
@@ -213,11 +186,9 @@
         #endregion
 
         private Label label5;
-        private Label label3;
         private Label label7;
         private Label label8;
         private TextBox dgtxtbox;
-        private TextBox sltxtbox;
         private TextBox tenvtpttxtbox;
         private TextBox mavtpttxtbox;
         private Panel panel1;

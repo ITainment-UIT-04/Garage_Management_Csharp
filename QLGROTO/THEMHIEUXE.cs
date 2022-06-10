@@ -32,15 +32,20 @@ namespace QLGROTO
 
         private void thembtn_Click(object sender, EventArgs e)
         {
-            string s =themtxtbox.Text;
-            if (ThemHieuXe(s))
-            {
-                this.Close();
-            }
+            if (String.IsNullOrEmpty(themtxtbox.Text))
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
             else
             {
-                MessageBox.Show("Thêm thất bại!");
-                this.Close();
+                string s = themtxtbox.Text;
+                if (ThemHieuXe(s))
+                {
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Thêm thất bại!");
+                    this.Close();
+                }
             }
         }
     }

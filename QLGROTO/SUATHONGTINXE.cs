@@ -67,23 +67,27 @@ namespace QLGROTO
 
         private void suabtn_Click(object sender, EventArgs e)
         {
-            string bienso = biensotxtbox.Text;
-            string ten = tentxtbox.Text;
-            string hieu = hieuxecbbox.Text;
-            string diachi = diachitxtbox.Text;
-            string dth = dthtxtbox.Text;
-            string email = emailtxtbox.Text;
-            DateTime ngay = ngaydtpicker.Value.Date;
-            string tien = notxtbox.Text;
-            if (XEDAO.Instance.SuaXe(bienso, ten, hieu, diachi, dth, email, tien, ngay))
-            {
-                this.Close();
-
-            }
+            if (String.IsNullOrEmpty(tentxtbox.Text) || String.IsNullOrEmpty(hieuxecbbox.Text) || String.IsNullOrEmpty(diachitxtbox.Text) 
+                || String.IsNullOrEmpty(dthtxtbox.Text) || String.IsNullOrEmpty(emailtxtbox.Text))
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
             else
-            {
-                MessageBox.Show("Sửa thất bại!");
-                this.Close();
+            { 
+                string bienso = biensotxtbox.Text;
+                string ten = tentxtbox.Text;
+                string hieu = hieuxecbbox.Text;
+                string diachi = diachitxtbox.Text;
+                string dth = dthtxtbox.Text;
+                string email = emailtxtbox.Text;
+                if (XEDAO.Instance.SuaXe(bienso, ten, hieu, diachi, dth, email))
+                {
+                    this.Close();
+
+                }
+                else
+                {
+                    MessageBox.Show("Sửa thất bại!");
+                    this.Close();
+                }
             }
         }
         
@@ -96,12 +100,10 @@ namespace QLGROTO
         {
             biensotxtbox.Text = bienso;
             tentxtbox.Text = ten;
-            ngaydtpicker.Value = ngay;
             hieuxecbbox.Text = hieuxe;
             diachitxtbox.Text = diachi;
             emailtxtbox.Text = email;
             dthtxtbox.Text = dth;
-            notxtbox.Text = no;
             
           
         }

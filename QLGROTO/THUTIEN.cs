@@ -99,17 +99,22 @@ namespace QLGROTO
 
         private void lapphieubtn_Click(object sender, EventArgs e)
         {
-            string maptt = matttxtbox.Text;
-            string bienso = biensocbbox.Text;
-            string tienthu = tienthutxtbox.Text;
-            if (PHIEUTHUTIENDAO.Instance.Them(maptt, bienso, tienthu))
-            {
-                this.Close();
-            }
+            if (String.IsNullOrEmpty(biensocbbox.Text) || String.IsNullOrEmpty(tienthutxtbox.Text))
+                MessageBox.Show("Vui lòng nhập tiền công thích hợp!");
             else
             {
-                MessageBox.Show("Thêm thất bại!");
-                this.Close();
+                string maptt = matttxtbox.Text;
+                string bienso = biensocbbox.Text;
+                string tienthu = tienthutxtbox.Text;
+                if (PHIEUTHUTIENDAO.Instance.Them(maptt, bienso, tienthu))
+                {
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Thêm thất bại!");
+                    this.Close();
+                }
             }
         }
     }

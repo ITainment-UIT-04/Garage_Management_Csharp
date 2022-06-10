@@ -103,20 +103,27 @@ namespace QLGROTO
 
         private void xacnhanbtn_Click(object sender, EventArgs e)
         {
-            string bs = biensotxtbox.Text;  
-            string t = tentxtbox.Text;
-            string h = hieuxecbbox.Text;
-            string d = diachitxtbox.Text;
-            string dth = dthtxtbox.Text;
-            string email = emailtxtbox.Text;    
-            if (TiepNhan(bs, t, h, d, dth, email))
-            {
-                this.Close();
-            }
+            if (String.IsNullOrEmpty(biensotxtbox.Text) || String.IsNullOrEmpty(tentxtbox.Text)
+                || String.IsNullOrEmpty(hieuxecbbox.Text) || String.IsNullOrEmpty(diachitxtbox.Text)
+                    || String.IsNullOrEmpty(dthtxtbox.Text) || String.IsNullOrEmpty(emailtxtbox.Text))
+                MessageBox.Show("Vui lòng nhập tiền công thích hợp!");
             else
             {
-                MessageBox.Show("Trùng biển số/ Vượt quá số xe tiếp nhận trong ngày", "Tiếp nhận thất bại!");
-                this.Close();
+                string bs = biensotxtbox.Text;
+                string t = tentxtbox.Text;
+                string h = hieuxecbbox.Text;
+                string d = diachitxtbox.Text;
+                string dth = dthtxtbox.Text;
+                string email = emailtxtbox.Text;
+                if (TiepNhan(bs, t, h, d, dth, email))
+                {
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Trùng biển số/ Vượt quá số xe tiếp nhận trong ngày", "Tiếp nhận thất bại!");
+                    this.Close();
+                }
             }
         }
     }

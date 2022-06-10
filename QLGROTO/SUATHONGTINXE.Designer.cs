@@ -42,15 +42,11 @@
             this.dthtxtbox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.thoatbtn = new System.Windows.Forms.Button();
             this.capnhatbtn = new System.Windows.Forms.Button();
-            this.ngaydtpicker = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.emailtxtbox = new System.Windows.Forms.TextBox();
             this.hieuxecbbox = new System.Windows.Forms.ComboBox();
-            this.notxtbox = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -210,23 +206,11 @@
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label5.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(45, 311);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(176, 31);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Ngày tiếp nhận:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label6.Click += new System.EventHandler(this.label2_Click);
-            // 
             // thoatbtn
             // 
             this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.thoatbtn.BackColor = System.Drawing.Color.White;
-            this.thoatbtn.Location = new System.Drawing.Point(591, 354);
+            this.thoatbtn.Location = new System.Drawing.Point(591, 286);
             this.thoatbtn.Name = "thoatbtn";
             this.thoatbtn.Size = new System.Drawing.Size(94, 29);
             this.thoatbtn.TabIndex = 8;
@@ -240,21 +224,13 @@
             this.capnhatbtn.BackColor = System.Drawing.Color.White;
             this.capnhatbtn.ForeColor = System.Drawing.SystemColors.ControlText;
             this.capnhatbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.capnhatbtn.Location = new System.Drawing.Point(491, 354);
+            this.capnhatbtn.Location = new System.Drawing.Point(491, 286);
             this.capnhatbtn.Name = "capnhatbtn";
             this.capnhatbtn.Size = new System.Drawing.Size(94, 29);
             this.capnhatbtn.TabIndex = 7;
             this.capnhatbtn.Text = "Sửa";
             this.capnhatbtn.UseVisualStyleBackColor = false;
             this.capnhatbtn.Click += new System.EventHandler(this.suabtn_Click);
-            // 
-            // ngaydtpicker
-            // 
-            this.ngaydtpicker.Enabled = false;
-            this.ngaydtpicker.Location = new System.Drawing.Point(227, 315);
-            this.ngaydtpicker.Name = "ngaydtpicker";
-            this.ngaydtpicker.Size = new System.Drawing.Size(362, 27);
-            this.ngaydtpicker.TabIndex = 5;
             // 
             // label7
             // 
@@ -287,29 +263,6 @@
             this.hieuxecbbox.Size = new System.Drawing.Size(362, 28);
             this.hieuxecbbox.TabIndex = 3;
             // 
-            // notxtbox
-            // 
-            this.notxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.notxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.notxtbox.Location = new System.Drawing.Point(227, 280);
-            this.notxtbox.Multiline = true;
-            this.notxtbox.Name = "notxtbox";
-            this.notxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.notxtbox.Size = new System.Drawing.Size(362, 29);
-            this.notxtbox.TabIndex = 6;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(126, 278);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(95, 31);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Tiền nợ:";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // SUATHONGTINXE
             // 
             this.AcceptButton = this.capnhatbtn;
@@ -319,16 +272,12 @@
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.CancelButton = this.thoatbtn;
-            this.ClientSize = new System.Drawing.Size(697, 395);
+            this.ClientSize = new System.Drawing.Size(697, 327);
             this.Controls.Add(this.hieuxecbbox);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.notxtbox);
             this.Controls.Add(this.emailtxtbox);
-            this.Controls.Add(this.ngaydtpicker);
             this.Controls.Add(this.capnhatbtn);
             this.Controls.Add(this.thoatbtn);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -371,15 +320,11 @@
         private TextBox dthtxtbox;
         private Label label4;
         private Label label5;
-        private Label label6;
         private Button thoatbtn;
         private Button capnhatbtn;
-        private DateTimePicker ngaydtpicker;
         private Label label7;
         private TextBox emailtxtbox;
         private ComboBox hieuxecbbox;
-        private TextBox notxtbox;
-        private Label label8;
     }
 }
 

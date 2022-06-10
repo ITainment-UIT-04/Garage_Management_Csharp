@@ -126,9 +126,9 @@ namespace QLGROTO.DAO
 
 
         }
-        public bool SuaVTPT(string ma, string ten, int slt, string dg)
+        public bool SuaVTPT(string ma, string ten, string dg)
         {
-            string sql = "UPDATE PHUTUNG SET TenVTPT = @ten, SoLuongTon = @slt, DonGia = @dg WHERE MaVTPT = @ma";
+            string sql = "UPDATE PHUTUNG SET TenVTPT = @ten, DonGia = @dg WHERE MaVTPT = @ma";
             SqlConnection con = dc.getConnect();
             try
             {
@@ -137,7 +137,6 @@ namespace QLGROTO.DAO
                 con.Open();
                 cmd.Parameters.AddWithValue("@ma", ma);
                 cmd.Parameters.AddWithValue("@ten", ten);
-                cmd.Parameters.AddWithValue("@slt", slt);
                 cmd.Parameters.AddWithValue("@dg", dg);
                 cmd.ExecuteNonQuery();
                 con.Close();

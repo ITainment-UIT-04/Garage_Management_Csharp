@@ -32,17 +32,25 @@ namespace QLGROTO
 
         private void suabtn_Click(object sender, EventArgs e)
         {
-            string mtc = matctxtbox.Text;
-            string tc = tctxtbox.Text;
-            string nd = ndtxtbox.Text;
-            if (TIENCONGDAO.Instance.SuaTienCong(mtc, tc, nd))
-            {
-                this.Close();
-            }
+            double output;
+            if (String.IsNullOrEmpty(tctxtbox.Text) || String.IsNullOrEmpty(ndtxtbox.Text))
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+            else if (!double.TryParse(tctxtbox.Text, out output))
+                MessageBox.Show("Vui lòng nhập tiền công thích hợp!");
             else
             {
-                MessageBox.Show("Sửa thất bại!");
-                this.Close();
+                string mtc = matctxtbox.Text;
+                string tc = tctxtbox.Text;
+                string nd = ndtxtbox.Text;
+                if (TIENCONGDAO.Instance.SuaTienCong(mtc, tc, nd))
+                {
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Sửa thất bại!");
+                    this.Close();
+                }
             }
         }
 

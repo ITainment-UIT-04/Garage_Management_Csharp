@@ -15,7 +15,7 @@ namespace QLGROTO
     {
         public string mavtpt { get; set; }
         public string tenvtpt { get; set; }
-        public string soluong { get; set; }
+        public int soluong { get; set; }
         public string dongia { get; set; }
         
         public SUAVTPT()
@@ -25,18 +25,25 @@ namespace QLGROTO
 
         private void suabtn_Click(object sender, EventArgs e)
         {
-            string ma = mavtpttxtbox.Text;
-            string ten = tenvtpttxtbox.Text;
-            int sl = Convert.ToInt32(sltxtbox.Text);
-            string dg = dgtxtbox.Text;
-            if (VTPTDAO.Instance.SuaVTPT(ma, ten, sl, dg))
-            {
-                this.Close();
-            }
+            double output;
+            if (String.IsNullOrEmpty(dgtxtbox.Text) || String.IsNullOrEmpty(tenvtpttxtbox.Text))
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+            else if (!double.TryParse(dgtxtbox.Text, out output))
+                MessageBox.Show("Vui lòng nhập đơn giá thích hợp!");
             else
             {
-                MessageBox.Show("Sửa thất bại!");
-                this.Close();
+                string ma = mavtpttxtbox.Text;
+                string ten = tenvtpttxtbox.Text;
+                string dg = dgtxtbox.Text;
+                if (VTPTDAO.Instance.SuaVTPT(ma, ten, dg))
+                {
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Sửa thất bại!");
+                    this.Close();
+                }
             }
         }
 
@@ -49,8 +56,12 @@ namespace QLGROTO
         {
             mavtpttxtbox.Text = mavtpt;
             tenvtpttxtbox.Text = tenvtpt;
-            sltxtbox.Text = soluong;
             dgtxtbox.Text = dongia;
+        }
+
+        private void sltnumeric_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

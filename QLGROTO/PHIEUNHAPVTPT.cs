@@ -40,15 +40,24 @@ namespace QLGROTO
 
         private void thembtn_Click(object sender, EventArgs e)
         {
-            string mpn = mapntxtbox.Text;
-            string ten = tenvtcbbox.Text;
-            string dgn = dgtxtbox.Text;
-            int sl = Convert.ToInt32(slnum.Value);
-            string mavt = "";
-            SqlDataReader dr = VTPTDAO.Instance.LoadMaVTPT(ten);
-            if (dr.Read())
-                mavt = dr["MaVTPT"].ToString();
-            ctnkgrid.Rows.Add(mavt, ten, sl, dgn);
+            double output;
+            if (String.IsNullOrEmpty(dgtxtbox.Text) || String.IsNullOrEmpty(tenvtcbbox.Text))
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+            else if (!double.TryParse(dgtxtbox.Text, out output))
+                MessageBox.Show("Vui lòng nhập đơn giá thích hợp!");
+            else
+            {
+                string mpn = mapntxtbox.Text;
+                string ten = tenvtcbbox.Text;
+                string dgn = dgtxtbox.Text;
+                int sl = Convert.ToInt32(slnum.Value);
+                string mavt = "";
+                SqlDataReader dr = VTPTDAO.Instance.LoadMaVTPT(ten);
+                if (dr.Read())
+                    mavt = dr["MaVTPT"].ToString();
+                ctnkgrid.Rows.Add(mavt, ten, sl, dgn);
+            }
+           
            
         }
 

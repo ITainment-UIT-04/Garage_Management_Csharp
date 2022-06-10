@@ -72,7 +72,7 @@
             this.biensotxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.biensotxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.biensotxtbox.Location = new System.Drawing.Point(227, 70);
+            this.biensotxtbox.Location = new System.Drawing.Point(226, 104);
             this.biensotxtbox.Multiline = true;
             this.biensotxtbox.Name = "biensotxtbox";
             this.biensotxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -84,7 +84,7 @@
             // 
             this.TenChuXe.AutoSize = true;
             this.TenChuXe.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TenChuXe.Location = new System.Drawing.Point(95, 103);
+            this.TenChuXe.Location = new System.Drawing.Point(94, 137);
             this.TenChuXe.Name = "TenChuXe";
             this.TenChuXe.Size = new System.Drawing.Size(126, 31);
             this.TenChuXe.TabIndex = 2;
@@ -107,7 +107,7 @@
             this.tentxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tentxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tentxtbox.Location = new System.Drawing.Point(227, 105);
+            this.tentxtbox.Location = new System.Drawing.Point(226, 139);
             this.tentxtbox.Multiline = true;
             this.tentxtbox.Name = "tentxtbox";
             this.tentxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -119,7 +119,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(129, 68);
+            this.label1.Location = new System.Drawing.Point(125, 102);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 31);
             this.label1.TabIndex = 2;
@@ -130,7 +130,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(126, 138);
+            this.label2.Location = new System.Drawing.Point(125, 172);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 31);
             this.label2.TabIndex = 2;
@@ -142,7 +142,7 @@
             this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(227, 175);
+            this.textBox3.Location = new System.Drawing.Point(226, 208);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -154,7 +154,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(132, 173);
+            this.label3.Location = new System.Drawing.Point(131, 206);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 31);
             this.label3.TabIndex = 2;
@@ -167,7 +167,7 @@
             this.diachitxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.diachitxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.diachitxtbox.Location = new System.Drawing.Point(227, 175);
+            this.diachitxtbox.Location = new System.Drawing.Point(226, 208);
             this.diachitxtbox.Multiline = true;
             this.diachitxtbox.Name = "diachitxtbox";
             this.diachitxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -180,7 +180,7 @@
             this.dthtxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dthtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dthtxtbox.Location = new System.Drawing.Point(227, 210);
+            this.dthtxtbox.Location = new System.Drawing.Point(226, 243);
             this.dthtxtbox.Multiline = true;
             this.dthtxtbox.Name = "dthtxtbox";
             this.dthtxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -192,7 +192,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(126, 173);
+            this.label4.Location = new System.Drawing.Point(125, 206);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(95, 31);
             this.label4.TabIndex = 2;
@@ -203,7 +203,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(97, 208);
+            this.label5.Location = new System.Drawing.Point(96, 241);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(124, 31);
             this.label5.TabIndex = 2;
@@ -215,7 +215,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(45, 276);
+            this.label6.Location = new System.Drawing.Point(44, 67);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(176, 31);
             this.label6.TabIndex = 2;
@@ -252,7 +252,7 @@
             // ngaydtpicker
             // 
             this.ngaydtpicker.Enabled = false;
-            this.ngaydtpicker.Location = new System.Drawing.Point(227, 280);
+            this.ngaydtpicker.Location = new System.Drawing.Point(226, 71);
             this.ngaydtpicker.Name = "ngaydtpicker";
             this.ngaydtpicker.Size = new System.Drawing.Size(362, 27);
             this.ngaydtpicker.TabIndex = 5;
@@ -261,7 +261,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(146, 245);
+            this.label7.Location = new System.Drawing.Point(145, 278);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(75, 31);
             this.label7.TabIndex = 7;
@@ -273,7 +273,7 @@
             this.emailtxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.emailtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.emailtxtbox.Location = new System.Drawing.Point(227, 245);
+            this.emailtxtbox.Location = new System.Drawing.Point(226, 278);
             this.emailtxtbox.Multiline = true;
             this.emailtxtbox.Name = "emailtxtbox";
             this.emailtxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -285,7 +285,7 @@
             this.hieuxecbbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.hieuxecbbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.hieuxecbbox.FormattingEnabled = true;
-            this.hieuxecbbox.Location = new System.Drawing.Point(227, 140);
+            this.hieuxecbbox.Location = new System.Drawing.Point(226, 174);
             this.hieuxecbbox.Name = "hieuxecbbox";
             this.hieuxecbbox.Size = new System.Drawing.Size(362, 28);
             this.hieuxecbbox.TabIndex = 3;
@@ -302,12 +302,12 @@
             this.CancelButton = this.thoatbtn;
             this.ClientSize = new System.Drawing.Size(697, 357);
             this.Controls.Add(this.hieuxecbbox);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.emailtxtbox);
             this.Controls.Add(this.ngaydtpicker);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.emailtxtbox);
             this.Controls.Add(this.tiepnhanbtn);
             this.Controls.Add(this.thoatbtn);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);

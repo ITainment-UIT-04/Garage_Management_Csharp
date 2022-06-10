@@ -65,7 +65,7 @@ namespace QLGROTO
             SUAVTPT infoAccChangeForm = new SUAVTPT();
             infoAccChangeForm.mavtpt = mavtpttxtbox.Text;
             infoAccChangeForm.tenvtpt =tenvtpttxtbox.Text;
-            infoAccChangeForm.soluong = sltxtbox.Text;
+            infoAccChangeForm.soluong = Convert.ToInt32(sltxtbox.Text);
             infoAccChangeForm.dongia = dgtxtbox.Text;    
             infoAccChangeForm.ShowDialog();
             HienThi();

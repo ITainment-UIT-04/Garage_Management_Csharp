@@ -138,9 +138,9 @@ namespace QLGROTO.DAO
             }
             return true;
         }
-        public bool SuaXe(string bienso, string ten, string hieu, string diachi, string dth, string email, string tien, DateTime ngay)
+        public bool SuaXe(string bienso, string ten, string hieu, string diachi, string dth, string email)
         {
-            string sql = "UPDATE XE SET TenChuXe = @ten, HieuXe = @hieuxe, DiaChi = @diachi, DienThoai = @dienthoai, Email = @email, TienNo = @tien, NgayTiepNhan = @ngay WHERE BienSo = @bienso";
+            string sql = "UPDATE XE SET TenChuXe = @ten, HieuXe = @hieuxe, DiaChi = @diachi, DienThoai = @dienthoai, Email = @email WHERE BienSo = @bienso";
             SqlConnection con = dc.getConnect();
             try
             {
@@ -152,8 +152,7 @@ namespace QLGROTO.DAO
                 cmd.Parameters.AddWithValue("@diachi", diachi);
                 cmd.Parameters.AddWithValue("@dienthoai", dth);
                 cmd.Parameters.AddWithValue("@email", email);
-                cmd.Parameters.AddWithValue("@tien", tien);
-                cmd.Parameters.AddWithValue("@ngay", ngay);
+               
                 cmd.ExecuteNonQuery();
                 con.Close();
             }

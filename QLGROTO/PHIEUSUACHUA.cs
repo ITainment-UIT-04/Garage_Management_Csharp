@@ -115,21 +115,25 @@ namespace QLGROTO
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
-            string nd = ndcbbox.Text;
-            string tenvt = ptcbbox.Text;
-            string dg = dgtxtbox.Text;
-            double tt = Convert.ToDouble(thanhtientxtbox.Text);
-            string tc = tctxtbox.Text;
-            int sl = Convert.ToInt32(slnumeric.Value);
-            string mavt = "";
-            SqlDataReader dr = VTPTDAO.Instance.LoadMaVTPT(tenvt);
-            if (dr.Read())
-                mavt = dr["MaVTPT"].ToString();
-            
-            pscdtgrid.Rows.Add(nd, mavt, tenvt, sl, dg, tc, tt);
-            s += tt;
-            ttttxtbox.Text = s.ToString();
+            if (String.IsNullOrEmpty(ndcbbox.Text) || String.IsNullOrEmpty(ptcbbox.Text))
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+            else
+            {
+                string nd = ndcbbox.Text;
+                string tenvt = ptcbbox.Text;
+                string dg = dgtxtbox.Text;
+                double tt = Convert.ToDouble(thanhtientxtbox.Text);
+                string tc = tctxtbox.Text;
+                int sl = Convert.ToInt32(slnumeric.Value);
+                string mavt = "";
+                SqlDataReader dr = VTPTDAO.Instance.LoadMaVTPT(tenvt);
+                if (dr.Read())
+                    mavt = dr["MaVTPT"].ToString();
+
+                pscdtgrid.Rows.Add(nd, mavt, tenvt, sl, dg, tc, tt);
+                s += tt;
+                ttttxtbox.Text = s.ToString();
+            }
         }
 
         private void button6_Click(object sender, EventArgs e)

@@ -41,6 +41,9 @@ namespace QLGROTO
 
         private void capnhatbtn_Click(object sender, EventArgs e)
         {
+            if (String.IsNullOrEmpty(tentxtbox.Text) ||
+                  String.IsNullOrEmpty(dctxtbox.Text) || String.IsNullOrEmpty(dthtxtbox.Text) || String.IsNullOrEmpty(chucvutxtbox.Text))
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
             string tdn = tdntxtbox.Text;
             string ten = tentxtbox.Text;
             string dc = dctxtbox.Text;
