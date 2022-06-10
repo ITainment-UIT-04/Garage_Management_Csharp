@@ -40,11 +40,10 @@ namespace QLGROTO
 
         private void thembtn_Click(object sender, EventArgs e)
         {
-            double output;
+           
             if (String.IsNullOrEmpty(dgtxtbox.Text) || String.IsNullOrEmpty(tenvtcbbox.Text))
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
-            else if (!double.TryParse(dgtxtbox.Text, out output))
-                MessageBox.Show("Vui lòng nhập đơn giá thích hợp!");
+            
             else
             {
                 string mpn = mapntxtbox.Text;
@@ -63,7 +62,10 @@ namespace QLGROTO
 
         private void xoabtn_Click(object sender, EventArgs e)
         {
-            ctnkgrid.Rows.RemoveAt(ctnkgrid.CurrentCell.RowIndex);
+            if (ctnkgrid.Rows.Count > 0)
+                ctnkgrid.Rows.RemoveAt(ctnkgrid.CurrentCell.RowIndex);
+            else
+                MessageBox.Show("Không có thông tin để xóa!");
         }
 
         private void lpbtn_Click(object sender, EventArgs e)
@@ -77,10 +79,10 @@ namespace QLGROTO
 
                 foreach (DataGridViewRow dataRow in ctnkgrid.Rows)
                 {
-                    string mavt = ctnkgrid.CurrentRow.Cells["MaVTPT"].Value.ToString();
-                    string dgn = ctnkgrid.CurrentRow.Cells["GiaNhap"].Value.ToString();
-                    string ten = ctnkgrid.CurrentRow.Cells["TenVTPT"].Value.ToString();
-                    int sl = Convert.ToInt32(ctnkgrid.CurrentRow.Cells["SoLuong"].Value);
+                    string mavt = dataRow.Cells["MaVTPT"].Value.ToString();
+                    string dgn = dataRow.Cells["GiaNhap"].Value.ToString();
+                    string ten = dataRow.Cells["TenVTPT"].Value.ToString();
+                    int sl = Convert.ToInt32(dataRow.Cells["SoLuong"].Value);
                     if (!CT_PNKVTPTDAO.Instance.Them(mpn, mavt, ten, sl, dgn))
                     {
                         MessageBox.Show("Lập phiếu thất bại!"); break;
@@ -97,7 +99,12 @@ namespace QLGROTO
 
         private void dgtxtbox_TextChanged(object sender, EventArgs e)
         {
-           
+            double output;
+            if (!double.TryParse(dgtxtbox.Text, out output) && !String.IsNullOrEmpty(dgtxtbox.Text))
+            {
+                MessageBox.Show("Vui lòng nhập đơn giá thích hợp!");
+                dgtxtbox.Clear();
+            }
         }
     }
 }

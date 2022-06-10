@@ -129,14 +129,17 @@ namespace QLGROTO
             TIEPNHANXE t = new TIEPNHANXE();
             t.ShowDialog();
             HienThi();
+           
         }
 
        
         private void button4_Click(object sender, EventArgs e)
         {
             PHIEUSUACHUA repairForm = new PHIEUSUACHUA();   
-            repairForm.ShowDialog();   
+            repairForm.ShowDialog();
+            HienThi();
         }
+
 
        
 
@@ -187,8 +190,10 @@ namespace QLGROTO
         private void button11_Click(object sender, EventArgs e)
         {
             string bienso = biensotxtbox.Text;
-            XEDAO.Instance.XoaXe(bienso);
-            HienThi();
+            if (XEDAO.Instance.XoaXe(bienso))
+                HienThi();
+            else
+                MessageBox.Show("Không thể xóa xe!");
         }
 
         private void cậpNhậtTỉLệLãiToolStripMenuItem_Click(object sender, EventArgs e)
@@ -346,8 +351,9 @@ namespace QLGROTO
 
         private void thutienbtn_Click(object sender, EventArgs e)
         {
-            THUTIEN t = new THUTIEN();
+            PHIEUTHUTIEN t = new PHIEUTHUTIEN();
             t.ShowDialog();
+            HienThi();
         }
 
         private void dangxuatbtn_Click(object sender, EventArgs e)

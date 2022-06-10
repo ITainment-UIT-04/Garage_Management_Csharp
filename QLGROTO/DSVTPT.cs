@@ -85,10 +85,15 @@ namespace QLGROTO
 
         private void xoavtptbtn_Click(object sender, EventArgs e)
         {
-            string ma = mavtpttxtbox.Text;
-            if (!VTPTDAO.Instance.XoaVTPT(ma))
-                MessageBox.Show("Không thể xóa vật tư phụ tùng!");
-            HienThi();
+            if (ptdtgrid.Rows.Count > 0)
+            {
+                string ma = mavtpttxtbox.Text;
+                if (!VTPTDAO.Instance.XoaVTPT(ma))
+                    MessageBox.Show("Không thể xóa vật tư phụ tùng!");
+                HienThi();
+            }
+            else
+                MessageBox.Show("Không có thông tin để xóa!");
         }
 
         private void timkiemtxtbox_TextChanged(object sender, EventArgs e)

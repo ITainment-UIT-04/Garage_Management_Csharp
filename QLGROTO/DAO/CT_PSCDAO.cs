@@ -42,7 +42,7 @@ namespace QLGROTO.DAO
             return dt;
 
         }
-        public bool Them(string mapsc, string noidung, string mavt, string tenvt, int sl, string dg, string mtc, string tc, string tt)
+        public bool Them(string mapsc, string noidung, string mavt, string tenvt, int sl, string dg, string mtc, double tc, string tt)
         {
             string sql = "INSERT INTO CT_PSC (MaPSC, NoiDung, MaVTPT, TenVTPT, SoLuong, DonGia, MaTienCong, TienCong, ThanhTien)" +
                 "VALUES (@masc, @noidung, @mavt, @tenvt, @sl, @dg, @matc, @tc, @tt)";

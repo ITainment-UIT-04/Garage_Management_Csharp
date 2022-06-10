@@ -69,10 +69,15 @@ namespace QLGROTO
 
         private void xoatcbtn_Click(object sender, EventArgs e)
         {
-            string mtc = matctxtbox.Text;
-            if (!TIENCONGDAO.Instance.XoaTienCong(mtc))
-                MessageBox.Show("Không thể xóa tiền công!");
-            HienThi();
+            if (tcdtgrid.Rows.Count > 0)
+            {
+                string mtc = matctxtbox.Text;
+                if (!TIENCONGDAO.Instance.XoaTienCong(mtc))
+                    MessageBox.Show("Không thể xóa tiền công!");
+                HienThi();
+            }
+            else
+                MessageBox.Show("Không có thông tin để xóa!");
         }
 
         private void timkiemtxtbox_TextChanged(object sender, EventArgs e)

@@ -84,7 +84,7 @@ namespace QLGROTO.DAO
             return dt;
         }
         
-        public bool ThemTienCong(string mtc, string tc, string nd)
+        public bool ThemTienCong(string mtc, double tc, string nd)
         {
             string sql = "INSERT INTO TIENCONG (MaTienCong, TienCong, NoiDung)" +
                 "VALUES (@mtc, @tc, @nd)";
@@ -107,7 +107,7 @@ namespace QLGROTO.DAO
             }
             return true;
         }
-        public bool SuaTienCong(string mtc, string tc, string nd)
+        public bool SuaTienCong(string mtc, double tc, string nd)
         {
             string sql = "UPDATE TIENCONG SET TienCong = @tc, NoiDung = @nd WHERE MaTienCong = @mtc";
             SqlConnection con = dc.getConnect();

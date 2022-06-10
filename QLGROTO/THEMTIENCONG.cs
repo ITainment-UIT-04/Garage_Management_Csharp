@@ -25,15 +25,14 @@ namespace QLGROTO
 
         private void thembtn_Click(object sender, EventArgs e)
         {
-            double output;
+            
             if (String.IsNullOrEmpty(tctxtbox.Text) || String.IsNullOrEmpty(ndtxtbox.Text))
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
-            else if (!double.TryParse(tctxtbox.Text, out output))
-                MessageBox.Show("Vui lòng nhập tiền công thích hợp!");
+            
             else
             {
                 string matc = matctxtbox.Text;
-                string tc = tctxtbox.Text;
+                double tc = Convert.ToDouble(tctxtbox.Text);
                 string nd = ndtxtbox.Text;
                 if (TIENCONGDAO.Instance.ThemTienCong(matc, tc, nd))
                 {
@@ -50,6 +49,16 @@ namespace QLGROTO
         private void ThemTienCong_Load(object sender, EventArgs e)
         {
             matctxtbox.Text = TIENCONGDAO.Instance.LoadMaTienCong();
+        }
+
+        private void tctxtbox_TextChanged(object sender, EventArgs e)
+        {
+            double output;
+            if (!double.TryParse(tctxtbox.Text, out output) && !String.IsNullOrEmpty(tctxtbox.Text))
+            {
+                MessageBox.Show("Vui lòng nhập tiền công thích hợp!");
+                tctxtbox.Clear();
+            }
         }
     }
 }

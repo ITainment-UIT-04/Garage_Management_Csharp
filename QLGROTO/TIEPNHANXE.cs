@@ -106,7 +106,7 @@ namespace QLGROTO
             if (String.IsNullOrEmpty(biensotxtbox.Text) || String.IsNullOrEmpty(tentxtbox.Text)
                 || String.IsNullOrEmpty(hieuxecbbox.Text) || String.IsNullOrEmpty(diachitxtbox.Text)
                     || String.IsNullOrEmpty(dthtxtbox.Text) || String.IsNullOrEmpty(emailtxtbox.Text))
-                MessageBox.Show("Vui lòng nhập tiền công thích hợp!");
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
             else
             {
                 string bs = biensotxtbox.Text;

@@ -61,17 +61,25 @@ namespace QLGROTO.DAO
             }
             set { instance = value; }
         }
-        public void XoaXe(string bienso)
+        public bool XoaXe(string bienso)
         {
             SqlConnection con = dc.getConnect();
-            con.Open();
+            try
+            {
+                con.Open();
 
-            string sql = "DELETE FROM XE WHERE BienSo = @bienso";
-            SqlCommand cmd = new SqlCommand(sql, con);
-            cmd.Parameters.AddWithValue("@bienso", bienso);
-            cmd.Connection = con;
-            cmd.ExecuteNonQuery();
-            con.Close();
+                string sql = "DELETE FROM XE WHERE BienSo = @bienso";
+                SqlCommand cmd = new SqlCommand(sql, con);
+                cmd.Parameters.AddWithValue("@bienso", bienso);
+                cmd.Connection = con;
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            return true;
         }
         public DataTable TimKiemTheoTen(string s)
         {
@@ -129,6 +137,27 @@ namespace QLGROTO.DAO
                 cmd.Parameters.AddWithValue("@diachi", dchi);
                 cmd.Parameters.AddWithValue("@dth", dth);
                 cmd.Parameters.AddWithValue("@email", email);
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            return true;
+        }
+        public bool SuaTienNo(string bienso, double tn)
+        {
+            string sql = "UPDATE XE SET TienNo = @tn WHERE BienSo = @bienso";
+            SqlConnection con = dc.getConnect();
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(sql, con);
+                cmd.Parameters.AddWithValue("@bienso", bienso);
+               
+                cmd.Parameters.AddWithValue("@tn", tn);
+
                 cmd.ExecuteNonQuery();
                 con.Close();
             }

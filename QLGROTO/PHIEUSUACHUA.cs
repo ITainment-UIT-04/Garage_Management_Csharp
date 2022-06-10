@@ -138,15 +138,16 @@ namespace QLGROTO
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if (pscdtgrid.Rows.Count == 0)
-                MessageBox.Show("Không có dữ liệu để xóa!");
-            else
+            if (pscdtgrid.Rows.Count > 0)
             {
                 double tt = Convert.ToDouble(pscdtgrid.CurrentRow.Cells["ThanhTien"].Value.ToString());
                 pscdtgrid.Rows.RemoveAt(pscdtgrid.CurrentCell.RowIndex);
                 s -= tt;
                 ttttxtbox.Text = s.ToString();
             }
+            else
+                MessageBox.Show("Không có thông tin để xóa!");
+
         }
 
         private void huybtn_Click(object sender, EventArgs e)
@@ -175,25 +176,28 @@ namespace QLGROTO
 
                 foreach (DataGridViewRow dataRow in pscdtgrid.Rows)
                 {
-                    string mavt = pscdtgrid.CurrentRow.Cells["MaVTPT"].Value.ToString();
-                    string tenvt = pscdtgrid.CurrentRow.Cells["TenVTPT"].Value.ToString();
-                    string noidung = pscdtgrid.CurrentRow.Cells["NoiDung"].Value.ToString();
-                    int sl = Convert.ToInt32(pscdtgrid.CurrentRow.Cells["SoLuong"].Value);
-                    string dg = pscdtgrid.CurrentRow.Cells["DonGia"].Value.ToString();
-                    string tc = pscdtgrid.CurrentRow.Cells["TienCong"].Value.ToString();
-                    string tt = pscdtgrid.CurrentRow.Cells["ThanhTien"].Value.ToString();
+                    string mavt = dataRow.Cells["MaVTPT"].Value.ToString();
+                    string tenvt = dataRow.Cells["TenVTPT"].Value.ToString();
+                    string noidung = dataRow.Cells["NoiDung"].Value.ToString();
+                    int sl = Convert.ToInt32(dataRow.Cells["SoLuong"].Value);
+                    string dg = dataRow.Cells["DonGia"].Value.ToString();
+                    double tc = Convert.ToDouble(dataRow.Cells["TienCong"].Value.ToString());
+                    string tt = dataRow.Cells["ThanhTien"].Value.ToString();
                     string matc = "";
                     SqlDataReader dr = TIENCONGDAO.Instance.LoadTienCongTheoNoiDung(noidung);
                     if (dr.Read())
                         matc = dr["MaTienCong"].ToString();
 
-                    if (!CT_PSCDAO.Instance.Them(masc, noidung, mavt, tenvt, sl, dg, matc, tc, tt))
-                    {
+                    CT_PSCDAO.Instance.Them(masc, noidung, mavt, tenvt, sl, dg, matc, tc, tt);
+                    
 
-                        MessageBox.Show("Lập phiếu thất bại!");
-                        break;
-                    }
-
+                }
+                SqlDataReader dr1 = XEDAO.Instance.LoadThongTinTheoBienSo(bienso);
+                if (dr1.Read())
+                {
+                    double tiennocu = Convert.ToDouble(dr1["TienNo"]);
+                    double tiennomoi = tiennocu + tongtien;
+                    XEDAO.Instance.SuaTienNo(bienso, tiennomoi);
                 }
                 this.Close();
 

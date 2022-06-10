@@ -126,7 +126,7 @@ namespace QLGROTO.DAO
 
 
         }
-        public bool SuaVTPT(string ma, string ten, string dg)
+        public bool SuaVTPT(string ma, string ten, double dg)
         {
             string sql = "UPDATE PHUTUNG SET TenVTPT = @ten, DonGia = @dg WHERE MaVTPT = @ma";
             SqlConnection con = dc.getConnect();

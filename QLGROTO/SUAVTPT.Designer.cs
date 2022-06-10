@@ -86,6 +86,7 @@
             this.dgtxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.dgtxtbox.Size = new System.Drawing.Size(360, 25);
             this.dgtxtbox.TabIndex = 51;
+            this.dgtxtbox.TextChanged += new System.EventHandler(this.dgtxtbox_TextChanged);
             // 
             // tenvtpttxtbox
             // 

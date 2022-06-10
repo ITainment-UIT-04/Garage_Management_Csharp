@@ -25,16 +25,15 @@ namespace QLGROTO
 
         private void suabtn_Click(object sender, EventArgs e)
         {
-            double output;
+           
             if (String.IsNullOrEmpty(dgtxtbox.Text) || String.IsNullOrEmpty(tenvtpttxtbox.Text))
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
-            else if (!double.TryParse(dgtxtbox.Text, out output))
-                MessageBox.Show("Vui lòng nhập đơn giá thích hợp!");
+            
             else
             {
                 string ma = mavtpttxtbox.Text;
                 string ten = tenvtpttxtbox.Text;
-                string dg = dgtxtbox.Text;
+                double dg = Convert.ToDouble(dgtxtbox.Text);
                 if (VTPTDAO.Instance.SuaVTPT(ma, ten, dg))
                 {
                     this.Close();
@@ -62,6 +61,16 @@ namespace QLGROTO
         private void sltnumeric_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dgtxtbox_TextChanged(object sender, EventArgs e)
+        {
+            double output;
+            if (!double.TryParse(dgtxtbox.Text, out output) && !String.IsNullOrEmpty(dgtxtbox.Text))
+            {
+                MessageBox.Show("Vui lòng nhập đơn giá thích hợp!");
+                dgtxtbox.Clear();
+            }
         }
     }
 }

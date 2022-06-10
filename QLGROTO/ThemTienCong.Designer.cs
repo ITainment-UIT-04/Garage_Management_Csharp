@@ -107,6 +107,7 @@
             this.tctxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.tctxtbox.Size = new System.Drawing.Size(360, 25);
             this.tctxtbox.TabIndex = 62;
+            this.tctxtbox.TextChanged += new System.EventHandler(this.tctxtbox_TextChanged);
             // 
             // matctxtbox
             // 

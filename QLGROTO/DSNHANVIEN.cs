@@ -80,8 +80,13 @@ namespace QLGROTO
 
         private void xoanvbtn_Click(object sender, EventArgs e)
         {
-            NHANVIENDAO.Instance.XoaNhanVien(tdntxtbox.Text);
-            HienThi();
+            if (nvdtgrid.Rows.Count > 0)
+            {
+                NHANVIENDAO.Instance.XoaNhanVien(tdntxtbox.Text);
+                HienThi();
+            }
+            else
+                MessageBox.Show("Không có thông tin để xóa!");
         }
 
         private void suanvbtn_Click(object sender, EventArgs e)

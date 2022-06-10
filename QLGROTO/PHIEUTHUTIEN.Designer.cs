@@ -1,6 +1,6 @@
 ﻿namespace QLGROTO
 {
-    partial class THUTIEN
+    partial class PHIEUTHUTIEN
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(THUTIEN));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PHIEUTHUTIEN));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -329,6 +329,7 @@
             // 
             // ngaydtpicker
             // 
+            this.ngaydtpicker.Enabled = false;
             this.ngaydtpicker.Location = new System.Drawing.Point(232, 99);
             this.ngaydtpicker.Name = "ngaydtpicker";
             this.ngaydtpicker.Size = new System.Drawing.Size(358, 23);
@@ -394,7 +395,7 @@
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label13.Click += new System.EventHandler(this.label3_Click);
             // 
-            // THUTIEN
+            // PHIEUTHUTIEN
             // 
             this.AcceptButton = this.lapphieubtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -434,7 +435,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "THUTIEN";
+            this.Name = "PHIEUTHUTIEN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phiếu thu tiền";
             this.Load += new System.EventHandler(this.THUTIEN_Load);

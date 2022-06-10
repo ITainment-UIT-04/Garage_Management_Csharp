@@ -79,7 +79,7 @@ namespace QLGROTO.DAO
             con.Close();
             return dt;
         }
-        public bool Them(string maptt, string bienso, string sotienthu)
+        public bool Them(string maptt, string bienso, double sotienthu)
         {
             string sql = "INSERT INTO PHIEUTHUTIEN (MaPTT, BienSo, NgayThuTien, SoTienThu) VALUES (@maptt, @bienso, GETDATE(), @sotienthu)";
             SqlConnection con = dc.getConnect();
