@@ -350,6 +350,8 @@
             // 
             // biensocbbox
             // 
+            this.biensocbbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.biensocbbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.biensocbbox.FormattingEnabled = true;
             this.biensocbbox.Location = new System.Drawing.Point(230, 128);
             this.biensocbbox.Name = "biensocbbox";

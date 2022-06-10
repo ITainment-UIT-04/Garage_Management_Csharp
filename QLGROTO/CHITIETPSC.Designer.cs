@@ -64,6 +64,7 @@
             // biensotxtbox
             // 
             this.biensotxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.biensotxtbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.biensotxtbox.Enabled = false;
             this.biensotxtbox.Location = new System.Drawing.Point(609, 69);
             this.biensotxtbox.Name = "biensotxtbox";

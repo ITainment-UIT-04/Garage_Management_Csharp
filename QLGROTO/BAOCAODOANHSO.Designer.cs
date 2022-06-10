@@ -40,14 +40,14 @@
             this.hienbcbtn = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.bcdsdtgrid = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.ttttxtbox = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
             this.HieuXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SOLUOT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TiLe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thoatbtn = new System.Windows.Forms.Button();
+            this.ttttxtbox = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.namnumeric)).BeginInit();
@@ -238,48 +238,6 @@
             this.bcdsdtgrid.TabIndex = 1;
             this.bcdsdtgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bcdsdtgrid_CellContentClick);
             // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(1001, 649);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Thoát";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // ttttxtbox
-            // 
-            this.ttttxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.ttttxtbox.Enabled = false;
-            this.ttttxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ttttxtbox.Location = new System.Drawing.Point(432, 650);
-            this.ttttxtbox.Name = "ttttxtbox";
-            this.ttttxtbox.Size = new System.Drawing.Size(397, 27);
-            this.ttttxtbox.TabIndex = 17;
-            // 
-            // label11
-            // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(272, 646);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(154, 28);
-            this.label11.TabIndex = 16;
-            this.label11.Text = "Tổng thành tiền:";
-            // 
-            // button4
-            // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button4.Location = new System.Drawing.Point(755, 650);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(9, 8);
-            this.button4.TabIndex = 18;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // HieuXe
             // 
             this.HieuXe.DataPropertyName = "HieuXe";
@@ -312,14 +270,58 @@
             this.TiLe.Name = "TiLe";
             this.TiLe.ReadOnly = true;
             // 
+            // thoatbtn
+            // 
+            this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.thoatbtn.Location = new System.Drawing.Point(1001, 649);
+            this.thoatbtn.Name = "thoatbtn";
+            this.thoatbtn.Size = new System.Drawing.Size(94, 29);
+            this.thoatbtn.TabIndex = 3;
+            this.thoatbtn.Text = "Thoát";
+            this.thoatbtn.UseVisualStyleBackColor = true;
+            this.thoatbtn.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // ttttxtbox
+            // 
+            this.ttttxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.ttttxtbox.Enabled = false;
+            this.ttttxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ttttxtbox.Location = new System.Drawing.Point(432, 650);
+            this.ttttxtbox.Name = "ttttxtbox";
+            this.ttttxtbox.Size = new System.Drawing.Size(397, 27);
+            this.ttttxtbox.TabIndex = 17;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(272, 646);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(154, 28);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "Tổng thành tiền:";
+            // 
+            // button4
+            // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button4.Location = new System.Drawing.Point(755, 650);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(9, 8);
+            this.button4.TabIndex = 18;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // BAOCAODOANHSO
             // 
+            this.AcceptButton = this.thoatbtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.thoatbtn;
             this.ClientSize = new System.Drawing.Size(1107, 690);
             this.Controls.Add(this.ttttxtbox);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -347,7 +349,7 @@
         private GroupBox groupBox1;
         private Button hienbcbtn;
         private GroupBox groupBox2;
-        private Button button2;
+        private Button thoatbtn;
         private NumericUpDown namnumeric;
         private NumericUpDown thangnumeric;
         private Label label2;
