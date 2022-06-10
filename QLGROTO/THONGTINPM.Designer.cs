@@ -41,7 +41,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.Desktop;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.label1.Location = new System.Drawing.Point(77, 9);
+            this.label1.Location = new System.Drawing.Point(171, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(360, 30);
             this.label1.TabIndex = 0;
@@ -51,32 +51,36 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.Desktop;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.label2.Location = new System.Drawing.Point(12, 271);
+            this.label2.Location = new System.Drawing.Point(12, 446);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 15);
+            this.label2.Size = new System.Drawing.Size(227, 21);
             this.label2.TabIndex = 1;
             this.label2.Text = "© 2022 Nhóm 18 - SE104.M22";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.Desktop;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.label4.Location = new System.Drawing.Point(15, 288);
+            this.label4.Location = new System.Drawing.Point(12, 467);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 15);
+            this.label4.Size = new System.Drawing.Size(153, 17);
             this.label4.TabIndex = 1;
             this.label4.Text = "Mọi quyền được bảo lưu";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // thoatbtn
             // 
             this.thoatbtn.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.thoatbtn.ForeColor = System.Drawing.Color.Black;
-            this.thoatbtn.Location = new System.Drawing.Point(410, 281);
+            this.thoatbtn.Location = new System.Drawing.Point(602, 458);
             this.thoatbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.thoatbtn.Name = "thoatbtn";
-            this.thoatbtn.Size = new System.Drawing.Size(82, 22);
+            this.thoatbtn.Size = new System.Drawing.Size(88, 26);
             this.thoatbtn.TabIndex = 2;
             this.thoatbtn.Text = "Thoát";
             this.thoatbtn.UseVisualStyleBackColor = false;
@@ -91,7 +95,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.thoatbtn;
-            this.ClientSize = new System.Drawing.Size(504, 314);
+            this.ClientSize = new System.Drawing.Size(702, 495);
             this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
