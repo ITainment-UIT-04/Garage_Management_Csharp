@@ -67,7 +67,7 @@ namespace QLGROTO
                 ttttxtbox.Text = ttt.ToString();
                 for (int i = 0; i < bcdsdtgrid.Rows.Count; i++)
                 {
-                    bcdsdtgrid.Rows[i].Cells["TiLe"].Value = (Convert.ToDouble(bcdsdtgrid.Rows[i].Cells["THANHTIEN"].Value) / ttt).
+                    bcdsdtgrid.Rows[i].Cells["TiLe"].Value = (Convert.ToDouble(bcdsdtgrid.Rows[i].Cells["THANHTIEN"].Value) / ttt);
                 }
             }
         }

@@ -114,7 +114,26 @@ namespace QLGROTO.DAO
             return dt;
 
         }
-        
+        public bool SuaSL(string ma, int sl)
+        {
+            string sql = "UPDATE PHUTUNG SET SoLuongTon = @sl WHERE MaVTPT = @ma";
+            SqlConnection con = dc.getConnect();
+            try
+            {
+                SqlCommand cmd = new SqlCommand(sql, con);
+
+                con.Open();
+                cmd.Parameters.AddWithValue("@ma", ma);
+                cmd.Parameters.AddWithValue("@sl", sl);
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            return true;
+        }
         public bool SuaSLDG(string ma, int sl, double dg)
         {
             string sql = "UPDATE PHUTUNG SET SoLuongTon = @sl, DonGia = @dg WHERE MaVTPT = @ma";

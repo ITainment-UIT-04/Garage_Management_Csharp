@@ -66,6 +66,8 @@
             this.ttttxtbox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.biensocbbox = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.tonkhotxtbox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slnumeric)).BeginInit();
@@ -178,10 +180,12 @@
             this.panel2.Controls.Add(this.thembtn);
             this.panel2.Controls.Add(this.thanhtientxtbox);
             this.panel2.Controls.Add(this.button6);
+            this.panel2.Controls.Add(this.tonkhotxtbox);
             this.panel2.Controls.Add(this.dgtxtbox);
             this.panel2.Controls.Add(this.tctxtbox);
             this.panel2.Controls.Add(this.ptcbbox);
             this.panel2.Controls.Add(this.ndcbbox);
+            this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label6);
@@ -475,6 +479,26 @@
             this.biensocbbox.Size = new System.Drawing.Size(223, 28);
             this.biensocbbox.TabIndex = 19;
             // 
+            // label12
+            // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(581, 102);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(87, 28);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Tồn kho:";
+            // 
+            // tonkhotxtbox
+            // 
+            this.tonkhotxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tonkhotxtbox.Enabled = false;
+            this.tonkhotxtbox.Location = new System.Drawing.Point(678, 106);
+            this.tonkhotxtbox.Name = "tonkhotxtbox";
+            this.tonkhotxtbox.Size = new System.Drawing.Size(271, 27);
+            this.tonkhotxtbox.TabIndex = 3;
+            // 
             // PHIEUSUACHUA
             // 
             this.AcceptButton = this.lapphieubtn;
@@ -553,5 +577,7 @@
         private DataGridViewTextBoxColumn ThanhTien;
         private ComboBox biensocbbox;
         private NumericUpDown slnumeric;
+        private TextBox tonkhotxtbox;
+        private Label label12;
     }
 }

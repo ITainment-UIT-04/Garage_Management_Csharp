@@ -64,11 +64,16 @@ namespace QLGROTO
 
         private void ptcbbox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            int slt = 0;
             SqlDataReader dr = VTPTDAO.Instance.LoadVTPTTheoTen(ptcbbox.Text);
             if (dr.Read())
+            {
                 dgtxtbox.Text = dr["DonGia"].ToString();
+                slt = Convert.ToInt32(dr["SoLuongTon"]);
+            }
+            tonkhotxtbox.Text = slt.ToString();
             int sl = Convert.ToInt32(slnumeric.Value);
-            if (!String.IsNullOrEmpty(tctxtbox.Text) && !String.IsNullOrEmpty(dgtxtbox.Text) && sl > 0)
+            if (!String.IsNullOrEmpty(tctxtbox.Text) && !String.IsNullOrEmpty(dgtxtbox.Text))
             {
                 double dg = Double.Parse(dgtxtbox.Text);
 
@@ -125,14 +130,24 @@ namespace QLGROTO
                 double tt = Convert.ToDouble(thanhtientxtbox.Text);
                 string tc = tctxtbox.Text;
                 int sl = Convert.ToInt32(slnumeric.Value);
+                int slt = 0;
                 string mavt = "";
                 SqlDataReader dr = VTPTDAO.Instance.LoadVTPTTheoTen(tenvt);
                 if (dr.Read())
+                {
                     mavt = dr["MaVTPT"].ToString();
+                    slt = Convert.ToInt32(dr["SoLuongTon"]);
+                }
+                if (slt - sl >= 0)
+                {
+                    pscdtgrid.Rows.Add(nd, mavt, tenvt, sl, dg, tc, tt);
 
-                pscdtgrid.Rows.Add(nd, mavt, tenvt, sl, dg, tc, tt);
-                s += tt;
-                ttttxtbox.Text = s.ToString();
+                    s += tt;
+                    ttttxtbox.Text = s.ToString();
+                }
+                else
+                    MessageBox.Show("Không đủ vật tư phụ tùng!");
+            
             }
         }
 
@@ -189,7 +204,17 @@ namespace QLGROTO
                         matc = dr["MaTienCong"].ToString();
 
                     CT_PSCDAO.Instance.Them(masc, noidung, mavt, tenvt, sl, dg, matc, tc, tt);
+                    SqlDataReader dr2 = VTPTDAO.Instance.LoadVTPTTheoTen(tenvt);
+                    int slcu = 0;
+
+                    if (dr2.Read())
+                    {
+                        slcu = Convert.ToInt32(dr2["SoLuongTon"]);
+                    }
+                    int slmoi = slcu - sl;
+                    VTPTDAO.Instance.SuaSL(mavt, slmoi);
                     
+                       
 
                 }
                 SqlDataReader dr1 = XEDAO.Instance.LoadThongTinTheoBienSo(bienso);
