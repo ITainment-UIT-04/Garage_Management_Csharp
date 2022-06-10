@@ -40,14 +40,14 @@
             this.themtiencong_btn = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.bcdsdtgrid = new System.Windows.Forms.DataGridView();
-            this.MaBCDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HieuXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TiLe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
             this.ttttxtbox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
+            this.HieuXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TiLe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.namnumeric)).BeginInit();
@@ -220,8 +220,8 @@
             this.bcdsdtgrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bcdsdtgrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bcdsdtgrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaBCDT,
             this.HieuXe,
+            this.Column1,
             this.ThanhTien,
             this.TiLe});
             this.bcdsdtgrid.Location = new System.Drawing.Point(8, 26);
@@ -231,38 +231,6 @@
             this.bcdsdtgrid.RowTemplate.Height = 29;
             this.bcdsdtgrid.Size = new System.Drawing.Size(1067, 435);
             this.bcdsdtgrid.TabIndex = 1;
-            // 
-            // MaBCDT
-            // 
-            this.MaBCDT.DataPropertyName = "MaBCDT";
-            this.MaBCDT.HeaderText = "Mã BCDT";
-            this.MaBCDT.MinimumWidth = 6;
-            this.MaBCDT.Name = "MaBCDT";
-            this.MaBCDT.ReadOnly = true;
-            // 
-            // HieuXe
-            // 
-            this.HieuXe.DataPropertyName = "HieuXe";
-            this.HieuXe.HeaderText = "Hiệu xe";
-            this.HieuXe.MinimumWidth = 6;
-            this.HieuXe.Name = "HieuXe";
-            this.HieuXe.ReadOnly = true;
-            // 
-            // ThanhTien
-            // 
-            this.ThanhTien.DataPropertyName = "ThanhTien";
-            this.ThanhTien.HeaderText = "Thành tiền";
-            this.ThanhTien.MinimumWidth = 6;
-            this.ThanhTien.Name = "ThanhTien";
-            this.ThanhTien.ReadOnly = true;
-            // 
-            // TiLe
-            // 
-            this.TiLe.DataPropertyName = "TiLe";
-            this.TiLe.HeaderText = "Tỉ lệ";
-            this.TiLe.MinimumWidth = 6;
-            this.TiLe.Name = "TiLe";
-            this.TiLe.ReadOnly = true;
             // 
             // button2
             // 
@@ -305,6 +273,37 @@
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
+            // HieuXe
+            // 
+            this.HieuXe.DataPropertyName = "HieuXe";
+            this.HieuXe.HeaderText = "Hiệu xe";
+            this.HieuXe.MinimumWidth = 6;
+            this.HieuXe.Name = "HieuXe";
+            this.HieuXe.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Số lượt sửa";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // ThanhTien
+            // 
+            this.ThanhTien.DataPropertyName = "ThanhTien";
+            this.ThanhTien.HeaderText = "Thành tiền";
+            this.ThanhTien.MinimumWidth = 6;
+            this.ThanhTien.Name = "ThanhTien";
+            this.ThanhTien.ReadOnly = true;
+            // 
+            // TiLe
+            // 
+            this.TiLe.DataPropertyName = "TiLe";
+            this.TiLe.HeaderText = "Tỉ lệ";
+            this.TiLe.MinimumWidth = 6;
+            this.TiLe.Name = "TiLe";
+            this.TiLe.ReadOnly = true;
+            // 
             // BAOCAODOANHSO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -346,13 +345,13 @@
         private Label label2;
         private Label label1;
         private DataGridView bcdsdtgrid;
-        private DataGridViewTextBoxColumn MaBCDT;
-        private DataGridViewTextBoxColumn HieuXe;
-        private DataGridViewTextBoxColumn ThanhTien;
-        private DataGridViewTextBoxColumn TiLe;
         private Button xuatbtn;
         private TextBox ttttxtbox;
         private Label label11;
         private Button button4;
+        private DataGridViewTextBoxColumn HieuXe;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn ThanhTien;
+        private DataGridViewTextBoxColumn TiLe;
     }
 }
