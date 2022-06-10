@@ -150,5 +150,11 @@ namespace QLGROTO
             else
                 HienThi();
         }
+
+        private void themtcbtn_Click(object sender, EventArgs e)
+        {
+            THEMVTPT t = new THEMVTPT();
+            t.ShowDialog();
+        }
     }
 }

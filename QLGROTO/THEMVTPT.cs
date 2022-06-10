@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace QLGROTO
 {
-    public partial class ThemTienCong : Form
+    public partial class THEMVTPT : Form
     {
-        public ThemTienCong()
+        public THEMVTPT()
         {
             InitializeComponent();
         }
@@ -25,10 +25,9 @@ namespace QLGROTO
 
         private void thembtn_Click(object sender, EventArgs e)
         {
-            string matc = matctxtbox.Text;
-            string tc = tctxtbox.Text;
-            string nd = ndtxtbox.Text;
-            if (TIENCONGDAO.Instance.ThemTienCong(matc, tc, nd))
+            string ma = mavttxtbox.Text;
+            string ten = tenvttxtbox.Text;
+            if (VTPTDAO.Instance.ThemVTPT(ma, ten))
             {
                 this.Close();
             }
@@ -39,9 +38,9 @@ namespace QLGROTO
             }
         }
 
-        private void ThemTienCong_Load(object sender, EventArgs e)
+        private void THEMVTPT_Load(object sender, EventArgs e)
         {
-            matctxtbox.Text = TIENCONGDAO.Instance.LoadMaTienCong();
+            mavttxtbox.Text = VTPTDAO.Instance.LoadMAVTPT();
         }
     }
 }

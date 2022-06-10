@@ -57,3 +57,4 @@ C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.DSP
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.THONGTINADMIN.resources
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.SUATHONGTINADMIN.resources
 C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.DOIMATKHAU.resources
+C:\Users\84981\source\repos\QLGROTO\QLGROTO\obj\Debug\net6.0-windows\QLGROTO.THEMVTPT.resources

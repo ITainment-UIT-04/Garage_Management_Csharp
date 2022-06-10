@@ -157,6 +157,18 @@ namespace QLGROTO.DAO
 
 
         }
+        public string LoadMaTienCong()
+        {
+            SqlConnection con = dc.getConnect();
+            con.Open();
+            string sql = "SELECT COUNT(*) + 1 AS SO FROM TIENCONG";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dr = cmd.ExecuteReader();
+            string l = "";
+            if (dr.Read())
+                l = dr["SO"].ToString();
+            return "TC" + l;
+        }
         public SqlDataReader HienThiNoiDungComboBox()
         {
             SqlConnection con = dc.getConnect();

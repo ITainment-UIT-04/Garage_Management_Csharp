@@ -59,6 +59,40 @@ namespace QLGROTO.DAO
             }
             return true;
         }
+        public string LoadMAVTPT()
+        {
+            SqlConnection con = dc.getConnect();
+            con.Open();
+            string sql = "SELECT COUNT(*) + 1 AS SO FROM PHUTUNG";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dr = cmd.ExecuteReader();
+            string l = "";
+            if (dr.Read())
+                l = dr["SO"].ToString();
+            return "PT" + l;
+        }
+        public bool ThemVTPT(string ma, string ten)
+        {
+            string sql = "INSERT INTO TIENCONG (MaVTPT, TenVTPT, SoLuongTon, DonGia)" +
+                "VALUES (@ma, @ten, 0, 0)";
+            SqlConnection con = dc.getConnect();
+            try
+            {
+                SqlCommand cmd = new SqlCommand(sql, con);
+
+                con.Open();
+                cmd.Parameters.AddWithValue("@ma", ma);
+                cmd.Parameters.AddWithValue("@ten", ten);
+
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            return true;
+        }
         public SqlDataReader LoadVTPT()
         {
             SqlConnection con = dc.getConnect();

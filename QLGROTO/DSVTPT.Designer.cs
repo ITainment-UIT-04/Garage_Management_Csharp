@@ -54,6 +54,7 @@
             this.dgtxtbox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.timkiembtn = new System.Windows.Forms.Button();
+            this.themtcbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptdtgrid)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -193,7 +194,7 @@
             this.xoavtptbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.xoavtptbtn.Image = global::QLGROTO.Properties.Resources.recycle_310938_640;
             this.xoavtptbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.xoavtptbtn.Location = new System.Drawing.Point(431, 745);
+            this.xoavtptbtn.Location = new System.Drawing.Point(569, 745);
             this.xoavtptbtn.Name = "xoavtptbtn";
             this.xoavtptbtn.Size = new System.Drawing.Size(265, 65);
             this.xoavtptbtn.TabIndex = 6;
@@ -209,7 +210,7 @@
             this.suavtptbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.suavtptbtn.Image = ((System.Drawing.Image)(resources.GetObject("suavtptbtn.Image")));
             this.suavtptbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.suavtptbtn.Location = new System.Drawing.Point(12, 745);
+            this.suavtptbtn.Location = new System.Drawing.Point(292, 745);
             this.suavtptbtn.Name = "suavtptbtn";
             this.suavtptbtn.Size = new System.Drawing.Size(265, 65);
             this.suavtptbtn.TabIndex = 5;
@@ -372,6 +373,22 @@
             this.timkiembtn.UseVisualStyleBackColor = false;
             this.timkiembtn.Click += new System.EventHandler(this.timkiembtn_Click);
             // 
+            // themtcbtn
+            // 
+            this.themtcbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.themtcbtn.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.themtcbtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.themtcbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.themtcbtn.Image = ((System.Drawing.Image)(resources.GetObject("themtcbtn.Image")));
+            this.themtcbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.themtcbtn.Location = new System.Drawing.Point(12, 745);
+            this.themtcbtn.Name = "themtcbtn";
+            this.themtcbtn.Size = new System.Drawing.Size(265, 65);
+            this.themtcbtn.TabIndex = 62;
+            this.themtcbtn.Text = "Thêm VTPT";
+            this.themtcbtn.UseVisualStyleBackColor = false;
+            this.themtcbtn.Click += new System.EventHandler(this.themtcbtn_Click);
+            // 
             // DSVTPT
             // 
             this.AcceptButton = this.timkiembtn;
@@ -380,6 +397,7 @@
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.CancelButton = this.thoatbtn;
             this.ClientSize = new System.Drawing.Size(1135, 857);
+            this.Controls.Add(this.themtcbtn);
             this.Controls.Add(this.timkiembtn);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.thoatbtn);
@@ -434,5 +452,6 @@
         private DataGridViewTextBoxColumn SoLuongTon;
         private DataGridViewTextBoxColumn DonGia;
         private Button timkiembtn;
+        private Button themtcbtn;
     }
 }
