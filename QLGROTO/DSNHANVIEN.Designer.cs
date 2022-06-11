@@ -179,6 +179,8 @@
             this.nvdtgrid.Size = new System.Drawing.Size(1380, 319);
             this.nvdtgrid.TabIndex = 500;
             this.nvdtgrid.TabStop = false;
+            this.nvdtgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.nvdtgrid_CellContentClick);
+            this.nvdtgrid.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.nvdtgrid_CellValueChanged);
             this.nvdtgrid.SelectionChanged += new System.EventHandler(this.nvdtgrid_SelectionChanged);
             // 
             // TenDangNhap

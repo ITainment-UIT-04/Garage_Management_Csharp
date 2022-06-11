@@ -49,12 +49,19 @@ namespace QLGROTO
 
         private void suatiencong_btn_Click(object sender, EventArgs e)
         {
-            SUATIENCONG wageForm = new SUATIENCONG();
-            wageForm.matiencong = matctxtbox.Text;
-            wageForm.tiencong = tctxtbox.Text;
-            wageForm.noidung = ndtxtbox.Text;
-            wageForm.ShowDialog();
-            HienThi();
+            if (tcdtgrid.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có loại tiền công để cập nhật!");
+            }
+            else
+            {
+                SUATIENCONG wageForm = new SUATIENCONG();
+                wageForm.matiencong = matctxtbox.Text;
+                wageForm.tiencong = tctxtbox.Text;
+                wageForm.noidung = ndtxtbox.Text;
+                wageForm.ShowDialog();
+                HienThi();
+            }
         }
 
         private void tcdtgrid_SelectionChanged(object sender, EventArgs e)
@@ -74,10 +81,13 @@ namespace QLGROTO
                 string mtc = matctxtbox.Text;
                 if (!TIENCONGDAO.Instance.XoaTienCong(mtc))
                     MessageBox.Show("Không thể xóa tiền công!");
+                tctxtbox.Clear();
+                ndtxtbox.Clear();
+                matctxtbox.Clear();
                 HienThi();
             }
             else
-                MessageBox.Show("Không có thông tin để xóa!");
+                MessageBox.Show("Không có loại tiền công để xóa!");
         }
 
         private void timkiemtxtbox_TextChanged(object sender, EventArgs e)
@@ -119,24 +129,29 @@ namespace QLGROTO
 
         private void xuatbtn_Click(object sender, EventArgs e)
         {
-            using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
+            if (tcdtgrid.Rows.Count == 0)
+                MessageBox.Show("Không có thông tin để xuất!");
+            else
             {
-                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
                 {
-                    try
+                    if (saveFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        using (XLWorkbook workbook = new XLWorkbook())
+                        try
                         {
-                            workbook.Worksheets.Add(tcdtgrid.DataSource as DataTable, "TienCong");
+                            using (XLWorkbook workbook = new XLWorkbook())
+                            {
+                                workbook.Worksheets.Add(tcdtgrid.DataSource as DataTable, "TienCong");
 
-                            workbook.SaveAs(saveFileDialog.FileName);
+                                workbook.SaveAs(saveFileDialog.FileName);
 
 
+                            }
                         }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Xuất file không thành công!");
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Xuất file không thành công!");
+                        }
                     }
                 }
             }

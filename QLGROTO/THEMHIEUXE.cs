@@ -43,7 +43,7 @@ namespace QLGROTO
                 }
                 else
                 {
-                    MessageBox.Show("Thêm thất bại!");
+                    MessageBox.Show("Thêm hiệu xe thất bại!");
                     this.Close();
                 }
             }

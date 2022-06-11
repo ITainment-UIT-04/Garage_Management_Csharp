@@ -47,7 +47,7 @@ namespace QLGROTO
                 }
                 else
                 {
-                    MessageBox.Show("Sửa thất bại!");
+                    MessageBox.Show("Cập nhật loại tiền công thất bại!");
                     this.Close();
                 }
             }

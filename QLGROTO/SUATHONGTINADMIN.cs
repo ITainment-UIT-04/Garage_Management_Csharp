@@ -56,7 +56,7 @@ namespace QLGROTO
             }
             else
             {
-                MessageBox.Show("Cập nhật thông tin admin thất bại!");
+                MessageBox.Show("Cập nhật thông tin quản lý thất bại!");
                 this.Close();
             }
 

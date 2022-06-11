@@ -58,13 +58,18 @@ namespace QLGROTO
 
         private void button10_Click(object sender, EventArgs e)
         {
-            SUAVTPT infoAccChangeForm = new SUAVTPT();
-            infoAccChangeForm.mavtpt = mavtpttxtbox.Text;
-            infoAccChangeForm.tenvtpt =tenvtpttxtbox.Text;
-            infoAccChangeForm.soluong = Convert.ToInt32(sltxtbox.Text);
-            infoAccChangeForm.dongia = dgtxtbox.Text;    
-            infoAccChangeForm.ShowDialog();
-            HienThi();
+            if (ptdtgrid.Rows.Count == 0)
+                MessageBox.Show("Không có vật tư phụ tùng để cập nhật!");
+            else
+            {
+                SUAVTPT infoAccChangeForm = new SUAVTPT();
+                infoAccChangeForm.mavtpt = mavtpttxtbox.Text;
+                infoAccChangeForm.tenvtpt = tenvtpttxtbox.Text;
+                infoAccChangeForm.soluong = Convert.ToInt32(sltxtbox.Text);
+                infoAccChangeForm.dongia = dgtxtbox.Text;
+                infoAccChangeForm.ShowDialog();
+                HienThi();
+            }
         }
 
         private void ptdtgrid_SelectionChanged(object sender, EventArgs e)
@@ -87,9 +92,13 @@ namespace QLGROTO
                 if (!VTPTDAO.Instance.XoaVTPT(ma))
                     MessageBox.Show("Không thể xóa vật tư phụ tùng!");
                 HienThi();
+                mavtpttxtbox.Clear();
+                tenvtpttxtbox.Clear();
+                dgtxtbox.Clear();
+                sltxtbox.Clear();
             }
             else
-                MessageBox.Show("Không có thông tin để xóa!");
+                MessageBox.Show("Không có vật tư phụ tùng để xóa!");
         }
 
         private void timkiemtxtbox_TextChanged(object sender, EventArgs e)
@@ -111,24 +120,28 @@ namespace QLGROTO
 
         private void xuatbtn_Click(object sender, EventArgs e)
         {
-            using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
-            {
-                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            if (ptdtgrid.Rows.Count == 0)
+                MessageBox.Show("Không có thông tin để xuất!");
+            else {
+                using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
                 {
-                    try
+                    if (saveFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        using (XLWorkbook workbook = new XLWorkbook())
+                        try
                         {
-                            workbook.Worksheets.Add(ptdtgrid.DataSource as DataTable, "VTPT");
+                            using (XLWorkbook workbook = new XLWorkbook())
+                            {
+                                workbook.Worksheets.Add(ptdtgrid.DataSource as DataTable, "VTPT");
 
-                            workbook.SaveAs(saveFileDialog.FileName);
-                            
-                             
+                                workbook.SaveAs(saveFileDialog.FileName);
+
+
+                            }
                         }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Xuất file không thành công!");
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Xuất file không thành công!");
+                        }
                     }
                 }
             }

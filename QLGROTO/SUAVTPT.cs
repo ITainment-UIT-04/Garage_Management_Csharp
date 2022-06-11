@@ -40,7 +40,7 @@ namespace QLGROTO
                 }
                 else
                 {
-                    MessageBox.Show("Sửa thất bại!");
+                    MessageBox.Show("Cập nhật vật tư phụ tùng thất bại!");
                     this.Close();
                 }
             }

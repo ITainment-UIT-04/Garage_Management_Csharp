@@ -40,7 +40,7 @@ namespace QLGROTO
                 }
                 else
                 {
-                    MessageBox.Show("Thêm thất bại!");
+                    MessageBox.Show("Thêm loại tiền công thất bại!");
                     this.Close();
                 }
             }

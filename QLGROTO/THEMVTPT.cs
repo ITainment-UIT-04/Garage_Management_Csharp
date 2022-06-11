@@ -38,7 +38,7 @@ namespace QLGROTO
                 }
                 else
                 {
-                    MessageBox.Show("Thêm thất bại!");
+                    MessageBox.Show("Thêm vật tư phụ tùng thất bại!");
                     this.Close();
                 }
             }

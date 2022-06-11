@@ -121,7 +121,7 @@ namespace QLGROTO
                 }
                 else
                 {
-                    MessageBox.Show("Trùng biển số/ Vượt quá số xe tiếp nhận trong ngày", "Tiếp nhận thất bại!");
+                    MessageBox.Show("Trùng biển số/ Vượt quá số xe tiếp nhận trong ngày", "Tiếp nhận xe thất bại!");
                     this.Close();
                 }
             }

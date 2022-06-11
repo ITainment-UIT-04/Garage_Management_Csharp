@@ -85,7 +85,7 @@ namespace QLGROTO
                 }
                 else
                 {
-                    MessageBox.Show("Sửa thất bại!");
+                    MessageBox.Show("Cập nhật thông tin xe thất bại!");
                     this.Close();
                 }
             }
