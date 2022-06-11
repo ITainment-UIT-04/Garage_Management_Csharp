@@ -81,10 +81,25 @@ namespace QLGROTO
                 string mtc = matctxtbox.Text;
                 if (!TIENCONGDAO.Instance.XoaTienCong(mtc))
                     MessageBox.Show("Không thể xóa tiền công!");
-                tctxtbox.Clear();
-                ndtxtbox.Clear();
-                matctxtbox.Clear();
-                HienThi();
+                else
+                {
+                    if (tcdtgrid.Rows.Count == 0)
+                    {
+                        tctxtbox.Clear();
+                        ndtxtbox.Clear();
+                        matctxtbox.Clear();
+                    }
+                    else
+                    {
+                        matctxtbox.DataBindings.Clear();
+                        matctxtbox.DataBindings.Add("Text", tcdtgrid.DataSource, "MaTienCong");
+                        tctxtbox.DataBindings.Clear();
+                        tctxtbox.DataBindings.Add("Text", tcdtgrid.DataSource, "TienCong");
+                        ndtxtbox.DataBindings.Clear();
+                        ndtxtbox.DataBindings.Add("Text", tcdtgrid.DataSource, "NoiDung");
+                    }
+                    HienThi();
+                }
             }
             else
                 MessageBox.Show("Không có loại tiền công để xóa!");

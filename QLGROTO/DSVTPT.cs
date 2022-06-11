@@ -91,11 +91,31 @@ namespace QLGROTO
                 string ma = mavtpttxtbox.Text;
                 if (!VTPTDAO.Instance.XoaVTPT(ma))
                     MessageBox.Show("Không thể xóa vật tư phụ tùng!");
-                HienThi();
-                mavtpttxtbox.Clear();
-                tenvtpttxtbox.Clear();
-                dgtxtbox.Clear();
-                sltxtbox.Clear();
+                else
+                {
+                    if (ptdtgrid.Rows.Count == 0)
+                    {
+                        mavtpttxtbox.Clear();
+                        tenvtpttxtbox.Clear();
+                        dgtxtbox.Clear();
+                        sltxtbox.Clear();
+                    }
+                    else
+                    {
+                        mavtpttxtbox.DataBindings.Clear();
+                        mavtpttxtbox.DataBindings.Add("Text", ptdtgrid.DataSource, "MaVTPT");
+                        tenvtpttxtbox.DataBindings.Clear();
+                        tenvtpttxtbox.DataBindings.Add("Text", ptdtgrid.DataSource, "TenVTPT");
+                        sltxtbox.DataBindings.Clear();
+                        sltxtbox.DataBindings.Add("Text", ptdtgrid.DataSource, "SoLuongTon");
+                        dgtxtbox.DataBindings.Clear();
+                        dgtxtbox.DataBindings.Add("Text", ptdtgrid.DataSource, "DonGia");
+                    }
+                    HienThi();
+
+                }
+
+
             }
             else
                 MessageBox.Show("Không có vật tư phụ tùng để xóa!");

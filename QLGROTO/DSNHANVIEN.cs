@@ -90,13 +90,33 @@ namespace QLGROTO
             {
                 NHANVIENDAO.Instance.XoaNhanVien(tdntxtbox.Text);
                 HienThi();
-                tdntxtbox.Clear();
-                mktxtbox.Clear();
-                tentxtbox.Clear();
-                dctxtbox.Clear();
-                dthtxtbox.Clear();
-                emailtxtbox.Clear();
-                chucvutxtbox.Clear();
+                if (nvdtgrid.Rows.Count == 0)
+                {
+                    tdntxtbox.Clear();
+                    mktxtbox.Clear();
+                    tentxtbox.Clear();
+                    dctxtbox.Clear();
+                    dthtxtbox.Clear();
+                    emailtxtbox.Clear();
+                    chucvutxtbox.Clear();
+                }
+                else
+                {
+                    tdntxtbox.DataBindings.Clear();
+                    tdntxtbox.DataBindings.Add("Text", nvdtgrid.DataSource, "TenDangNhap");
+                    mktxtbox.DataBindings.Clear();
+                    mktxtbox.DataBindings.Add("Text", nvdtgrid.DataSource, "MatKhau");
+                    tentxtbox.DataBindings.Clear();
+                    tentxtbox.DataBindings.Add("Text", nvdtgrid.DataSource, "TenNV");
+                    dctxtbox.DataBindings.Clear();
+                    dctxtbox.DataBindings.Add("Text", nvdtgrid.DataSource, "DiaChi");
+                    dthtxtbox.DataBindings.Clear();
+                    dthtxtbox.DataBindings.Add("Text", nvdtgrid.DataSource, "DienThoai");
+                    emailtxtbox.DataBindings.Clear();
+                    emailtxtbox.DataBindings.Add("Text", nvdtgrid.DataSource, "Email");
+                    chucvutxtbox.DataBindings.Clear();
+                    chucvutxtbox.DataBindings.Add("Text", nvdtgrid.DataSource, "ChucVu");
+                }
             }
             else
                 MessageBox.Show("Không có nhân viên để xóa!");
