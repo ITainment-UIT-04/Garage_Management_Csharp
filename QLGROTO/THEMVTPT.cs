@@ -27,7 +27,7 @@ namespace QLGROTO
         {
             if (String.IsNullOrEmpty(tenvttxtbox.Text))
 
-                MessageBox.Show("Vui lòng nhập tiền công thích hợp!");
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
             else
             {
                 string ma = mavttxtbox.Text;
