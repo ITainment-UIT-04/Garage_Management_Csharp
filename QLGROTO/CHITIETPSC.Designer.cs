@@ -65,6 +65,7 @@
             // 
             this.biensotxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.biensotxtbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.biensotxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.biensotxtbox.Enabled = false;
             this.biensotxtbox.Location = new System.Drawing.Point(609, 69);
             this.biensotxtbox.Name = "biensotxtbox";
@@ -130,6 +131,7 @@
             // ttttxtbox
             // 
             this.ttttxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ttttxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.ttttxtbox.Enabled = false;
             this.ttttxtbox.Location = new System.Drawing.Point(651, 550);
             this.ttttxtbox.Name = "ttttxtbox";
@@ -238,6 +240,7 @@
             // masctxtbox
             // 
             this.masctxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.masctxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.masctxtbox.Enabled = false;
             this.masctxtbox.Location = new System.Drawing.Point(251, 69);
             this.masctxtbox.Name = "masctxtbox";

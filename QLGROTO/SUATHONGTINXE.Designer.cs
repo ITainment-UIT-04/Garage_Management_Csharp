@@ -69,6 +69,7 @@
             // 
             this.biensotxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.biensotxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.biensotxtbox.Enabled = false;
             this.biensotxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.biensotxtbox.Location = new System.Drawing.Point(227, 70);
@@ -105,6 +106,7 @@
             // 
             this.tentxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tentxtbox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.tentxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tentxtbox.Location = new System.Drawing.Point(227, 105);
             this.tentxtbox.Multiline = true;
@@ -139,6 +141,7 @@
             // 
             this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox3.BackColor = System.Drawing.SystemColors.HighlightText;
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox3.Location = new System.Drawing.Point(227, 175);
             this.textBox3.Multiline = true;
@@ -163,6 +166,7 @@
             // 
             this.diachitxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.diachitxtbox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.diachitxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.diachitxtbox.Location = new System.Drawing.Point(227, 175);
             this.diachitxtbox.Multiline = true;
@@ -175,6 +179,7 @@
             // 
             this.dthtxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dthtxtbox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.dthtxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dthtxtbox.Location = new System.Drawing.Point(227, 210);
             this.dthtxtbox.Multiline = true;
@@ -247,6 +252,7 @@
             // 
             this.emailtxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.emailtxtbox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.emailtxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.emailtxtbox.Location = new System.Drawing.Point(227, 245);
             this.emailtxtbox.Multiline = true;
@@ -257,6 +263,7 @@
             // 
             // hieuxecbbox
             // 
+            this.hieuxecbbox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.hieuxecbbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.hieuxecbbox.FormattingEnabled = true;
             this.hieuxecbbox.Location = new System.Drawing.Point(227, 140);

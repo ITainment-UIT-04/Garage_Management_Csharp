@@ -168,6 +168,7 @@
             // mapntxtbox
             // 
             this.mapntxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.mapntxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.mapntxtbox.Enabled = false;
             this.mapntxtbox.Location = new System.Drawing.Point(326, 80);
             this.mapntxtbox.Name = "mapntxtbox";
@@ -230,6 +231,7 @@
             this.tenvtcbbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tenvtcbbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.tenvtcbbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.tenvtcbbox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.tenvtcbbox.FormattingEnabled = true;
             this.tenvtcbbox.Location = new System.Drawing.Point(174, 12);
             this.tenvtcbbox.Name = "tenvtcbbox";
@@ -239,6 +241,7 @@
             // slnum
             // 
             this.slnum.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.slnum.BackColor = System.Drawing.SystemColors.HighlightText;
             this.slnum.Location = new System.Drawing.Point(847, 30);
             this.slnum.Maximum = new decimal(new int[] {
             1000,
@@ -308,6 +311,7 @@
             // dgtxtbox
             // 
             this.dgtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dgtxtbox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.dgtxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dgtxtbox.Location = new System.Drawing.Point(174, 46);
             this.dgtxtbox.Multiline = true;

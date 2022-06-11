@@ -42,6 +42,8 @@
             this.SoTienThu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.thoatbtn = new System.Windows.Forms.Button();
             this.xuatbtn = new System.Windows.Forms.Button();
+            this.timtheongayradio = new System.Windows.Forms.RadioButton();
+            this.ngaydtpicker = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pttdtgrid)).BeginInit();
             this.SuspendLayout();
@@ -87,7 +89,7 @@
             this.mapttradio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.mapttradio.AutoSize = true;
             this.mapttradio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.mapttradio.Location = new System.Drawing.Point(479, 101);
+            this.mapttradio.Location = new System.Drawing.Point(418, 101);
             this.mapttradio.Name = "mapttradio";
             this.mapttradio.Size = new System.Drawing.Size(209, 24);
             this.mapttradio.TabIndex = 2;
@@ -98,6 +100,7 @@
             // timkiemtxtbox
             // 
             this.timkiemtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.timkiemtxtbox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.timkiemtxtbox.Location = new System.Drawing.Point(418, 68);
             this.timkiemtxtbox.Name = "timkiemtxtbox";
             this.timkiemtxtbox.Size = new System.Drawing.Size(371, 27);
@@ -131,12 +134,12 @@
             this.NgayThuTien,
             this.BienSo,
             this.SoTienThu});
-            this.pttdtgrid.Location = new System.Drawing.Point(12, 131);
+            this.pttdtgrid.Location = new System.Drawing.Point(12, 164);
             this.pttdtgrid.Name = "pttdtgrid";
             this.pttdtgrid.ReadOnly = true;
             this.pttdtgrid.RowHeadersWidth = 51;
             this.pttdtgrid.RowTemplate.Height = 29;
-            this.pttdtgrid.Size = new System.Drawing.Size(1159, 456);
+            this.pttdtgrid.Size = new System.Drawing.Size(1159, 423);
             this.pttdtgrid.TabIndex = 6;
             this.pttdtgrid.TabStop = false;
             this.pttdtgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.pttdtgrid_CellContentClick);
@@ -199,6 +202,26 @@
             this.xuatbtn.UseVisualStyleBackColor = false;
             this.xuatbtn.Click += new System.EventHandler(this.xuatbtn_Click);
             // 
+            // timtheongayradio
+            // 
+            this.timtheongayradio.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.timtheongayradio.AutoSize = true;
+            this.timtheongayradio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.timtheongayradio.Location = new System.Drawing.Point(633, 101);
+            this.timtheongayradio.Name = "timtheongayradio";
+            this.timtheongayradio.Size = new System.Drawing.Size(191, 24);
+            this.timtheongayradio.TabIndex = 27;
+            this.timtheongayradio.Text = "Tìm theo ngày lập phiếu";
+            this.timtheongayradio.UseVisualStyleBackColor = true;
+            this.timtheongayradio.CheckedChanged += new System.EventHandler(this.timtheongayradio_CheckedChanged);
+            // 
+            // ngaydtpicker
+            // 
+            this.ngaydtpicker.Location = new System.Drawing.Point(482, 131);
+            this.ngaydtpicker.Name = "ngaydtpicker";
+            this.ngaydtpicker.Size = new System.Drawing.Size(250, 27);
+            this.ngaydtpicker.TabIndex = 29;
+            // 
             // DSPHIEUTHUTIEN
             // 
             this.AcceptButton = this.timkiembtn;
@@ -207,6 +230,8 @@
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.CancelButton = this.thoatbtn;
             this.ClientSize = new System.Drawing.Size(1183, 670);
+            this.Controls.Add(this.ngaydtpicker);
+            this.Controls.Add(this.timtheongayradio);
             this.Controls.Add(this.xuatbtn);
             this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.pttdtgrid);
@@ -243,5 +268,7 @@
         private DataGridViewTextBoxColumn BienSo;
         private DataGridViewTextBoxColumn SoTienThu;
         private Button xuatbtn;
+        private RadioButton timtheongayradio;
+        private DateTimePicker ngaydtpicker;
     }
 }

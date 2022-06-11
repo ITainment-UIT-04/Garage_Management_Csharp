@@ -154,6 +154,7 @@
             // dthtxtbox
             // 
             this.dthtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dthtxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.dthtxtbox.Enabled = false;
             this.dthtxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dthtxtbox.Location = new System.Drawing.Point(230, 281);
@@ -166,6 +167,7 @@
             // diachitxtbox
             // 
             this.diachitxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.diachitxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.diachitxtbox.Enabled = false;
             this.diachitxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.diachitxtbox.Location = new System.Drawing.Point(230, 219);
@@ -192,6 +194,7 @@
             // hieuxetxtbox
             // 
             this.hieuxetxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.hieuxetxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.hieuxetxtbox.Enabled = false;
             this.hieuxetxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.hieuxetxtbox.Location = new System.Drawing.Point(230, 189);
@@ -204,6 +207,7 @@
             // tentxtbox
             // 
             this.tentxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tentxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.tentxtbox.Enabled = false;
             this.tentxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tentxtbox.Location = new System.Drawing.Point(230, 159);
@@ -238,6 +242,7 @@
             // tiennotxtbox
             // 
             this.tiennotxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tiennotxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.tiennotxtbox.Enabled = false;
             this.tiennotxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tiennotxtbox.Location = new System.Drawing.Point(230, 312);
@@ -285,6 +290,7 @@
             // tienthutxtbox
             // 
             this.tienthutxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tienthutxtbox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.tienthutxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tienthutxtbox.Location = new System.Drawing.Point(230, 343);
             this.tienthutxtbox.Multiline = true;
@@ -309,6 +315,7 @@
             // tienconnotxtbox
             // 
             this.tienconnotxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tienconnotxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.tienconnotxtbox.Enabled = false;
             this.tienconnotxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tienconnotxtbox.Location = new System.Drawing.Point(230, 374);
@@ -339,6 +346,7 @@
             // matttxtbox
             // 
             this.matttxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.matttxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.matttxtbox.Enabled = false;
             this.matttxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.matttxtbox.Location = new System.Drawing.Point(230, 68);
@@ -352,6 +360,7 @@
             // 
             this.biensocbbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.biensocbbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.biensocbbox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.biensocbbox.FormattingEnabled = true;
             this.biensocbbox.Location = new System.Drawing.Point(230, 128);
             this.biensocbbox.Name = "biensocbbox";
@@ -375,6 +384,7 @@
             // emailtxtbox
             // 
             this.emailtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.emailtxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.emailtxtbox.Enabled = false;
             this.emailtxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.emailtxtbox.Location = new System.Drawing.Point(230, 250);

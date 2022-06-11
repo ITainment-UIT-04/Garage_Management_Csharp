@@ -46,52 +46,69 @@ namespace QLGROTO
 
         private void xuatbtn_Click(object sender, EventArgs e)
         {
-            using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
-            {
-                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            if (phieunhapvtptdtgrid.Rows.Count == 0)
+                MessageBox.Show("Không có thông tin để xuất!");
+            else {
+                using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
                 {
-                    try
+                    if (saveFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        using (XLWorkbook workbook = new XLWorkbook())
+                        try
                         {
-                            workbook.Worksheets.Add(phieunhapvtptdtgrid.DataSource as DataTable, "PNKVTPT");
+                            using (XLWorkbook workbook = new XLWorkbook())
+                            {
+                                workbook.Worksheets.Add(phieunhapvtptdtgrid.DataSource as DataTable, "PNKVTPT");
 
-                            workbook.SaveAs(saveFileDialog.FileName);
+                                workbook.SaveAs(saveFileDialog.FileName);
 
 
+                            }
                         }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Xuất file không thành công!");
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Xuất file không thành công!");
+                        }
                     }
                 }
             }
         }
 
-        private void timtheomaradio_CheckedChanged(object sender, EventArgs e)
-        {
-            flag = 1;
-        }
-
+     
      
         private void timkiembtn_Click(object sender, EventArgs e)
         {
             string s = timkiemtxtbox.Text;
-            
-            if (!string.IsNullOrEmpty(s))
-            {
-                if (flag == 1)
-                    phieunhapvtptdtgrid.DataSource = PNKVTPTDAO.Instance.TimKiemTheoMa(s);
-                
-            }
+            int ngay = ngaydtpicker.Value.Day;
+            int thang = ngaydtpicker.Value.Month;
+            int nam = ngaydtpicker.Value.Year;
+            if (flag == 2)
+                phieunhapvtptdtgrid.DataSource = PNKVTPTDAO.Instance.TimKiemTheoNgay(ngay, thang, nam);
             else
-                HienThi();
+            {
+                if (!string.IsNullOrEmpty(s))
+                {
+                    if (flag == 1)
+                        phieunhapvtptdtgrid.DataSource = PNKVTPTDAO.Instance.TimKiemTheoMa(s);
+
+                }
+                else
+                    HienThi();
+            }
         }
 
         private void DSPNKVTPT_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void timngayradio_CheckedChanged(object sender, EventArgs e)
+        {
+            flag = 2;
+        }
+
+        private void timtheomaradio_CheckedChanged_1(object sender, EventArgs e)
+        {
+            flag = 1;
         }
     }
 }

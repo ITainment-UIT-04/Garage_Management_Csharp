@@ -63,6 +63,7 @@
             // 
             // maxxenumeric
             // 
+            this.maxxenumeric.BackColor = System.Drawing.SystemColors.HighlightText;
             this.maxxenumeric.Location = new System.Drawing.Point(223, 72);
             this.maxxenumeric.Maximum = new decimal(new int[] {
             1000,

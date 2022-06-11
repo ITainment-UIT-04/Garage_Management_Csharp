@@ -43,10 +43,12 @@
             this.thembtn = new System.Windows.Forms.Button();
             this.thanhtientxtbox = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
+            this.tonkhotxtbox = new System.Windows.Forms.TextBox();
             this.dgtxtbox = new System.Windows.Forms.TextBox();
             this.tctxtbox = new System.Windows.Forms.TextBox();
             this.ptcbbox = new System.Windows.Forms.ComboBox();
             this.ndcbbox = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -66,8 +68,6 @@
             this.ttttxtbox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.biensocbbox = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.tonkhotxtbox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slnumeric)).BeginInit();
@@ -77,6 +77,7 @@
             // ngaynhapdtpicker
             // 
             this.ngaynhapdtpicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ngaynhapdtpicker.CalendarForeColor = System.Drawing.Color.Gainsboro;
             this.ngaynhapdtpicker.Enabled = false;
             this.ngaynhapdtpicker.Location = new System.Drawing.Point(940, 67);
             this.ngaynhapdtpicker.Name = "ngaynhapdtpicker";
@@ -164,6 +165,7 @@
             // mapsctxtbox
             // 
             this.mapsctxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.mapsctxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.mapsctxtbox.Enabled = false;
             this.mapsctxtbox.Location = new System.Drawing.Point(298, 66);
             this.mapsctxtbox.Name = "mapsctxtbox";
@@ -236,6 +238,7 @@
             // thanhtientxtbox
             // 
             this.thanhtientxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.thanhtientxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.thanhtientxtbox.Enabled = false;
             this.thanhtientxtbox.Location = new System.Drawing.Point(130, 106);
             this.thanhtientxtbox.Name = "thanhtientxtbox";
@@ -253,9 +256,20 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // tonkhotxtbox
+            // 
+            this.tonkhotxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tonkhotxtbox.BackColor = System.Drawing.Color.Gainsboro;
+            this.tonkhotxtbox.Enabled = false;
+            this.tonkhotxtbox.Location = new System.Drawing.Point(678, 106);
+            this.tonkhotxtbox.Name = "tonkhotxtbox";
+            this.tonkhotxtbox.Size = new System.Drawing.Size(271, 27);
+            this.tonkhotxtbox.TabIndex = 3;
+            // 
             // dgtxtbox
             // 
             this.dgtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dgtxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.dgtxtbox.Enabled = false;
             this.dgtxtbox.Location = new System.Drawing.Point(677, 61);
             this.dgtxtbox.Name = "dgtxtbox";
@@ -265,6 +279,7 @@
             // tctxtbox
             // 
             this.tctxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tctxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.tctxtbox.Enabled = false;
             this.tctxtbox.Location = new System.Drawing.Point(1099, 18);
             this.tctxtbox.Name = "tctxtbox";
@@ -294,6 +309,17 @@
             this.ndcbbox.Size = new System.Drawing.Size(818, 28);
             this.ndcbbox.TabIndex = 1;
             this.ndcbbox.SelectedIndexChanged += new System.EventHandler(this.ndcbbox_SelectedIndexChanged);
+            // 
+            // label12
+            // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(581, 102);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(87, 28);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Tồn kho:";
             // 
             // label8
             // 
@@ -451,6 +477,7 @@
             // ttttxtbox
             // 
             this.ttttxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.ttttxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.ttttxtbox.Enabled = false;
             this.ttttxtbox.Location = new System.Drawing.Point(592, 679);
             this.ttttxtbox.Name = "ttttxtbox";
@@ -473,31 +500,12 @@
             this.biensocbbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.biensocbbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.biensocbbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.biensocbbox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.biensocbbox.FormattingEnabled = true;
             this.biensocbbox.Location = new System.Drawing.Point(593, 69);
             this.biensocbbox.Name = "biensocbbox";
             this.biensocbbox.Size = new System.Drawing.Size(223, 28);
             this.biensocbbox.TabIndex = 19;
-            // 
-            // label12
-            // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(581, 102);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(87, 28);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Tồn kho:";
-            // 
-            // tonkhotxtbox
-            // 
-            this.tonkhotxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tonkhotxtbox.Enabled = false;
-            this.tonkhotxtbox.Location = new System.Drawing.Point(678, 106);
-            this.tonkhotxtbox.Name = "tonkhotxtbox";
-            this.tonkhotxtbox.Size = new System.Drawing.Size(271, 27);
-            this.tonkhotxtbox.TabIndex = 3;
             // 
             // PHIEUSUACHUA
             // 

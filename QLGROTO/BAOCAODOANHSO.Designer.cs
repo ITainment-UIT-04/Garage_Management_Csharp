@@ -40,14 +40,14 @@
             this.hienbcbtn = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.bcdsdtgrid = new System.Windows.Forms.DataGridView();
-            this.thoatbtn = new System.Windows.Forms.Button();
-            this.ttttxtbox = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
             this.HieuXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoLuotThu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TiLe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thoatbtn = new System.Windows.Forms.Button();
+            this.ttttxtbox = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.namnumeric)).BeginInit();
@@ -117,6 +117,7 @@
             // namnumeric
             // 
             this.namnumeric.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.namnumeric.BackColor = System.Drawing.SystemColors.HighlightText;
             this.namnumeric.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.namnumeric.Location = new System.Drawing.Point(362, 47);
             this.namnumeric.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -142,6 +143,7 @@
             // thangnumeric
             // 
             this.thangnumeric.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.thangnumeric.BackColor = System.Drawing.SystemColors.HighlightText;
             this.thangnumeric.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.thangnumeric.Location = new System.Drawing.Point(120, 47);
             this.thangnumeric.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -238,6 +240,38 @@
             this.bcdsdtgrid.TabIndex = 1;
             this.bcdsdtgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bcdsdtgrid_CellContentClick);
             // 
+            // HieuXe
+            // 
+            this.HieuXe.DataPropertyName = "HieuXe";
+            this.HieuXe.HeaderText = "Hiệu xe";
+            this.HieuXe.MinimumWidth = 6;
+            this.HieuXe.Name = "HieuXe";
+            this.HieuXe.ReadOnly = true;
+            // 
+            // ThanhTien
+            // 
+            this.ThanhTien.DataPropertyName = "ThanhTien";
+            this.ThanhTien.HeaderText = "Thành tiền";
+            this.ThanhTien.MinimumWidth = 6;
+            this.ThanhTien.Name = "ThanhTien";
+            this.ThanhTien.ReadOnly = true;
+            // 
+            // SoLuotThu
+            // 
+            this.SoLuotThu.DataPropertyName = "SoLuotThu";
+            this.SoLuotThu.HeaderText = "Số lượt thu tiền";
+            this.SoLuotThu.MinimumWidth = 6;
+            this.SoLuotThu.Name = "SoLuotThu";
+            this.SoLuotThu.ReadOnly = true;
+            // 
+            // TiLe
+            // 
+            this.TiLe.DataPropertyName = "TiLe";
+            this.TiLe.HeaderText = "Tỉ lệ";
+            this.TiLe.MinimumWidth = 6;
+            this.TiLe.Name = "TiLe";
+            this.TiLe.ReadOnly = true;
+            // 
             // thoatbtn
             // 
             this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -279,38 +313,6 @@
             this.button4.TabIndex = 18;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
-            // 
-            // HieuXe
-            // 
-            this.HieuXe.DataPropertyName = "HieuXe";
-            this.HieuXe.HeaderText = "Hiệu xe";
-            this.HieuXe.MinimumWidth = 6;
-            this.HieuXe.Name = "HieuXe";
-            this.HieuXe.ReadOnly = true;
-            // 
-            // ThanhTien
-            // 
-            this.ThanhTien.DataPropertyName = "ThanhTien";
-            this.ThanhTien.HeaderText = "Thành tiền";
-            this.ThanhTien.MinimumWidth = 6;
-            this.ThanhTien.Name = "ThanhTien";
-            this.ThanhTien.ReadOnly = true;
-            // 
-            // SoLuotThu
-            // 
-            this.SoLuotThu.DataPropertyName = "SoLuotThu";
-            this.SoLuotThu.HeaderText = "Số lượt thu tiền";
-            this.SoLuotThu.MinimumWidth = 6;
-            this.SoLuotThu.Name = "SoLuotThu";
-            this.SoLuotThu.ReadOnly = true;
-            // 
-            // TiLe
-            // 
-            this.TiLe.DataPropertyName = "TiLe";
-            this.TiLe.HeaderText = "Tỉ lệ";
-            this.TiLe.MinimumWidth = 6;
-            this.TiLe.Name = "TiLe";
-            this.TiLe.ReadOnly = true;
             // 
             // BAOCAODOANHSO
             // 

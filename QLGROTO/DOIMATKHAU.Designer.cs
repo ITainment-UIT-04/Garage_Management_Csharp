@@ -70,18 +70,21 @@
             // 
             // nhaplaitxtbox
             // 
+            this.nhaplaitxtbox.BackColor = System.Drawing.SystemColors.HighlightText;
             resources.ApplyResources(this.nhaplaitxtbox, "nhaplaitxtbox");
             this.nhaplaitxtbox.Name = "nhaplaitxtbox";
             this.nhaplaitxtbox.UseSystemPasswordChar = true;
             // 
             // mkmtxtbox
             // 
+            this.mkmtxtbox.BackColor = System.Drawing.SystemColors.HighlightText;
             resources.ApplyResources(this.mkmtxtbox, "mkmtxtbox");
             this.mkmtxtbox.Name = "mkmtxtbox";
             this.mkmtxtbox.UseSystemPasswordChar = true;
             // 
             // mkctxtbox
             // 
+            this.mkctxtbox.BackColor = System.Drawing.SystemColors.HighlightText;
             resources.ApplyResources(this.mkctxtbox, "mkctxtbox");
             this.mkctxtbox.Name = "mkctxtbox";
             this.mkctxtbox.UseSystemPasswordChar = true;

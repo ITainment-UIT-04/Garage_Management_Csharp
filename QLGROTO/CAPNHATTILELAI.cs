@@ -44,5 +44,10 @@ namespace QLGROTO
         {
             this.Close();
         }
+
+        private void CAPNHATTILELAI_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

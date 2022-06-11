@@ -476,6 +476,7 @@
             // timtxtbox
             // 
             this.timtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.timtxtbox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.timtxtbox.Location = new System.Drawing.Point(710, 42);
             this.timtxtbox.Name = "timtxtbox";
             this.timtxtbox.Size = new System.Drawing.Size(371, 27);
@@ -596,6 +597,7 @@
             // hieuxetxtbox
             // 
             this.hieuxetxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.hieuxetxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.hieuxetxtbox.Enabled = false;
             this.hieuxetxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.hieuxetxtbox.Location = new System.Drawing.Point(155, 48);
@@ -624,6 +626,7 @@
             // biensotxtbox
             // 
             this.biensotxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.biensotxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.biensotxtbox.Enabled = false;
             this.biensotxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.biensotxtbox.Location = new System.Drawing.Point(155, 18);
@@ -651,6 +654,7 @@
             // notxtbox
             // 
             this.notxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.notxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.notxtbox.Enabled = false;
             this.notxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.notxtbox.Location = new System.Drawing.Point(155, 113);
@@ -666,6 +670,7 @@
             // diachitxtbox
             // 
             this.diachitxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.diachitxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.diachitxtbox.Enabled = false;
             this.diachitxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.diachitxtbox.Location = new System.Drawing.Point(704, 47);
@@ -681,6 +686,7 @@
             // tentxtbox
             // 
             this.tentxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.tentxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.tentxtbox.Enabled = false;
             this.tentxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tentxtbox.Location = new System.Drawing.Point(704, 14);
@@ -735,6 +741,7 @@
             // emailtxtbox
             // 
             this.emailtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.emailtxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.emailtxtbox.Enabled = false;
             this.emailtxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.emailtxtbox.Location = new System.Drawing.Point(704, 78);
@@ -749,6 +756,7 @@
             // dthtxtbox
             // 
             this.dthtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.dthtxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.dthtxtbox.Enabled = false;
             this.dthtxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dthtxtbox.Location = new System.Drawing.Point(155, 79);
@@ -888,6 +896,7 @@
             // dangsudungtxtbox
             // 
             this.dangsudungtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dangsudungtxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.dangsudungtxtbox.Enabled = false;
             this.dangsudungtxtbox.Location = new System.Drawing.Point(283, 74);
             this.dangsudungtxtbox.Name = "dangsudungtxtbox";

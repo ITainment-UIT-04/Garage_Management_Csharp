@@ -71,6 +71,7 @@
             // timhieuxetxtbox
             // 
             this.timhieuxetxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.timhieuxetxtbox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.timhieuxetxtbox.Location = new System.Drawing.Point(230, 68);
             this.timhieuxetxtbox.Name = "timhieuxetxtbox";
             this.timhieuxetxtbox.Size = new System.Drawing.Size(371, 27);

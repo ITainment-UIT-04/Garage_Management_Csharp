@@ -51,7 +51,20 @@ namespace QLGROTO.DAO
             da.Fill(dt);
             return dt;
         }
-      
+        public DataTable TimKiemTheoNgay(int ngay, int thang, int nam)
+        {
+            SqlConnection con = dc.getConnect();
+            con.Open();
+            string sql = "SELECT * FROM PHIEUNHAPKHOVTPT WHERE DAY(NgayNhap) = @ngay AND MONTH(NgayNhap) = @thang AND YEAR(NgayNhap) = @nam";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@ngay", ngay);
+            cmd.Parameters.AddWithValue("@thang", thang);
+            cmd.Parameters.AddWithValue("@nam", nam);
+            DataTable dt = new DataTable();
+            da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            return dt;
+        }
         public bool Them(string mnk)
         {
             string sql = "INSERT INTO PHIEUNHAPKHOVTPT (MaNKVTPT, NgayNhap) VALUES (@mank, GETDATE())";

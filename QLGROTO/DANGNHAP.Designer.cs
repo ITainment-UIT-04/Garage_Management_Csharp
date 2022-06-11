@@ -55,6 +55,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.HighlightText;
             this.panel1.Controls.Add(this.EscapeButton);
             this.panel1.Controls.Add(this.LogInButtion);
             this.panel1.Controls.Add(this.pass_txtbox);
@@ -88,6 +89,7 @@
             // 
             // pass_txtbox
             // 
+            this.pass_txtbox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.pass_txtbox.Location = new System.Drawing.Point(148, 50);
             this.pass_txtbox.Name = "pass_txtbox";
             this.pass_txtbox.Size = new System.Drawing.Size(338, 27);
@@ -96,6 +98,7 @@
             // 
             // tendangnhap_txtbox
             // 
+            this.tendangnhap_txtbox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.tendangnhap_txtbox.Location = new System.Drawing.Point(148, 15);
             this.tendangnhap_txtbox.Name = "tendangnhap_txtbox";
             this.tendangnhap_txtbox.Size = new System.Drawing.Size(338, 27);

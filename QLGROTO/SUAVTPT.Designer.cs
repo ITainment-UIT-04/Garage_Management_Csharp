@@ -79,6 +79,7 @@
             // dgtxtbox
             // 
             this.dgtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dgtxtbox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.dgtxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dgtxtbox.Location = new System.Drawing.Point(188, 134);
             this.dgtxtbox.Multiline = true;
@@ -91,6 +92,7 @@
             // tenvtpttxtbox
             // 
             this.tenvtpttxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tenvtpttxtbox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.tenvtpttxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tenvtpttxtbox.Location = new System.Drawing.Point(188, 103);
             this.tenvtpttxtbox.Multiline = true;
@@ -102,6 +104,7 @@
             // mavtpttxtbox
             // 
             this.mavtpttxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.mavtpttxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.mavtpttxtbox.Enabled = false;
             this.mavtpttxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.mavtpttxtbox.Location = new System.Drawing.Point(188, 73);

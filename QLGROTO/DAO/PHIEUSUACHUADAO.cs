@@ -27,6 +27,20 @@ namespace QLGROTO.DAO
             }
             set { instance = value; }
         }
+        public DataTable TimKiemTheoNgay(int ngay, int thang, int nam)
+        {
+            SqlConnection con = dc.getConnect();
+            con.Open();
+            string sql = "SELECT * FROM PHIEUSUACHUA WHERE DAY(NgaySuaChua) = @ngay AND MONTH(NgaySuaChua) = @thang AND YEAR(NgaySuaChua) = @nam";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@ngay", ngay);
+            cmd.Parameters.AddWithValue("@thang", thang);
+            cmd.Parameters.AddWithValue("@nam", nam);
+            DataTable dt = new DataTable();
+            da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            return dt;
+        }
         public bool Them(string masc, string bienso, double tongtien)
         {
             string sql = "INSERT INTO PHIEUSUACHUA (MaPSC, BienSo, NgaySuaChua, TongTien) VALUES (@masc, @bienso, GETDATE(), @tongtien)";

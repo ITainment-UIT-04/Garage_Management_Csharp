@@ -166,6 +166,7 @@
             // mpntxtbox
             // 
             this.mpntxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.mpntxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.mpntxtbox.Enabled = false;
             this.mpntxtbox.Location = new System.Drawing.Point(331, 79);
             this.mpntxtbox.Name = "mpntxtbox";

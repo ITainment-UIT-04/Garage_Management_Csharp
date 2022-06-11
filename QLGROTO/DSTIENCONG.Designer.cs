@@ -109,6 +109,7 @@
             // timkiemtxtbox
             // 
             this.timkiemtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.timkiemtxtbox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.timkiemtxtbox.Location = new System.Drawing.Point(417, 68);
             this.timkiemtxtbox.Name = "timkiemtxtbox";
             this.timkiemtxtbox.Size = new System.Drawing.Size(371, 27);
@@ -236,6 +237,7 @@
             // tctxtbox
             // 
             this.tctxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.tctxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.tctxtbox.Enabled = false;
             this.tctxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tctxtbox.Location = new System.Drawing.Point(231, 57);
@@ -249,6 +251,7 @@
             // matctxtbox
             // 
             this.matctxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.matctxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.matctxtbox.Enabled = false;
             this.matctxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.matctxtbox.Location = new System.Drawing.Point(231, 27);
@@ -262,6 +265,7 @@
             // ndtxtbox
             // 
             this.ndtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.ndtxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.ndtxtbox.Enabled = false;
             this.ndtxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ndtxtbox.Location = new System.Drawing.Point(149, 89);

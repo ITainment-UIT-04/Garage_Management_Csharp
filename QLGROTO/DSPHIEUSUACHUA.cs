@@ -49,24 +49,29 @@ namespace QLGROTO
 
         private void xuatbtn_Click(object sender, EventArgs e)
         {
-            using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
+            if (pscdtgrid.Rows.Count == 0)
+                MessageBox.Show("Không có thông tin để xuất!");
+            else
             {
-                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
                 {
-                    try
+                    if (saveFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        using (XLWorkbook workbook = new XLWorkbook())
+                        try
                         {
-                            workbook.Worksheets.Add(pscdtgrid.DataSource as DataTable, "PHIEUSUACHUA");
+                            using (XLWorkbook workbook = new XLWorkbook())
+                            {
+                                workbook.Worksheets.Add(pscdtgrid.DataSource as DataTable, "PHIEUSUACHUA");
 
-                            workbook.SaveAs(saveFileDialog.FileName);
+                                workbook.SaveAs(saveFileDialog.FileName);
 
 
+                            }
                         }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Xuất file không thành công!");
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Xuất file không thành công!");
+                        }
                     }
                 }
             }
@@ -81,17 +86,29 @@ namespace QLGROTO
         private void timkiembtn_Click(object sender, EventArgs e)
         {
             string s = timkiemtxtbox.Text;
-           
-            if (!string.IsNullOrEmpty(s))
-            {
-                if (flag == 1)
-                    pscdtgrid.DataSource = PHIEUSUACHUADAO.Instance.TimKiemTheoMa(s);
-               
-
-            }
+            int ngay = ngaydtpicker.Value.Day;
+            int thang = ngaydtpicker.Value.Month;
+            int nam = ngaydtpicker.Value.Year;
+            if (flag == 2)
+                pscdtgrid.DataSource = PHIEUSUACHUADAO.Instance.TimKiemTheoNgay(ngay, thang, nam);
             else
-                HienThi();
+            {
+                if (!string.IsNullOrEmpty(s))
+                {
 
+                    pscdtgrid.DataSource = PHIEUSUACHUADAO.Instance.TimKiemTheoMa(s);
+
+
+                }
+                else
+                    HienThi();
+            }
+
+        }
+
+        private void timtheongayradio_CheckedChanged(object sender, EventArgs e)
+        {
+            flag = 2;
         }
     }
 }

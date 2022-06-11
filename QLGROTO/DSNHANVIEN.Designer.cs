@@ -137,6 +137,7 @@
             // timkiemtxtbox
             // 
             this.timkiemtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.timkiemtxtbox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.timkiemtxtbox.Location = new System.Drawing.Point(532, 70);
             this.timkiemtxtbox.Name = "timkiemtxtbox";
             this.timkiemtxtbox.Size = new System.Drawing.Size(371, 27);
@@ -397,6 +398,7 @@
             // 
             this.chucvutxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.chucvutxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.chucvutxtbox.Enabled = false;
             this.chucvutxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.chucvutxtbox.Location = new System.Drawing.Point(629, 160);
@@ -425,6 +427,7 @@
             // 
             this.dthtxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dthtxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.dthtxtbox.Enabled = false;
             this.dthtxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dthtxtbox.Location = new System.Drawing.Point(357, 114);
@@ -440,6 +443,7 @@
             // 
             this.emailtxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.emailtxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.emailtxtbox.Enabled = false;
             this.emailtxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.emailtxtbox.Location = new System.Drawing.Point(846, 114);
@@ -455,6 +459,7 @@
             // 
             this.tentxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tentxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.tentxtbox.Enabled = false;
             this.tentxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tentxtbox.Location = new System.Drawing.Point(357, 79);
@@ -470,6 +475,7 @@
             // 
             this.dctxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dctxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.dctxtbox.Enabled = false;
             this.dctxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dctxtbox.Location = new System.Drawing.Point(846, 79);
@@ -485,6 +491,7 @@
             // 
             this.mktxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.mktxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.mktxtbox.Enabled = false;
             this.mktxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.mktxtbox.Location = new System.Drawing.Point(846, 44);
@@ -500,6 +507,7 @@
             // 
             this.tdntxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tdntxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.tdntxtbox.Enabled = false;
             this.tdntxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tdntxtbox.Location = new System.Drawing.Point(357, 39);

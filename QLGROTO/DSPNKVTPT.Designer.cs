@@ -41,6 +41,8 @@
             this.xemctbtn = new System.Windows.Forms.Button();
             this.thoatbtn = new System.Windows.Forms.Button();
             this.xuatbtn = new System.Windows.Forms.Button();
+            this.ngaydtpicker = new System.Windows.Forms.DateTimePicker();
+            this.timngayradio = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.phieunhapvtptdtgrid)).BeginInit();
             this.SuspendLayout();
@@ -81,12 +83,12 @@
             this.phieunhapvtptdtgrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaNKVTPT,
             this.NgayNhap});
-            this.phieunhapvtptdtgrid.Location = new System.Drawing.Point(12, 134);
+            this.phieunhapvtptdtgrid.Location = new System.Drawing.Point(12, 164);
             this.phieunhapvtptdtgrid.Name = "phieunhapvtptdtgrid";
             this.phieunhapvtptdtgrid.ReadOnly = true;
             this.phieunhapvtptdtgrid.RowHeadersWidth = 51;
             this.phieunhapvtptdtgrid.RowTemplate.Height = 29;
-            this.phieunhapvtptdtgrid.Size = new System.Drawing.Size(1159, 453);
+            this.phieunhapvtptdtgrid.Size = new System.Drawing.Size(1159, 423);
             this.phieunhapvtptdtgrid.TabIndex = 6;
             this.phieunhapvtptdtgrid.TabStop = false;
             this.phieunhapvtptdtgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -124,17 +126,18 @@
             this.timtheomaradio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.timtheomaradio.AutoSize = true;
             this.timtheomaradio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.timtheomaradio.Location = new System.Drawing.Point(491, 104);
+            this.timtheomaradio.Location = new System.Drawing.Point(406, 101);
             this.timtheomaradio.Name = "timtheomaradio";
             this.timtheomaradio.Size = new System.Drawing.Size(192, 24);
             this.timtheomaradio.TabIndex = 2;
             this.timtheomaradio.Text = "Tìm theo mã phiếu nhập";
             this.timtheomaradio.UseVisualStyleBackColor = true;
-            this.timtheomaradio.CheckedChanged += new System.EventHandler(this.timtheomaradio_CheckedChanged);
+            this.timtheomaradio.CheckedChanged += new System.EventHandler(this.timtheomaradio_CheckedChanged_1);
             // 
             // timkiemtxtbox
             // 
             this.timkiemtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.timkiemtxtbox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.timkiemtxtbox.Location = new System.Drawing.Point(426, 71);
             this.timkiemtxtbox.Name = "timkiemtxtbox";
             this.timkiemtxtbox.Size = new System.Drawing.Size(371, 27);
@@ -194,6 +197,26 @@
             this.xuatbtn.UseVisualStyleBackColor = false;
             this.xuatbtn.Click += new System.EventHandler(this.xuatbtn_Click);
             // 
+            // ngaydtpicker
+            // 
+            this.ngaydtpicker.Location = new System.Drawing.Point(477, 131);
+            this.ngaydtpicker.Name = "ngaydtpicker";
+            this.ngaydtpicker.Size = new System.Drawing.Size(250, 27);
+            this.ngaydtpicker.TabIndex = 29;
+            // 
+            // timngayradio
+            // 
+            this.timngayradio.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.timngayradio.AutoSize = true;
+            this.timngayradio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.timngayradio.Location = new System.Drawing.Point(604, 101);
+            this.timngayradio.Name = "timngayradio";
+            this.timngayradio.Size = new System.Drawing.Size(191, 24);
+            this.timngayradio.TabIndex = 30;
+            this.timngayradio.Text = "Tìm theo ngày lập phiếu";
+            this.timngayradio.UseVisualStyleBackColor = true;
+            this.timngayradio.CheckedChanged += new System.EventHandler(this.timngayradio_CheckedChanged);
+            // 
             // DSPNKVTPT
             // 
             this.AcceptButton = this.timkiembtn;
@@ -202,6 +225,8 @@
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.CancelButton = this.thoatbtn;
             this.ClientSize = new System.Drawing.Size(1183, 670);
+            this.Controls.Add(this.timngayradio);
+            this.Controls.Add(this.ngaydtpicker);
             this.Controls.Add(this.xuatbtn);
             this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.xemctbtn);
@@ -238,5 +263,7 @@
         private DataGridViewTextBoxColumn MaNKVTPT;
         private DataGridViewTextBoxColumn NgayNhap;
         private Button xuatbtn;
+        private DateTimePicker ngaydtpicker;
+        private RadioButton timngayradio;
     }
 }

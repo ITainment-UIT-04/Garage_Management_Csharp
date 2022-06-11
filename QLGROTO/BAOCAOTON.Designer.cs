@@ -41,15 +41,15 @@
             this.themtiencong_btn = new System.Windows.Forms.Button();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
             this.bctdtgrid = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.ReportDoanhSo_Title = new System.Windows.Forms.Label();
-            this.thoatbtn = new System.Windows.Forms.Button();
             this.MaVTPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenVTPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TonDau = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PhatSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SuDung = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TonCuoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.ReportDoanhSo_Title = new System.Windows.Forms.Label();
+            this.thoatbtn = new System.Windows.Forms.Button();
             this.Group1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.namnumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.thangnumeric)).BeginInit();
@@ -97,6 +97,7 @@
             // 
             // namnumeric
             // 
+            this.namnumeric.BackColor = System.Drawing.SystemColors.HighlightText;
             this.namnumeric.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.namnumeric.Location = new System.Drawing.Point(359, 47);
             this.namnumeric.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -121,6 +122,7 @@
             // 
             // thangnumeric
             // 
+            this.thangnumeric.BackColor = System.Drawing.SystemColors.HighlightText;
             this.thangnumeric.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.thangnumeric.Location = new System.Drawing.Point(117, 47);
             this.thangnumeric.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -243,41 +245,6 @@
             this.bctdtgrid.TabIndex = 1;
             this.bctdtgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bctdtgrid_CellContentClick);
             // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel1.Controls.Add(this.ReportDoanhSo_Title);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1108, 66);
-            this.panel1.TabIndex = 6;
-            // 
-            // ReportDoanhSo_Title
-            // 
-            this.ReportDoanhSo_Title.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.ReportDoanhSo_Title.AutoSize = true;
-            this.ReportDoanhSo_Title.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ReportDoanhSo_Title.ForeColor = System.Drawing.Color.White;
-            this.ReportDoanhSo_Title.Location = new System.Drawing.Point(378, 9);
-            this.ReportDoanhSo_Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.ReportDoanhSo_Title.Name = "ReportDoanhSo_Title";
-            this.ReportDoanhSo_Title.Size = new System.Drawing.Size(326, 45);
-            this.ReportDoanhSo_Title.TabIndex = 3;
-            this.ReportDoanhSo_Title.Text = "BÁO CÁO TỒN KHO";
-            // 
-            // thoatbtn
-            // 
-            this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.thoatbtn.Location = new System.Drawing.Point(1000, 649);
-            this.thoatbtn.Name = "thoatbtn";
-            this.thoatbtn.Size = new System.Drawing.Size(94, 29);
-            this.thoatbtn.TabIndex = 7;
-            this.thoatbtn.Text = "Thoát";
-            this.thoatbtn.UseVisualStyleBackColor = true;
-            this.thoatbtn.Click += new System.EventHandler(this.button2_Click);
-            // 
             // MaVTPT
             // 
             this.MaVTPT.DataPropertyName = "MaVTPT";
@@ -319,6 +286,41 @@
             this.TonCuoi.HeaderText = "Tồn cuối";
             this.TonCuoi.MinimumWidth = 6;
             this.TonCuoi.Name = "TonCuoi";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel1.Controls.Add(this.ReportDoanhSo_Title);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1108, 66);
+            this.panel1.TabIndex = 6;
+            // 
+            // ReportDoanhSo_Title
+            // 
+            this.ReportDoanhSo_Title.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ReportDoanhSo_Title.AutoSize = true;
+            this.ReportDoanhSo_Title.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ReportDoanhSo_Title.ForeColor = System.Drawing.Color.White;
+            this.ReportDoanhSo_Title.Location = new System.Drawing.Point(378, 9);
+            this.ReportDoanhSo_Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ReportDoanhSo_Title.Name = "ReportDoanhSo_Title";
+            this.ReportDoanhSo_Title.Size = new System.Drawing.Size(326, 45);
+            this.ReportDoanhSo_Title.TabIndex = 3;
+            this.ReportDoanhSo_Title.Text = "BÁO CÁO TỒN KHO";
+            // 
+            // thoatbtn
+            // 
+            this.thoatbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.thoatbtn.Location = new System.Drawing.Point(1000, 649);
+            this.thoatbtn.Name = "thoatbtn";
+            this.thoatbtn.Size = new System.Drawing.Size(94, 29);
+            this.thoatbtn.TabIndex = 7;
+            this.thoatbtn.Text = "Thoát";
+            this.thoatbtn.UseVisualStyleBackColor = true;
+            this.thoatbtn.Click += new System.EventHandler(this.button2_Click);
             // 
             // BAOCAOTON
             // 

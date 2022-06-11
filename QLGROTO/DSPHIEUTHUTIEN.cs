@@ -47,15 +47,22 @@ namespace QLGROTO
         private void SearchButton_Click(object sender, EventArgs e)
         {
             string s = timkiemtxtbox.Text;
-        
-            if (!string.IsNullOrEmpty(s))
-            {
-                if (flag == 1)
-                    pttdtgrid.DataSource = PHIEUTHUTIENDAO.Instance.TimKiemTheoMa(s);
-        
-            }
+            int ngay = ngaydtpicker.Value.Day;
+            int thang = ngaydtpicker.Value.Month;
+            int nam = ngaydtpicker.Value.Year;
+            if (flag == 2)
+                pttdtgrid.DataSource = PHIEUTHUTIENDAO.Instance.TimKiemTheoNgay(ngay, thang, nam);
             else
-                HienThi();
+            {
+                if (!string.IsNullOrEmpty(s))
+                {
+                    if (flag == 1)
+                        pttdtgrid.DataSource = PHIEUTHUTIENDAO.Instance.TimKiemTheoMa(s);
+
+                }
+                else
+                    HienThi();
+            }
 
         }
 
@@ -84,27 +91,33 @@ namespace QLGROTO
 
         private void xuatbtn_Click(object sender, EventArgs e)
         {
-            using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
+            if (pttdtgrid.Rows.Count == 0)
+                MessageBox.Show("Không có thông tin để xuất!");
+            else
             {
-                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
                 {
-                    try
+                    if (saveFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        using (XLWorkbook workbook = new XLWorkbook())
+                        try
                         {
-                            workbook.Worksheets.Add(pttdtgrid.DataSource as DataTable, "PHIEUTHUTIEN");
+                            using (XLWorkbook workbook = new XLWorkbook())
+                            {
+                                workbook.Worksheets.Add(pttdtgrid.DataSource as DataTable, "PHIEUTHUTIEN");
 
-                            workbook.SaveAs(saveFileDialog.FileName);
+                                workbook.SaveAs(saveFileDialog.FileName);
 
 
+                            }
                         }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Xuất file không thành công!");
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Xuất file không thành công!");
+                        }
                     }
                 }
             }
+        
         }
 
         private void mapnradio_CheckedChanged(object sender, EventArgs e)
@@ -117,6 +130,11 @@ namespace QLGROTO
         private void pttdtgrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void timtheongayradio_CheckedChanged(object sender, EventArgs e)
+        {
+            flag = 2;
         }
     }
 }

@@ -40,6 +40,7 @@
             // 
             // tilenumeric
             // 
+            this.tilenumeric.BackColor = System.Drawing.SystemColors.HighlightText;
             this.tilenumeric.DecimalPlaces = 2;
             this.tilenumeric.Location = new System.Drawing.Point(97, 60);
             this.tilenumeric.Maximum = new decimal(new int[] {
@@ -88,11 +89,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(96, 0);
+            this.label1.Location = new System.Drawing.Point(119, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 45);
+            this.label1.Size = new System.Drawing.Size(93, 45);
             this.label1.TabIndex = 2;
-            this.label1.Text = "TỈ LỆ LÃI";
+            this.label1.Text = "TỈ LỆ";
             // 
             // panel1
             // 
@@ -123,6 +124,7 @@
             this.Name = "CAPNHATTILELAI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Cập nhật tỉ lệ lãi";
+            this.Load += new System.EventHandler(this.CAPNHATTILELAI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tilenumeric)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
