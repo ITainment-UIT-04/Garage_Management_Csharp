@@ -240,14 +240,25 @@ namespace QLGROTO
 
         private void cậpNhậtTỉLệLãiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CAPNHATTILELAI interestRateForm = new CAPNHATTILELAI();
-            interestRateForm.ShowDialog();
+            if (NHANVIENDAO.Instance.flag != 1)
+                MessageBox.Show("Phải là quản lý mới có quyền truy cập!");
+            else
+            {
+                CAPNHATTILELAI interestRateForm = new CAPNHATTILELAI();
+
+                interestRateForm.ShowDialog();
+            }
         }
 
         private void thayĐổiSốXeSToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CAPNHATSOXE maxCarForm = new CAPNHATSOXE();
-            maxCarForm.ShowDialog();
+            if (NHANVIENDAO.Instance.flag != 1)
+                MessageBox.Show("Phải là quản lý mới có quyền truy cập!");
+            else
+            {
+                CAPNHATSOXE maxCarForm = new CAPNHATSOXE();
+                maxCarForm.ShowDialog();
+            }
         }
 
         private void danhSáchLoạiTiềnCôngToolStripMenuItem_Click(object sender, EventArgs e)
