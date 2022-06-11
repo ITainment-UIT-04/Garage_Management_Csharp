@@ -74,25 +74,16 @@ namespace QLGROTO
             flag = 1;
         }
 
-        private void timtheokhoangngayradio_CheckedChanged(object sender, EventArgs e)
-        {
-            flag = 2;
-        }
-
+     
         private void timkiembtn_Click(object sender, EventArgs e)
         {
             string s = timkiemtxtbox.Text;
-            int tbd = tudtpicker.Value.Month;
-            int nbd = tudtpicker.Value.Year;
-            int tkt = dendtpicker.Value.Month;
-            int nkt = dendtpicker.Value.Year; 
+            
             if (!string.IsNullOrEmpty(s))
             {
                 if (flag == 1)
                     phieunhapvtptdtgrid.DataSource = PNKVTPTDAO.Instance.TimKiemTheoMa(s);
-                else if (flag == 2)
-                    phieunhapvtptdtgrid.DataSource = PNKVTPTDAO.Instance.TimKiemTheoKhoangNgay(tbd, nbd, tkt, nkt);
-              
+                
             }
             else
                 HienThi();

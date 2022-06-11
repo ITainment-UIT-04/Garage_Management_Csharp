@@ -35,14 +35,9 @@
             this.MaNKVTPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timkiembtn = new System.Windows.Forms.Button();
-            this.timtheokhoangngayradio = new System.Windows.Forms.RadioButton();
             this.timtheomaradio = new System.Windows.Forms.RadioButton();
             this.timkiemtxtbox = new System.Windows.Forms.TextBox();
             this.SearchLabel = new System.Windows.Forms.Label();
-            this.tudtpicker = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dendtpicker = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
             this.xemctbtn = new System.Windows.Forms.Button();
             this.thoatbtn = new System.Windows.Forms.Button();
             this.xuatbtn = new System.Windows.Forms.Button();
@@ -86,12 +81,12 @@
             this.phieunhapvtptdtgrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaNKVTPT,
             this.NgayNhap});
-            this.phieunhapvtptdtgrid.Location = new System.Drawing.Point(12, 167);
+            this.phieunhapvtptdtgrid.Location = new System.Drawing.Point(12, 134);
             this.phieunhapvtptdtgrid.Name = "phieunhapvtptdtgrid";
             this.phieunhapvtptdtgrid.ReadOnly = true;
             this.phieunhapvtptdtgrid.RowHeadersWidth = 51;
             this.phieunhapvtptdtgrid.RowTemplate.Height = 29;
-            this.phieunhapvtptdtgrid.Size = new System.Drawing.Size(1159, 420);
+            this.phieunhapvtptdtgrid.Size = new System.Drawing.Size(1159, 453);
             this.phieunhapvtptdtgrid.TabIndex = 6;
             this.phieunhapvtptdtgrid.TabStop = false;
             this.phieunhapvtptdtgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -124,25 +119,12 @@
             this.timkiembtn.UseVisualStyleBackColor = false;
             this.timkiembtn.Click += new System.EventHandler(this.timkiembtn_Click);
             // 
-            // timtheokhoangngayradio
-            // 
-            this.timtheokhoangngayradio.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.timtheokhoangngayradio.AutoSize = true;
-            this.timtheokhoangngayradio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.timtheokhoangngayradio.Location = new System.Drawing.Point(619, 104);
-            this.timtheokhoangngayradio.Name = "timtheokhoangngayradio";
-            this.timtheokhoangngayradio.Size = new System.Drawing.Size(178, 24);
-            this.timtheokhoangngayradio.TabIndex = 2;
-            this.timtheokhoangngayradio.Text = "Tìm theo khoảng ngày";
-            this.timtheokhoangngayradio.UseVisualStyleBackColor = true;
-            this.timtheokhoangngayradio.CheckedChanged += new System.EventHandler(this.timtheokhoangngayradio_CheckedChanged);
-            // 
             // timtheomaradio
             // 
             this.timtheomaradio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.timtheomaradio.AutoSize = true;
             this.timtheomaradio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.timtheomaradio.Location = new System.Drawing.Point(426, 104);
+            this.timtheomaradio.Location = new System.Drawing.Point(491, 104);
             this.timtheomaradio.Name = "timtheomaradio";
             this.timtheomaradio.Size = new System.Drawing.Size(192, 24);
             this.timtheomaradio.TabIndex = 2;
@@ -169,46 +151,6 @@
             this.SearchLabel.Size = new System.Drawing.Size(104, 28);
             this.SearchLabel.TabIndex = 19;
             this.SearchLabel.Text = "Tìm kiếm:";
-            // 
-            // tudtpicker
-            // 
-            this.tudtpicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tudtpicker.Location = new System.Drawing.Point(333, 134);
-            this.tudtpicker.Name = "tudtpicker";
-            this.tudtpicker.Size = new System.Drawing.Size(250, 27);
-            this.tudtpicker.TabIndex = 3;
-            this.tudtpicker.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(282, 130);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 31);
-            this.label1.TabIndex = 25;
-            this.label1.Text = "Từ:";
-            // 
-            // dendtpicker
-            // 
-            this.dendtpicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dendtpicker.Location = new System.Drawing.Point(671, 134);
-            this.dendtpicker.Name = "dendtpicker";
-            this.dendtpicker.Size = new System.Drawing.Size(250, 27);
-            this.dendtpicker.TabIndex = 4;
-            this.dendtpicker.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(605, 130);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 31);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Đến:";
             // 
             // xemctbtn
             // 
@@ -263,12 +205,7 @@
             this.Controls.Add(this.xuatbtn);
             this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.xemctbtn);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dendtpicker);
-            this.Controls.Add(this.tudtpicker);
             this.Controls.Add(this.timkiembtn);
-            this.Controls.Add(this.timtheokhoangngayradio);
             this.Controls.Add(this.timtheomaradio);
             this.Controls.Add(this.timkiemtxtbox);
             this.Controls.Add(this.SearchLabel);
@@ -293,14 +230,9 @@
         private Label VatTuPhuTung_Title;
         private DataGridView phieunhapvtptdtgrid;
         private Button timkiembtn;
-        private RadioButton timtheokhoangngayradio;
         private RadioButton timtheomaradio;
         private TextBox timkiemtxtbox;
         private Label SearchLabel;
-        private DateTimePicker tudtpicker;
-        private Label label1;
-        private DateTimePicker dendtpicker;
-        private Label label2;
         private Button xemctbtn;
         private Button thoatbtn;
         private DataGridViewTextBoxColumn MaNKVTPT;

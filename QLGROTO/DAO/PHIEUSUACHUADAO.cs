@@ -84,21 +84,6 @@ namespace QLGROTO.DAO
             da.Fill(dt);
             return dt;
         }
-        public DataTable TimKiemTheoKhoangNgay(int tbd, int tkt, int nbd, int nkt)
-        {
-            SqlConnection con = dc.getConnect();
-            con.Open();
-            string sql = "SELECT * FROM PHIEUSUACHUA WHERE (MONTH(NgayNhap) BETWEEN &tbd AND @tkt) " +
-                "AND (YEAR(NgayNhap) BETWEEN @nbd AND @nkt)";
-            SqlCommand cmd = new SqlCommand(sql, con);
-            cmd.Parameters.AddWithValue("@tbd", tbd);
-            cmd.Parameters.AddWithValue("@tkt", tkt);
-            cmd.Parameters.AddWithValue("@nbd", nbd);
-            cmd.Parameters.AddWithValue("@nkt", nkt);
-            DataTable dt = new DataTable();
-            da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
-            return dt;
-        }
+       
     }
 }

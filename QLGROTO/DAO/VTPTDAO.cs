@@ -73,7 +73,7 @@ namespace QLGROTO.DAO
         }
         public bool ThemVTPT(string ma, string ten)
         {
-            string sql = "INSERT INTO VTPT (MaVTPT, TenVTPT, SoLuongTon, DonGia)" +
+            string sql = "INSERT INTO PhuTung (MaVTPT, TenVTPT, SoLuongTon, DonGia)" +
                 "VALUES (@ma, @ten, 0, 0)";
             SqlConnection con = dc.getConnect();
             try
