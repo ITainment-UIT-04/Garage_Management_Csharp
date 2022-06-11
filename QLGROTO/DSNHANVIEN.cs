@@ -36,24 +36,29 @@ namespace QLGROTO
 
         private void xuatbtn_Click(object sender, EventArgs e)
         {
-            using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
+            if (nvdtgrid.Rows.Count == 0)
+                MessageBox.Show("Không có thông tin để xuất!");
+            else
             {
-                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
                 {
-                    try
+                    if (saveFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        using (XLWorkbook workbook = new XLWorkbook())
+                        try
                         {
-                            workbook.Worksheets.Add(nvdtgrid.DataSource as DataTable, "NhanVien");
+                            using (XLWorkbook workbook = new XLWorkbook())
+                            {
+                                workbook.Worksheets.Add(nvdtgrid.DataSource as DataTable, "NhanVien");
 
-                            workbook.SaveAs(saveFileDialog.FileName);
+                                workbook.SaveAs(saveFileDialog.FileName);
 
 
+                            }
                         }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Xuất file không thành công!");
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Xuất file không thành công!");
+                        }
                     }
                 }
             }
@@ -61,21 +66,33 @@ namespace QLGROTO
 
         private void nvdtgrid_SelectionChanged(object sender, EventArgs e)
         {
-            tdntxtbox.DataBindings.Clear();
-            tdntxtbox.DataBindings.Add("Text", nvdtgrid.DataSource, "TenDangNhap");
-            mktxtbox.DataBindings.Clear();
-            mktxtbox.DataBindings.Add("Text", nvdtgrid.DataSource, "MatKhau");
-            tentxtbox.DataBindings.Clear();
-            tentxtbox.DataBindings.Add("Text", nvdtgrid.DataSource, "TenNV");
-            dctxtbox.DataBindings.Clear();
-            dctxtbox.DataBindings.Add("Text", nvdtgrid.DataSource, "DiaChi");
-            dthtxtbox.DataBindings.Clear();
-            dthtxtbox.DataBindings.Add("Text", nvdtgrid.DataSource, "DienThoai");
-            emailtxtbox.DataBindings.Clear();
-            emailtxtbox.DataBindings.Add("Text", nvdtgrid.DataSource, "Email");
-            chucvutxtbox.DataBindings.Clear();
-            chucvutxtbox.DataBindings.Add("Text", nvdtgrid.DataSource, "ChucVu");
-
+            if (nvdtgrid.Rows.Count == 0)
+            {
+                tdntxtbox.Clear();
+                mktxtbox.Clear();
+                tentxtbox.Clear();
+                dctxtbox.Clear();
+                dthtxtbox.Clear();
+                emailtxtbox.Clear();
+                chucvutxtbox.Clear();
+            }
+            else
+            {
+                tdntxtbox.DataBindings.Clear();
+                tdntxtbox.DataBindings.Add("Text", nvdtgrid.DataSource, "TenDangNhap");
+                mktxtbox.DataBindings.Clear();
+                mktxtbox.DataBindings.Add("Text", nvdtgrid.DataSource, "MatKhau");
+                tentxtbox.DataBindings.Clear();
+                tentxtbox.DataBindings.Add("Text", nvdtgrid.DataSource, "TenNV");
+                dctxtbox.DataBindings.Clear();
+                dctxtbox.DataBindings.Add("Text", nvdtgrid.DataSource, "DiaChi");
+                dthtxtbox.DataBindings.Clear();
+                dthtxtbox.DataBindings.Add("Text", nvdtgrid.DataSource, "DienThoai");
+                emailtxtbox.DataBindings.Clear();
+                emailtxtbox.DataBindings.Add("Text", nvdtgrid.DataSource, "Email");
+                chucvutxtbox.DataBindings.Clear();
+                chucvutxtbox.DataBindings.Add("Text", nvdtgrid.DataSource, "ChucVu");
+            }
         }
 
         private void xoanvbtn_Click(object sender, EventArgs e)

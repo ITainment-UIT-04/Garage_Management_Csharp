@@ -86,45 +86,9 @@ create table PHIEUTHUTIEN(
 	constraint PK_PHIEUTHUTIEN primary key(MaPTT)
 )
 
--- 9.BAO CAO DOANH THU
-create table BAOCAODOANHTHU(
-	
-	MaBCDT char(10),
-	Thang int,
-	Nam int,
-	TongDoanhThu money
-	constraint PK_BAOCAODOANHTHU primary key(MaBCDT)
-)
 
--- 10. CHI TIET BAO CAO DOANH THU
-create table CT_BAOCAODOANHTHU(
-	
-	MaBCDT char(10),
-	HieuXe varchar(20),
-	ThanhTien money,
-	TiLe float
-	
-)
 
--- 11. BAO CAO TON VAT TU PHU TUNG 
-create table BAOCAOTONVTPT(
-	
-	MaBCTVTPT char(10),
-	Thang int,
-	Nam int,
-	constraint PK_BAOCAOTONVTPT primary key(MaBCTVTPT)
-)
 
--- 12. CHI TIET BAO CAO TON VAT TU PHU TUNG 
-create table CT_BAOCAOTONVTPT(
-	
-	MaBCTVTPT char(10),
-	MaVTPT char(10),
-	TonDau int,
-	PhatSinh int,
-	TonCuoi int,
-	
-)
 
 -- 13. PHIEU NHAP KHO VAT TU PHU CTUNG
 create table PHIEUNHAPKHOVTPT(
@@ -159,13 +123,6 @@ alter table CT_PSC add constraint FK3_CT_PSC foreign key(MaTienCong) references 
 -- 4. BANG PHIEU THU TIEN
 alter table PHIEUTHUTIEN add constraint FK_PHIEUTHUTIEN foreign key(BienSo) references XE(BienSo)
 
--- 5. BANG CT_BAOCAODOANHTHU
-alter table CT_BAOCAODOANHTHU add constraint FK1_CT_BAOCAODOANHTHU foreign key(MaBCDT) references BAOCAODOANHTHU(MaBCDT)
-alter table CT_BAOCAODOANHTHU add constraint FK2_CT_BAOCAODOANHTHU foreign key(HieuXe) references HIEUXE(HieuXe)
-
--- 6. BANG CT_BAOCAOTONVTPT
-alter table CT_BAOCAOTONVTPT add constraint FK1_CT_BAOCAOTONVTPT foreign key(MaBCTVTPT) references BAOCAOTONVTPT(MaBCTVTPT)
-alter table CT_BAOCAOTONVTPT add constraint FK2_CT_BAOCAOTONVTPT foreign key(MaVTPT) references PHUTUNG(MaVTPT)
 
 
 
@@ -174,8 +131,7 @@ alter table CT_BAOCAOTONVTPT add constraint FK2_CT_BAOCAOTONVTPT foreign key(MaV
 
 
 
--- ThanhTien = SoLuong*DonGia + TienCong
-alter table CT_PSC add constraint CHECK_THANHTIEN check (ThanhTien = SoLuong*DonGia + TienCong)
+
 USE QUANLIGARA
 GO
 CREATE TABLE NHANVIEN
@@ -233,27 +189,27 @@ CREATE PROC BAOCAOTON
 @thang int, @nam int
 AS 
 BEGIN
-((SELECT MaVTPT, TenVTPT, SUM(SoLuong) AS PHATSINH, 0 AS SUDUNG FROM CT_PNKVTPT C, PHIEUNHAPKHOVTPT P  
+((SELECT MaVTPT, TenVTPT, SUM(SoLuong) AS PhatSinh, 0 AS SuDung FROM CT_PNKVTPT C, PHIEUNHAPKHOVTPT P  
 WHERE P.MaNKVTPT = C.MaNKVTPT AND MONTH(P.NgayNhap) = @thang AND YEAR(P.NgayNhap) = @nam AND MaVTPT NOT IN 
 (SELECT T1.MaVTPT FROM
-(SELECT MaVTPT, TenVTPT, SUM(SoLuong) AS PHATSINH, 0 AS SUDUNG FROM CT_PNKVTPT C, PHIEUNHAPKHOVTPT P  
+(SELECT MaVTPT, TenVTPT, SUM(SoLuong) AS PhatSinh, 0 AS SuDung FROM CT_PNKVTPT C, PHIEUNHAPKHOVTPT P  
 WHERE P.MaNKVTPT = C.MaNKVTPT AND MONTH(P.NgayNhap) = @thang AND YEAR(P.NgayNhap) = @nam
 GROUP BY MaVTPT, TenVTPT)  T1
 JOIN
-(SELECT MaVTPT, TenVTPT, 0 AS PHATSINH, SUM(SoLuong) AS SUDUNG FROM CT_PSC C, PHIEUSUACHUA P  
+(SELECT MaVTPT, TenVTPT, 0 AS PhatSinh, SUM(SoLuong) AS SuDung FROM CT_PSC C, PHIEUSUACHUA P  
 WHERE P.MaPSC = C.MaPSC AND MONTH(P.NgaySuaChua) = @thang AND YEAR(P.NgaySuaChua) = @nam
 GROUP BY MaVTPT, TenVTPT) T2
 ON T1.MaVTPT = T2.MaVTPT)
 GROUP BY MaVTPT, TenVTPT))
 UNION
-(SELECT MaVTPT, TenVTPT, 0 AS PHATSINH, SUM(SoLuong) AS SUDUNG FROM CT_PSC C, PHIEUSUACHUA P  
+(SELECT MaVTPT, TenVTPT, 0 AS PhatSinh, SUM(SoLuong) AS SuDung FROM CT_PSC C, PHIEUSUACHUA P  
 WHERE P.MaPSC = C.MaPSC AND MONTH(P.NgaySuaChua) = @thang AND YEAR(P.NgaySuaChua) = @nam AND MaVTPT
 NOT IN (SELECT T1.MaVTPT FROM
-(SELECT MaVTPT, TenVTPT, SUM(SoLuong) AS PHATSINH, 0 AS SUDUNG FROM CT_PNKVTPT C, PHIEUNHAPKHOVTPT P  
+(SELECT MaVTPT, TenVTPT, SUM(SoLuong) AS PhatSinh, 0 AS SuDung FROM CT_PNKVTPT C, PHIEUNHAPKHOVTPT P  
 WHERE P.MaNKVTPT = C.MaNKVTPT AND MONTH(P.NgayNhap) = @thang AND YEAR(P.NgayNhap) = @nam
 GROUP BY MaVTPT, TenVTPT)  T1
 JOIN
-(SELECT MaVTPT, TenVTPT, 0 AS PHATSINH, SUM(SoLuong) AS SUDUNG FROM CT_PSC C, PHIEUSUACHUA P  
+(SELECT MaVTPT, TenVTPT, 0 AS PhatSinh, SUM(SoLuong) AS SuDung FROM CT_PSC C, PHIEUSUACHUA P  
 WHERE P.MaPSC = C.MaPSC AND MONTH(P.NgaySuaChua) = @thang AND YEAR(P.NgaySuaChua) = @nam
 GROUP BY MaVTPT, TenVTPT) T2
 ON T1.MaVTPT = T2.MaVTPT)
@@ -273,3 +229,4 @@ WHERE P.MaPSC = C.MaPSC AND MONTH(P.NgaySuaChua) = @thang AND YEAR(P.NgaySuaChua
 GROUP BY MaVTPT, TenVTPT) T2
 ON T1.MaVTPT = T2.MaVTPT)
 END
+

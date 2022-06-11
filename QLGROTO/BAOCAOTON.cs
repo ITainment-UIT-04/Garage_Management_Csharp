@@ -47,25 +47,29 @@ namespace QLGROTO
 
         private void xuatbtn_Click(object sender, EventArgs e)
         {
-            
-            using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
+            if (bctdtgrid.Rows.Count == 0)
+                MessageBox.Show("Không có thông tin để xuất!");
+            else
             {
-                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
                 {
-                    try
+                    if (saveFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        using (XLWorkbook workbook = new XLWorkbook())
+                        try
                         {
-                            workbook.Worksheets.Add(bctdtgrid.DataSource as DataTable, "BAOCAOTON");
+                            using (XLWorkbook workbook = new XLWorkbook())
+                            {
+                                workbook.Worksheets.Add(bctdtgrid.DataSource as DataTable, "BAOCAOTON");
 
-                            workbook.SaveAs(saveFileDialog.FileName);
+                                workbook.SaveAs(saveFileDialog.FileName);
 
 
+                            }
                         }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Xuất file không thành công!");
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Xuất file không thành công!");
+                        }
                     }
                 }
             }
@@ -77,24 +81,37 @@ namespace QLGROTO
             int nam = Convert.ToInt32(namnumeric.Value);
 
 
-            bctdtgrid.DataSource = BAOCAOTONDAO.Instance.PhatSinhVaSuDung(thang, nam);
-            if (bctdtgrid.Rows.Count > 0)
+            DataTable dt = BAOCAOTONDAO.Instance.PhatSinhVaSuDung(thang, nam);
+            dt.Columns.Add("TonCuoi");
+            dt.Columns.Add("TonDau");
+            if (dt.Rows.Count > 0)
             {
-                for (int i = 0; i < bctdtgrid.Rows.Count; i++)
+                for (int i = 0; i < dt.Rows.Count; i++)
                 {
-                    SqlDataReader dr = VTPTDAO.Instance.LoadVTPTTheoTen(bctdtgrid.Rows[i].Cells["TenVTPT"].Value.ToString());
+                    SqlDataReader dr = VTPTDAO.Instance.LoadVTPTTheoTen(dt.Rows[i]["TenVTPT"].ToString());
                     if (dr.Read())
                     {
                         int tc = Convert.ToInt32(dr["SoLuongTon"]);
-                        int ps = Convert.ToInt32(bctdtgrid.Rows[i].Cells["PhatSinh"].Value);
-                        int sd = Convert.ToInt32(bctdtgrid.Rows[i].Cells["SuDung"].Value);
+                        int ps = Convert.ToInt32(dt.Rows[i]["PhatSinh"]);
+                        int sd = Convert.ToInt32(dt.Rows[i]["SuDung"]);
                         int td = tc - ps + sd;
-                        bctdtgrid.Rows[i].Cells["TonCuoi"].Value = tc.ToString();
-                        bctdtgrid.Rows[i].Cells["TonDau"].Value = td.ToString();
+                        dt.Rows[i]["TonCuoi"] = tc.ToString();
+                        dt.Rows[i]["TonDau"] = td.ToString();
+
+
                     }
                 }
-                
+                bctdtgrid.DataSource = dt;
             }
+            else
+                bctdtgrid.DataSource = null;
+
+
+        }
+
+        private void bctdtgrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

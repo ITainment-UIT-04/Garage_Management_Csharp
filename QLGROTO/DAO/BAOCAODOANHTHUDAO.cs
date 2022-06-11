@@ -33,7 +33,7 @@ namespace QLGROTO.DAO
             
             
                 con.Open();
-                string sql = "SELECT HieuXe, SUM(SoTienThu) AS THANHTIEN, COUNT(X.BienSo) AS SOLUOT FROM PHIEUTHUTIEN P, XE X WHERE P.BienSo = X.BienSo AND MONTH(NgayThuTien) = @thang AND YEAR(NgayThuTien) = @nam GROUP BY HieuXe";
+                string sql = "SELECT HieuXe, SUM(SoTienThu) AS ThanhTien, COUNT(X.BienSo) AS SoLuotThu FROM PHIEUTHUTIEN P, XE X WHERE P.BienSo = X.BienSo AND MONTH(NgayThuTien) = @thang AND YEAR(NgayThuTien) = @nam GROUP BY HieuXe";
                 SqlCommand cmd = new SqlCommand(sql, con);
                 cmd.Parameters.AddWithValue("@nam", nam);
                 cmd.Parameters.AddWithValue("@thang", thang);

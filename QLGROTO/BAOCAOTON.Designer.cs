@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BAOCAOTON));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Group1 = new System.Windows.Forms.GroupBox();
             this.xuatbtn = new System.Windows.Forms.Button();
             this.namnumeric = new System.Windows.Forms.NumericUpDown();
@@ -41,15 +41,15 @@
             this.themtiencong_btn = new System.Windows.Forms.Button();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
             this.bctdtgrid = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.ReportDoanhSo_Title = new System.Windows.Forms.Label();
+            this.thoatbtn = new System.Windows.Forms.Button();
             this.MaVTPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenVTPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TonDau = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PhatSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SuDung = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TonCuoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.ReportDoanhSo_Title = new System.Windows.Forms.Label();
-            this.thoatbtn = new System.Windows.Forms.Button();
             this.Group1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.namnumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.thangnumeric)).BeginInit();
@@ -203,14 +203,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bctdtgrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bctdtgrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bctdtgrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.bctdtgrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bctdtgrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaVTPT,
@@ -219,70 +219,29 @@
             this.PhatSinh,
             this.SuDung,
             this.TonCuoi});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bctdtgrid.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bctdtgrid.DefaultCellStyle = dataGridViewCellStyle2;
             this.bctdtgrid.Location = new System.Drawing.Point(8, 28);
             this.bctdtgrid.Name = "bctdtgrid";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bctdtgrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bctdtgrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.bctdtgrid.RowHeadersWidth = 51;
             this.bctdtgrid.RowTemplate.Height = 29;
             this.bctdtgrid.Size = new System.Drawing.Size(1066, 421);
             this.bctdtgrid.TabIndex = 1;
-            // 
-            // MaVTPT
-            // 
-            this.MaVTPT.DataPropertyName = "MaVTPT";
-            this.MaVTPT.HeaderText = "Mã VTPT";
-            this.MaVTPT.MinimumWidth = 6;
-            this.MaVTPT.Name = "MaVTPT";
-            // 
-            // TenVTPT
-            // 
-            this.TenVTPT.DataPropertyName = "TenVTPT";
-            this.TenVTPT.HeaderText = "Tên VTPT";
-            this.TenVTPT.MinimumWidth = 6;
-            this.TenVTPT.Name = "TenVTPT";
-            // 
-            // TonDau
-            // 
-            this.TonDau.DataPropertyName = "TonDau";
-            this.TonDau.HeaderText = "Tồn đầu";
-            this.TonDau.MinimumWidth = 6;
-            this.TonDau.Name = "TonDau";
-            // 
-            // PhatSinh
-            // 
-            this.PhatSinh.DataPropertyName = "PHATSINH";
-            this.PhatSinh.HeaderText = "Phát sinh";
-            this.PhatSinh.MinimumWidth = 6;
-            this.PhatSinh.Name = "PhatSinh";
-            // 
-            // SuDung
-            // 
-            this.SuDung.DataPropertyName = "SUDUNG";
-            this.SuDung.HeaderText = "Sử dụng";
-            this.SuDung.MinimumWidth = 6;
-            this.SuDung.Name = "SuDung";
-            // 
-            // TonCuoi
-            // 
-            this.TonCuoi.DataPropertyName = "TonCuoi";
-            this.TonCuoi.HeaderText = "Tồn cuối";
-            this.TonCuoi.MinimumWidth = 6;
-            this.TonCuoi.Name = "TonCuoi";
+            this.bctdtgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bctdtgrid_CellContentClick);
             // 
             // panel1
             // 
@@ -318,6 +277,48 @@
             this.thoatbtn.Text = "Thoát";
             this.thoatbtn.UseVisualStyleBackColor = true;
             this.thoatbtn.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // MaVTPT
+            // 
+            this.MaVTPT.DataPropertyName = "MaVTPT";
+            this.MaVTPT.HeaderText = "Mã VTPT";
+            this.MaVTPT.MinimumWidth = 6;
+            this.MaVTPT.Name = "MaVTPT";
+            // 
+            // TenVTPT
+            // 
+            this.TenVTPT.DataPropertyName = "TenVTPT";
+            this.TenVTPT.HeaderText = "Tên VTPT";
+            this.TenVTPT.MinimumWidth = 6;
+            this.TenVTPT.Name = "TenVTPT";
+            // 
+            // TonDau
+            // 
+            this.TonDau.DataPropertyName = "TonDau";
+            this.TonDau.HeaderText = "Tồn đầu";
+            this.TonDau.MinimumWidth = 6;
+            this.TonDau.Name = "TonDau";
+            // 
+            // PhatSinh
+            // 
+            this.PhatSinh.DataPropertyName = "PhatSinh";
+            this.PhatSinh.HeaderText = "Phát sinh";
+            this.PhatSinh.MinimumWidth = 6;
+            this.PhatSinh.Name = "PhatSinh";
+            // 
+            // SuDung
+            // 
+            this.SuDung.DataPropertyName = "SuDung";
+            this.SuDung.HeaderText = "Sử dụng";
+            this.SuDung.MinimumWidth = 6;
+            this.SuDung.Name = "SuDung";
+            // 
+            // TonCuoi
+            // 
+            this.TonCuoi.DataPropertyName = "TonCuoi";
+            this.TonCuoi.HeaderText = "Tồn cuối";
+            this.TonCuoi.MinimumWidth = 6;
+            this.TonCuoi.Name = "TonCuoi";
             // 
             // BAOCAOTON
             // 

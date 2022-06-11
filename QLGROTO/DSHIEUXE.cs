@@ -83,24 +83,29 @@ namespace QLGROTO
 
         private void xuatbtn_Click(object sender, EventArgs e)
         {
-            using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
+            if (hieuxedtgrid.Rows.Count == 0)
+                MessageBox.Show("Không có thông tin để xuất!");
+            else
             {
-                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
                 {
-                    try
+                    if (saveFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        using (XLWorkbook workbook = new XLWorkbook())
+                        try
                         {
-                            workbook.Worksheets.Add(hieuxedtgrid.DataSource as DataTable, "VTPT");
+                            using (XLWorkbook workbook = new XLWorkbook())
+                            {
+                                workbook.Worksheets.Add(hieuxedtgrid.DataSource as DataTable, "VTPT");
 
-                            workbook.SaveAs(saveFileDialog.FileName);
+                                workbook.SaveAs(saveFileDialog.FileName);
 
 
+                            }
                         }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Xuất file không thành công!");
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Xuất file không thành công!");
+                        }
                     }
                 }
             }

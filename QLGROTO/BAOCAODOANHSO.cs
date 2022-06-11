@@ -27,24 +27,29 @@ namespace QLGROTO
 
         private void xuatbtn_Click(object sender, EventArgs e)
         {
-            using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
+            if (bcdsdtgrid.Rows.Count == 0)
+                MessageBox.Show("Không có thông tin để xuất!");
+            else
             {
-                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
                 {
-                    try
+                    if (saveFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        using (XLWorkbook workbook = new XLWorkbook())
+                        try
                         {
-                            workbook.Worksheets.Add(bcdsdtgrid.DataSource as DataTable, "BAOCAODOANHSO");
+                            using (XLWorkbook workbook = new XLWorkbook())
+                            {
+                                workbook.Worksheets.Add(bcdsdtgrid.DataSource as DataTable, "BAOCAODOANHSO");
 
-                            workbook.SaveAs(saveFileDialog.FileName);
+                                workbook.SaveAs(saveFileDialog.FileName);
 
 
+                            }
                         }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Xuất file không thành công!");
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Xuất file không thành công!");
+                        }
                     }
                 }
             }
@@ -57,18 +62,25 @@ namespace QLGROTO
             double ttt = 0;
           
         
-            bcdsdtgrid.DataSource = BAOCAODOANHTHUDAO.Instance.BaoCao(thang, nam);
-            if (bcdsdtgrid.Rows.Count > 0)
+            DataTable dt = BAOCAODOANHTHUDAO.Instance.BaoCao(thang, nam);
+            dt.Columns.Add("TiLe");
+            if (dt.Rows.Count > 0)
             {
-                
+
                 SqlDataReader dr = BAOCAODOANHTHUDAO.Instance.TongThanhTien(thang, nam);
                 if (dr.Read())
                     ttt = Convert.ToDouble(dr["TONGTHANHTIEN"]);
                 ttttxtbox.Text = ttt.ToString();
-                for (int i = 0; i < bcdsdtgrid.Rows.Count; i++)
+                for (int i = 0; i < dt.Rows.Count; i++)
                 {
-                    bcdsdtgrid.Rows[i].Cells["TiLe"].Value = (Convert.ToDouble(bcdsdtgrid.Rows[i].Cells["THANHTIEN"].Value) / ttt);
+                    dt.Rows[i]["TiLe"] = (Convert.ToDouble(dt.Rows[i]["THANHTIEN"]) / ttt);
                 }
+                bcdsdtgrid.DataSource = dt;
+            }
+            else
+            {
+                bcdsdtgrid.DataSource = null;
+                ttttxtbox.Clear();
             }
         }
 
