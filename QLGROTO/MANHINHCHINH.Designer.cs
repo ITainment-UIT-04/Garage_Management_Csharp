@@ -171,7 +171,6 @@
             this.danhSáchToolStripMenuItem.Name = "danhSáchToolStripMenuItem";
             this.danhSáchToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
             this.danhSáchToolStripMenuItem.Text = "Quản lý";
-            this.danhSáchToolStripMenuItem.Click += new System.EventHandler(this.danhSáchToolStripMenuItem_Click);
             // 
             // danhSáchVậtTưPhụTùngToolStripMenuItem
             // 
@@ -471,7 +470,6 @@
             this.SearchLabel.Size = new System.Drawing.Size(104, 28);
             this.SearchLabel.TabIndex = 3;
             this.SearchLabel.Text = "Tìm kiếm:";
-            this.SearchLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // timtxtbox
             // 

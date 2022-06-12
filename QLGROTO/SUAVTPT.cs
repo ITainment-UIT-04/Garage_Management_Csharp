@@ -34,7 +34,7 @@ namespace QLGROTO
                 string ma = mavtpttxtbox.Text;
                 string ten = tenvtpttxtbox.Text;
                 double dg = Convert.ToDouble(dgtxtbox.Text);
-                if (VTPTDAO.Instance.SuaVTPT(ma, ten, dg))
+                if (VTPTDAO.Instance.Sua(ma, ten, dg))
                 {
                     this.Close();
                 }

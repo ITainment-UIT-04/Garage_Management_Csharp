@@ -88,7 +88,7 @@ namespace QLGROTO
         {
             if (nvdtgrid.Rows.Count > 0)
             {
-                NHANVIENDAO.Instance.XoaNhanVien(tdntxtbox.Text);
+                NHANVIENDAO.Instance.Xoa(tdntxtbox.Text);
                 HienThi();
                 if (nvdtgrid.Rows.Count == 0)
                 {

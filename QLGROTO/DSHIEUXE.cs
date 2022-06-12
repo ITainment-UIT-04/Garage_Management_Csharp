@@ -22,7 +22,7 @@ namespace QLGROTO
         void HienThi()
         {
 
-            hieuxedtgrid.DataSource = HIEUXEDAO.Instance.HienThiHieuXe2();
+            hieuxedtgrid.DataSource = HIEUXEDAO.Instance.HienThi();
         }
         private void BrandList_Load(object sender, EventArgs e)
         {
@@ -51,7 +51,7 @@ namespace QLGROTO
             if (hieuxedtgrid.Rows.Count > 0)
             {
                 string s = hieuxedtgrid.CurrentRow.Cells[0].Value.ToString();
-                if (!HIEUXEDAO.Instance.XoaHieuXe(s))
+                if (!HIEUXEDAO.Instance.Xoa(s))
 
 
                     MessageBox.Show("Không thể xóa hiệu xe!");

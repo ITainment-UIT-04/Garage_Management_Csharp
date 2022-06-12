@@ -34,7 +34,7 @@ namespace QLGROTO
                 string matc = matctxtbox.Text;
                 double tc = Convert.ToDouble(tctxtbox.Text);
                 string nd = ndtxtbox.Text;
-                if (TIENCONGDAO.Instance.ThemTienCong(matc, tc, nd))
+                if (TIENCONGDAO.Instance.Them(matc, tc, nd))
                 {
                     this.Close();
                 }

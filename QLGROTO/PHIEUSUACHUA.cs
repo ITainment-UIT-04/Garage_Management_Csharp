@@ -19,14 +19,10 @@ namespace QLGROTO
         public PHIEUSUACHUA()
         {
             InitializeComponent();
-            HienThi();
+          
 
         }
-        public void HienThi()
-        {
-           
-
-        }
+        
 
         
 

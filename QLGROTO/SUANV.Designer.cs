@@ -44,11 +44,10 @@
             this.capnhatbtn = new System.Windows.Forms.Button();
             this.tdntxtbox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.chucvutxtbox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.mktxtbox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.cvcbbox = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -229,32 +228,6 @@
             this.label4.TabIndex = 27;
             this.label4.Text = "Tên đăng nhập:";
             // 
-            // textBox6
-            // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox6.Location = new System.Drawing.Point(240, 277);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.textBox6.Size = new System.Drawing.Size(300, 29);
-            this.textBox6.TabIndex = 20;
-            // 
-            // chucvutxtbox
-            // 
-            this.chucvutxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.chucvutxtbox.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.chucvutxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.chucvutxtbox.Location = new System.Drawing.Point(240, 281);
-            this.chucvutxtbox.Multiline = true;
-            this.chucvutxtbox.Name = "chucvutxtbox";
-            this.chucvutxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.chucvutxtbox.Size = new System.Drawing.Size(300, 29);
-            this.chucvutxtbox.TabIndex = 19;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -289,6 +262,14 @@
             this.label6.TabIndex = 27;
             this.label6.Text = "Mật khẩu:";
             // 
+            // cvcbbox
+            // 
+            this.cvcbbox.FormattingEnabled = true;
+            this.cvcbbox.Location = new System.Drawing.Point(240, 281);
+            this.cvcbbox.Name = "cvcbbox";
+            this.cvcbbox.Size = new System.Drawing.Size(300, 28);
+            this.cvcbbox.TabIndex = 30;
+            // 
             // SUANV
             // 
             this.AcceptButton = this.capnhatbtn;
@@ -297,6 +278,7 @@
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.CancelButton = this.thoatbtn;
             this.ClientSize = new System.Drawing.Size(633, 363);
+            this.Controls.Add(this.cvcbbox);
             this.Controls.Add(this.capnhatbtn);
             this.Controls.Add(this.thoatbtn);
             this.Controls.Add(this.label5);
@@ -304,10 +286,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.chucvutxtbox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.TenChuXe);
-            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.emailtxtbox);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.dthtxtbox);
@@ -347,10 +327,9 @@
         private Button capnhatbtn;
         private TextBox tdntxtbox;
         private Label label4;
-        private TextBox textBox6;
-        private TextBox chucvutxtbox;
         private Label label5;
         private TextBox mktxtbox;
         private Label label6;
+        private ComboBox cvcbbox;
     }
 }

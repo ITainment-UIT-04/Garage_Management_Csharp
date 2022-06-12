@@ -167,7 +167,7 @@ namespace QLGROTO.DAO
             }
             return true;
         }
-        public bool SuaXe(string bienso, string ten, string hieu, string diachi, string dth, string email)
+        public bool Sua(string bienso, string ten, string hieu, string diachi, string dth, string email)
         {
             string sql = "UPDATE XE SET TenChuXe = @ten, HieuXe = @hieuxe, DiaChi = @diachi, DienThoai = @dienthoai, Email = @email WHERE BienSo = @bienso";
             SqlConnection con = dc.getConnect();

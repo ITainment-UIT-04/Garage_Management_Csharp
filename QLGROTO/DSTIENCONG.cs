@@ -79,7 +79,7 @@ namespace QLGROTO
             if (tcdtgrid.Rows.Count > 0)
             {
                 string mtc = matctxtbox.Text;
-                if (!TIENCONGDAO.Instance.XoaTienCong(mtc))
+                if (!TIENCONGDAO.Instance.Xoa(mtc))
                     MessageBox.Show("Không thể xóa tiền công!");
                 else
                 {

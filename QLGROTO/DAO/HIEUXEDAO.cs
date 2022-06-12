@@ -25,7 +25,7 @@ namespace QLGROTO.DAO
                     }
             set { instance = value; }
         }
-        public SqlDataReader HienThiHieuXe1()
+        public SqlDataReader HienThiCBBox()
         {
             SqlConnection con = dc.getConnect();
             con.Open();
@@ -34,7 +34,7 @@ namespace QLGROTO.DAO
             SqlDataReader dt = cmd.ExecuteReader();
             return dt;
         }
-        public DataTable HienThiHieuXe2()
+        public DataTable HienThi()
         {
           
             SqlConnection con = dc.getConnect();
@@ -62,7 +62,7 @@ namespace QLGROTO.DAO
 
 
         }
-        public bool ThemHieuXe(string h)
+        public bool Them(string h)
         {
             string sql = "INSERT INTO HIEUXE VALUES(@h)";
             SqlConnection con = dc.getConnect();
@@ -82,7 +82,7 @@ namespace QLGROTO.DAO
             }
             return true;
         }
-        public bool XoaHieuXe(string s)
+        public bool Xoa(string s)
         {
             SqlConnection con = dc.getConnect();
             try

@@ -50,94 +50,51 @@ namespace QLGROTO
             contactForm.ShowDialog();
         }
 
-        private void thôngTinToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
        
 
-        private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            THONGTINADMIN t = new THONGTINADMIN();
-
-            t.tendangnhap = tendangnhap;      
-
-            
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+     
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            SqlDataReader dr = NHANVIENDAO.Instance.HienThiThongTin(tendangnhap);
-            if (dr.Read())
-                dangsudungtxtbox.Text = dr["TenNV"].ToString();
-
+            if (NHANVIENDAO.Instance.flag == 0)
+                dangsudungtxtbox.Text = "Khách";
+            else
+            {
+                SqlDataReader dr = NHANVIENDAO.Instance.HienThiThongTin(tendangnhap);
+                if (dr.Read())
+                    dangsudungtxtbox.Text = dr["TenNV"].ToString();
+            }
             
             
             
 
         }
-        
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void trợGiúpToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void quảnLýNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+     
         private void button1_Click_1(object sender, EventArgs e)
         {
-            TIEPNHANXE t = new TIEPNHANXE();
-            t.ShowDialog();
-            HienThi();
+
+            if (NHANVIENDAO.Instance.flag == 0)
+                MessageBox.Show("Khách không được sử dụng chức năng này!");
+            else
+            {
+                TIEPNHANXE t = new TIEPNHANXE();
+                t.ShowDialog();
+                HienThi();
+            }
            
         }
 
        
         private void button4_Click(object sender, EventArgs e)
         {
-            PHIEUSUACHUA repairForm = new PHIEUSUACHUA();   
-            repairForm.ShowDialog();
-            HienThi();
+            if (NHANVIENDAO.Instance.flag == 0)
+                MessageBox.Show("Khách không được sử dụng chức năng này!");
+            else
+            {
+                PHIEUSUACHUA repairForm = new PHIEUSUACHUA();
+                repairForm.ShowDialog();
+                HienThi();
+            }
         }
 
 
@@ -147,91 +104,98 @@ namespace QLGROTO
 
         private void button10_Click(object sender, EventArgs e)
         {
-            if (xedtgrid.Rows.Count == 0)
-                MessageBox.Show("Không có xe để cập nhật!");
+            if (NHANVIENDAO.Instance.flag == 0)
+                MessageBox.Show("Khách không được sử dụng chức năng này!");
             else
             {
-                SUATHONGTINXE changeForm = new SUATHONGTINXE();
-                changeForm.bienso = biensotxtbox.Text;
-                changeForm.ten = tentxtbox.Text;
-                changeForm.hieuxe = hieuxetxtbox.Text;
-                changeForm.diachi = diachitxtbox.Text;
-                changeForm.dth = dthtxtbox.Text;
-                changeForm.email = emailtxtbox.Text;
-                changeForm.no = notxtbox.Text;
-                changeForm.ngay = ngaydtpicker.Value;
-                changeForm.ShowDialog();
-                HienThi();
+                if (xedtgrid.Rows.Count == 0)
+                    MessageBox.Show("Không có xe để cập nhật!");
+                else
+                {
+                    SUATHONGTINXE changeForm = new SUATHONGTINXE();
+                    changeForm.bienso = biensotxtbox.Text;
+                    changeForm.ten = tentxtbox.Text;
+                    changeForm.hieuxe = hieuxetxtbox.Text;
+                    changeForm.diachi = diachitxtbox.Text;
+                    changeForm.dth = dthtxtbox.Text;
+                    changeForm.email = emailtxtbox.Text;
+                    changeForm.no = notxtbox.Text;
+                    changeForm.ngay = ngaydtpicker.Value;
+                    changeForm.ShowDialog();
+                    HienThi();
+                }
             }
         }
 
-        private void cậpNhậtToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void danhSáchVậtTưPhụTùngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
+     
         private void danhSáchPhiếuNhậtKhoVTPTToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DSPNKVTPT dSPHIEUNHAPKHO = new DSPNKVTPT();
-            dSPHIEUNHAPKHO.ShowDialog();
+            if (NHANVIENDAO.Instance.flag == 0)
+                MessageBox.Show("Khách không được sử dụng chức năng này!");
+            else
+            {
+                DSPNKVTPT dSPHIEUNHAPKHO = new DSPNKVTPT();
+                dSPHIEUNHAPKHO.ShowDialog();
+            }
         }
 
-        private void danhSáchToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
+   
         private void danhSáchVậtTưPhụTùngToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            DSVTPT a = new DSVTPT();
-            a.ShowDialog();
+            if (NHANVIENDAO.Instance.flag == 0)
+                MessageBox.Show("Khách không được sử dụng chức năng này!");
+            else
+            {
+                DSVTPT a = new DSVTPT();
+                a.ShowDialog();
+            }
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
+            if (NHANVIENDAO.Instance.flag == 0)
+                MessageBox.Show("Khách không được sử dụng chức năng này!");
+            else { 
             string bienso = biensotxtbox.Text;
-            if (xedtgrid.Rows.Count == 0)
-                MessageBox.Show("Không có xe để xóa");
-            else
-            {
-                if (!XEDAO.Instance.XoaXe(bienso))
-                    MessageBox.Show("Không thể xóa xe!");
-                else {
-                    if (xedtgrid.Rows.Count == 0)
-                    {
-                        biensotxtbox.Clear();
-                        tentxtbox.Clear();
-                        dthtxtbox.Clear();
-                        diachitxtbox.Clear();
-                        emailtxtbox.Clear();
-                        hieuxetxtbox.Clear();
-                        notxtbox.Clear();
-                    }
+                if (xedtgrid.Rows.Count == 0)
+                    MessageBox.Show("Không có xe để xóa");
+                else
+                {
+                    if (!XEDAO.Instance.XoaXe(bienso))
+                        MessageBox.Show("Không thể xóa xe!");
                     else
                     {
-                        biensotxtbox.DataBindings.Clear();
-                        biensotxtbox.DataBindings.Add("Text", xedtgrid.DataSource, "BienSo");
-                        tentxtbox.DataBindings.Clear();
-                        tentxtbox.DataBindings.Add("Text", xedtgrid.DataSource, "TenChuXe");
-                        hieuxetxtbox.DataBindings.Clear();
-                        hieuxetxtbox.DataBindings.Add("Text", xedtgrid.DataSource, "HieuXe");
-                        diachitxtbox.DataBindings.Clear();
-                        diachitxtbox.DataBindings.Add("Text", xedtgrid.DataSource, "DiaChi");
-                        dthtxtbox.DataBindings.Clear();
-                        dthtxtbox.DataBindings.Add("Text", xedtgrid.DataSource, "DienThoai");
-                        emailtxtbox.DataBindings.Clear();
-                        emailtxtbox.DataBindings.Add("Text", xedtgrid.DataSource, "Email");
-                        notxtbox.DataBindings.Clear();
-                        notxtbox.DataBindings.Add("Text", xedtgrid.DataSource, "TienNo");
-                        ngaydtpicker.DataBindings.Clear();
-                        ngaydtpicker.DataBindings.Add("Value", xedtgrid.DataSource, "NgayTiepNhan");
+                        if (xedtgrid.Rows.Count == 0)
+                        {
+                            biensotxtbox.Clear();
+                            tentxtbox.Clear();
+                            dthtxtbox.Clear();
+                            diachitxtbox.Clear();
+                            emailtxtbox.Clear();
+                            hieuxetxtbox.Clear();
+                            notxtbox.Clear();
+                        }
+                        else
+                        {
+                            biensotxtbox.DataBindings.Clear();
+                            biensotxtbox.DataBindings.Add("Text", xedtgrid.DataSource, "BienSo");
+                            tentxtbox.DataBindings.Clear();
+                            tentxtbox.DataBindings.Add("Text", xedtgrid.DataSource, "TenChuXe");
+                            hieuxetxtbox.DataBindings.Clear();
+                            hieuxetxtbox.DataBindings.Add("Text", xedtgrid.DataSource, "HieuXe");
+                            diachitxtbox.DataBindings.Clear();
+                            diachitxtbox.DataBindings.Add("Text", xedtgrid.DataSource, "DiaChi");
+                            dthtxtbox.DataBindings.Clear();
+                            dthtxtbox.DataBindings.Add("Text", xedtgrid.DataSource, "DienThoai");
+                            emailtxtbox.DataBindings.Clear();
+                            emailtxtbox.DataBindings.Add("Text", xedtgrid.DataSource, "Email");
+                            notxtbox.DataBindings.Clear();
+                            notxtbox.DataBindings.Add("Text", xedtgrid.DataSource, "TienNo");
+                            ngaydtpicker.DataBindings.Clear();
+                            ngaydtpicker.DataBindings.Add("Value", xedtgrid.DataSource, "NgayTiepNhan");
+                        }
+                        HienThi();
                     }
-                    HienThi();
                 }
 
 
@@ -240,7 +204,9 @@ namespace QLGROTO
 
         private void cậpNhậtTỉLệLãiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (NHANVIENDAO.Instance.flag != 1)
+            if (NHANVIENDAO.Instance.flag == 0)
+                    MessageBox.Show("Khách không được sử dụng chức năng này!");
+            else if (NHANVIENDAO.Instance.flag != 1)
                 MessageBox.Show("Phải là quản lý mới có quyền truy cập!");
             else
             {
@@ -252,7 +218,9 @@ namespace QLGROTO
 
         private void thayĐổiSốXeSToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (NHANVIENDAO.Instance.flag != 1)
+            if (NHANVIENDAO.Instance.flag == 0)
+                MessageBox.Show("Khách không được sử dụng chức năng này!");
+            else if (NHANVIENDAO.Instance.flag != 1)
                 MessageBox.Show("Phải là quản lý mới có quyền truy cập!");
             else
             {
@@ -263,52 +231,84 @@ namespace QLGROTO
 
         private void danhSáchLoạiTiềnCôngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DSTIENCONG wageForm = new DSTIENCONG();
-            wageForm.ShowDialog();
+            if (NHANVIENDAO.Instance.flag == 0)
+                MessageBox.Show("Khách không được sử dụng chức năng này!");
+            else
+            {
+                DSTIENCONG wageForm = new DSTIENCONG();
+                wageForm.ShowDialog();
+            }
         }
 
         private void danhSáchHiệuXeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DSHIEUXE brandForm = new DSHIEUXE();
-            brandForm.ShowDialog();
+            if (NHANVIENDAO.Instance.flag == 0)
+                MessageBox.Show("Khách không được sử dụng chức năng này!");
+            else
+            {
+                DSHIEUXE brandForm = new DSHIEUXE();
+                brandForm.ShowDialog();
+            }
         }
 
         private void danhSáchNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DSNHANVIEN dSNHANVIEN = new DSNHANVIEN();
-            dSNHANVIEN.ShowDialog();
+            if (NHANVIENDAO.Instance.flag == 0)
+                MessageBox.Show("Khách không được sử dụng chức năng này!");
+            else
+            {
+                DSNHANVIEN dSNHANVIEN = new DSNHANVIEN();
+                dSNHANVIEN.ShowDialog();
+            }
         }
 
         private void báoCáoTồnVậtTưPhụTùngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            BAOCAOTON bAOCAOTON = new BAOCAOTON();
-            bAOCAOTON.ShowDialog();
+            if (NHANVIENDAO.Instance.flag == 0)
+                MessageBox.Show("Khách không được sử dụng chức năng này!");
+            else
+            {
+                BAOCAOTON bAOCAOTON = new BAOCAOTON();
+                bAOCAOTON.ShowDialog();
+            }
         }
 
         private void báoCáoDoanhSốThángToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            BAOCAODOANHSO b = new BAOCAODOANHSO();
-            b.ShowDialog();
+            if (NHANVIENDAO.Instance.flag == 0)
+                MessageBox.Show("Khách không được sử dụng chức năng này!");
+            else
+            {
+                BAOCAODOANHSO b = new BAOCAODOANHSO();
+                b.ShowDialog();
+            }
         }
 
         private void danhSáchLToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DSPHIEUSUACHUA dSPHIEUSUACHUA = new DSPHIEUSUACHUA();
-            dSPHIEUSUACHUA.ShowDialog();
+            if (NHANVIENDAO.Instance.flag == 0)
+                MessageBox.Show("Khách không được sử dụng chức năng này!");
+            else
+            {
+                DSPHIEUSUACHUA dSPHIEUSUACHUA = new DSPHIEUSUACHUA();
+                dSPHIEUSUACHUA.ShowDialog();
+            }
         }
 
         private void danhSáchPhiếuThuTiềnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DSPHIEUTHUTIEN dSPHIEUTHUTIEN = new DSPHIEUTHUTIEN();
-            dSPHIEUTHUTIEN.ShowDialog();
+            if (NHANVIENDAO.Instance.flag == 0)
+                MessageBox.Show("Khách không được sử dụng chức năng này!");
+            else
+            {
+                DSPHIEUTHUTIEN dSPHIEUTHUTIEN = new DSPHIEUTHUTIEN();
+                dSPHIEUTHUTIEN.ShowDialog();
+            }
         }
 
        
 
-        private void xedtgrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+     
 
         private void NameSearchRadiobtn_CheckedChanged(object sender, EventArgs e)
         {
@@ -357,8 +357,13 @@ namespace QLGROTO
 
         private void lapphieuvtptbtn_Click(object sender, EventArgs e)
         {
-            PHIEUNHAPVTPT p = new PHIEUNHAPVTPT();
-            p.ShowDialog();
+            if (NHANVIENDAO.Instance.flag == 0)
+                MessageBox.Show("Khách không được sử dụng chức năng này!");
+            else
+            {
+                PHIEUNHAPVTPT p = new PHIEUNHAPVTPT();
+                p.ShowDialog();
+            }
         }
 
         private void timkiembtn_Click(object sender, EventArgs e)
@@ -379,28 +384,33 @@ namespace QLGROTO
 
         private void xuatbtn_Click(object sender, EventArgs e)
         {
-            if (xedtgrid.Rows.Count == 0)
-                MessageBox.Show("Không có thông tin để xuất");
+            if (NHANVIENDAO.Instance.flag == 0)
+                MessageBox.Show("Khách không được sử dụng chức năng này!");
             else
             {
-                using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
+                if (xedtgrid.Rows.Count == 0)
+                    MessageBox.Show("Không có thông tin để xuất");
+                else
                 {
-                    if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                    using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
                     {
-                        try
+                        if (saveFileDialog.ShowDialog() == DialogResult.OK)
                         {
-                            using (XLWorkbook workbook = new XLWorkbook())
+                            try
                             {
-                                workbook.Worksheets.Add(xedtgrid.DataSource as DataTable, "Xe");
+                                using (XLWorkbook workbook = new XLWorkbook())
+                                {
+                                    workbook.Worksheets.Add(xedtgrid.DataSource as DataTable, "Xe");
 
-                                workbook.SaveAs(saveFileDialog.FileName);
+                                    workbook.SaveAs(saveFileDialog.FileName);
 
 
+                                }
                             }
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show("Xuất file không thành công!");
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show("Xuất file không thành công!");
+                            }
                         }
                     }
                 }
@@ -409,9 +419,14 @@ namespace QLGROTO
 
         private void thutienbtn_Click(object sender, EventArgs e)
         {
-            PHIEUTHUTIEN t = new PHIEUTHUTIEN();
-            t.ShowDialog();
-            HienThi();
+            if (NHANVIENDAO.Instance.flag == 0)
+                MessageBox.Show("Khách không được sử dụng chức năng này!");
+            else
+            {
+                PHIEUTHUTIEN t = new PHIEUTHUTIEN();
+                t.ShowDialog();
+                HienThi();
+            }
         }
 
         private void dangxuatbtn_Click(object sender, EventArgs e)
@@ -421,7 +436,9 @@ namespace QLGROTO
 
         private void thôngTinCáNhânToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            if (NHANVIENDAO.Instance.flag != 1)
+            if (NHANVIENDAO.Instance.flag == 0)
+                MessageBox.Show("Khách không được sử dụng chức năng này!");
+            else if (NHANVIENDAO.Instance.flag != 1)
                 MessageBox.Show("Phải là quản lý mới có quyền truy cập!");
             else
             {
@@ -433,7 +450,9 @@ namespace QLGROTO
 
         private void quảnLýNhânViênToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            if (NHANVIENDAO.Instance.flag != 1)
+            if (NHANVIENDAO.Instance.flag == 0)
+                MessageBox.Show("Khách không được sử dụng chức năng này!");
+            else if (NHANVIENDAO.Instance.flag != 1)
                 MessageBox.Show("Phải là quản lý mới có quyền truy cập!");
             else
             {

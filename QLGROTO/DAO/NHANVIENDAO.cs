@@ -63,6 +63,18 @@ namespace QLGROTO.DAO
             }
             return true;
         }
+        public SqlDataReader LoadChucVu()
+        {
+            SqlConnection con = dc.getConnect();
+            con.Open();
+            string sql = "SELECT * FROM CHUCVU";
+            SqlCommand cmd = new SqlCommand(sql, con);
+          
+            cmd.ExecuteNonQuery();
+            SqlDataReader dt = cmd.ExecuteReader();
+            return dt;
+
+        }
         public SqlDataReader HienThiThongTin(string tdn)
         {
             SqlConnection con = dc.getConnect();
@@ -76,7 +88,7 @@ namespace QLGROTO.DAO
             return dt;
            
         }
-        public bool SuaNhanVien(string tdn, string mk, string ten, string diachi, string dth, string email, string cv)
+        public bool Sua(string tdn, string mk, string ten, string diachi, string dth, string email, string cv)
         {
             string sql = "UPDATE NHANVIEN SET MatKhau = @mk, TenNV = @ten, DienThoai = @dth, DiaChi = @dc, Email = @email, ChucVu = @cv WHERE TenDangNhap = @tdn";
             SqlConnection con = dc.getConnect();
@@ -101,7 +113,7 @@ namespace QLGROTO.DAO
             }
             return true;
         }
-        public bool SuaNhanVienAdmin(string tdn, string ten, string diachi, string dth, string email, string cv)
+        public bool SuaAdmin(string tdn, string ten, string diachi, string dth, string email, string cv)
         {
             string sql = "UPDATE NHANVIEN SET TenNV = @ten, DienThoai = @dth, DiaChi = @dc, Email = @email, ChucVu = @cv WHERE TenDangNhap = @tdn";
             SqlConnection con = dc.getConnect();
@@ -171,6 +183,8 @@ namespace QLGROTO.DAO
                 l = true;
                 if (dr["ChucVu"].ToString() == "Quản lý")
                     flag = 1;
+                else 
+                    flag = 2;
             }
             return l;
         }
@@ -188,7 +202,7 @@ namespace QLGROTO.DAO
 
 
         }
-        public bool ThemNhanVien(string tdn, string mk, string ten, string diachi, string dth, string email, string cv)
+        public bool Them(string tdn, string mk, string ten, string diachi, string dth, string email, string cv)
         {
             string sql = "INSERT INTO NHANVIEN (TenDangNhap, MatKhau, TenNV, DienThoai, Email, DiaChi, ChucVu) " +
                 "VALUES(@tdn, @mk, @ten, @dth, @email, @dc, @cv)";
@@ -214,7 +228,7 @@ namespace QLGROTO.DAO
             }
             return true;
         }
-        public void XoaNhanVien(string tdn)
+        public void Xoa(string tdn)
         {
             SqlConnection con = dc.getConnect();
             con.Open();

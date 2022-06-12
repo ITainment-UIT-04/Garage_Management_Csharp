@@ -32,7 +32,7 @@ namespace QLGROTO
             {
                 string ma = mavttxtbox.Text;
                 string ten = tenvttxtbox.Text;
-                if (VTPTDAO.Instance.ThemVTPT(ma, ten))
+                if (VTPTDAO.Instance.Them(ma, ten))
                 {
                     this.Close();
                 }

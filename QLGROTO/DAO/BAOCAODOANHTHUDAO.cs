@@ -33,7 +33,7 @@ namespace QLGROTO.DAO
             
             
                 con.Open();
-                string sql = "SELECT HieuXe, SUM(SoTienThu) AS ThanhTien, COUNT(X.BienSo) AS SoLuotThu FROM PHIEUTHUTIEN P, XE X WHERE P.BienSo = X.BienSo AND MONTH(NgayThuTien) = @thang AND YEAR(NgayThuTien) = @nam GROUP BY HieuXe";
+                string sql = "SELECT HieuXe, SUM(TongTien) AS ThanhTien, COUNT(X.BienSo) AS SoLuot FROM PHIEUSUACHUA P, XE X WHERE P.BienSo = X.BienSo AND MONTH(NgaySuaChua) = @thang AND YEAR(NgaySuaChua) = @nam GROUP BY HieuXe";
                 SqlCommand cmd = new SqlCommand(sql, con);
                 cmd.Parameters.AddWithValue("@nam", nam);
                 cmd.Parameters.AddWithValue("@thang", thang);
@@ -41,12 +41,6 @@ namespace QLGROTO.DAO
                 da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
                 return dt;
-
-
-            
-            
-
-
         }
 
         public SqlDataReader TongThanhTien(int thang, int nam)
@@ -54,7 +48,7 @@ namespace QLGROTO.DAO
 
             SqlConnection con = dc.getConnect();
             con.Open();
-            string sql = "SELECT SUM(SoTienThu) AS TONGTHANHTIEN FROM PHIEUTHUTIEN P, XE X WHERE MONTH(NgayThuTien) = @thang AND YEAR(NgayThuTien) = @nam AND P.BienSo = X.BienSo";
+            string sql = "SELECT SUM(TongTien) AS TONGTHANHTIEN FROM PHIEUSUACHUA P, XE X WHERE MONTH(NgaySuaChua) = @thang AND YEAR(NgaySuaChua) = @nam AND P.BienSo = X.BienSo";
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.Parameters.AddWithValue("@thang", thang);
             cmd.Parameters.AddWithValue("@nam", nam);

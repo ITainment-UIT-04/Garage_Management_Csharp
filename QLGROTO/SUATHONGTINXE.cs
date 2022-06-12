@@ -31,7 +31,7 @@ namespace QLGROTO
         }
         public void LoadHieuXe()
         {
-            SqlDataReader dr = HIEUXEDAO.Instance.HienThiHieuXe1();
+            SqlDataReader dr = HIEUXEDAO.Instance.HienThiCBBox();
             while (dr.Read())
             {
                 hieuxecbbox.Items.Add(dr["HieuXe"]);
@@ -78,7 +78,7 @@ namespace QLGROTO
                 string diachi = diachitxtbox.Text;
                 string dth = dthtxtbox.Text;
                 string email = emailtxtbox.Text;
-                if (XEDAO.Instance.SuaXe(bienso, ten, hieu, diachi, dth, email))
+                if (XEDAO.Instance.Sua(bienso, ten, hieu, diachi, dth, email))
                 {
                     this.Close();
 

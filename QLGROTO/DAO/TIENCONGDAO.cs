@@ -40,7 +40,7 @@ namespace QLGROTO.DAO
             return dt;
 
         }
-        public bool XoaTienCong(string mtc)
+        public bool Xoa(string mtc)
         {
 
             SqlConnection con = dc.getConnect();
@@ -84,7 +84,7 @@ namespace QLGROTO.DAO
             return dt;
         }
         
-        public bool ThemTienCong(string mtc, double tc, string nd)
+        public bool Them(string mtc, double tc, string nd)
         {
             string sql = "INSERT INTO TIENCONG (MaTienCong, TienCong, NoiDung)" +
                 "VALUES (@mtc, @tc, @nd)";
@@ -107,7 +107,7 @@ namespace QLGROTO.DAO
             }
             return true;
         }
-        public bool SuaTienCong(string mtc, double tc, string nd)
+        public bool Sua(string mtc, double tc, string nd)
         {
             string sql = "UPDATE TIENCONG SET TienCong = @tc, NoiDung = @nd WHERE MaTienCong = @mtc";
             SqlConnection con = dc.getConnect();
@@ -169,7 +169,7 @@ namespace QLGROTO.DAO
                 l = dr["SO"].ToString();
             return "TC" + l;
         }
-        public SqlDataReader HienThiNoiDungComboBox()
+        public SqlDataReader LoadTienCongCBBox()
         {
             SqlConnection con = dc.getConnect();
             con.Open();

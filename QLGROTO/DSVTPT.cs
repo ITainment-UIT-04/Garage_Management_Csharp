@@ -89,7 +89,7 @@ namespace QLGROTO
             if (ptdtgrid.Rows.Count > 0)
             {
                 string ma = mavtpttxtbox.Text;
-                if (!VTPTDAO.Instance.XoaVTPT(ma))
+                if (!VTPTDAO.Instance.Xoa(ma))
                     MessageBox.Show("Không thể xóa vật tư phụ tùng!");
                 else
                 {

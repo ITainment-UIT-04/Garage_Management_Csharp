@@ -22,7 +22,7 @@ namespace QLGROTO
         }
         public void LoadHieuXe()
         {
-            SqlDataReader dr = HIEUXEDAO.Instance.HienThiHieuXe1();
+            SqlDataReader dr = HIEUXEDAO.Instance.HienThiCBBox();
             while (dr.Read())
             {
                 hieuxecbbox.Items.Add(dr["HieuXe"]);

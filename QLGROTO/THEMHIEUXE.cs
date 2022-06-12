@@ -20,10 +20,7 @@ namespace QLGROTO
         }
 
 
-        public bool ThemHieuXe(string s)
-        {
-            return HIEUXEDAO.Instance.ThemHieuXe(s);
-        }
+       
 
         private void thoatbtn_Click(object sender, EventArgs e)
         {
@@ -37,7 +34,7 @@ namespace QLGROTO
             else
             {
                 string s = themtxtbox.Text;
-                if (ThemHieuXe(s))
+                if (HIEUXEDAO.Instance.Them(s))
                 {
                     this.Close();
                 }

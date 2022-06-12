@@ -67,5 +67,15 @@ namespace QLGROTO
         {
 
         }
+
+        private void chedokhachbtn_Click(object sender, EventArgs e)
+        {
+            MANHINHCHINH frm = new MANHINHCHINH();
+            this.Hide();
+            NHANVIENDAO.Instance.flag = 0;
+
+            frm.ShowDialog();
+            this.Show();
+        }
     }
 }

@@ -41,7 +41,7 @@ namespace QLGROTO
                 string mtc = matctxtbox.Text;
                 double tc = Convert.ToDouble(tctxtbox.Text);
                 string nd = ndtxtbox.Text;
-                if (TIENCONGDAO.Instance.SuaTienCong(mtc, tc, nd))
+                if (TIENCONGDAO.Instance.Sua(mtc, tc, nd))
                 {
                     this.Close();
                 }

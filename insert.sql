@@ -240,5 +240,6 @@ insert into XE(Bienso, Hieuxe, TenChuXe, DiaChi, DienThoai, NgayTiepNhan, TienNo
 ('83B-83361','Honda',N'Đỗ Thị Thùy Dương',N'Quận Thủ Đức, TP.HCM','944545232','2022-08-05 00:00:00','460000'),
 ('82F-55255','Honda',N'Nguyễn Thị Phương',N'Quận Thủ Đức, TP.HCM','912644784','2022-08-05 00:00:00','260000')
 insert into QUYDINH(SoXeSuaChuaToiDa, TiLeLai) VALUES (100, 1.05)
+insert into CHUCVU VALUES(N'Quản lý'), (N'Nhân viên')
 insert into NHANVIEN VALUES('Tuan', '123', N'Lâm Minh Tuấn', '098', '@gmail', 'TPHCM', N'Quản lý')
 

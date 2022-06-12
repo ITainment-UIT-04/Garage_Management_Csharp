@@ -37,6 +37,7 @@
             this.tendangnhap_txtbox = new System.Windows.Forms.TextBox();
             this.PassLabel = new System.Windows.Forms.Label();
             this.UsernameLabel = new System.Windows.Forms.Label();
+            this.chedokhachbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +57,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.panel1.Controls.Add(this.chedokhachbtn);
             this.panel1.Controls.Add(this.EscapeButton);
             this.panel1.Controls.Add(this.LogInButtion);
             this.panel1.Controls.Add(this.pass_txtbox);
@@ -69,7 +71,7 @@
             // 
             // EscapeButton
             // 
-            this.EscapeButton.Location = new System.Drawing.Point(323, 92);
+            this.EscapeButton.Location = new System.Drawing.Point(392, 89);
             this.EscapeButton.Name = "EscapeButton";
             this.EscapeButton.Size = new System.Drawing.Size(94, 29);
             this.EscapeButton.TabIndex = 4;
@@ -79,7 +81,7 @@
             // 
             // LogInButtion
             // 
-            this.LogInButtion.Location = new System.Drawing.Point(72, 92);
+            this.LogInButtion.Location = new System.Drawing.Point(292, 89);
             this.LogInButtion.Name = "LogInButtion";
             this.LogInButtion.Size = new System.Drawing.Size(94, 29);
             this.LogInButtion.TabIndex = 3;
@@ -127,6 +129,17 @@
             this.UsernameLabel.Text = "Tên đăng nhập:";
             this.UsernameLabel.Click += new System.EventHandler(this.label2_Click);
             // 
+            // chedokhachbtn
+            // 
+            this.chedokhachbtn.AutoSize = true;
+            this.chedokhachbtn.Location = new System.Drawing.Point(12, 89);
+            this.chedokhachbtn.Name = "chedokhachbtn";
+            this.chedokhachbtn.Size = new System.Drawing.Size(108, 30);
+            this.chedokhachbtn.TabIndex = 5;
+            this.chedokhachbtn.Text = "Chế độ khách";
+            this.chedokhachbtn.UseVisualStyleBackColor = true;
+            this.chedokhachbtn.Click += new System.EventHandler(this.chedokhachbtn_Click);
+            // 
             // DANGNHAP
             // 
             this.AcceptButton = this.LogInButtion;
@@ -160,5 +173,6 @@
         private TextBox pass_txtbox;
         private TextBox tendangnhap_txtbox;
         private Label PassLabel;
+        private Button chedokhachbtn;
     }
 }

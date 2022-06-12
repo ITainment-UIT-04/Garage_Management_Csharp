@@ -39,7 +39,7 @@ namespace QLGROTO.DAO
             con.Close();
             return dt;
         }
-        public bool XoaVTPT(string mavtpt)
+        public bool Xoa(string mavtpt)
         {
             SqlConnection con = dc.getConnect();
             try
@@ -71,7 +71,7 @@ namespace QLGROTO.DAO
                 l = dr["SO"].ToString();
             return "PT" + l;
         }
-        public bool ThemVTPT(string ma, string ten)
+        public bool Them(string ma, string ten)
         {
             string sql = "INSERT INTO PhuTung (MaVTPT, TenVTPT, SoLuongTon, DonGia)" +
                 "VALUES (@ma, @ten, 0, 0)";
@@ -155,7 +155,7 @@ namespace QLGROTO.DAO
             }
             return true;
         }
-        public bool SuaVTPT(string ma, string ten, double dg)
+        public bool Sua(string ma, string ten, double dg)
         {
             string sql = "UPDATE PHUTUNG SET TenVTPT = @ten, DonGia = @dg WHERE MaVTPT = @ma";
             SqlConnection con = dc.getConnect();

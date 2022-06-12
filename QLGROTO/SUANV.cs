@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -36,8 +37,11 @@ namespace QLGROTO
             tentxtbox.Text = ten;
             dthtxtbox.Text = dth;
             dctxtbox.Text = diachi;
-            chucvutxtbox.Text = chucvu;
+            cvcbbox.Text = chucvu;
             emailtxtbox.Text = email;
+            SqlDataReader dr = NHANVIENDAO.Instance.LoadChucVu();
+            while (dr.Read())
+                cvcbbox.Items.Add(dr["ChucVu"]);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -48,7 +52,7 @@ namespace QLGROTO
         private void button2_Click(object sender, EventArgs e)
         {
             if (String.IsNullOrEmpty(mktxtbox.Text) || String.IsNullOrEmpty(tentxtbox.Text) ||
-                String.IsNullOrEmpty(dctxtbox.Text) || String.IsNullOrEmpty(dthtxtbox.Text) || String.IsNullOrEmpty(chucvutxtbox.Text))
+                String.IsNullOrEmpty(dctxtbox.Text) || String.IsNullOrEmpty(dthtxtbox.Text) || String.IsNullOrEmpty(cvcbbox.Text))
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
             else
             {
@@ -58,8 +62,8 @@ namespace QLGROTO
                 string diachi = dctxtbox.Text;
                 string dth = dthtxtbox.Text;
                 string email = emailtxtbox.Text;
-                string cv = chucvutxtbox.Text;
-                if (NHANVIENDAO.Instance.SuaNhanVien(tdn, mk, ten, diachi, dth, email, cv))
+                string cv = cvcbbox.Text;
+                if (NHANVIENDAO.Instance.Sua(tdn, mk, ten, diachi, dth, email, cv))
                 {
                     this.Close();
                 }
