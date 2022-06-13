@@ -38,6 +38,12 @@ namespace QLGROTO
             DataTable dt = XEDAO.Instance.HienThi();
             xedtgrid.DataSource = dt;
         }
+
+        public void HienThiXeTiepNhanTrongNgay()
+        {
+            DataTable dt = XEDAO.Instance.HienThiXeNhapTrongNgay();
+            xedtgrid.DataSource = dt;
+        }
         private void thôngTinPhầnMềmToolStripMenuItem_Click(object sender, EventArgs e)
         {
             THONGTINPM aboutForm = new THONGTINPM();
@@ -334,6 +340,10 @@ namespace QLGROTO
             flag = 3;
             
         }
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            flag = 4;
+        }
 
         private void xedtgrid_SelectionChanged_1(object sender, EventArgs e)
         {
@@ -377,6 +387,8 @@ namespace QLGROTO
                     xedtgrid.DataSource = XEDAO.Instance.TimKiemTheoSDT(s);
                 else if (flag == 3)
                     xedtgrid.DataSource = XEDAO.Instance.TimKiemTheoBienSo(s);
+                else if (flag == 4)
+                    xedtgrid.DataSource = XEDAO.Instance.TimKiemTheoNgay(s);
             }
             else
                 HienThi();
@@ -504,6 +516,11 @@ namespace QLGROTO
         private void diachitxtbox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void xetiepnhantrongngaybtn_Click(object sender, EventArgs e)
+        {
+            HienThiXeTiepNhanTrongNgay();
         }
     }
 }

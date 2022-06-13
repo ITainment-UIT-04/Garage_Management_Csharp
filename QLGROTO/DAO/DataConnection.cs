@@ -9,7 +9,7 @@ namespace QLGROTO.DAO
 {
     internal class DataConnection
     {
-        string constr = "Data Source=ZenBookUX425EA\\SQLEXPRESS;Initial Catalog=QUANLIGARA;Integrated Security=True";
+        string constr = "Data Source=LAPTOP-UUNOUMSL;Initial Catalog=QUANLIGARA;Integrated Security=True";
         public SqlConnection getConnect()
         {
             return new SqlConnection(constr);

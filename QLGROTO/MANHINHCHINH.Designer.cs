@@ -96,6 +96,8 @@
             this.dangsudungtxtbox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timtheongayradio = new System.Windows.Forms.RadioButton();
+            this.xetiepnhantrongngaybtn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -475,7 +477,7 @@
             // 
             this.timtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.timtxtbox.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.timtxtbox.Location = new System.Drawing.Point(710, 42);
+            this.timtxtbox.Location = new System.Drawing.Point(719, 42);
             this.timtxtbox.Name = "timtxtbox";
             this.timtxtbox.Size = new System.Drawing.Size(371, 27);
             this.timtxtbox.TabIndex = 0;
@@ -486,7 +488,7 @@
             this.NameSearchRadiobtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NameSearchRadiobtn.AutoSize = true;
             this.NameSearchRadiobtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.NameSearchRadiobtn.Location = new System.Drawing.Point(598, 75);
+            this.NameSearchRadiobtn.Location = new System.Drawing.Point(565, 77);
             this.NameSearchRadiobtn.Name = "NameSearchRadiobtn";
             this.NameSearchRadiobtn.Size = new System.Drawing.Size(160, 24);
             this.NameSearchRadiobtn.TabIndex = 1;
@@ -499,7 +501,7 @@
             this.sdttimradio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.sdttimradio.AutoSize = true;
             this.sdttimradio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.sdttimradio.Location = new System.Drawing.Point(774, 75);
+            this.sdttimradio.Location = new System.Drawing.Point(750, 77);
             this.sdttimradio.Name = "sdttimradio";
             this.sdttimradio.Size = new System.Drawing.Size(225, 24);
             this.sdttimradio.TabIndex = 1;
@@ -512,7 +514,7 @@
             this.biensotimradio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.biensotimradio.AutoSize = true;
             this.biensotimradio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.biensotimradio.Location = new System.Drawing.Point(1016, 75);
+            this.biensotimradio.Location = new System.Drawing.Point(997, 78);
             this.biensotimradio.Name = "biensotimradio";
             this.biensotimradio.Size = new System.Drawing.Size(160, 24);
             this.biensotimradio.TabIndex = 1;
@@ -802,7 +804,7 @@
             this.xedtgrid.Name = "xedtgrid";
             this.xedtgrid.RowHeadersWidth = 51;
             this.xedtgrid.RowTemplate.Height = 29;
-            this.xedtgrid.Size = new System.Drawing.Size(1279, 515);
+            this.xedtgrid.Size = new System.Drawing.Size(1254, 515);
             this.xedtgrid.TabIndex = 4;
             this.xedtgrid.TabStop = false;
             this.xedtgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.xedtgrid_CellContentClick_1);
@@ -883,9 +885,9 @@
             this.xuatbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.xuatbtn.Image = global::QLGROTO.Properties.Resources.certificate_g32c53cd83_640__1_;
             this.xuatbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.xuatbtn.Location = new System.Drawing.Point(1232, 42);
+            this.xuatbtn.Location = new System.Drawing.Point(1357, 30);
             this.xuatbtn.Name = "xuatbtn";
-            this.xuatbtn.Size = new System.Drawing.Size(265, 65);
+            this.xuatbtn.Size = new System.Drawing.Size(221, 38);
             this.xuatbtn.TabIndex = 10;
             this.xuatbtn.Text = "Xuất file danh sách";
             this.xuatbtn.UseVisualStyleBackColor = false;
@@ -896,7 +898,7 @@
             this.dangsudungtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dangsudungtxtbox.BackColor = System.Drawing.Color.Gainsboro;
             this.dangsudungtxtbox.Enabled = false;
-            this.dangsudungtxtbox.Location = new System.Drawing.Point(283, 74);
+            this.dangsudungtxtbox.Location = new System.Drawing.Point(275, 77);
             this.dangsudungtxtbox.Name = "dangsudungtxtbox";
             this.dangsudungtxtbox.ReadOnly = true;
             this.dangsudungtxtbox.Size = new System.Drawing.Size(276, 27);
@@ -927,6 +929,35 @@
             this.pictureBox1.TabIndex = 74;
             this.pictureBox1.TabStop = false;
             // 
+            // timtheongayradio
+            // 
+            this.timtheongayradio.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.timtheongayradio.AutoSize = true;
+            this.timtheongayradio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.timtheongayradio.Location = new System.Drawing.Point(1186, 78);
+            this.timtheongayradio.Name = "timtheongayradio";
+            this.timtheongayradio.Size = new System.Drawing.Size(125, 24);
+            this.timtheongayradio.TabIndex = 1;
+            this.timtheongayradio.Text = "Tìm theo ngày";
+            this.timtheongayradio.UseVisualStyleBackColor = true;
+            this.timtheongayradio.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // xetiepnhantrongngaybtn
+            // 
+            this.xetiepnhantrongngaybtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.xetiepnhantrongngaybtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.xetiepnhantrongngaybtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.xetiepnhantrongngaybtn.Image = ((System.Drawing.Image)(resources.GetObject("xetiepnhantrongngaybtn.Image")));
+            this.xetiepnhantrongngaybtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.xetiepnhantrongngaybtn.Location = new System.Drawing.Point(1317, 74);
+            this.xetiepnhantrongngaybtn.Name = "xetiepnhantrongngaybtn";
+            this.xetiepnhantrongngaybtn.Size = new System.Drawing.Size(273, 35);
+            this.xetiepnhantrongngaybtn.TabIndex = 10;
+            this.xetiepnhantrongngaybtn.Text = "Xe tiếp nhận trong ngày";
+            this.xetiepnhantrongngaybtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.xetiepnhantrongngaybtn.UseVisualStyleBackColor = false;
+            this.xetiepnhantrongngaybtn.Click += new System.EventHandler(this.xetiepnhantrongngaybtn_Click);
+            // 
             // MANHINHCHINH
             // 
             this.AcceptButton = this.timkiembtn;
@@ -934,6 +965,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(1509, 801);
+            this.Controls.Add(this.xetiepnhantrongngaybtn);
+            this.Controls.Add(this.timtheongayradio);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dangsudungtxtbox);
@@ -1040,5 +1073,7 @@
         private TextBox dangsudungtxtbox;
         private Label label3;
         private PictureBox pictureBox1;
+        private RadioButton timtheongayradio;
+        private Button xetiepnhantrongngaybtn;
     }
 }

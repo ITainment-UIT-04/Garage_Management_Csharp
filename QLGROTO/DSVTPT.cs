@@ -190,5 +190,10 @@ namespace QLGROTO
             THEMVTPT t = new THEMVTPT();
             t.ShowDialog();
         }
+
+        private void ptdtgrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

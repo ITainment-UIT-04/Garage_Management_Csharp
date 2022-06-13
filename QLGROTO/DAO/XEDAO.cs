@@ -31,6 +31,20 @@ namespace QLGROTO.DAO
             con.Close();
             return dt;
         }
+
+        public DataTable HienThiXeNhapTrongNgay()
+        {
+            SqlConnection con = dc.getConnect();
+            con.Open();
+            string sql = "SELECT * FROM Xe WHERE" +
+                " convert(date,NgayTiepNhan) = convert(date,getdate())";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
+            return dt;
+        }
         public SqlDataReader LoadBienSo()
         {
             SqlConnection con = dc.getConnect();
@@ -116,6 +130,19 @@ namespace QLGROTO.DAO
             string sql = "SELECT * FROM XE WHERE DienThoai LIKE CONCAT('%', @ten, '%')";
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.Parameters.AddWithValue("@ten", s);
+            DataTable dt = new DataTable();
+            da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            return dt;
+        }
+
+        public DataTable TimKiemTheoNgay(string s)
+        {
+            SqlConnection con = dc.getConnect();
+            con.Open();
+            string sql = "SELECT * FROM XE WHERE NgayTiepNhan LIKE convert(smalldatetime,@s)";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@s", s);
             DataTable dt = new DataTable();
             da = new SqlDataAdapter(cmd);
             da.Fill(dt);

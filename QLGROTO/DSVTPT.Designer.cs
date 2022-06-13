@@ -156,6 +156,7 @@
             this.ptdtgrid.Size = new System.Drawing.Size(1111, 512);
             this.ptdtgrid.TabIndex = 4;
             this.ptdtgrid.TabStop = false;
+            this.ptdtgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ptdtgrid_CellContentClick);
             this.ptdtgrid.SelectionChanged += new System.EventHandler(this.ptdtgrid_SelectionChanged);
             // 
             // MaVTPT
