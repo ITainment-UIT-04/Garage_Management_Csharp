@@ -1,5 +1,4 @@
-# Nhóm 18
-## Phần mềm quản lý gara ô tô
+# SE104 - Nhóm 18 - Đồ án: Phần mềm quản lý gara ô tô
 ## Thành viên nhóm: 
 + Mai Văn Thiên Phước - 20521776 
 + Đậu Văn Nam - 20521626
