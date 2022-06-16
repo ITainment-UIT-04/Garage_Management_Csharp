@@ -140,5 +140,15 @@ namespace QLGROTO
                 }
             }
         }
+
+        private void tentxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tienconnotxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

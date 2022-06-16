@@ -61,6 +61,7 @@
             0,
             0,
             0});
+            this.tilenumeric.ValueChanged += new System.EventHandler(this.tilenumeric_ValueChanged);
             // 
             // thoatbtn
             // 

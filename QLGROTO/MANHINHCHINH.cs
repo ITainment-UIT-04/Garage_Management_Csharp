@@ -485,7 +485,7 @@ namespace QLGROTO
 
         private void xedtgrid_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-
+           
         }
 
         private void biensotxtbox_TextChanged(object sender, EventArgs e)
@@ -521,6 +521,27 @@ namespace QLGROTO
         private void xetiepnhantrongngaybtn_Click(object sender, EventArgs e)
         {
             HienThiXeTiepNhanTrongNgay();
+        }
+
+        private void xedtgrid_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+       
+        }
+
+        private void xedtgrid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            PHIEUTHUTIEN phieuthu = new PHIEUTHUTIEN();
+            phieuthu.biensocbbox.Text = this.xedtgrid.CurrentRow.Cells[0].Value.ToString();
+            phieuthu.tentxtbox.Text = this.xedtgrid.CurrentRow.Cells[1].Value.ToString();
+            phieuthu.hieuxetxtbox.Text = this.xedtgrid.CurrentRow.Cells[2].Value.ToString();
+            phieuthu.diachitxtbox.Text = this.xedtgrid.CurrentRow.Cells[3].Value.ToString();
+            phieuthu.dthtxtbox.Text = this.xedtgrid.CurrentRow.Cells[4].Value.ToString();
+            phieuthu.emailtxtbox.Text = this.xedtgrid.CurrentRow.Cells[5].Value.ToString();
+            phieuthu.tiennotxtbox.Text = this.xedtgrid.CurrentRow.Cells[6].Value.ToString();
+            phieuthu.tienthutxtbox.Text = "0";
+            phieuthu.tienconnotxtbox.Text = this.xedtgrid.CurrentRow.Cells[6].Value.ToString();
+            phieuthu.ShowDialog();
+            HienThi();
         }
     }
 }

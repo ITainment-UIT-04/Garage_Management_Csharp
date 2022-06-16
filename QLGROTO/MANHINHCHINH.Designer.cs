@@ -804,10 +804,13 @@
             this.xedtgrid.Name = "xedtgrid";
             this.xedtgrid.RowHeadersWidth = 51;
             this.xedtgrid.RowTemplate.Height = 29;
+            this.xedtgrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.xedtgrid.Size = new System.Drawing.Size(1254, 515);
             this.xedtgrid.TabIndex = 4;
             this.xedtgrid.TabStop = false;
+            this.xedtgrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.xedtgrid_CellClick);
             this.xedtgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.xedtgrid_CellContentClick_1);
+            this.xedtgrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.xedtgrid_CellDoubleClick);
             this.xedtgrid.SelectionChanged += new System.EventHandler(this.xedtgrid_SelectionChanged_1);
             // 
             // BienSo

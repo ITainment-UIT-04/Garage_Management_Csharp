@@ -49,5 +49,10 @@ namespace QLGROTO
         {
 
         }
+
+        private void tilenumeric_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

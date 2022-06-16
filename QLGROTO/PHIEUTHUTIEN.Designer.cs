@@ -154,8 +154,7 @@
             // dthtxtbox
             // 
             this.dthtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dthtxtbox.BackColor = System.Drawing.Color.Gainsboro;
-            this.dthtxtbox.Enabled = false;
+            this.dthtxtbox.BackColor = System.Drawing.Color.White;
             this.dthtxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dthtxtbox.Location = new System.Drawing.Point(230, 281);
             this.dthtxtbox.Multiline = true;
@@ -167,8 +166,7 @@
             // diachitxtbox
             // 
             this.diachitxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.diachitxtbox.BackColor = System.Drawing.Color.Gainsboro;
-            this.diachitxtbox.Enabled = false;
+            this.diachitxtbox.BackColor = System.Drawing.Color.White;
             this.diachitxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.diachitxtbox.Location = new System.Drawing.Point(230, 219);
             this.diachitxtbox.Multiline = true;
@@ -194,8 +192,7 @@
             // hieuxetxtbox
             // 
             this.hieuxetxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.hieuxetxtbox.BackColor = System.Drawing.Color.Gainsboro;
-            this.hieuxetxtbox.Enabled = false;
+            this.hieuxetxtbox.BackColor = System.Drawing.Color.White;
             this.hieuxetxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.hieuxetxtbox.Location = new System.Drawing.Point(230, 189);
             this.hieuxetxtbox.Multiline = true;
@@ -207,8 +204,7 @@
             // tentxtbox
             // 
             this.tentxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tentxtbox.BackColor = System.Drawing.Color.Gainsboro;
-            this.tentxtbox.Enabled = false;
+            this.tentxtbox.BackColor = System.Drawing.Color.White;
             this.tentxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tentxtbox.Location = new System.Drawing.Point(230, 159);
             this.tentxtbox.Multiline = true;
@@ -216,6 +212,7 @@
             this.tentxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.tentxtbox.Size = new System.Drawing.Size(360, 25);
             this.tentxtbox.TabIndex = 10;
+            this.tentxtbox.TextChanged += new System.EventHandler(this.tentxtbox_TextChanged);
             // 
             // thoatbtn
             // 
@@ -324,6 +321,7 @@
             this.tienconnotxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.tienconnotxtbox.Size = new System.Drawing.Size(360, 25);
             this.tienconnotxtbox.TabIndex = 21;
+            this.tienconnotxtbox.TextChanged += new System.EventHandler(this.tienconnotxtbox_TextChanged);
             // 
             // label2
             // 
@@ -384,8 +382,7 @@
             // emailtxtbox
             // 
             this.emailtxtbox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.emailtxtbox.BackColor = System.Drawing.Color.Gainsboro;
-            this.emailtxtbox.Enabled = false;
+            this.emailtxtbox.BackColor = System.Drawing.Color.White;
             this.emailtxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.emailtxtbox.Location = new System.Drawing.Point(230, 250);
             this.emailtxtbox.Multiline = true;
@@ -469,26 +466,26 @@
         private Label label7;
         private Label label8;
         private Label TenChuXe;
-        private TextBox dthtxtbox;
-        private TextBox diachitxtbox;
         private TextBox textBox3;
-        private TextBox hieuxetxtbox;
-        private TextBox tentxtbox;
         private Button thoatbtn;
         private Button lapphieubtn;
-        private TextBox tiennotxtbox;
         private Label label6;
         private Label label9;
         private Label label10;
-        private TextBox tienthutxtbox;
         private Label label11;
-        private TextBox tienconnotxtbox;
         private Label label2;
         private DateTimePicker ngaydtpicker;
         private TextBox matttxtbox;
-        private ComboBox biensocbbox;
         private TextBox textBox1;
-        private TextBox emailtxtbox;
         private Label label13;
+        public ComboBox biensocbbox;
+        public TextBox tentxtbox;
+        public TextBox hieuxetxtbox;
+        public TextBox diachitxtbox;
+        public TextBox emailtxtbox;
+        public TextBox dthtxtbox;
+        public TextBox tiennotxtbox;
+        public TextBox tienthutxtbox;
+        public TextBox tienconnotxtbox;
     }
 }
